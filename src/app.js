@@ -158,15 +158,6 @@ async function shareResult() {
   const emojiShare = generateEmojiShare(state.guesses, state.scoutedStats, state.scoutTokens);
   const header = `Backyardle ${isRandomMode ? "Random" : `#${puzzle.number}`} - ${state.status === "won" ? `${state.guesses.length}/6` : "X/6"}`;
   const sharedResult = `${header}\n${emojiShare}\nhttps://jlund24.github.io/byb-wordle/`;
-  if (navigator.share) {
-    try {
-      await navigator.share({ text: sharedResult });
-      return;
-    } catch (error) {
-      if (error.name === "AbortError") return;
-    }
-  }
-
   if (await copyText(sharedResult)) {
     const copyStatus = sheet.querySelector("#share-copy-status");
     if (copyStatus) {
