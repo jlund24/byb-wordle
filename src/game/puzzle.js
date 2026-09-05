@@ -1,7 +1,10 @@
 const DAY_MS = 86_400_000;
 
 export function dateId(date = new Date()) {
-  return new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate())).toISOString().slice(0, 10);
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
 }
 
 export function parsePuzzleDate(value) {
@@ -9,7 +12,9 @@ export function parsePuzzleDate(value) {
 }
 
 export function puzzleNumber(puzzleDate) {
-  return Math.floor((Date.parse(`${puzzleDate}T00:00:00Z`) - Date.UTC(2026, 0, 1)) / DAY_MS) + 1;
+  const puzzleStart = new Date(`${puzzleDate}T00:00:00`);
+  const firstPuzzleDay = new Date(2026, 0, 1);
+  return Math.floor((puzzleStart.getTime() - firstPuzzleDay.getTime()) / DAY_MS) + 1;
 }
 
 function seeded(seed) {

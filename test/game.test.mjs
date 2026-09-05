@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { CORE_STATS, PLAYERS } from "../src/data/players.js";
-import { createDailyPuzzle, createRandomPuzzle } from "../src/game/puzzle.js";
+import { createDailyPuzzle, createRandomPuzzle, dateId, puzzleNumber } from "../src/game/puzzle.js";
 import { comparePlayer, equivalentProfiles } from "../src/game/comparisons.js";
 import { createGameState, scoutStat, submitGuess } from "../src/game/gameState.js";
 import { filterCandidates } from "../src/game/filtering.js";
@@ -8,6 +8,8 @@ import { getStatRange, valueFallsInRange } from "../src/game/statRanges.js";
 import { guessHistoryMarkup } from "../src/ui/guessHistory.js";
 
 assert.deepEqual(getStatRange(0), { min: 0, max: 25, label: "0-25" });
+assert.equal(dateId(new Date(2026, 8, 5, 12, 0)), "2026-09-05");
+assert.equal(puzzleNumber("2026-09-05"), 1 + Math.floor((new Date(2026, 8, 5, 0, 0, 0).getTime() - new Date(2026, 0, 1).getTime()) / 86_400_000));
 assert.deepEqual(getStatRange(25), { min: 0, max: 25, label: "0-25" });
 assert.deepEqual(getStatRange(26), { min: 26, max: 50, label: "26-50" });
 assert.deepEqual(getStatRange(50), { min: 26, max: 50, label: "26-50" });
