@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "import:players": "node scripts/import-players.mjs",
+    "test": "node test/game.test.mjs"
+  }
+}
