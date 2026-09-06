@@ -22,6 +22,17 @@ export const CORE_STATS = [
   "coordination", "arm", "throwing", "vision"
 ];
 
+export const STATLINE_STATS = [
+  { key: "battingPower", label: "Bat Power" },
+  { key: "battingContact", label: "Bat Contact" },
+  { key: "stamina", label: "Stamina" },
+  { key: "speed", label: "Speed" },
+  { key: "coordination", label: "Coordination" },
+  { key: "arm", label: "Arm Strength" },
+  { key: "throwing", label: "Arm Accuracy" },
+  { key: "vision", label: "Eye" }
+];
+
 export const STAT_LABELS = {
   battingPower: "Power", battingContact: "Contact", stamina: "Stamina", speed: "Speed",
   coordination: "Coordination", arm: "Arm Strength", throwing: "Arm Accuracy", vision: "Vision"

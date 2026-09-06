@@ -41,6 +41,20 @@ export function createDailyPuzzle(players, puzzleDate, playerOverride) {
   return { id: puzzleDate, number: puzzleNumber(puzzleDate), mysteryId, startingStats: [] };
 }
 
+/** Create a repeatable Statline mystery distinct from Backyardle's daily player. */
+export function createStatlineDailyPuzzle(players, puzzleDate, playerOverride) {
+  if (playerOverride && players.some((player) => player.id === playerOverride)) {
+    return createDailyPuzzle(players, puzzleDate, playerOverride);
+  }
+  const dailyPuzzle = createDailyPuzzle(players, puzzleDate);
+  const random = seeded(hash(`statline:${puzzleDate}`));
+  let mysteryIndex = Math.floor(random() * players.length);
+  if (players.length > 1 && players[mysteryIndex].id === dailyPuzzle.mysteryId) {
+    mysteryIndex = (mysteryIndex + 1) % players.length;
+  }
+  return { id: puzzleDate, number: puzzleNumber(puzzleDate), mysteryId: players[mysteryIndex].id, startingStats: [] };
+}
+
 /** Create a repeatable mystery player for one independently generated round. */
 export function createRandomPuzzle(players, roundId) {
   const random = seeded(hash(roundId));
