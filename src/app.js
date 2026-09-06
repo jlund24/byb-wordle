@@ -3,7 +3,6 @@ import { createDailyPuzzle, createRandomPuzzle, dateId, parsePuzzleDate } from "
 import { createGameState, scoutStat, submitGuess } from "./game/gameState.js?v=scout-1";
 import { equivalentPlayers } from "./game/comparisons.js";
 import { filterCandidates } from "./game/filtering.js";
-import { valueFallsInRange } from "./game/statRanges.js";
 import { loadProgress, saveProgress } from "./storage/storage.js";
 import { playerSearchMarkup, wirePlayerSearch } from "./ui/playerSearch.js?v=sticky-2";
 import { candidatesMarkup } from "./ui/candidateDrawer.js";
@@ -95,16 +94,6 @@ function selectInlineGuess(root, playerId) {
     return `<div><div class="stat-value-line"><strong>${player[stat]}</strong></div></div>`;
   }).join("")}</div>`;
   currentRow.querySelector("#inline-guess-preview").hidden = false;
-  CORE_STATS.forEach((stat) => {
-    const range = state.possibleRanges[stat] || state.scoutedStats[stat];
-    const indicator = currentRow.querySelector(`[data-stat="${stat}"] .preview-range-indicator`);
-    if (!indicator || !range) return;
-    const statCell = indicator.closest("[data-stat]");
-    indicator.textContent = valueFallsInRange(player[stat], range) ? "✓" : "✕";
-    indicator.setAttribute("aria-label", valueFallsInRange(player[stat], range) ? "in range" : "out of range");
-    indicator.hidden = false;
-    statCell.classList.add("has-preview-indicator");
-  });
   window.requestAnimationFrame(focusCurrentGuess);
   const guessButton = document.querySelector("#inline-guess");
   if (guessButton) guessButton.disabled = false;
@@ -225,10 +214,6 @@ function render() {
       const currentRow = inlineGuess.closest(".mystery-row");
       currentRow.querySelector("#mystery-guess-title").textContent = `#${state.guesses.length + 1}: ???????`;
       currentRow.querySelector("#inline-guess-preview").hidden = true;
-      currentRow.querySelectorAll(".preview-range-indicator").forEach((indicator) => {
-        indicator.hidden = true;
-        indicator.closest("[data-stat]").classList.remove("has-preview-indicator");
-      });
       const guessButton = document.querySelector("#inline-guess");
       if (guessButton) guessButton.disabled = true;
     });

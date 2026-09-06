@@ -85,6 +85,10 @@ assert.equal(Object.keys(state.guesses[0].comparisons).length, CORE_STATS.length
 assert.deepEqual(state.guesses[0].comparisons, comparePlayer(kenny, pablo));
 assert.deepEqual(state.guesses[0].possibleRanges.speed, state.possibleRanges.speed);
 assert.equal(state.possibleRanges.speed.label, comparePlayer(kenny, pablo).speed === "higher" ? `${kenny.speed + 1}-100` : `${0}-${kenny.speed - 1}`);
+const rangeMarkup = guessHistoryMarkup(state.guesses, state.possibleRanges);
+assert.match(rangeMarkup, new RegExp(`>${state.possibleRanges.speed.min}<`));
+assert.match(rangeMarkup, new RegExp(`>${state.possibleRanges.speed.max}<`));
+assert.doesNotMatch(rangeMarkup, /preview-range-indicator|aria-label="(?:in range|out of range)"/);
 assert.equal((guessHistoryMarkup(state.guesses).match(/(?:⬆️|⬇️|✅)/g) || []).length, CORE_STATS.length);
 assert.equal((guessHistoryMarkup(state.guesses).match(/aria-label="(?:higher|lower|equal)"/g) || []).length, CORE_STATS.length);
 assert.equal((guessHistoryMarkup(state.guesses).match(/<article class="guess-row empty-guess-row"><h3>#\d+: -----<\/h3><\/article>/g) || []).length, 4);
