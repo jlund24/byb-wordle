@@ -2,6 +2,7 @@ import { CORE_STATS, STAT_LABELS, STAT_EMOJIS, TYPE_DISPLAY_VALUES } from "../da
 import { MAX_GUESSES } from "../game/gameState.js";
 import { inlinePlayerSearchMarkup } from "./playerSearch.js";
 import { playerImageMarkup } from "./playerImage.js";
+import { getStatTier, speedTierNumber } from "../game/statlineState.js";
 
 const SYMBOLS = { higher: "⬆️", lower: "⬇️", equal: "✅", wrong: "❌" };
 const SHARE_HEADER = CORE_STATS.map((stat) => STAT_EMOJIS[stat]).join("");
@@ -12,10 +13,12 @@ function rangeLabel(range) {
   return range.min === range.max ? `${range.min}` : range.label;
 }
 
-function mysteryRangeMarkup(range) {
+function mysteryRangeMarkup(range, stat) {
   if (!range) return "?";
-  if (range.min === range.max) return `${range.min}`;
-  return `<span>${range.min}</span><span class="range-separator" aria-hidden="true">-</span><span>${range.max}</span>`;
+  const min = stat === "speed" ? speedTierNumber(getStatTier(range.min, stat)) : range.min;
+  const max = stat === "speed" ? speedTierNumber(getStatTier(range.max, stat)) : range.max;
+  if (min === max) return `${min}`;
+  return `<span>${min}</span><span class="range-separator" aria-hidden="true">-</span><span>${max}</span>`;
 }
 
 export function statHeaderMarkup(showEmojis = true) {
@@ -24,6 +27,10 @@ export function statHeaderMarkup(showEmojis = true) {
 
 export function formatStatValue(stat, value) {
   if (stat === "type") return TYPE_DISPLAY_VALUES[value] ?? value ?? "?";
+  if (stat === "speed" && typeof value === "number") {
+    const tier = getStatTier(value, stat);
+    return `${speedTierNumber(tier)} (${value})`;
+  }
   return value ?? "?";
 }
 
@@ -67,7 +74,7 @@ export function guessHistoryMarkup(guesses, possibleRanges = {}, scoutedStats = 
       const typeValue = possibleTypes.length === 3 ? "?" : possibleTypes.map((type) => formatStatValue(stat, type)).join(" / ");
       return `<div class="${possibleTypes.length === 1 ? "revealed" : ""}" data-stat="${stat}"><strong class="range-value">${typeValue}</strong></div>`;
     }
-    return `<div class="${range ? "revealed" : ""}" data-stat="${stat}"><strong class="range-value">${mysteryRangeMarkup(range)}</strong></div>`;
+    return `<div class="${range ? "revealed" : ""}" data-stat="${stat}"><strong class="range-value">${mysteryRangeMarkup(range, stat)}</strong></div>`;
   }).join("")}</div><div class="inline-guess-preview" id="inline-guess-preview" hidden></div>${availablePlayers.length ? inlinePlayerSearchMarkup(availablePlayers, scoutTokens, scoutAvailable) : ""}</article>`;
   const emptyRowCount = MAX_GUESSES - guesses.length - (gameOver ? 0 : 1);
   const emptyRows = Array.from({ length: Math.max(0, emptyRowCount) }, (_, index) => {

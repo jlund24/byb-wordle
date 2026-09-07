@@ -13,12 +13,22 @@ export const SPEED_TIER_RANGES = [
   { tier: "B", range: "60-79", numeric: 6 }, { tier: "C", range: "40-59", numeric: 5 }, { tier: "D", range: "20-39", numeric: 4 }, { tier: "E", range: "0-19", numeric: 3 }
 ];
 
+export function speedTierRange(value) {
+  return SPEED_TIER_RANGES.find(({ range }) => {
+    const values = range.split("-").map(Number);
+    const min = values[0];
+    const max = values[1] ?? min;
+    return value >= min && value <= max;
+  });
+}
+
+export function speedTierNumber(tier) {
+  return SPEED_TIER_RANGES.find((item) => item.tier === tier)?.numeric;
+}
+
 export function getStatTier(value, stat) {
   if (stat === "speed") {
-    return SPEED_TIER_RANGES.find(({ range }) => {
-      const [min, max] = range.split("-").map(Number);
-      return value >= min && value <= (max ?? min);
-    }).tier;
+    return speedTierRange(value).tier;
   }
   if (value === 100) return "S+";
   if (value >= 85) return "S";

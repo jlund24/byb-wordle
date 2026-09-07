@@ -1,7 +1,14 @@
 import { CORE_STATS } from "../data/players.js?v=types-2";
+import { getStatTier } from "./statlineState.js";
 
 export function comparisonFor(stat, guessValue, mysteryValue) {
   if (stat === "type") return mysteryValue === guessValue ? "equal" : "wrong";
+  if (stat === "speed") {
+    const difference = ["E", "D", "C", "B", "A", "S", "S+"].indexOf(getStatTier(mysteryValue, stat))
+      - ["E", "D", "C", "B", "A", "S", "S+"].indexOf(getStatTier(guessValue, stat));
+    if (difference === 0) return "equal";
+    return difference > 0 ? "higher" : "lower";
+  }
   if (mysteryValue === guessValue) return "equal";
   return mysteryValue > guessValue ? "higher" : "lower";
 }

@@ -29,7 +29,7 @@ const puzzle = isRandomMode
   : createDailyPuzzle(PLAYERS, puzzleDate, parameters.get("player"));
 const mystery = PLAYERS.find((player) => player.id === puzzle.mysteryId);
 const savedState = loadProgress(puzzle.id, isRandomMode ? "random" : "daily");
-const savedStateIsCurrent = savedState?.version === 6 && savedState.startingStats?.length === 0 && savedState.mysteryId === puzzle.mysteryId && Number.isInteger(savedState.scoutTokens) && savedState.scoutedStats && savedState.possibleRanges && savedState.possibleTypes && savedState.guesses.every((guess) => PLAYERS.some((player) => player.id === guess.playerId) && guess.comparisons && [0, 8].includes(Object.keys(guess.comparisons).length));
+const savedStateIsCurrent = savedState?.version === 7 && savedState.startingStats?.length === 0 && savedState.mysteryId === puzzle.mysteryId && Number.isInteger(savedState.scoutTokens) && savedState.scoutedStats && savedState.possibleRanges && savedState.possibleTypes && savedState.guesses.every((guess) => PLAYERS.some((player) => player.id === guess.playerId) && guess.comparisons && [0, 8].includes(Object.keys(guess.comparisons).length));
 let state = savedStateIsCurrent ? savedState : createGameState(puzzle);
 let priorFocus;
 let pendingGuessPlayerId = null;

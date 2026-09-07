@@ -34,7 +34,7 @@ let state = savedStateIsCurrent ? savedState : createStatlineState(puzzle);
 let copyStatusTimeout;
 let priorFocus;
 const SHARE_SYMBOLS = { correct: "🟩", higher: "🟦", lower: "🟥", wrong: "⬛" };
-const IMAGE_CHOICES = [...new Map(PLAYERS.map((player) => [playerImageKey(player), player]).filter(([key]) => key)).values()];
+const IMAGE_CHOICES = [...new Map(PLAYERS.map((player) => [playerImageKey(player), player]).filter(([key]) => key)).values()].reverse();
 
 function scheduleNextDailyPuzzle() {
   if (isRandomMode || parameters.has("date")) return;
