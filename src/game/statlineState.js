@@ -8,8 +8,18 @@ export const STATLINE_TIER_RANGES = [
   { tier: "S+", range: "100" }, { tier: "S", range: "85-99" }, { tier: "A", range: "70-84" },
   { tier: "B", range: "55-69" }, { tier: "C", range: "40-54" }, { tier: "D", range: "21-39" }, { tier: "E", range: "1-20" }
 ];
+export const SPEED_TIER_RANGES = [
+  { tier: "S+", range: "100", numeric: 9 }, { tier: "S", range: "96-99", numeric: 8 }, { tier: "A", range: "80-95", numeric: 7 },
+  { tier: "B", range: "60-79", numeric: 6 }, { tier: "C", range: "40-59", numeric: 5 }, { tier: "D", range: "20-39", numeric: 4 }, { tier: "E", range: "0-19", numeric: 3 }
+];
 
-export function getStatTier(value) {
+export function getStatTier(value, stat) {
+  if (stat === "speed") {
+    return SPEED_TIER_RANGES.find(({ range }) => {
+      const [min, max] = range.split("-").map(Number);
+      return value >= min && value <= (max ?? min);
+    }).tier;
+  }
   if (value === 100) return "S+";
   if (value >= 85) return "S";
   if (value >= 70) return "A";
@@ -26,7 +36,7 @@ export function compareTiers(guessTier, correctTier) {
 }
 
 export function playerTiers(player) {
-  return Object.fromEntries(STATLINE_STATS.map(({ key, kind }) => [key, kind === "image" ? playerImageKey(player) : getStatTier(player[key])]));
+  return Object.fromEntries(STATLINE_STATS.map(({ key, kind }) => [key, kind === "image" ? playerImageKey(player) : getStatTier(player[key], key)]));
 }
 
 export function scoreFirstGuess(guesses, player) {

@@ -5,7 +5,7 @@ import { comparePlayer, equivalentProfiles } from "../src/game/comparisons.js";
 import { createGameState, scoutStat, submitGuess } from "../src/game/gameState.js";
 import { filterCandidates } from "../src/game/filtering.js";
 import { getStatRange, possibleTypesForGuesses, valueFallsInRange } from "../src/game/statRanges.js";
-import { STATLINE_MAX_ATTEMPTS, compareTiers, createStatlineState, getStatTier, playerTiers, scoreFirstGuess, submitStatlineGuess } from "../src/game/statlineState.js";
+import { SPEED_TIER_RANGES, STATLINE_MAX_ATTEMPTS, compareTiers, createStatlineState, getStatTier, playerTiers, scoreFirstGuess, submitStatlineGuess } from "../src/game/statlineState.js";
 import { formatStatValue, guessHistoryMarkup } from "../src/ui/guessHistory.js";
 import { scoutMarkup } from "../src/ui/statReveal.js";
 
@@ -52,6 +52,23 @@ assert.equal(getStatTier(55), "B");
 assert.equal(getStatTier(40), "C");
 assert.equal(getStatTier(21), "D");
 assert.equal(getStatTier(1), "E");
+assert.deepEqual(SPEED_TIER_RANGES.map(({ tier, range, numeric }) => ({ tier, range, numeric })), [
+	{ tier: "S+", range: "100", numeric: 9 }, { tier: "S", range: "96-99", numeric: 8 }, { tier: "A", range: "80-95", numeric: 7 },
+	{ tier: "B", range: "60-79", numeric: 6 }, { tier: "C", range: "40-59", numeric: 5 }, { tier: "D", range: "20-39", numeric: 4 }, { tier: "E", range: "0-19", numeric: 3 }
+]);
+assert.equal(getStatTier(100, "speed"), "S+");
+assert.equal(getStatTier(99, "speed"), "S");
+assert.equal(getStatTier(96, "speed"), "S");
+assert.equal(getStatTier(95, "speed"), "A");
+assert.equal(getStatTier(80, "speed"), "A");
+assert.equal(getStatTier(79, "speed"), "B");
+assert.equal(getStatTier(60, "speed"), "B");
+assert.equal(getStatTier(59, "speed"), "C");
+assert.equal(getStatTier(40, "speed"), "C");
+assert.equal(getStatTier(39, "speed"), "D");
+assert.equal(getStatTier(20, "speed"), "D");
+assert.equal(getStatTier(19, "speed"), "E");
+assert.equal(getStatTier(0, "speed"), "E");
 assert.equal(compareTiers("B", "A"), "higher");
 assert.equal(compareTiers("S", "A"), "lower");
 assert.equal(compareTiers("A", "A"), "correct");
