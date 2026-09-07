@@ -59,7 +59,7 @@ export function guessHistoryMarkup(guesses, possibleRanges = {}, scoutedStats = 
     return `<div class="${comparison ? `direction-${comparison}` : ""}"><div class="stat-value-line"><strong>${value}</strong>${comparison ? `<small aria-label="${comparison}">${symbol}</small>` : ""}</div></div>`;
     }).join("")}</div></article>`;
   }).join("");
-  const mysteryRow = gameOver ? "" : `<article class="mystery-row"><h3 id="mystery-guess-title">#${guesses.length + 1}: ???????</h3>${statHeaderMarkup(false)}<div class="history-stats">${CORE_STATS.map((stat) => {
+  const mysteryRow = gameOver ? "" : `<article class="mystery-row"><h3 id="mystery-guess-title">#${guesses.length + 1}: ???????</h3>${statHeaderMarkup()}<div class="history-stats">${CORE_STATS.map((stat) => {
     const range = possibleRanges[stat] || scoutedStats[stat];
     if (stat === "type") {
       const typeValue = possibleTypes.length === 3 ? "?" : possibleTypes.map((type) => formatStatValue(stat, type)).join(" / ");

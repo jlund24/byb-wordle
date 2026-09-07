@@ -112,7 +112,7 @@ assert.match(rangeMarkup, new RegExp(`>${state.possibleRanges.speed.max}<`));
 assert.doesNotMatch(rangeMarkup, /preview-range-indicator|aria-label="(?:in range|out of range)"/);
 assert.equal((guessHistoryMarkup(state.guesses).match(/(?:⬆️|⬇️|✅)/g) || []).length, CORE_STATS.length);
 const repeatedGuessMarkup = guessHistoryMarkup([state.guesses[0], state.guesses[0]]);
-assert.equal((repeatedGuessMarkup.match(/class="stat-header-emoji"/g) || []).length, CORE_STATS.length);
+assert.equal((repeatedGuessMarkup.match(/class="stat-header-emoji"/g) || []).length, CORE_STATS.length * 2);
 assert.equal((guessHistoryMarkup(state.guesses).match(/aria-label="(?:higher|lower|equal)"/g) || []).length, CORE_STATS.length);
 assert.equal((guessHistoryMarkup(state.guesses).match(/<article class="guess-row empty-guess-row"><h3>#\d+: -----<\/h3><\/article>/g) || []).length, 4);
 assert.equal((guessHistoryMarkup(state.guesses).match(/empty-guess-row[\s\S]*?(?:report-header|history-stats)/g) || []).length, 0);
