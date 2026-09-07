@@ -3,6 +3,8 @@
   "type": "module",
   "scripts": {
     "import:players": "node scripts/import-players.mjs",
+    "generate:images": "node scripts/generate-images.mjs",
+    "images:download": "node scripts/download-images.mjs",
     "test": "node test/game.test.mjs"
   }
 }

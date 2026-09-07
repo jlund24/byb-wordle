@@ -2,6 +2,7 @@ import { PLAYERS, STATLINE_STATS, STAT_EMOJIS, STAT_LABELS } from "./data/player
 import { createRandomPuzzle, createStatlineDailyPuzzle, dateId, parsePuzzleDate } from "./game/puzzle.js";
 import { STATLINE_MAX_ATTEMPTS, STATLINE_STATE_VERSION, STATLINE_TIER_ORDER, STATLINE_TIER_RANGES, createStatlineState, getStatTier, submitStatlineGuess } from "./game/statlineState.js";
 import { loadProgress, saveProgress } from "./storage/storage.js";
+import { playerImageKey, playerImageMarkup } from "./ui/playerImage.js";
 
 const app = document.querySelector("#app");
 const sheet = document.querySelector("#bottom-sheet");
@@ -32,7 +33,8 @@ const savedStateIsCurrent = savedState?.version === STATLINE_STATE_VERSION
 let state = savedStateIsCurrent ? savedState : createStatlineState(puzzle);
 let copyStatusTimeout;
 let priorFocus;
-const SHARE_SYMBOLS = { correct: "🟩", higher: "🟦", lower: "🟥" };
+const SHARE_SYMBOLS = { correct: "🟩", higher: "🟦", lower: "🟥", wrong: "⬛" };
+const IMAGE_CHOICES = [...new Map(PLAYERS.map((player) => [playerImageKey(player), player]).filter(([key]) => key)).values()];
 
 function scheduleNextDailyPuzzle() {
   if (isRandomMode || parameters.has("date")) return;
@@ -58,6 +60,14 @@ function persistAndRender() {
 function selectTier(stat, tier) {
   if (state.status !== "playing" || !stat || state.lockedStats.includes(stat) || state.history.some((entry) => entry.guesses[stat] === tier)) return;
   const guesses = { ...state.guesses, [stat]: tier };
+  const nextStat = STATLINE_STATS.find(({ key }) => !state.lockedStats.includes(key) && !guesses[key])?.key ?? stat;
+  state = { ...state, guesses, activeStat: nextStat };
+  persistAndRender();
+}
+
+function selectImage(stat, imageKey) {
+  if (state.status !== "playing" || stat !== "headshot" || state.lockedStats.includes(stat) || state.history.some((entry) => entry.guesses[stat] === imageKey)) return;
+  const guesses = { ...state.guesses, [stat]: imageKey };
   const nextStat = STATLINE_STATS.find(({ key }) => !state.lockedStats.includes(key) && !guesses[key])?.key ?? stat;
   state = { ...state, guesses, activeStat: nextStat };
   persistAndRender();
@@ -105,7 +115,7 @@ async function shareResult() {
   const emojiHeader = STATLINE_STATS.map(({ key }) => STAT_EMOJIS[key]).join("");
   const emojiRows = state.history.map(({ feedback }) => STATLINE_STATS.map(({ key }) => SHARE_SYMBOLS[feedback[key]]).join("")).join("\n");
   const modeLabel = isRandomMode ? "Random" : `Daily - ${puzzleDateLabel}`;
-  const result = `📊 STATLINE ${modeLabel}\nFirst guess: ${state.firstGuessScore}/8\nFinal: ${finalScore}/8 in ${state.attempt} attempts\n${emojiHeader}\n${emojiRows}\nhttps://jlund24.github.io/byb-wordle/statline.html`;
+  const result = `📊 STATLINE ${modeLabel}\nFirst guess: ${state.firstGuessScore}/${STATLINE_STATS.length}\nFinal: ${finalScore}/${STATLINE_STATS.length} in ${state.attempt} attempts\n${emojiHeader}\n${emojiRows}\nhttps://jlund24.github.io/byb-wordle/statline.html`;
   if (await copyText(result)) {
     const status = sheet.querySelector("#share-copy-status");
     if (status) {
@@ -117,7 +127,7 @@ async function shareResult() {
 }
 
 function feedbackSymbol(feedback) {
-  return feedback === "correct" ? "✅" : feedback === "higher" ? "⬆️" : "⬇️";
+  return feedback === "correct" ? "✅" : feedback === "higher" ? "⬆️" : feedback === "lower" ? "⬇️" : "❌";
 }
 
 function feedbackText(stat, guess, feedback) {
@@ -130,14 +140,19 @@ function activeRatingCell({ key }) {
   const guess = state.guesses[key];
   const locked = state.lockedStats.includes(key);
   const label = STATLINE_STATS.find((stat) => stat.key === key).label;
-  return `<button type="button" class="statline-active-cell ${locked ? "locked" : ""} ${state.activeStat === key ? "active" : ""}" data-active-stat="${key}" ${locked ? "disabled" : ""} aria-label="${label}: ${guess ? `selected ${guess}` : "not selected"}"><strong>${guess ?? "-"}</strong></button>`;
+  const value = key === "headshot" && guess
+    ? playerImageMarkup(IMAGE_CHOICES.find((player) => playerImageKey(player) === guess), { loading: "eager" })
+    : `<strong>${guess ?? "-"}</strong>`;
+  return `<button type="button" class="statline-active-cell ${key === "headshot" ? "statline-image-cell" : ""} ${locked ? "locked" : ""} ${state.activeStat === key ? "active" : ""}" data-active-stat="${key}" ${locked ? "disabled" : ""} aria-label="${label}: ${guess ? "selected" : "not selected"}">${value}</button>`;
 }
 
 function historyRow(entry, index) {
   return `<article class="guess-row statline-history-row"><div class="history-stats">${STATLINE_STATS.map(({ key }) => {
     const guess = entry.guesses[key];
     const feedback = entry.feedback[key];
-    return `<div class="statline-history-cell ${feedback}"><strong>${guess}</strong><small aria-label="${feedbackText(key, guess, feedback)}">${feedbackSymbol(feedback)}</small></div>`;
+    const value = key === "headshot" ? playerImageMarkup(IMAGE_CHOICES.find((player) => playerImageKey(player) === guess), { loading: "eager" }) : `<strong>${guess}</strong>`;
+    const feedbackMarkup = key === "headshot" ? "" : `<small aria-label="${feedbackText(key, guess, feedback)}">${feedbackSymbol(feedback)}</small>`;
+    return `<div class="statline-history-cell ${feedback}">${value}${feedbackMarkup}</div>`;
   }).join("")}</div></article>`;
 }
 
@@ -147,16 +162,18 @@ function emptyAttemptRows(hasActiveRow) {
 }
 
 function statlineHeaderMarkup() {
-  const shortLabels = { battingPower: "PWR", battingContact: "CON", stamina: "STA", speed: "SPD", coordination: "CRD", arm: "STR", throwing: "ACC", vision: "VIS" };
+  const shortLabels = { headshot: "IMG", battingPower: "PWR", battingContact: "CON", stamina: "STA", speed: "SPD", arm: "STR", throwing: "ACC", vision: "VIS" };
   return `<div class="report-header">${STATLINE_STATS.map(({ key }) => `<span><span class="stat-header-emoji" aria-hidden="true">${STAT_EMOJIS[key]}</span>${shortLabels[key]}</span>`).join("")}</div>`;
 }
 
 function resultMarkup() {
   const resultTitle = state.status === "won" ? "Solved!" : "Out of attempts";
   const finalScore = state.lockedStats.length;
-  const profile = STATLINE_STATS.map(({ key }) => `<div class="statline-reveal-cell"><div class="stat-value-line"><strong>${getStatTier(mystery[key])}</strong><small>${mystery[key]}</small></div></div>`).join("");
+  const profile = STATLINE_STATS.map(({ key }) => key === "headshot"
+    ? `<div class="statline-reveal-cell">${playerImageMarkup(mystery, { loading: "eager", decorative: false })}</div>`
+    : `<div class="statline-reveal-cell"><div class="stat-value-line"><strong>${getStatTier(mystery[key])}</strong><small>${mystery[key]}</small></div></div>`).join("");
   const nextRoundButton = isRandomMode ? '<button class="secondary-button" id="next-random" type="button">Next random player</button>' : '<button class="secondary-button" id="try-random" type="button">Try random mode</button>';
-  return `<section class="statline-result ${state.status}"><h2 id="sheet-title">${resultTitle}</h2><p class="result-player">${mystery.name}</p><p><strong>First guess: ${state.firstGuessScore}/8</strong></p><p>Final: ${finalScore}/8 in ${state.attempt} attempts</p><div class="statline-reveal report-scroll" aria-label="Correct player ratings"><div class="report-grid">${statlineHeaderMarkup()}<div class="history-stats">${profile}</div></div></div><div class="statline-result-actions"><button class="secondary-button" id="share-result" type="button">Copy spoiler-free result</button>${nextRoundButton}</div><p class="share-copy-status" id="share-copy-status" role="status">Result copied!</p></section>`;
+  return `<section class="statline-result ${state.status}"><h2 id="sheet-title">${resultTitle}</h2><p class="result-player"><span>${playerImageMarkup(mystery, { loading: "eager", decorative: false })}</span>${mystery.name}</p><p><strong>First guess: ${state.firstGuessScore}/${STATLINE_STATS.length}</strong></p><p>Final: ${finalScore}/${STATLINE_STATS.length} in ${state.attempt} attempts</p><div class="statline-reveal report-scroll" aria-label="Correct player ratings"><div class="report-grid">${statlineHeaderMarkup()}<div class="history-stats">${profile}</div></div></div><div class="statline-result-actions"><button class="secondary-button" id="share-result" type="button">Copy spoiler-free result</button>${nextRoundButton}</div><p class="share-copy-status" id="share-copy-status" role="status">Result copied!</p></section>`;
 }
 
 function closeSheet() {
@@ -178,20 +195,24 @@ function openGameOverSheet() {
 }
 
 function render() {
-  const allChosen = STATLINE_STATS.every(({ key }) => STATLINE_TIER_ORDER.includes(state.guesses[key]));
+  const allChosen = STATLINE_STATS.every(({ key, kind }) => kind === "image" ? typeof state.guesses[key] === "string" : STATLINE_TIER_ORDER.includes(state.guesses[key]));
   const activeStat = state.activeStat && !state.lockedStats.includes(state.activeStat) ? state.activeStat : STATLINE_STATS.find(({ key }) => !state.lockedStats.includes(key))?.key;
   const activeLabel = STAT_LABELS[activeStat];
   const activeTitle = activeStat ? `${STAT_EMOJIS[activeStat]} ${activeLabel}` : "Ready to submit";
   const isPlaying = state.status === "playing";
   const activeRow = isPlaying ? `<article class="mystery-row statline-active-row"><div class="history-stats">${STATLINE_STATS.map(activeRatingCell).join("")}</div></article>` : "";
-  const action = isPlaying ? `<div class="statline-action"><p class="active-stat-label">${activeTitle}</p><div class="tier-picker shared-tier-picker" role="group" aria-label="Choose a tier for ${activeLabel}">${STATLINE_TIER_ORDER.map((tier) => { const range = STATLINE_TIER_RANGES.find((item) => item.tier === tier).range; const used = activeStat && state.history.some((entry) => entry.guesses[activeStat] === tier); return `<button type="button" class="tier-button" data-tier="${tier}" ${activeStat && !used ? "" : "disabled"} aria-label="${tier}: ${range}${used ? ", already guessed" : ""}"><strong>${tier}</strong><small>${range}</small></button>`; }).join("")}</div><button class="primary-action" id="submit-ratings" type="button" ${allChosen ? "" : "disabled"}>Submit ratings</button></div>` : "";
-  app.innerHTML = `<header><div class="header-top"><div><h1>Statline</h1><p class="eyebrow">Guess ⚾ '01 ratings in 3</p></div><div class="mode-picker"><select class="mode-select" id="mode-select" aria-label="Game mode"><option value="daily"${isRandomMode ? "" : " selected"}>Daily - ${puzzleDateLabel}</option><option value="random"${isRandomMode ? " selected" : ""}>Random</option></select>${isRandomMode ? '<button class="shuffle-button" id="shuffle-random" type="button" aria-label="Start a new random round" title="Start a new random round">&#128256;</button>' : ""}</div></div><nav class="site-nav" aria-label="Game modes"><a href="./index.html">Backyardle</a><a href="./statline.html" aria-current="page">Statline</a></nav></header><section class="statline-intro"><h2>${mystery.name}</h2></section><section class="statline-board" aria-label="Statline attempts"><div class="statline-progress"><span>${isPlaying ? `Attempt ${state.attempt + 1} of ${STATLINE_MAX_ATTEMPTS}` : state.status === "won" ? "Solved" : "Out of attempts"}</span>${state.firstGuessScore !== null ? `<strong>First guess: ${state.firstGuessScore}/8</strong>` : ""}</div><div class="report-scroll statline-report-scroll"><div class="report-grid statline-report">${statlineHeaderMarkup()}${state.history.map(historyRow).join("")}${activeRow}${emptyAttemptRows(isPlaying)}</div></div></section>${action}`;
+  const picker = activeStat === "headshot"
+    ? `<div class="image-picker" role="listbox" aria-label="Choose a headshot">${IMAGE_CHOICES.map((player) => { const imageKey = playerImageKey(player); const used = state.history.some((entry) => entry.guesses.headshot === imageKey); const selected = state.guesses.headshot === imageKey; return `<button type="button" class="image-choice${selected ? " selected" : ""}" data-image-choice="${imageKey}" ${used ? "disabled" : ""} aria-label="${player.name}${used ? ", already guessed" : ""}">${playerImageMarkup(player)}</button>`; }).join("")}</div>`
+    : `<div class="tier-picker shared-tier-picker" role="group" aria-label="Choose a tier for ${activeLabel}">${STATLINE_TIER_ORDER.map((tier) => { const range = STATLINE_TIER_RANGES.find((item) => item.tier === tier).range; const used = activeStat && state.history.some((entry) => entry.guesses[activeStat] === tier); return `<button type="button" class="tier-button" data-tier="${tier}" ${activeStat && !used ? "" : "disabled"} aria-label="${tier}: ${range}${used ? ", already guessed" : ""}"><strong>${tier}</strong><small>${range}</small></button>`; }).join("")}</div>`;
+  const action = isPlaying ? `<div class="statline-action"><p class="active-stat-label">${activeTitle}</p>${picker}<button class="primary-action" id="submit-ratings" type="button" ${allChosen ? "" : "disabled"}>Submit ratings</button></div>` : "";
+  app.innerHTML = `<header><div class="header-top"><div><h1>Statline</h1><p class="eyebrow">Guess ⚾ '01 ratings in 3</p></div><div class="mode-picker"><select class="mode-select" id="mode-select" aria-label="Game mode"><option value="daily"${isRandomMode ? "" : " selected"}>Daily - ${puzzleDateLabel}</option><option value="random"${isRandomMode ? " selected" : ""}>Random</option></select>${isRandomMode ? '<button class="shuffle-button" id="shuffle-random" type="button" aria-label="Start a new random round" title="Start a new random round">&#128256;</button>' : ""}</div></div><nav class="site-nav" aria-label="Game modes"><a href="./index.html">Backyardle</a><a href="./statline.html" aria-current="page">Statline</a></nav></header><section class="statline-intro"><h2>${mystery.name}</h2></section><section class="statline-board" aria-label="Statline attempts"><div class="statline-progress"><span>${isPlaying ? `Attempt ${state.attempt + 1} of ${STATLINE_MAX_ATTEMPTS}` : state.status === "won" ? "Solved" : "Out of attempts"}</span>${state.firstGuessScore !== null ? `<strong>First guess: ${state.firstGuessScore}/${STATLINE_STATS.length}</strong>` : ""}</div><div class="report-scroll statline-report-scroll"><div class="report-grid statline-report">${statlineHeaderMarkup()}${state.history.map(historyRow).join("")}${activeRow}${emptyAttemptRows(isPlaying)}</div></div></section>${action}`;
   app.querySelector("#mode-select").addEventListener("change", (event) => {
     if (event.target.value === "random") startRandomRound();
     else if (isRandomMode) startDailyChallenge();
   });
   app.querySelector("#shuffle-random")?.addEventListener("click", startRandomRound);
   app.querySelectorAll("[data-tier]").forEach((button) => button.addEventListener("click", () => selectTier(activeStat, button.dataset.tier)));
+  app.querySelectorAll("[data-image-choice]").forEach((button) => button.addEventListener("click", () => selectImage(activeStat, button.dataset.imageChoice)));
   app.querySelectorAll("[data-active-stat]").forEach((button) => button.addEventListener("click", () => selectActiveStat(button.dataset.activeStat)));
   app.querySelector("#submit-ratings")?.addEventListener("click", submitRatings);
   if (!isPlaying && !sheet.dataset.gameOverSeen) {

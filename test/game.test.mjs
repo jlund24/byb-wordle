@@ -27,7 +27,7 @@ const kenny = PLAYERS.find((player) => player.name === "Kenny Kawaguchi");
 assert.deepEqual(CORE_STATS.slice(0, 8), ["type", "battingPower", "battingContact", "stamina", "speed", "arm", "throwing", "vision"]);
 assert.equal(CORE_STATS.includes("coordination"), false);
 assert.equal(STAT_EMOJIS.type, "👤");
-assert.deepEqual(STATLINE_STATS.map(({ key }) => key), ["battingPower", "battingContact", "stamina", "speed", "coordination", "arm", "throwing", "vision"]);
+assert.deepEqual(STATLINE_STATS.map(({ key }) => key), ["headshot", "battingPower", "battingContact", "stamina", "speed", "arm", "throwing", "vision"]);
 assert.equal(STATLINE_STATS.some(({ key }) => key === "type"), false);
 assert.equal(STAT_EMOJIS.coordination, "🧤");
 assert.equal(STAT_LABELS.coordination, "Coordination");
@@ -44,7 +44,7 @@ assert.equal(PLAYERS.find((player) => player.name === "Kimmy Eckman")?.type, "Ba
 assert.equal(PLAYERS.find((player) => player.id === "mo-vaughn-31")?.type, "Pro/Clone");
 assert.equal(PLAYERS.find((player) => player.id === "amy-bostwick-62")?.type, "Generic");
 assert.equal(PLAYERS.find((player) => player.id === "mr-clanky-263")?.type, "Backyard");
-assert.deepEqual(STATLINE_STATS.map(({ label }) => label), ["Bat Power", "Bat Contact", "Stamina", "Speed", "Coordination", "Arm Strength", "Arm Accuracy", "Eye"]);
+assert.deepEqual(STATLINE_STATS.map(({ label }) => label), ["Headshot", "Bat Power", "Bat Contact", "Stamina", "Speed", "Arm Strength", "Arm Accuracy", "Eye"]);
 assert.equal(getStatTier(100), "S+");
 assert.equal(getStatTier(85), "S");
 assert.equal(getStatTier(70), "A");
@@ -63,7 +63,8 @@ assert.deepEqual(statlinePuzzle, createStatlineDailyPuzzle(PLAYERS, "2026-09-05"
 assert.notEqual(statlinePuzzle.mysteryId, createDailyPuzzle(PLAYERS, "2026-09-05").mysteryId);
 assert.equal(createStatlineDailyPuzzle(PLAYERS, "2026-09-05", pablo.id).mysteryId, pablo.id);
 let statlineState = createStatlineState(puzzle);
-statlineState = { ...statlineState, guesses: Object.fromEntries(STATLINE_STATS.map(({ key }) => [key, "E"])) };
+const wrongHeadshots = ["generic-1.png", "generic-2.png", "generic-3.png"];
+statlineState = { ...statlineState, guesses: Object.fromEntries(STATLINE_STATS.map(({ key }) => [key, key === "headshot" ? wrongHeadshots[0] : "E"])) };
 statlineState = submitStatlineGuess(statlineState, pablo);
 assert.equal(statlineState.attempt, 1);
 assert.equal(statlineState.firstGuessScore, scoreFirstGuess(statlineState.firstGuessTiers, pablo));
@@ -73,7 +74,7 @@ assert.deepEqual(statlineState.history[0].guesses, statlineState.firstGuessTiers
 assert.deepEqual(statlineState.history[0].feedback, statlineState.feedback);
 assert.deepEqual(statlineState.guesses, {});
 assert(statlineState.lockedStats.every((key) => statlineState.feedback[key] === "correct"));
-assert.throws(() => submitStatlineGuess({ ...statlineState, guesses: Object.fromEntries(STATLINE_STATS.map(({ key }) => [key, "E"])) }, pablo));
+assert.throws(() => submitStatlineGuess({ ...statlineState, guesses: Object.fromEntries(STATLINE_STATS.map(({ key }) => [key, key === "headshot" ? wrongHeadshots[0] : "E"])) }, pablo));
 const preservedFirstGuessScore = statlineState.firstGuessScore;
 statlineState = { ...statlineState, guesses: playerTiers(pablo) };
 statlineState = submitStatlineGuess(statlineState, pablo);
@@ -81,7 +82,8 @@ assert.equal(statlineState.status, "won");
 assert.equal(statlineState.firstGuessScore, preservedFirstGuessScore);
 let statlineLoss = createStatlineState(puzzle);
 for (const tier of ["E", "D", "C"]) {
-	statlineLoss = { ...statlineLoss, guesses: Object.fromEntries(STATLINE_STATS.map(({ key }) => [key, tier])) };
+	const attempt = ["E", "D", "C"].indexOf(tier);
+	statlineLoss = { ...statlineLoss, guesses: Object.fromEntries(STATLINE_STATS.map(({ key }) => [key, key === "headshot" ? wrongHeadshots[attempt] : tier])) };
 	statlineLoss = submitStatlineGuess(statlineLoss, pablo);
 }
 assert.equal(statlineLoss.status, "lost");

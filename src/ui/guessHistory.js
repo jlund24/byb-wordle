@@ -1,6 +1,7 @@
 import { CORE_STATS, STAT_LABELS, STAT_EMOJIS, TYPE_DISPLAY_VALUES } from "../data/players.js?v=types-2";
 import { MAX_GUESSES } from "../game/gameState.js";
 import { inlinePlayerSearchMarkup } from "./playerSearch.js";
+import { playerImageMarkup } from "./playerImage.js";
 
 const SYMBOLS = { higher: "⬆️", lower: "⬇️", equal: "✅", wrong: "❌" };
 const SHARE_HEADER = CORE_STATS.map((stat) => STAT_EMOJIS[stat]).join("");
@@ -48,11 +49,12 @@ export function generateEmojiShare(guesses, scoutedStats = {}, scoutTokens = 0) 
   return result;
 }
 
-export function guessHistoryMarkup(guesses, possibleRanges = {}, scoutedStats = {}, availablePlayers = [], scoutTokens = 0, scoutAvailable = false, gameOver = false, possibleTypes = ["Backyard", "Generic", "Pro/Clone"]) {
+export function guessHistoryMarkup(guesses, possibleRanges = {}, scoutedStats = {}, availablePlayers = [], scoutTokens = 0, scoutAvailable = false, gameOver = false, possibleTypes = ["Backyard", "Generic", "Pro/Clone"], players = []) {
   const guessRows = guesses.map((guess, index) => {
     const isCorrect = Object.keys(guess.comparisons ?? {}).length === 0;
     const isIncorrect = Object.keys(guess.comparisons ?? {}).length > 0;
-    return `<article class="guess-row${isIncorrect ? " incorrect" : ""}${isCorrect ? " correct" : ""}"><h3>#${index + 1}: ${isCorrect ? "✅ " : isIncorrect ? "❌ " : ""}${guess.playerName}</h3>${statHeaderMarkup(index === 0)}<div class="history-stats">${CORE_STATS.map((stat) => {
+    const player = players.find((candidate) => candidate.name === guess.playerName);
+    return `<article class="guess-row${isIncorrect ? " incorrect" : ""}${isCorrect ? " correct" : ""}"><h3>#${index + 1}: ${isCorrect ? "✅ " : isIncorrect ? "❌ " : ""}${player ? playerImageMarkup(player, { loading: "eager" }) : ""}<span>${guess.playerName}</span></h3>${statHeaderMarkup(index === 0)}<div class="history-stats">${CORE_STATS.map((stat) => {
     const comparison = isCorrect ? "equal" : guess.comparisons?.[stat];
     const value = formatStatValue(stat, guess.playerStats[stat]);
     const symbol = comparison ? SYMBOLS[comparison] : "";

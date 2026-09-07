@@ -13,7 +13,8 @@ const FIELD_MAP = {
   arm: "Arm Strength",
   throwing: "Arm Accuracy",
   vision: "Eye",
-  height: "Height"
+  height: "Height",
+  appearance: "Appearance"
 };
 const TYPE_DISPLAY_VALUES = { Backyard: "Backyard", Generic: "Generic", "Pro/Clone": "Pro/Clone" };
 
@@ -60,6 +61,7 @@ function moduleSource(players) {
     " * @property {number} throwing",
     " * @property {number} vision",
     " * @property {number=} height",
+    " * @property {number=} appearance",
     " */",
     "",
     "export const CORE_STATS = [",
@@ -72,24 +74,24 @@ function moduleSource(players) {
     "};",
     "",
     "export const STATLINE_STATS = [",
+    "  { key: \"headshot\", label: \"Headshot\", kind: \"image\" },",
     "  { key: \"battingPower\", label: \"Bat Power\" },",
     "  { key: \"battingContact\", label: \"Bat Contact\" },",
     "  { key: \"stamina\", label: \"Stamina\" },",
     "  { key: \"speed\", label: \"Speed\" },",
-    "  { key: \"coordination\", label: \"Coordination\" },",
     "  { key: \"arm\", label: \"Arm Strength\" },",
     "  { key: \"throwing\", label: \"Arm Accuracy\" },",
     "  { key: \"vision\", label: \"Eye\" }",
     "];",
     "",
     "export const STAT_LABELS = {",
-    "  type: \"Type\", battingPower: \"Power\", battingContact: \"Contact\", stamina: \"Stamina\", speed: \"Speed\",",
+    "  type: \"Type\", battingPower: \"Power\", battingContact: \"Contact\", stamina: \"Stamina\", speed: \"Speed\", coordination: \"Coordination\", headshot: \"Headshot\",",
     "  arm: \"Arm Strength\", throwing: \"Arm Accuracy\", vision: \"Vision\"",
     "};",
     "",
     "export const STAT_EMOJIS = {",
-    "  type: \"\\u{1F3F7}\", battingPower: \"\\u{1F4A3}\", battingContact: \"\\u{1F3AF}\", stamina: \"\\u{1F50B}\", speed: \"\\u{1F45F}\",",
-    "  arm: \"\\u{1F4AA}\", throwing: \"\\u{1F3F9}\", vision: \"\\u{1F440}\"",
+    "  type: \"\\u{1F464}\", battingPower: \"\\u{1F4A3}\", battingContact: \"\\u{1F3AF}\", stamina: \"\\u{1F50B}\", speed: \"\\u{1F45F}\", coordination: \"🧤\",",
+    "  arm: \"\\u{1F4AA}\", throwing: \"\\u{1F3F9}\", vision: \"\\u{1F440}\", headshot: \"🖼️\"",
     "};"
   ].join("\n");
   return `${metadata}\n\n/** @type {Player[]} */\nexport const PLAYERS = ${JSON.stringify(players, null, 2)};\n`;

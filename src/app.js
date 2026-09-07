@@ -10,6 +10,7 @@ import { playerSearchMarkup, wirePlayerSearch } from "./ui/playerSearch.js?v=sti
 import { candidatesMarkup } from "./ui/candidateDrawer.js";
 import { scoutMarkup } from "./ui/statReveal.js?v=scout-copy-3";
 import { guessHistoryMarkup, generateEmojiShare, statHeaderMarkup, formatStatValue } from "./ui/guessHistory.js";
+import { playerImageMarkup } from "./ui/playerImage.js";
 
 const app = document.querySelector("#app");
 const sheet = document.querySelector("#bottom-sheet");
@@ -176,7 +177,7 @@ function gameOverMarkup() {
   }
   
   const trueStats = `${statHeaderMarkup()}<div class="history-stats">${CORE_STATS.map((stat) => `<div><div class="stat-value-line"><strong>${formatStatValue(stat, mystery[stat])}</strong></div></div>`).join("")}</div>`;
-  return `<section class="result lost"><h2 id="sheet-title">Out of guesses</h2><p>${isRandomMode ? "This round's" : "Today's"} mystery player:</p><h3>${mystery.name}</h3><div class="loss-profile">${trueStats}</div><p>${clues}</p>${equivalents.length > 1 ? `<p>Accepted: ${equivalents.map((player) => player.name).join(", ")}</p>` : ""}<button class="secondary-button" id="share-result" type="button">Copy spoiler-free result</button>${nextRoundButton}<p class="share-copy-status" id="share-copy-status" role="status">Result copied!</p></section>`;
+  return `<section class="result lost"><h2 id="sheet-title">Out of guesses</h2><p>${isRandomMode ? "This round's" : "Today's"} mystery player:</p><h3 class="result-player-heading">${playerImageMarkup(mystery, { loading: "eager", decorative: false })}<span>${mystery.name}</span></h3><div class="loss-profile">${trueStats}</div><p>${clues}</p>${equivalents.length > 1 ? `<p>Accepted: ${equivalents.map((player) => player.name).join(", ")}</p>` : ""}<button class="secondary-button" id="share-result" type="button">Copy spoiler-free result</button>${nextRoundButton}<p class="share-copy-status" id="share-copy-status" role="status">Result copied!</p></section>`;
 }
 
 function focusCurrentGuess() {

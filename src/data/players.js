@@ -16,6 +16,7 @@
  * @property {number} throwing
  * @property {number} vision
  * @property {number=} height
+ * @property {number=} appearance
  */
 
 export const CORE_STATS = [
@@ -28,24 +29,24 @@ export const TYPE_DISPLAY_VALUES = {
 };
 
 export const STATLINE_STATS = [
+  { key: "headshot", label: "Headshot", kind: "image" },
   { key: "battingPower", label: "Bat Power" },
   { key: "battingContact", label: "Bat Contact" },
   { key: "stamina", label: "Stamina" },
   { key: "speed", label: "Speed" },
-  { key: "coordination", label: "Coordination" },
   { key: "arm", label: "Arm Strength" },
   { key: "throwing", label: "Arm Accuracy" },
   { key: "vision", label: "Eye" }
 ];
 
 export const STAT_LABELS = {
-  type: "Type", battingPower: "Power", battingContact: "Contact", stamina: "Stamina", speed: "Speed",
-  coordination: "Coordination", arm: "Arm Strength", throwing: "Arm Accuracy", vision: "Vision"
+  type: "Type", battingPower: "Power", battingContact: "Contact", stamina: "Stamina", speed: "Speed", coordination: "Coordination", headshot: "Headshot",
+  arm: "Arm Strength", throwing: "Arm Accuracy", vision: "Vision"
 };
 
 export const STAT_EMOJIS = {
-  type: "👤", battingPower: "\u{1F4A3}", battingContact: "\u{1F3AF}", stamina: "\u{1F50B}", speed: "\u{1F45F}",
-  coordination: "🧤", arm: "\u{1F4AA}", throwing: "\u{1F3F9}", vision: "\u{1F440}"
+  type: "\u{1F464}", battingPower: "\u{1F4A3}", battingContact: "\u{1F3AF}", stamina: "\u{1F50B}", speed: "\u{1F45F}", coordination: "🧤",
+  arm: "\u{1F4AA}", throwing: "\u{1F3F9}", vision: "\u{1F440}", headshot: "🖼️"
 };
 
 /** @type {Player[]} */
@@ -62,7 +63,8 @@ export const PLAYERS = [
     "arm": 75,
     "throwing": 75,
     "vision": 43,
-    "height": 2
+    "height": 2,
+    "appearance": 57
   },
   {
     "id": "kimmy-eckman-eckman-acres-1-1",
@@ -76,7 +78,8 @@ export const PLAYERS = [
     "arm": 75,
     "throwing": 75,
     "vision": 85,
-    "height": 2
+    "height": 2,
+    "appearance": 57
   },
   {
     "id": "maria-luna-2",
@@ -90,7 +93,8 @@ export const PLAYERS = [
     "arm": 43,
     "throwing": 3,
     "vision": 80,
-    "height": 2
+    "height": 2,
+    "appearance": 15
   },
   {
     "id": "maria-luna-pink-uniform-2-1",
@@ -104,7 +108,8 @@ export const PLAYERS = [
     "arm": 73,
     "throwing": 73,
     "vision": 80,
-    "height": 2
+    "height": 2,
+    "appearance": 15
   },
   {
     "id": "angela-delvecchio-3",
@@ -118,7 +123,8 @@ export const PLAYERS = [
     "arm": 15,
     "throwing": 22,
     "vision": 63,
-    "height": 2
+    "height": 2,
+    "appearance": 78
   },
   {
     "id": "angela-delvecchio-vs-tony-delvecchio-3-1",
@@ -132,7 +138,8 @@ export const PLAYERS = [
     "arm": 75,
     "throwing": 82,
     "vision": 63,
-    "height": 2
+    "height": 2,
+    "appearance": 78
   },
   {
     "id": "vicki-kawaguchi-4",
@@ -146,7 +153,8 @@ export const PLAYERS = [
     "arm": 52,
     "throwing": 59,
     "vision": 100,
-    "height": 2
+    "height": 2,
+    "appearance": 39
   },
   {
     "id": "gretchen-hasselhoff-5",
@@ -160,7 +168,8 @@ export const PLAYERS = [
     "arm": 1,
     "throwing": 69,
     "vision": 28,
-    "height": 2
+    "height": 2,
+    "appearance": 8
   },
   {
     "id": "sally-dobbs-6",
@@ -174,7 +183,8 @@ export const PLAYERS = [
     "arm": 86,
     "throwing": 84,
     "vision": 31,
-    "height": 4
+    "height": 4,
+    "appearance": 97
   },
   {
     "id": "sally-dobbs-w-ronny-dobbs-6-1",
@@ -188,7 +198,8 @@ export const PLAYERS = [
     "arm": 96,
     "throwing": 94,
     "vision": 71,
-    "height": 4
+    "height": 4,
+    "appearance": 97
   },
   {
     "id": "billy-jean-blackwood-7",
@@ -202,7 +213,8 @@ export const PLAYERS = [
     "arm": 64,
     "throwing": 82,
     "vision": 71,
-    "height": 5
+    "height": 5,
+    "appearance": 86
   },
   {
     "id": "billy-jean-blackwood-w-marky-dubois-7-1",
@@ -216,7 +228,8 @@ export const PLAYERS = [
     "arm": 34,
     "throwing": 42,
     "vision": 31,
-    "height": 5
+    "height": 5,
+    "appearance": 46
   },
   {
     "id": "ashley-webber-8",
@@ -230,7 +243,8 @@ export const PLAYERS = [
     "arm": 65,
     "throwing": 48,
     "vision": 95,
-    "height": 3
+    "height": 3,
+    "appearance": 71
   },
   {
     "id": "ashley-webber-w-sidney-webber-8-1",
@@ -244,7 +258,8 @@ export const PLAYERS = [
     "arm": 85,
     "throwing": 78,
     "vision": 95,
-    "height": 3
+    "height": 3,
+    "appearance": 81
   },
   {
     "id": "sidney-webber-9",
@@ -258,7 +273,8 @@ export const PLAYERS = [
     "arm": 65,
     "throwing": 48,
     "vision": 95,
-    "height": 3
+    "height": 3,
+    "appearance": 71
   },
   {
     "id": "sidney-webber-w-ashley-webber-9-1",
@@ -272,7 +288,8 @@ export const PLAYERS = [
     "arm": 85,
     "throwing": 78,
     "vision": 95,
-    "height": 3
+    "height": 3,
+    "appearance": 81
   },
   {
     "id": "kiesha-phillips-10",
@@ -286,7 +303,8 @@ export const PLAYERS = [
     "arm": 86,
     "throwing": 51,
     "vision": 21,
-    "height": 4
+    "height": 4,
+    "appearance": 100
   },
   {
     "id": "stephanie-morgan-11",
@@ -300,7 +318,8 @@ export const PLAYERS = [
     "arm": 56,
     "throwing": 68,
     "vision": 88,
-    "height": 3
+    "height": 3,
+    "appearance": 63
   },
   {
     "id": "luanne-lui-12",
@@ -314,7 +333,8 @@ export const PLAYERS = [
     "arm": 24,
     "throwing": 1,
     "vision": 29,
-    "height": 1
+    "height": 1,
+    "appearance": 91
   },
   {
     "id": "annie-frazier-13",
@@ -328,7 +348,8 @@ export const PLAYERS = [
     "arm": 49,
     "throwing": 19,
     "vision": 49,
-    "height": 3
+    "height": 3,
+    "appearance": 46
   },
   {
     "id": "jocinda-smith-14",
@@ -342,7 +363,8 @@ export const PLAYERS = [
     "arm": 63,
     "throwing": 94,
     "vision": 82,
-    "height": 4
+    "height": 4,
+    "appearance": 30
   },
   {
     "id": "lisa-crocket-15",
@@ -356,7 +378,8 @@ export const PLAYERS = [
     "arm": 73,
     "throwing": 19,
     "vision": 68,
-    "height": 4
+    "height": 4,
+    "appearance": 65
   },
   {
     "id": "ronny-dobbs-16",
@@ -370,7 +393,8 @@ export const PLAYERS = [
     "arm": 88,
     "throwing": 68,
     "vision": 31,
-    "height": 1
+    "height": 1,
+    "appearance": 29
   },
   {
     "id": "ronny-dobbs-w-sally-dobbs-16-1",
@@ -384,7 +408,8 @@ export const PLAYERS = [
     "arm": 48,
     "throwing": 38,
     "vision": 15,
-    "height": 1
+    "height": 1,
+    "appearance": 19
   },
   {
     "id": "achmed-khan-17",
@@ -398,7 +423,8 @@ export const PLAYERS = [
     "arm": 31,
     "throwing": 29,
     "vision": 38,
-    "height": 3
+    "height": 3,
+    "appearance": 23
   },
   {
     "id": "amir-khan-18",
@@ -412,7 +438,8 @@ export const PLAYERS = [
     "arm": 26,
     "throwing": 36,
     "vision": 100,
-    "height": 2
+    "height": 2,
+    "appearance": 51
   },
   {
     "id": "amir-khan-w-achmed-khan-18-1",
@@ -426,7 +453,8 @@ export const PLAYERS = [
     "arm": 39,
     "throwing": 54,
     "vision": 30,
-    "height": 2
+    "height": 2,
+    "appearance": 68
   },
   {
     "id": "kenny-kawaguchi-19",
@@ -440,7 +468,8 @@ export const PLAYERS = [
     "arm": 43,
     "throwing": 38,
     "vision": 100,
-    "height": 2
+    "height": 2,
+    "appearance": 84
   },
   {
     "id": "pete-wheeler-20",
@@ -454,7 +483,8 @@ export const PLAYERS = [
     "arm": 82,
     "throwing": 64,
     "vision": 12,
-    "height": 4
+    "height": 4,
+    "appearance": 12
   },
   {
     "id": "dmitri-petrovich-21",
@@ -468,7 +498,8 @@ export const PLAYERS = [
     "arm": 53,
     "throwing": 28,
     "vision": 43,
-    "height": 3
+    "height": 3,
+    "appearance": 35
   },
   {
     "id": "ricky-johnson-22",
@@ -482,7 +513,8 @@ export const PLAYERS = [
     "arm": 26,
     "throwing": 15,
     "vision": 29,
-    "height": 4
+    "height": 4,
+    "appearance": 70
   },
   {
     "id": "marky-dubois-23",
@@ -496,7 +528,8 @@ export const PLAYERS = [
     "arm": 57,
     "throwing": 71,
     "vision": 49,
-    "height": 3
+    "height": 3,
+    "appearance": 88
   },
   {
     "id": "marky-dubois-vs-red-white-sox-23-1",
@@ -510,7 +543,8 @@ export const PLAYERS = [
     "arm": 77,
     "throwing": 81,
     "vision": 69,
-    "height": 3
+    "height": 3,
+    "appearance": 88
   },
   {
     "id": "marky-dubois-w-billy-jean-blackwood-23-2",
@@ -524,7 +558,8 @@ export const PLAYERS = [
     "arm": 77,
     "throwing": 71,
     "vision": 69,
-    "height": 3
+    "height": 3,
+    "appearance": 88
   },
   {
     "id": "marky-dubois-w-billy-jean-vs-sox-23-21",
@@ -538,7 +573,8 @@ export const PLAYERS = [
     "arm": 77,
     "throwing": 81,
     "vision": 69,
-    "height": 3
+    "height": 3,
+    "appearance": 88
   },
   {
     "id": "marky-dubois-on-red-white-sox-23-3",
@@ -552,7 +588,8 @@ export const PLAYERS = [
     "arm": 57,
     "throwing": 35,
     "vision": 30,
-    "height": 3
+    "height": 3,
+    "appearance": 88
   },
   {
     "id": "marky-dubois-w-billy-jean-on-sox-23-31",
@@ -566,7 +603,8 @@ export const PLAYERS = [
     "arm": 57,
     "throwing": 35,
     "vision": 30,
-    "height": 3
+    "height": 3,
+    "appearance": 88
   },
   {
     "id": "reese-worthington-24",
@@ -580,7 +618,8 @@ export const PLAYERS = [
     "arm": 19,
     "throwing": 66,
     "vision": 74,
-    "height": 2
+    "height": 2,
+    "appearance": 1
   },
   {
     "id": "pablo-sanchez-25",
@@ -594,7 +633,8 @@ export const PLAYERS = [
     "arm": 72,
     "throwing": 78,
     "vision": 68,
-    "height": 1
+    "height": 1,
+    "appearance": 44
   },
   {
     "id": "tony-delvecchio-26",
@@ -608,7 +648,8 @@ export const PLAYERS = [
     "arm": 100,
     "throwing": 70,
     "vision": 55,
-    "height": 4
+    "height": 4,
+    "appearance": 12
   },
   {
     "id": "tony-delvecchio-vs-angela-delvecchio-26-1",
@@ -622,7 +663,8 @@ export const PLAYERS = [
     "arm": 100,
     "throwing": 80,
     "vision": 85,
-    "height": 4
+    "height": 4,
+    "appearance": 12
   },
   {
     "id": "jorge-garcia-27",
@@ -636,7 +678,8 @@ export const PLAYERS = [
     "arm": 79,
     "throwing": 50,
     "vision": 1,
-    "height": 4
+    "height": 4,
+    "appearance": 61
   },
   {
     "id": "dante-robinson-28",
@@ -650,7 +693,8 @@ export const PLAYERS = [
     "arm": 64,
     "throwing": 100,
     "vision": 50,
-    "height": 2
+    "height": 2,
+    "appearance": 67
   },
   {
     "id": "ernie-steele-29",
@@ -664,7 +708,8 @@ export const PLAYERS = [
     "arm": 34,
     "throwing": 85,
     "vision": 71,
-    "height": 4
+    "height": 4,
+    "appearance": 23
   },
   {
     "id": "ernie-steele-steele-stadium-29-1",
@@ -678,7 +723,8 @@ export const PLAYERS = [
     "arm": 75,
     "throwing": 85,
     "vision": 85,
-    "height": 4
+    "height": 4,
+    "appearance": 23
   },
   {
     "id": "mikey-thomas-30",
@@ -692,7 +738,8 @@ export const PLAYERS = [
     "arm": 100,
     "throwing": 49,
     "vision": 58,
-    "height": 2
+    "height": 2,
+    "appearance": 34
   },
   {
     "id": "mo-vaughn-31",
@@ -706,7 +753,8 @@ export const PLAYERS = [
     "arm": 60,
     "throwing": 51,
     "vision": 84,
-    "height": 4
+    "height": 4,
+    "appearance": 1
   },
   {
     "id": "randy-johnson-32",
@@ -720,7 +768,8 @@ export const PLAYERS = [
     "arm": 100,
     "throwing": 30,
     "vision": 55,
-    "height": 5
+    "height": 5,
+    "appearance": 2
   },
   {
     "id": "chipper-jones-33",
@@ -734,7 +783,8 @@ export const PLAYERS = [
     "arm": 80,
     "throwing": 75,
     "vision": 72,
-    "height": 3
+    "height": 3,
+    "appearance": 3
   },
   {
     "id": "cal-ripken-jr-34",
@@ -748,7 +798,8 @@ export const PLAYERS = [
     "arm": 80,
     "throwing": 96,
     "vision": 48,
-    "height": 3
+    "height": 3,
+    "appearance": 4
   },
   {
     "id": "nomar-garciaparra-35",
@@ -762,7 +813,8 @@ export const PLAYERS = [
     "arm": 72,
     "throwing": 87,
     "vision": 77,
-    "height": 3
+    "height": 3,
+    "appearance": 5
   },
   {
     "id": "sammy-sosa-36",
@@ -776,7 +828,8 @@ export const PLAYERS = [
     "arm": 98,
     "throwing": 60,
     "vision": 69,
-    "height": 3
+    "height": 3,
+    "appearance": 6
   },
   {
     "id": "frank-thomas-37",
@@ -790,7 +843,8 @@ export const PLAYERS = [
     "arm": 58,
     "throwing": 54,
     "vision": 20,
-    "height": 4
+    "height": 4,
+    "appearance": 1
   },
   {
     "id": "barry-larkin-38",
@@ -804,7 +858,8 @@ export const PLAYERS = [
     "arm": 89,
     "throwing": 66,
     "vision": 69,
-    "height": 3
+    "height": 3,
+    "appearance": 2
   },
   {
     "id": "kenny-lofton-39",
@@ -818,7 +873,8 @@ export const PLAYERS = [
     "arm": 83,
     "throwing": 78,
     "vision": 53,
-    "height": 3
+    "height": 3,
+    "appearance": 3
   },
   {
     "id": "larry-walker-40",
@@ -832,7 +888,8 @@ export const PLAYERS = [
     "arm": 92,
     "throwing": 96,
     "vision": 98,
-    "height": 3
+    "height": 3,
+    "appearance": 4
   },
   {
     "id": "juan-gonzalez-41",
@@ -846,7 +903,8 @@ export const PLAYERS = [
     "arm": 95,
     "throwing": 46,
     "vision": 72,
-    "height": 3
+    "height": 3,
+    "appearance": 5
   },
   {
     "id": "alex-gonzalez-42",
@@ -860,7 +918,8 @@ export const PLAYERS = [
     "arm": 77,
     "throwing": 54,
     "vision": 14,
-    "height": 3
+    "height": 3,
+    "appearance": 6
   },
   {
     "id": "jeff-bagwell-43",
@@ -874,7 +933,8 @@ export const PLAYERS = [
     "arm": 95,
     "throwing": 55,
     "vision": 67,
-    "height": 3
+    "height": 3,
+    "appearance": 1
   },
   {
     "id": "carlos-beltran-44",
@@ -888,7 +948,8 @@ export const PLAYERS = [
     "arm": 75,
     "throwing": 43,
     "vision": 29,
-    "height": 3
+    "height": 3,
+    "appearance": 2
   },
   {
     "id": "raul-mondesi-45",
@@ -902,7 +963,8 @@ export const PLAYERS = [
     "arm": 100,
     "throwing": 79,
     "vision": 53,
-    "height": 3
+    "height": 3,
+    "appearance": 3
   },
   {
     "id": "jeromy-burnitz-46",
@@ -916,7 +978,8 @@ export const PLAYERS = [
     "arm": 80,
     "throwing": 31,
     "vision": 45,
-    "height": 3
+    "height": 3,
+    "appearance": 4
   },
   {
     "id": "marty-cordova-47",
@@ -930,7 +993,8 @@ export const PLAYERS = [
     "arm": 95,
     "throwing": 76,
     "vision": 36,
-    "height": 3
+    "height": 3,
+    "appearance": 5
   },
   {
     "id": "vladimir-guerrero-48",
@@ -944,7 +1008,8 @@ export const PLAYERS = [
     "arm": 95,
     "throwing": 39,
     "vision": 59,
-    "height": 3
+    "height": 3,
+    "appearance": 6
   },
   {
     "id": "mike-piazza-49",
@@ -958,7 +1023,8 @@ export const PLAYERS = [
     "arm": 56,
     "throwing": 66,
     "vision": 81,
-    "height": 3
+    "height": 3,
+    "appearance": 1
   },
   {
     "id": "derek-jeter-50",
@@ -972,7 +1038,8 @@ export const PLAYERS = [
     "arm": 98,
     "throwing": 82,
     "vision": 77,
-    "height": 3
+    "height": 3,
+    "appearance": 2
   },
   {
     "id": "jason-giambi-51",
@@ -986,7 +1053,8 @@ export const PLAYERS = [
     "arm": 24,
     "throwing": 45,
     "vision": 60,
-    "height": 3
+    "height": 3,
+    "appearance": 3
   },
   {
     "id": "curt-schilling-52",
@@ -1000,7 +1068,8 @@ export const PLAYERS = [
     "arm": 97,
     "throwing": 55,
     "vision": 75,
-    "height": 3
+    "height": 3,
+    "appearance": 4
   },
   {
     "id": "jason-kendall-53",
@@ -1014,7 +1083,8 @@ export const PLAYERS = [
     "arm": 74,
     "throwing": 57,
     "vision": 81,
-    "height": 3
+    "height": 3,
+    "appearance": 5
   },
   {
     "id": "tony-gwynn-54",
@@ -1028,7 +1098,8 @@ export const PLAYERS = [
     "arm": 58,
     "throwing": 85,
     "vision": 82,
-    "height": 3
+    "height": 3,
+    "appearance": 6
   },
   {
     "id": "barry-bonds-55",
@@ -1042,7 +1113,8 @@ export const PLAYERS = [
     "arm": 95,
     "throwing": 66,
     "vision": 65,
-    "height": 3
+    "height": 3,
+    "appearance": 1
   },
   {
     "id": "ken-griffey-jr-56",
@@ -1056,7 +1128,8 @@ export const PLAYERS = [
     "arm": 75,
     "throwing": 76,
     "vision": 55,
-    "height": 3
+    "height": 3,
+    "appearance": 2
   },
   {
     "id": "mark-mcgwire-57",
@@ -1070,7 +1143,8 @@ export const PLAYERS = [
     "arm": 63,
     "throwing": 50,
     "vision": 63,
-    "height": 4
+    "height": 4,
+    "appearance": 3
   },
   {
     "id": "jose-canseco-58",
@@ -1084,7 +1158,8 @@ export const PLAYERS = [
     "arm": 80,
     "throwing": 80,
     "vision": 90,
-    "height": 4
+    "height": 4,
+    "appearance": 4
   },
   {
     "id": "ivan-rodriguez-59",
@@ -1098,7 +1173,8 @@ export const PLAYERS = [
     "arm": 99,
     "throwing": 55,
     "vision": 76,
-    "height": 2
+    "height": 2,
+    "appearance": 5
   },
   {
     "id": "shawn-green-60",
@@ -1112,7 +1188,8 @@ export const PLAYERS = [
     "arm": 62,
     "throwing": 46,
     "vision": 51,
-    "height": 3
+    "height": 3,
+    "appearance": 6
   },
   {
     "id": "alex-rodriguez-61",
@@ -1126,7 +1203,8 @@ export const PLAYERS = [
     "arm": 75,
     "throwing": 76,
     "vision": 55,
-    "height": 3
+    "height": 3,
+    "appearance": 6
   },
   {
     "id": "amy-bostwick-62",
@@ -1140,7 +1218,8 @@ export const PLAYERS = [
     "arm": 75,
     "throwing": 75,
     "vision": 33,
-    "height": 2
+    "height": 2,
+    "appearance": 7
   },
   {
     "id": "arlene-perez-63",
@@ -1154,7 +1233,8 @@ export const PLAYERS = [
     "arm": 43,
     "throwing": 3,
     "vision": 80,
-    "height": 2
+    "height": 2,
+    "appearance": 8
   },
   {
     "id": "betty-houstan-64",
@@ -1168,7 +1248,8 @@ export const PLAYERS = [
     "arm": 15,
     "throwing": 22,
     "vision": 63,
-    "height": 2
+    "height": 2,
+    "appearance": 9
   },
   {
     "id": "cindy-chang-65",
@@ -1182,7 +1263,8 @@ export const PLAYERS = [
     "arm": 52,
     "throwing": 59,
     "vision": 76,
-    "height": 2
+    "height": 2,
+    "appearance": 10
   },
   {
     "id": "clarice-reid-66",
@@ -1196,7 +1278,8 @@ export const PLAYERS = [
     "arm": 1,
     "throwing": 69,
     "vision": 28,
-    "height": 2
+    "height": 2,
+    "appearance": 11
   },
   {
     "id": "colleen-klinker-67",
@@ -1210,7 +1293,8 @@ export const PLAYERS = [
     "arm": 86,
     "throwing": 84,
     "vision": 51,
-    "height": 2
+    "height": 2,
+    "appearance": 12
   },
   {
     "id": "debby-nagasawa-68",
@@ -1224,7 +1308,8 @@ export const PLAYERS = [
     "arm": 64,
     "throwing": 82,
     "vision": 71,
-    "height": 2
+    "height": 2,
+    "appearance": 7
   },
   {
     "id": "diana-hayes-69",
@@ -1238,7 +1323,8 @@ export const PLAYERS = [
     "arm": 65,
     "throwing": 48,
     "vision": 95,
-    "height": 2
+    "height": 2,
+    "appearance": 8
   },
   {
     "id": "esther-french-70",
@@ -1252,7 +1338,8 @@ export const PLAYERS = [
     "arm": 65,
     "throwing": 48,
     "vision": 95,
-    "height": 2
+    "height": 2,
+    "appearance": 9
   },
   {
     "id": "francis-blewer-71",
@@ -1266,7 +1353,8 @@ export const PLAYERS = [
     "arm": 86,
     "throwing": 51,
     "vision": 31,
-    "height": 2
+    "height": 2,
+    "appearance": 10
   },
   {
     "id": "gail-weinmann-72",
@@ -1280,7 +1368,8 @@ export const PLAYERS = [
     "arm": 56,
     "throwing": 68,
     "vision": 88,
-    "height": 2
+    "height": 2,
+    "appearance": 11
   },
   {
     "id": "grace-tipton-73",
@@ -1294,7 +1383,8 @@ export const PLAYERS = [
     "arm": 24,
     "throwing": 1,
     "vision": 29,
-    "height": 2
+    "height": 2,
+    "appearance": 12
   },
   {
     "id": "hannah-peavy-74",
@@ -1308,7 +1398,8 @@ export const PLAYERS = [
     "arm": 49,
     "throwing": 19,
     "vision": 49,
-    "height": 2
+    "height": 2,
+    "appearance": 7
   },
   {
     "id": "heather-quinn-75",
@@ -1322,7 +1413,8 @@ export const PLAYERS = [
     "arm": 63,
     "throwing": 94,
     "vision": 82,
-    "height": 2
+    "height": 2,
+    "appearance": 8
   },
   {
     "id": "holly-franklin-76",
@@ -1336,7 +1428,8 @@ export const PLAYERS = [
     "arm": 73,
     "throwing": 19,
     "vision": 68,
-    "height": 2
+    "height": 2,
+    "appearance": 9
   },
   {
     "id": "isabelle-marelli-77",
@@ -1350,7 +1443,8 @@ export const PLAYERS = [
     "arm": 88,
     "throwing": 68,
     "vision": 31,
-    "height": 2
+    "height": 2,
+    "appearance": 10
   },
   {
     "id": "jane-davis-78",
@@ -1364,7 +1458,8 @@ export const PLAYERS = [
     "arm": 31,
     "throwing": 29,
     "vision": 38,
-    "height": 2
+    "height": 2,
+    "appearance": 11
   },
   {
     "id": "joella-minotti-79",
@@ -1378,7 +1473,8 @@ export const PLAYERS = [
     "arm": 26,
     "throwing": 36,
     "vision": 20,
-    "height": 2
+    "height": 2,
+    "appearance": 12
   },
   {
     "id": "judy-abwunza-80",
@@ -1392,7 +1488,8 @@ export const PLAYERS = [
     "arm": 43,
     "throwing": 38,
     "vision": 100,
-    "height": 2
+    "height": 2,
+    "appearance": 7
   },
   {
     "id": "julie-dunkel-81",
@@ -1406,7 +1503,8 @@ export const PLAYERS = [
     "arm": 82,
     "throwing": 64,
     "vision": 12,
-    "height": 2
+    "height": 2,
+    "appearance": 8
   },
   {
     "id": "karen-donato-82",
@@ -1420,7 +1518,8 @@ export const PLAYERS = [
     "arm": 53,
     "throwing": 28,
     "vision": 43,
-    "height": 2
+    "height": 2,
+    "appearance": 9
   },
   {
     "id": "katie-shankar-83",
@@ -1434,7 +1533,8 @@ export const PLAYERS = [
     "arm": 26,
     "throwing": 15,
     "vision": 29,
-    "height": 2
+    "height": 2,
+    "appearance": 10
   },
   {
     "id": "krissy-mulligan-84",
@@ -1448,7 +1548,8 @@ export const PLAYERS = [
     "arm": 57,
     "throwing": 71,
     "vision": 49,
-    "height": 2
+    "height": 2,
+    "appearance": 11
   },
   {
     "id": "lara-nunez-85",
@@ -1462,7 +1563,8 @@ export const PLAYERS = [
     "arm": 19,
     "throwing": 66,
     "vision": 54,
-    "height": 2
+    "height": 2,
+    "appearance": 12
   },
   {
     "id": "leah-wayne-86",
@@ -1476,7 +1578,8 @@ export const PLAYERS = [
     "arm": 72,
     "throwing": 78,
     "vision": 35,
-    "height": 2
+    "height": 2,
+    "appearance": 7
   },
   {
     "id": "lena-ng-87",
@@ -1490,7 +1593,8 @@ export const PLAYERS = [
     "arm": 100,
     "throwing": 70,
     "vision": 55,
-    "height": 2
+    "height": 2,
+    "appearance": 8
   },
   {
     "id": "linda-potter-88",
@@ -1504,7 +1608,8 @@ export const PLAYERS = [
     "arm": 79,
     "throwing": 50,
     "vision": 1,
-    "height": 2
+    "height": 2,
+    "appearance": 9
   },
   {
     "id": "liz-kinghorn-89",
@@ -1518,7 +1623,8 @@ export const PLAYERS = [
     "arm": 64,
     "throwing": 100,
     "vision": 50,
-    "height": 2
+    "height": 2,
+    "appearance": 10
   },
   {
     "id": "marianna-rauf-90",
@@ -1532,7 +1638,8 @@ export const PLAYERS = [
     "arm": 34,
     "throwing": 85,
     "vision": 71,
-    "height": 2
+    "height": 2,
+    "appearance": 11
   },
   {
     "id": "mary-reilly-91",
@@ -1546,7 +1653,8 @@ export const PLAYERS = [
     "arm": 100,
     "throwing": 49,
     "vision": 58,
-    "height": 2
+    "height": 2,
+    "appearance": 12
   },
   {
     "id": "michiko-adachi-92",
@@ -1560,7 +1668,8 @@ export const PLAYERS = [
     "arm": 80,
     "throwing": 100,
     "vision": 48,
-    "height": 2
+    "height": 2,
+    "appearance": 10
   },
   {
     "id": "molly-may-93",
@@ -1574,7 +1683,8 @@ export const PLAYERS = [
     "arm": 90,
     "throwing": 76,
     "vision": 1,
-    "height": 2
+    "height": 2,
+    "appearance": 7
   },
   {
     "id": "nancy-chin-94",
@@ -1588,7 +1698,8 @@ export const PLAYERS = [
     "arm": 34,
     "throwing": 68,
     "vision": 25,
-    "height": 2
+    "height": 2,
+    "appearance": 8
   },
   {
     "id": "olga-tollefson-95",
@@ -1602,7 +1713,8 @@ export const PLAYERS = [
     "arm": 10,
     "throwing": 49,
     "vision": 34,
-    "height": 2
+    "height": 2,
+    "appearance": 9
   },
   {
     "id": "olive-hussein-96",
@@ -1616,7 +1728,8 @@ export const PLAYERS = [
     "arm": 28,
     "throwing": 76,
     "vision": 33,
-    "height": 2
+    "height": 2,
+    "appearance": 10
   },
   {
     "id": "petra-chekov-97",
@@ -1630,7 +1743,8 @@ export const PLAYERS = [
     "arm": 23,
     "throwing": 46,
     "vision": 48,
-    "height": 2
+    "height": 2,
+    "appearance": 11
   },
   {
     "id": "ramona-bennett-98",
@@ -1644,7 +1758,8 @@ export const PLAYERS = [
     "arm": 27,
     "throwing": 37,
     "vision": 27,
-    "height": 2
+    "height": 2,
+    "appearance": 12
   },
   {
     "id": "randi-uno-99",
@@ -1658,7 +1773,8 @@ export const PLAYERS = [
     "arm": 78,
     "throwing": 67,
     "vision": 33,
-    "height": 2
+    "height": 2,
+    "appearance": 7
   },
   {
     "id": "serena-damonte-100",
@@ -1672,7 +1788,8 @@ export const PLAYERS = [
     "arm": 100,
     "throwing": 78,
     "vision": 37,
-    "height": 2
+    "height": 2,
+    "appearance": 8
   },
   {
     "id": "sheila-basanti-101",
@@ -1686,7 +1803,8 @@ export const PLAYERS = [
     "arm": 45,
     "throwing": 27,
     "vision": 57,
-    "height": 2
+    "height": 2,
+    "appearance": 9
   },
   {
     "id": "sonja-hagen-102",
@@ -1700,7 +1818,8 @@ export const PLAYERS = [
     "arm": 77,
     "throwing": 56,
     "vision": 89,
-    "height": 2
+    "height": 2,
+    "appearance": 10
   },
   {
     "id": "stacy-gordon-103",
@@ -1714,7 +1833,8 @@ export const PLAYERS = [
     "arm": 62,
     "throwing": 87,
     "vision": 1,
-    "height": 2
+    "height": 2,
+    "appearance": 11
   },
   {
     "id": "star-moonbeam-104",
@@ -1728,7 +1848,8 @@ export const PLAYERS = [
     "arm": 19,
     "throwing": 54,
     "vision": 78,
-    "height": 2
+    "height": 2,
+    "appearance": 12
   },
   {
     "id": "tanya-uchida-105",
@@ -1742,7 +1863,8 @@ export const PLAYERS = [
     "arm": 48,
     "throwing": 77,
     "vision": 68,
-    "height": 2
+    "height": 2,
+    "appearance": 7
   },
   {
     "id": "tiffany-bosworth-106",
@@ -1756,7 +1878,8 @@ export const PLAYERS = [
     "arm": 59,
     "throwing": 90,
     "vision": 59,
-    "height": 2
+    "height": 2,
+    "appearance": 8
   },
   {
     "id": "tina-herrara-107",
@@ -1770,7 +1893,8 @@ export const PLAYERS = [
     "arm": 87,
     "throwing": 100,
     "vision": 87,
-    "height": 2
+    "height": 2,
+    "appearance": 9
   },
   {
     "id": "vanna-steinman-108",
@@ -1784,7 +1908,8 @@ export const PLAYERS = [
     "arm": 30,
     "throwing": 30,
     "vision": 76,
-    "height": 2
+    "height": 2,
+    "appearance": 10
   },
   {
     "id": "veronica-lee-109",
@@ -1798,7 +1923,8 @@ export const PLAYERS = [
     "arm": 49,
     "throwing": 79,
     "vision": 58,
-    "height": 2
+    "height": 2,
+    "appearance": 11
   },
   {
     "id": "whitney-singh-110",
@@ -1812,7 +1938,8 @@ export const PLAYERS = [
     "arm": 76,
     "throwing": 55,
     "vision": 88,
-    "height": 2
+    "height": 2,
+    "appearance": 12
   },
   {
     "id": "zena-fromme-111",
@@ -1826,7 +1953,8 @@ export const PLAYERS = [
     "arm": 69,
     "throwing": 71,
     "vision": 49,
-    "height": 2
+    "height": 2,
+    "appearance": 11
   },
   {
     "id": "andres-ibsen-112",
@@ -1840,7 +1968,8 @@ export const PLAYERS = [
     "arm": 75,
     "throwing": 75,
     "vision": 33,
-    "height": 2
+    "height": 2,
+    "appearance": 1
   },
   {
     "id": "artie-pimbleton-113",
@@ -1854,7 +1983,8 @@ export const PLAYERS = [
     "arm": 43,
     "throwing": 3,
     "vision": 80,
-    "height": 2
+    "height": 2,
+    "appearance": 2
   },
   {
     "id": "bobby-bulgrien-114",
@@ -1868,7 +1998,8 @@ export const PLAYERS = [
     "arm": 15,
     "throwing": 22,
     "vision": 63,
-    "height": 2
+    "height": 2,
+    "appearance": 6
   },
   {
     "id": "bret-olson-115",
@@ -1882,7 +2013,8 @@ export const PLAYERS = [
     "arm": 52,
     "throwing": 59,
     "vision": 76,
-    "height": 2
+    "height": 2,
+    "appearance": 4
   },
   {
     "id": "carlos-ocampo-116",
@@ -1896,7 +2028,8 @@ export const PLAYERS = [
     "arm": 1,
     "throwing": 69,
     "vision": 28,
-    "height": 2
+    "height": 2,
+    "appearance": 5
   },
   {
     "id": "chad-koppel-117",
@@ -1910,7 +2043,8 @@ export const PLAYERS = [
     "arm": 86,
     "throwing": 84,
     "vision": 51,
-    "height": 2
+    "height": 2,
+    "appearance": 3
   },
   {
     "id": "chico-pappas-118",
@@ -1924,7 +2058,8 @@ export const PLAYERS = [
     "arm": 44,
     "throwing": 52,
     "vision": 91,
-    "height": 2
+    "height": 2,
+    "appearance": 5
   },
   {
     "id": "chris-milton-119",
@@ -1938,7 +2073,8 @@ export const PLAYERS = [
     "arm": 65,
     "throwing": 48,
     "vision": 95,
-    "height": 2
+    "height": 2,
+    "appearance": 2
   },
   {
     "id": "chucky-flinder-120",
@@ -1952,7 +2088,8 @@ export const PLAYERS = [
     "arm": 65,
     "throwing": 48,
     "vision": 95,
-    "height": 2
+    "height": 2,
+    "appearance": 3
   },
   {
     "id": "davy-marian-121",
@@ -1966,7 +2103,8 @@ export const PLAYERS = [
     "arm": 86,
     "throwing": 51,
     "vision": 31,
-    "height": 2
+    "height": 2,
+    "appearance": 4
   },
   {
     "id": "dominique-lowe-122",
@@ -1980,7 +2118,8 @@ export const PLAYERS = [
     "arm": 56,
     "throwing": 68,
     "vision": 88,
-    "height": 2
+    "height": 2,
+    "appearance": 1
   },
   {
     "id": "earl-abbot-123",
@@ -1994,7 +2133,8 @@ export const PLAYERS = [
     "arm": 24,
     "throwing": 1,
     "vision": 29,
-    "height": 2
+    "height": 2,
+    "appearance": 6
   },
   {
     "id": "eric-lebeaux-124",
@@ -2008,7 +2148,8 @@ export const PLAYERS = [
     "arm": 49,
     "throwing": 19,
     "vision": 49,
-    "height": 2
+    "height": 2,
+    "appearance": 1
   },
   {
     "id": "felix-grant-125",
@@ -2022,7 +2163,8 @@ export const PLAYERS = [
     "arm": 63,
     "throwing": 94,
     "vision": 82,
-    "height": 2
+    "height": 2,
+    "appearance": 2
   },
   {
     "id": "fernando-diaz-126",
@@ -2036,7 +2178,8 @@ export const PLAYERS = [
     "arm": 73,
     "throwing": 19,
     "vision": 68,
-    "height": 2
+    "height": 2,
+    "appearance": 3
   },
   {
     "id": "franky-holly-127",
@@ -2050,7 +2193,8 @@ export const PLAYERS = [
     "arm": 88,
     "throwing": 68,
     "vision": 31,
-    "height": 2
+    "height": 2,
+    "appearance": 4
   },
   {
     "id": "fred-benson-128",
@@ -2064,7 +2208,8 @@ export const PLAYERS = [
     "arm": 31,
     "throwing": 29,
     "vision": 38,
-    "height": 2
+    "height": 2,
+    "appearance": 5
   },
   {
     "id": "gary-allen-129",
@@ -2078,7 +2223,8 @@ export const PLAYERS = [
     "arm": 26,
     "throwing": 36,
     "vision": 20,
-    "height": 2
+    "height": 2,
+    "appearance": 6
   },
   {
     "id": "george-coleman-130",
@@ -2092,7 +2238,8 @@ export const PLAYERS = [
     "arm": 43,
     "throwing": 38,
     "vision": 100,
-    "height": 2
+    "height": 2,
+    "appearance": 1
   },
   {
     "id": "henri-deschenes-131",
@@ -2106,7 +2253,8 @@ export const PLAYERS = [
     "arm": 82,
     "throwing": 64,
     "vision": 12,
-    "height": 2
+    "height": 2,
+    "appearance": 2
   },
   {
     "id": "horace-young-132",
@@ -2120,7 +2268,8 @@ export const PLAYERS = [
     "arm": 53,
     "throwing": 28,
     "vision": 43,
-    "height": 2
+    "height": 2,
+    "appearance": 3
   },
   {
     "id": "ibrahim-mohamed-133",
@@ -2134,7 +2283,8 @@ export const PLAYERS = [
     "arm": 26,
     "throwing": 15,
     "vision": 29,
-    "height": 2
+    "height": 2,
+    "appearance": 4
   },
   {
     "id": "isaac-drummond-134",
@@ -2148,7 +2298,8 @@ export const PLAYERS = [
     "arm": 57,
     "throwing": 71,
     "vision": 49,
-    "height": 2
+    "height": 2,
+    "appearance": 5
   },
   {
     "id": "jack-joseph-135",
@@ -2162,7 +2313,8 @@ export const PLAYERS = [
     "arm": 19,
     "throwing": 66,
     "vision": 54,
-    "height": 2
+    "height": 2,
+    "appearance": 6
   },
   {
     "id": "jay-green-136",
@@ -2176,7 +2328,8 @@ export const PLAYERS = [
     "arm": 72,
     "throwing": 78,
     "vision": 35,
-    "height": 2
+    "height": 2,
+    "appearance": 1
   },
   {
     "id": "jim-kiley-137",
@@ -2190,7 +2343,8 @@ export const PLAYERS = [
     "arm": 100,
     "throwing": 70,
     "vision": 55,
-    "height": 2
+    "height": 2,
+    "appearance": 2
   },
   {
     "id": "johnny-omar-138",
@@ -2204,7 +2358,8 @@ export const PLAYERS = [
     "arm": 79,
     "throwing": 50,
     "vision": 1,
-    "height": 2
+    "height": 2,
+    "appearance": 3
   },
   {
     "id": "jordan-thorner-139",
@@ -2218,7 +2373,8 @@ export const PLAYERS = [
     "arm": 64,
     "throwing": 100,
     "vision": 50,
-    "height": 2
+    "height": 2,
+    "appearance": 4
   },
   {
     "id": "mickey-o-connor-140",
@@ -2232,7 +2388,8 @@ export const PLAYERS = [
     "arm": 34,
     "throwing": 85,
     "vision": 71,
-    "height": 2
+    "height": 2,
+    "appearance": 5
   },
   {
     "id": "murray-goldman-141",
@@ -2246,7 +2403,8 @@ export const PLAYERS = [
     "arm": 100,
     "throwing": 49,
     "vision": 58,
-    "height": 2
+    "height": 2,
+    "appearance": 6
   },
   {
     "id": "nate-kowalski-142",
@@ -2260,7 +2418,8 @@ export const PLAYERS = [
     "arm": 80,
     "throwing": 100,
     "vision": 48,
-    "height": 2
+    "height": 2,
+    "appearance": 1
   },
   {
     "id": "nicky-winston-143",
@@ -2274,7 +2433,8 @@ export const PLAYERS = [
     "arm": 90,
     "throwing": 76,
     "vision": 1,
-    "height": 2
+    "height": 2,
+    "appearance": 2
   },
   {
     "id": "omar-stephano-144",
@@ -2288,7 +2448,8 @@ export const PLAYERS = [
     "arm": 34,
     "throwing": 68,
     "vision": 25,
-    "height": 2
+    "height": 2,
+    "appearance": 3
   },
   {
     "id": "paco-kaufman-145",
@@ -2302,7 +2463,8 @@ export const PLAYERS = [
     "arm": 10,
     "throwing": 49,
     "vision": 34,
-    "height": 2
+    "height": 2,
+    "appearance": 4
   },
   {
     "id": "pj-shareef-146",
@@ -2316,7 +2478,8 @@ export const PLAYERS = [
     "arm": 28,
     "throwing": 76,
     "vision": 33,
-    "height": 2
+    "height": 2,
+    "appearance": 5
   },
   {
     "id": "rafael-hendrix-147",
@@ -2330,7 +2493,8 @@ export const PLAYERS = [
     "arm": 23,
     "throwing": 46,
     "vision": 48,
-    "height": 2
+    "height": 2,
+    "appearance": 6
   },
   {
     "id": "ray-tran-148",
@@ -2344,7 +2508,8 @@ export const PLAYERS = [
     "arm": 27,
     "throwing": 37,
     "vision": 27,
-    "height": 2
+    "height": 2,
+    "appearance": 2
   },
   {
     "id": "robby-bocko-149",
@@ -2358,7 +2523,8 @@ export const PLAYERS = [
     "arm": 78,
     "throwing": 67,
     "vision": 33,
-    "height": 2
+    "height": 2,
+    "appearance": 3
   },
   {
     "id": "ryan-vanderhoek-150",
@@ -2372,7 +2538,8 @@ export const PLAYERS = [
     "arm": 100,
     "throwing": 78,
     "vision": 37,
-    "height": 2
+    "height": 2,
+    "appearance": 4
   },
   {
     "id": "shane-smith-151",
@@ -2386,7 +2553,8 @@ export const PLAYERS = [
     "arm": 45,
     "throwing": 27,
     "vision": 57,
-    "height": 2
+    "height": 2,
+    "appearance": 5
   },
   {
     "id": "stan-olafson-152",
@@ -2400,7 +2568,8 @@ export const PLAYERS = [
     "arm": 77,
     "throwing": 56,
     "vision": 89,
-    "height": 2
+    "height": 2,
+    "appearance": 6
   },
   {
     "id": "stevie-lindt-153",
@@ -2414,7 +2583,8 @@ export const PLAYERS = [
     "arm": 62,
     "throwing": 87,
     "vision": 1,
-    "height": 2
+    "height": 2,
+    "appearance": 1
   },
   {
     "id": "stuart-sullivan-154",
@@ -2428,7 +2598,8 @@ export const PLAYERS = [
     "arm": 19,
     "throwing": 54,
     "vision": 78,
-    "height": 2
+    "height": 2,
+    "appearance": 2
   },
   {
     "id": "timmy-unger-155",
@@ -2442,7 +2613,8 @@ export const PLAYERS = [
     "arm": 48,
     "throwing": 77,
     "vision": 68,
-    "height": 2
+    "height": 2,
+    "appearance": 3
   },
   {
     "id": "todd-xavier-156",
@@ -2456,7 +2628,8 @@ export const PLAYERS = [
     "arm": 59,
     "throwing": 90,
     "vision": 59,
-    "height": 2
+    "height": 2,
+    "appearance": 4
   },
   {
     "id": "vic-soufle-157",
@@ -2470,7 +2643,8 @@ export const PLAYERS = [
     "arm": 87,
     "throwing": 100,
     "vision": 87,
-    "height": 2
+    "height": 2,
+    "appearance": 5
   },
   {
     "id": "vladimir-womak-158",
@@ -2484,7 +2658,8 @@ export const PLAYERS = [
     "arm": 30,
     "throwing": 30,
     "vision": 76,
-    "height": 2
+    "height": 2,
+    "appearance": 6
   },
   {
     "id": "wally-evans-159",
@@ -2498,7 +2673,8 @@ export const PLAYERS = [
     "arm": 49,
     "throwing": 79,
     "vision": 58,
-    "height": 2
+    "height": 2,
+    "appearance": 1
   },
   {
     "id": "wing-kwan-160",
@@ -2512,7 +2688,8 @@ export const PLAYERS = [
     "arm": 76,
     "throwing": 55,
     "vision": 88,
-    "height": 2
+    "height": 2,
+    "appearance": 2
   },
   {
     "id": "zenon-estrada-161",
@@ -2526,7 +2703,8 @@ export const PLAYERS = [
     "arm": 69,
     "throwing": 71,
     "vision": 49,
-    "height": 2
+    "height": 2,
+    "appearance": 6
   },
   {
     "id": "alexis-weis-162",
@@ -2540,7 +2718,8 @@ export const PLAYERS = [
     "arm": 40,
     "throwing": 42,
     "vision": 65,
-    "height": 2
+    "height": 2,
+    "appearance": 10
   },
   {
     "id": "angelique-harding-163",
@@ -2554,7 +2733,8 @@ export const PLAYERS = [
     "arm": 71,
     "throwing": 73,
     "vision": 21,
-    "height": 2
+    "height": 2,
+    "appearance": 8
   },
   {
     "id": "catherine-asher-164",
@@ -2568,7 +2748,8 @@ export const PLAYERS = [
     "arm": 42,
     "throwing": 46,
     "vision": 28,
-    "height": 2
+    "height": 2,
+    "appearance": 8
   },
   {
     "id": "clair-nelson-165",
@@ -2582,7 +2763,8 @@ export const PLAYERS = [
     "arm": 36,
     "throwing": 70,
     "vision": 2,
-    "height": 2
+    "height": 2,
+    "appearance": 12
   },
   {
     "id": "courtney-valentino-166",
@@ -2596,7 +2778,8 @@ export const PLAYERS = [
     "arm": 79,
     "throwing": 100,
     "vision": 15,
-    "height": 2
+    "height": 2,
+    "appearance": 10
   },
   {
     "id": "dana-sekula-167",
@@ -2610,7 +2793,8 @@ export const PLAYERS = [
     "arm": 39,
     "throwing": 61,
     "vision": 75,
-    "height": 2
+    "height": 2,
+    "appearance": 7
   },
   {
     "id": "ellen-martinez-168",
@@ -2624,7 +2808,8 @@ export const PLAYERS = [
     "arm": 86,
     "throwing": 36,
     "vision": 46,
-    "height": 2
+    "height": 2,
+    "appearance": 10
   },
   {
     "id": "erin-harris-169",
@@ -2638,7 +2823,8 @@ export const PLAYERS = [
     "arm": 81,
     "throwing": 27,
     "vision": 5,
-    "height": 2
+    "height": 2,
+    "appearance": 12
   },
   {
     "id": "esmarelda-heimann-170",
@@ -2652,7 +2838,8 @@ export const PLAYERS = [
     "arm": 94,
     "throwing": 61,
     "vision": 91,
-    "height": 2
+    "height": 2,
+    "appearance": 7
   },
   {
     "id": "ezra-travolta-171",
@@ -2666,7 +2853,8 @@ export const PLAYERS = [
     "arm": 100,
     "throwing": 95,
     "vision": 69,
-    "height": 2
+    "height": 2,
+    "appearance": 8
   },
   {
     "id": "fabienne-callahan-172",
@@ -2680,7 +2868,8 @@ export const PLAYERS = [
     "arm": 53,
     "throwing": 53,
     "vision": 24,
-    "height": 2
+    "height": 2,
+    "appearance": 9
   },
   {
     "id": "francesca-whitaker-173",
@@ -2694,7 +2883,8 @@ export const PLAYERS = [
     "arm": 57,
     "throwing": 56,
     "vision": 73,
-    "height": 2
+    "height": 2,
+    "appearance": 10
   },
   {
     "id": "gloria-keitel-174",
@@ -2708,7 +2898,8 @@ export const PLAYERS = [
     "arm": 54,
     "throwing": 88,
     "vision": 19,
-    "height": 2
+    "height": 2,
+    "appearance": 11
   },
   {
     "id": "heidi-thurman-175",
@@ -2722,7 +2913,8 @@ export const PLAYERS = [
     "arm": 98,
     "throwing": 37,
     "vision": 95,
-    "height": 2
+    "height": 2,
+    "appearance": 7
   },
   {
     "id": "joan-mae-176",
@@ -2736,7 +2928,8 @@ export const PLAYERS = [
     "arm": 65,
     "throwing": 21,
     "vision": 30,
-    "height": 2
+    "height": 2,
+    "appearance": 9
   },
   {
     "id": "jody-palmer-177",
@@ -2750,7 +2943,8 @@ export const PLAYERS = [
     "arm": 70,
     "throwing": 86,
     "vision": 54,
-    "height": 2
+    "height": 2,
+    "appearance": 10
   },
   {
     "id": "katelyn-cain-178",
@@ -2764,7 +2958,8 @@ export const PLAYERS = [
     "arm": 11,
     "throwing": 81,
     "vision": 58,
-    "height": 2
+    "height": 2,
+    "appearance": 8
   },
   {
     "id": "kathy-wolf-179",
@@ -2778,7 +2973,8 @@ export const PLAYERS = [
     "arm": 95,
     "throwing": 94,
     "vision": 14,
-    "height": 2
+    "height": 2,
+    "appearance": 7
   },
   {
     "id": "lindsy-felgate-180",
@@ -2792,7 +2988,8 @@ export const PLAYERS = [
     "arm": 55,
     "throwing": 100,
     "vision": 79,
-    "height": 2
+    "height": 2,
+    "appearance": 10
   },
   {
     "id": "lorelei-ikaye-181",
@@ -2806,7 +3003,8 @@ export const PLAYERS = [
     "arm": 22,
     "throwing": 53,
     "vision": 85,
-    "height": 2
+    "height": 2,
+    "appearance": 11
   },
   {
     "id": "mamie-skiumsby-182",
@@ -2820,7 +3018,8 @@ export const PLAYERS = [
     "arm": 27,
     "throwing": 57,
     "vision": 24,
-    "height": 2
+    "height": 2,
+    "appearance": 12
   },
   {
     "id": "mandy-coolidge-183",
@@ -2834,7 +3033,8 @@ export const PLAYERS = [
     "arm": 64,
     "throwing": 54,
     "vision": 3,
-    "height": 2
+    "height": 2,
+    "appearance": 7
   },
   {
     "id": "rosanna-phelps-184",
@@ -2848,7 +3048,8 @@ export const PLAYERS = [
     "arm": 63,
     "throwing": 98,
     "vision": 47,
-    "height": 2
+    "height": 2,
+    "appearance": 7
   },
   {
     "id": "ruth-proutt-185",
@@ -2862,7 +3063,8 @@ export const PLAYERS = [
     "arm": 61,
     "throwing": 65,
     "vision": 69,
-    "height": 2
+    "height": 2,
+    "appearance": 8
   },
   {
     "id": "samantha-winslow-186",
@@ -2876,7 +3078,8 @@ export const PLAYERS = [
     "arm": 48,
     "throwing": 78,
     "vision": 62,
-    "height": 2
+    "height": 2,
+    "appearance": 8
   },
   {
     "id": "tatiana-jackson-187",
@@ -2890,7 +3093,8 @@ export const PLAYERS = [
     "arm": 28,
     "throwing": 100,
     "vision": 24,
-    "height": 2
+    "height": 2,
+    "appearance": 10
   },
   {
     "id": "tracy-hoban-188",
@@ -2904,7 +3108,8 @@ export const PLAYERS = [
     "arm": 100,
     "throwing": 72,
     "vision": 79,
-    "height": 2
+    "height": 2,
+    "appearance": 10
   },
   {
     "id": "uma-morris-189",
@@ -2918,7 +3123,8 @@ export const PLAYERS = [
     "arm": 71,
     "throwing": 63,
     "vision": 12,
-    "height": 2
+    "height": 2,
+    "appearance": 7
   },
   {
     "id": "vanessa-goodman-190",
@@ -2932,7 +3138,8 @@ export const PLAYERS = [
     "arm": 18,
     "throwing": 82,
     "vision": 5,
-    "height": 2
+    "height": 2,
+    "appearance": 8
   },
   {
     "id": "victoria-shamberg-191",
@@ -2946,7 +3153,8 @@ export const PLAYERS = [
     "arm": 25,
     "throwing": 26,
     "vision": 48,
-    "height": 2
+    "height": 2,
+    "appearance": 9
   },
   {
     "id": "adam-van-doren-192",
@@ -2960,7 +3168,8 @@ export const PLAYERS = [
     "arm": 49,
     "throwing": 60,
     "vision": 4,
-    "height": 2
+    "height": 2,
+    "appearance": 6
   },
   {
     "id": "alan-hulsman-193",
@@ -2974,7 +3183,8 @@ export const PLAYERS = [
     "arm": 49,
     "throwing": 31,
     "vision": 90,
-    "height": 2
+    "height": 2,
+    "appearance": 1
   },
   {
     "id": "billy-mendelson-194",
@@ -2988,7 +3198,8 @@ export const PLAYERS = [
     "arm": 19,
     "throwing": 14,
     "vision": 66,
-    "height": 2
+    "height": 2,
+    "appearance": 1
   },
   {
     "id": "brad-bender-195",
@@ -3002,7 +3213,8 @@ export const PLAYERS = [
     "arm": 83,
     "throwing": 26,
     "vision": 7,
-    "height": 2
+    "height": 2,
+    "appearance": 4
   },
   {
     "id": "buddy-martin-196",
@@ -3016,7 +3228,8 @@ export const PLAYERS = [
     "arm": 79,
     "throwing": 60,
     "vision": 79,
-    "height": 2
+    "height": 2,
+    "appearance": 1
   },
   {
     "id": "butch-sherrod-197",
@@ -3030,7 +3243,8 @@ export const PLAYERS = [
     "arm": 88,
     "throwing": 82,
     "vision": 99,
-    "height": 2
+    "height": 2,
+    "appearance": 2
   },
   {
     "id": "cameron-haines-198",
@@ -3044,7 +3258,8 @@ export const PLAYERS = [
     "arm": 62,
     "throwing": 51,
     "vision": 78,
-    "height": 2
+    "height": 2,
+    "appearance": 3
   },
   {
     "id": "chandler-huggins-199",
@@ -3058,7 +3273,8 @@ export const PLAYERS = [
     "arm": 40,
     "throwing": 61,
     "vision": 76,
-    "height": 2
+    "height": 2,
+    "appearance": 4
   },
   {
     "id": "daniel-willis-200",
@@ -3072,7 +3288,8 @@ export const PLAYERS = [
     "arm": 68,
     "throwing": 23,
     "vision": 20,
-    "height": 2
+    "height": 2,
+    "appearance": 1
   },
   {
     "id": "derek-mccattery-201",
@@ -3086,7 +3303,8 @@ export const PLAYERS = [
     "arm": 41,
     "throwing": 36,
     "vision": 17,
-    "height": 2
+    "height": 2,
+    "appearance": 4
   },
   {
     "id": "donald-vogel-202",
@@ -3100,7 +3318,8 @@ export const PLAYERS = [
     "arm": 90,
     "throwing": 85,
     "vision": 93,
-    "height": 2
+    "height": 2,
+    "appearance": 5
   },
   {
     "id": "guiseppe-pachasa-203",
@@ -3114,7 +3333,8 @@ export const PLAYERS = [
     "arm": 19,
     "throwing": 23,
     "vision": 68,
-    "height": 2
+    "height": 2,
+    "appearance": 3
   },
   {
     "id": "ivan-king-204",
@@ -3128,7 +3348,8 @@ export const PLAYERS = [
     "arm": 31,
     "throwing": 17,
     "vision": 38,
-    "height": 2
+    "height": 2,
+    "appearance": 1
   },
   {
     "id": "jerry-mahoney-205",
@@ -3142,7 +3363,8 @@ export const PLAYERS = [
     "arm": 32,
     "throwing": 45,
     "vision": 11,
-    "height": 2
+    "height": 2,
+    "appearance": 1
   },
   {
     "id": "jose-meisenheimer-206",
@@ -3156,7 +3378,8 @@ export const PLAYERS = [
     "arm": 63,
     "throwing": 50,
     "vision": 81,
-    "height": 2
+    "height": 2,
+    "appearance": 4
   },
   {
     "id": "lance-lambert-207",
@@ -3170,7 +3393,8 @@ export const PLAYERS = [
     "arm": 14,
     "throwing": 20,
     "vision": 37,
-    "height": 2
+    "height": 2,
+    "appearance": 2
   },
   {
     "id": "marsellus-marx-208",
@@ -3184,7 +3408,8 @@ export const PLAYERS = [
     "arm": 43,
     "throwing": 42,
     "vision": 47,
-    "height": 2
+    "height": 2,
+    "appearance": 1
   },
   {
     "id": "matthew-la-cruz-209",
@@ -3198,7 +3423,8 @@ export const PLAYERS = [
     "arm": 62,
     "throwing": 18,
     "vision": 32,
-    "height": 2
+    "height": 2,
+    "appearance": 5
   },
   {
     "id": "maynard-mcelroy-210",
@@ -3212,7 +3438,8 @@ export const PLAYERS = [
     "arm": 81,
     "throwing": 67,
     "vision": 80,
-    "height": 2
+    "height": 2,
+    "appearance": 5
   },
   {
     "id": "melvin-berger-211",
@@ -3226,7 +3453,8 @@ export const PLAYERS = [
     "arm": 22,
     "throwing": 12,
     "vision": 55,
-    "height": 2
+    "height": 2,
+    "appearance": 3
   },
   {
     "id": "parker-collum-212",
@@ -3240,7 +3468,8 @@ export const PLAYERS = [
     "arm": 29,
     "throwing": 19,
     "vision": 58,
-    "height": 2
+    "height": 2,
+    "appearance": 4
   },
   {
     "id": "peter-levine-213",
@@ -3254,7 +3483,8 @@ export const PLAYERS = [
     "arm": 61,
     "throwing": 75,
     "vision": 37,
-    "height": 2
+    "height": 2,
+    "appearance": 6
   },
   {
     "id": "quentin-driver-214",
@@ -3268,7 +3498,8 @@ export const PLAYERS = [
     "arm": 34,
     "throwing": 24,
     "vision": 1,
-    "height": 2
+    "height": 2,
+    "appearance": 4
   },
   {
     "id": "randolph-glueckert-215",
@@ -3282,7 +3513,8 @@ export const PLAYERS = [
     "arm": 49,
     "throwing": 39,
     "vision": 90,
-    "height": 2
+    "height": 2,
+    "appearance": 1
   },
   {
     "id": "samuel-middleton-216",
@@ -3296,7 +3528,8 @@ export const PLAYERS = [
     "arm": 65,
     "throwing": 48,
     "vision": 71,
-    "height": 2
+    "height": 2,
+    "appearance": 3
   },
   {
     "id": "scotty-roth-217",
@@ -3310,7 +3543,8 @@ export const PLAYERS = [
     "arm": 97,
     "throwing": 40,
     "vision": 84,
-    "height": 2
+    "height": 2,
+    "appearance": 6
   },
   {
     "id": "terry-vega-218",
@@ -3324,7 +3558,8 @@ export const PLAYERS = [
     "arm": 23,
     "throwing": 52,
     "vision": 31,
-    "height": 2
+    "height": 2,
+    "appearance": 2
   },
   {
     "id": "vincent-sweet-219",
@@ -3338,7 +3573,8 @@ export const PLAYERS = [
     "arm": 85,
     "throwing": 79,
     "vision": 20,
-    "height": 2
+    "height": 2,
+    "appearance": 5
   },
   {
     "id": "walter-hall-220",
@@ -3352,7 +3588,8 @@ export const PLAYERS = [
     "arm": 29,
     "throwing": 60,
     "vision": 63,
-    "height": 2
+    "height": 2,
+    "appearance": 4
   },
   {
     "id": "wayne-pitman-221",
@@ -3366,7 +3603,8 @@ export const PLAYERS = [
     "arm": 17,
     "throwing": 36,
     "vision": 60,
-    "height": 2
+    "height": 2,
+    "appearance": 5
   },
   {
     "id": "rachel-la-buena-222",
@@ -3380,7 +3618,8 @@ export const PLAYERS = [
     "arm": 26,
     "throwing": 19,
     "vision": 83,
-    "height": 2
+    "height": 2,
+    "appearance": 10
   },
   {
     "id": "kendra-yarbrough-223",
@@ -3394,7 +3633,8 @@ export const PLAYERS = [
     "arm": 21,
     "throwing": 75,
     "vision": 79,
-    "height": 2
+    "height": 2,
+    "appearance": 8
   },
   {
     "id": "berit-greenwalt-224",
@@ -3408,7 +3648,8 @@ export const PLAYERS = [
     "arm": 93,
     "throwing": 53,
     "vision": 95,
-    "height": 2
+    "height": 2,
+    "appearance": 8
   },
   {
     "id": "rose-fluegel-225",
@@ -3422,7 +3663,8 @@ export const PLAYERS = [
     "arm": 81,
     "throwing": 39,
     "vision": 62,
-    "height": 2
+    "height": 2,
+    "appearance": 12
   },
   {
     "id": "maya-woodruff-226",
@@ -3436,7 +3678,8 @@ export const PLAYERS = [
     "arm": 94,
     "throwing": 48,
     "vision": 40,
-    "height": 2
+    "height": 2,
+    "appearance": 10
   },
   {
     "id": "trent-sizemore-227",
@@ -3450,7 +3693,8 @@ export const PLAYERS = [
     "arm": 95,
     "throwing": 40,
     "vision": 68,
-    "height": 2
+    "height": 2,
+    "appearance": 6
   },
   {
     "id": "perry-marx-228",
@@ -3464,7 +3708,8 @@ export const PLAYERS = [
     "arm": 53,
     "throwing": 52,
     "vision": 41,
-    "height": 2
+    "height": 2,
+    "appearance": 2
   },
   {
     "id": "dominic-hoskins-229",
@@ -3478,7 +3723,8 @@ export const PLAYERS = [
     "arm": 51,
     "throwing": 79,
     "vision": 90,
-    "height": 2
+    "height": 2,
+    "appearance": 5
   },
   {
     "id": "umberto-anders-230",
@@ -3492,7 +3738,8 @@ export const PLAYERS = [
     "arm": 50,
     "throwing": 60,
     "vision": 19,
-    "height": 2
+    "height": 2,
+    "appearance": 4
   },
   {
     "id": "thor-herring-231",
@@ -3506,7 +3753,8 @@ export const PLAYERS = [
     "arm": 98,
     "throwing": 36,
     "vision": 31,
-    "height": 2
+    "height": 2,
+    "appearance": 5
   },
   {
     "id": "alicia-blakely-232",
@@ -3520,7 +3768,8 @@ export const PLAYERS = [
     "arm": 60,
     "throwing": 51,
     "vision": 84,
-    "height": 4
+    "height": 4,
+    "appearance": 1
   },
   {
     "id": "amanda-hellerman-233",
@@ -3534,7 +3783,8 @@ export const PLAYERS = [
     "arm": 100,
     "throwing": 30,
     "vision": 55,
-    "height": 5
+    "height": 5,
+    "appearance": 2
   },
   {
     "id": "anna-goudreau-234",
@@ -3548,7 +3798,8 @@ export const PLAYERS = [
     "arm": 80,
     "throwing": 75,
     "vision": 72,
-    "height": 3
+    "height": 3,
+    "appearance": 3
   },
   {
     "id": "barbara-jones-235",
@@ -3562,7 +3813,8 @@ export const PLAYERS = [
     "arm": 80,
     "throwing": 96,
     "vision": 48,
-    "height": 3
+    "height": 3,
+    "appearance": 4
   },
   {
     "id": "brenda-markart-236",
@@ -3576,7 +3828,8 @@ export const PLAYERS = [
     "arm": 72,
     "throwing": 87,
     "vision": 77,
-    "height": 3
+    "height": 3,
+    "appearance": 5
   },
   {
     "id": "cheryl-reynolds-237",
@@ -3590,7 +3843,8 @@ export const PLAYERS = [
     "arm": 98,
     "throwing": 60,
     "vision": 69,
-    "height": 3
+    "height": 3,
+    "appearance": 6
   },
   {
     "id": "christina-beattie-238",
@@ -3604,7 +3858,8 @@ export const PLAYERS = [
     "arm": 58,
     "throwing": 54,
     "vision": 20,
-    "height": 4
+    "height": 4,
+    "appearance": 1
   },
   {
     "id": "claudia-villarta-239",
@@ -3618,7 +3873,8 @@ export const PLAYERS = [
     "arm": 89,
     "throwing": 66,
     "vision": 69,
-    "height": 3
+    "height": 3,
+    "appearance": 2
   },
   {
     "id": "dawn-cozart-240",
@@ -3632,7 +3888,8 @@ export const PLAYERS = [
     "arm": 83,
     "throwing": 78,
     "vision": 53,
-    "height": 3
+    "height": 3,
+    "appearance": 3
   },
   {
     "id": "emily-lewbel-241",
@@ -3646,7 +3903,8 @@ export const PLAYERS = [
     "arm": 92,
     "throwing": 96,
     "vision": 98,
-    "height": 3
+    "height": 3,
+    "appearance": 4
   },
   {
     "id": "fay-dawson-242",
@@ -3660,7 +3918,8 @@ export const PLAYERS = [
     "arm": 95,
     "throwing": 46,
     "vision": 72,
-    "height": 3
+    "height": 3,
+    "appearance": 5
   },
   {
     "id": "gwen-sears-243",
@@ -3674,7 +3933,8 @@ export const PLAYERS = [
     "arm": 77,
     "throwing": 54,
     "vision": 14,
-    "height": 3
+    "height": 3,
+    "appearance": 6
   },
   {
     "id": "hillary-vargas-244",
@@ -3688,7 +3948,8 @@ export const PLAYERS = [
     "arm": 95,
     "throwing": 55,
     "vision": 67,
-    "height": 3
+    "height": 3,
+    "appearance": 1
   },
   {
     "id": "ingrid-dahlman-245",
@@ -3702,7 +3963,8 @@ export const PLAYERS = [
     "arm": 75,
     "throwing": 43,
     "vision": 29,
-    "height": 3
+    "height": 3,
+    "appearance": 2
   },
   {
     "id": "jessica-wassersas-246",
@@ -3716,7 +3978,8 @@ export const PLAYERS = [
     "arm": 100,
     "throwing": 79,
     "vision": 53,
-    "height": 3
+    "height": 3,
+    "appearance": 3
   },
   {
     "id": "jillian-paine-247",
@@ -3730,7 +3993,8 @@ export const PLAYERS = [
     "arm": 80,
     "throwing": 31,
     "vision": 45,
-    "height": 3
+    "height": 3,
+    "appearance": 4
   },
   {
     "id": "kristen-sullivan-248",
@@ -3744,7 +4008,8 @@ export const PLAYERS = [
     "arm": 95,
     "throwing": 76,
     "vision": 36,
-    "height": 3
+    "height": 3,
+    "appearance": 5
   },
   {
     "id": "kay-o-toole-249",
@@ -3758,7 +4023,8 @@ export const PLAYERS = [
     "arm": 95,
     "throwing": 39,
     "vision": 59,
-    "height": 3
+    "height": 3,
+    "appearance": 6
   },
   {
     "id": "libby-futterman-250",
@@ -3772,7 +4038,8 @@ export const PLAYERS = [
     "arm": 56,
     "throwing": 66,
     "vision": 81,
-    "height": 3
+    "height": 3,
+    "appearance": 1
   },
   {
     "id": "marilyn-mcdonnell-251",
@@ -3786,7 +4053,8 @@ export const PLAYERS = [
     "arm": 98,
     "throwing": 82,
     "vision": 77,
-    "height": 3
+    "height": 3,
+    "appearance": 2
   },
   {
     "id": "melissa-waters-252",
@@ -3800,7 +4068,8 @@ export const PLAYERS = [
     "arm": 24,
     "throwing": 45,
     "vision": 60,
-    "height": 3
+    "height": 3,
+    "appearance": 3
   },
   {
     "id": "nan-porter-253",
@@ -3814,7 +4083,8 @@ export const PLAYERS = [
     "arm": 97,
     "throwing": 55,
     "vision": 75,
-    "height": 3
+    "height": 3,
+    "appearance": 4
   },
   {
     "id": "pamela-kirkos-254",
@@ -3828,7 +4098,8 @@ export const PLAYERS = [
     "arm": 74,
     "throwing": 57,
     "vision": 81,
-    "height": 3
+    "height": 3,
+    "appearance": 5
   },
   {
     "id": "raquel-cullen-255",
@@ -3842,7 +4113,8 @@ export const PLAYERS = [
     "arm": 58,
     "throwing": 85,
     "vision": 82,
-    "height": 3
+    "height": 3,
+    "appearance": 6
   },
   {
     "id": "sarah-maxwell-256",
@@ -3856,7 +4128,8 @@ export const PLAYERS = [
     "arm": 95,
     "throwing": 66,
     "vision": 65,
-    "height": 3
+    "height": 3,
+    "appearance": 1
   },
   {
     "id": "susan-gore-257",
@@ -3870,7 +4143,8 @@ export const PLAYERS = [
     "arm": 75,
     "throwing": 76,
     "vision": 55,
-    "height": 3
+    "height": 3,
+    "appearance": 2
   },
   {
     "id": "sophie-meyer-258",
@@ -3884,7 +4158,8 @@ export const PLAYERS = [
     "arm": 63,
     "throwing": 50,
     "vision": 63,
-    "height": 4
+    "height": 4,
+    "appearance": 3
   },
   {
     "id": "tonya-lesco-259",
@@ -3898,7 +4173,8 @@ export const PLAYERS = [
     "arm": 80,
     "throwing": 80,
     "vision": 90,
-    "height": 4
+    "height": 4,
+    "appearance": 4
   },
   {
     "id": "wendy-parsons-260",
@@ -3912,7 +4188,8 @@ export const PLAYERS = [
     "arm": 99,
     "throwing": 55,
     "vision": 76,
-    "height": 2
+    "height": 2,
+    "appearance": 5
   },
   {
     "id": "yvonne-carter-261",
@@ -3926,7 +4203,8 @@ export const PLAYERS = [
     "arm": 62,
     "throwing": 46,
     "vision": 51,
-    "height": 3
+    "height": 3,
+    "appearance": 6
   },
   {
     "id": "zoe-mallory-262",
@@ -3940,7 +4218,8 @@ export const PLAYERS = [
     "arm": 75,
     "throwing": 76,
     "vision": 55,
-    "height": 3
+    "height": 3,
+    "appearance": 6
   },
   {
     "id": "mr-clanky-263",
@@ -3954,6 +4233,7 @@ export const PLAYERS = [
     "arm": 100,
     "throwing": 75,
     "vision": 100,
-    "height": 3
+    "height": 3,
+    "appearance": 0
   }
 ];

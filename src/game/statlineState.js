@@ -1,6 +1,7 @@
 import { STATLINE_STATS } from "../data/players.js?v=types-2";
+import { playerImageKey } from "../ui/playerImage.js";
 
-export const STATLINE_STATE_VERSION = 5;
+export const STATLINE_STATE_VERSION = 7;
 export const STATLINE_MAX_ATTEMPTS = 3;
 export const STATLINE_TIER_ORDER = ["E", "D", "C", "B", "A", "S", "S+"];
 export const STATLINE_TIER_RANGES = [
@@ -25,7 +26,7 @@ export function compareTiers(guessTier, correctTier) {
 }
 
 export function playerTiers(player) {
-  return Object.fromEntries(STATLINE_STATS.map(({ key }) => [key, getStatTier(player[key])]));
+  return Object.fromEntries(STATLINE_STATS.map(({ key, kind }) => [key, kind === "image" ? playerImageKey(player) : getStatTier(player[key])]));
 }
 
 export function scoreFirstGuess(guesses, player) {
@@ -44,7 +45,7 @@ export function createStatlineState(puzzle) {
     mysteryId: puzzle.mysteryId,
     attempt: 0,
     guesses: {},
-    activeStat: "battingPower",
+    activeStat: "headshot",
     submittedGuesses: {},
     feedback: {},
     lockedStats: [],
@@ -59,12 +60,13 @@ export function submitStatlineGuess(state, player) {
   if (state.status !== "playing") throw new Error("This Statline puzzle is complete.");
   const correctTiers = playerTiers(player);
   const guesses = { ...state.guesses };
-  for (const { key } of STATLINE_STATS) {
-    if (!STATLINE_TIER_ORDER.includes(guesses[key])) throw new Error("Choose a tier for every stat before submitting.");
+  for (const { key, kind } of STATLINE_STATS) {
+    const validGuess = kind === "image" ? typeof guesses[key] === "string" : STATLINE_TIER_ORDER.includes(guesses[key]);
+    if (!validGuess) throw new Error("Choose a value for every stat before submitting.");
     if (state.lockedStats.includes(key)) guesses[key] = correctTiers[key];
     else if (state.history.some((entry) => entry.guesses[key] === guesses[key])) throw new Error("Choose a tier you have not previously guessed for each unresolved stat.");
   }
-  const feedback = Object.fromEntries(STATLINE_STATS.map(({ key }) => [key, compareTiers(guesses[key], correctTiers[key])]));
+  const feedback = Object.fromEntries(STATLINE_STATS.map(({ key, kind }) => [key, kind === "image" ? (guesses[key] === correctTiers[key] ? "correct" : "wrong") : compareTiers(guesses[key], correctTiers[key])]));
   const lockedStats = STATLINE_STATS.filter(({ key }) => feedback[key] === "correct").map(({ key }) => key);
   const attempt = state.attempt + 1;
   const solved = lockedStats.length === STATLINE_STATS.length;

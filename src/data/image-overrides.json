@@ -1,0 +1,20 @@
+{
+  "players": {
+    "Angela Delvecchio (vs Tony Delvecchio)": "b-angela-tony",
+    "Tony Delvecchio (vs Angela Delvecchio)": "b-tony-angela",
+    "Billy Jean Blackwood (w/ Marky Dubois)": "n-billy-jean-marky",
+    "Marky Dubois (w/ Billy Jean Blackwood)": "b-marky-billy-jean",
+    "Marky Dubois (on Red/White Sox)": "n-marky-on-sox",
+    "Marky Dubois (vs Red/White Sox)": "b-marky-vs-sox",
+    "Marky Dubois (w/ Billy Jean & vs Sox)": "b-marky-vs-sox-billy-jean",
+    "Marky Dubois (w/ Billy Jean & on Sox)": "b-n-marky-on-sox-billy-jean",
+    "Ernie Steele (@ Steele Stadium)": "b-ernie-hf",
+    "Ronny Dobbs (w/ Sally Dobbs)": "n-ronny-sally",
+    "Sally Dobbs (w/ Ronny Dobbs)": "b-sally-ronny",
+    "Maria Luna (pink uniform)": "b-maria-p",
+    "Kimmy Eckman (@ Eckman Acres)": "b-kimmy-hf",
+    "Ashley Webber (w/ Sidney Webber)": "b-ashley-sidney",
+    "Sidney Webber (w/ Ashley Webber)": "b-ashley-sidney",
+    "Amir Khan (w/ Achmed Khan)": "b-amir-achmed"
+  }
+}

@@ -62,3 +62,24 @@ header { position:sticky; z-index:4; top:0; width:100dvw; margin:0 0 6px calc(50
 .statline-empty-row { padding:8px 5px; background:#f7f8f4; }.statline-empty-row .history-stats > div { align-content:center; justify-items:center; color:#9aa79f; background:#f0f2ed; text-align:center; }
 .scout-sheet { padding-bottom:max(18px,env(safe-area-inset-bottom)); }
 .report-scroll { width:100%; margin-left:0; }
+.player-option { display:flex; align-items:center; gap:10px; padding:4px 11px 4px 4px; }
+.player-option-name { min-width:0; flex:1; }
+.player-option > span:last-child { margin-left:auto; font-size:.75rem; }
+.player-avatar { display:block; width:34px; height:34px; flex:0 0 34px; border-radius:3px; object-fit:contain; background:transparent; }
+.player-avatar-missing { border:1px dashed #9cb5a6; }
+.guess-row h3 .player-avatar,.result-player-heading .player-avatar { width:32px; height:32px; flex-basis:32px; }
+.result-player-heading { display:flex; align-items:center; gap:10px; margin:8px 0 13px; color:var(--green); font-size:1.25rem; }
+.result-player-heading span { min-width:0; }
+.statline-result .result-player { display:flex; align-items:center; gap:10px; }
+.statline-result .result-player .player-avatar { width:40px; height:40px; flex-basis:40px; }
+.player-option { font-size:1.05rem; }
+.player-option .player-avatar { width:34px; height:34px; flex-basis:34px; }
+.statline-report .report-header,.statline-report .history-stats,.statline-reveal .report-header,.statline-reveal .history-stats { grid-template-columns:repeat(8,minmax(36px,1fr)); }
+.statline-image-cell .player-avatar,.statline-history-cell .player-avatar,.statline-reveal-cell .player-avatar { width:28px; height:28px; flex-basis:28px; }
+.statline-history-cell,.statline-reveal-cell { justify-items:center; }
+.statline-history-cell.wrong { color:#a43b2d; background:#f9d8d2 !important; }
+.image-picker { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); gap:5px; max-height:180px; margin:0 auto 10px; padding:4px; overflow:auto; }
+.image-choice { display:grid; min-width:0; min-height:48px; place-items:center; padding:4px; border:1px solid #9cb5a6; border-radius:4px; background:transparent; }
+.image-choice:hover:not(:disabled),.image-choice.selected { border-color:var(--green); background:#edf5e8; }
+.image-choice:disabled { opacity:.35; }
+.image-choice .player-avatar { width:34px; height:34px; flex-basis:34px; }

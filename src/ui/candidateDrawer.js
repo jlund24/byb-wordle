@@ -1,3 +1,5 @@
+import { playerImageMarkup } from "./playerImage.js";
+
 export function candidatesMarkup(players, guessedIds) {
-  return `<h2 id="sheet-title">Browse players</h2><p class="sheet-subtitle">These players match your scouted ranges.</p><div class="candidate-list">${players.map((player) => `<button class="player-option" type="button" data-player-id="${player.id}" ${guessedIds.includes(player.id) ? "disabled" : ""}>${player.name}${guessedIds.includes(player.id) ? " <span>Guessed</span>" : ""}</button>`).join("")}</div>`;
+  return `<h2 id="sheet-title">Browse players</h2><p class="sheet-subtitle">These players match your scouted ranges.</p><div class="candidate-list">${players.map((player) => `<button class="player-option" type="button" data-player-id="${player.id}" ${guessedIds.includes(player.id) ? "disabled" : ""}>${playerImageMarkup(player)}<span class="player-option-name">${player.name}</span>${guessedIds.includes(player.id) ? " <span>Guessed</span>" : ""}</button>`).join("")}</div>`;
 }
