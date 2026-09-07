@@ -1,4 +1,4 @@
-import { STAT_LABELS, STAT_EMOJIS } from "../data/players.js";
+import { STAT_LABELS, STAT_EMOJIS } from "../data/players.js?v=types-2";
 
 export function scoutMarkup(stats, tokens, possibleRanges = {}) {
   const availableStats = stats.filter((stat) => stat !== "type");

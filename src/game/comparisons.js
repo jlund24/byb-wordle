@@ -1,4 +1,4 @@
-import { CORE_STATS } from "../data/players.js";
+import { CORE_STATS } from "../data/players.js?v=types-2";
 
 export function comparisonFor(stat, guessValue, mysteryValue) {
   if (stat === "type") return mysteryValue === guessValue ? "equal" : "wrong";

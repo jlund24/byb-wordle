@@ -1,4 +1,4 @@
-import { STATLINE_STATS } from "../data/players.js";
+import { STATLINE_STATS } from "../data/players.js?v=types-2";
 
 export const STATLINE_STATE_VERSION = 5;
 export const STATLINE_MAX_ATTEMPTS = 3;

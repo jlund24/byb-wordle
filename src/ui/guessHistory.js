@@ -1,4 +1,4 @@
-import { CORE_STATS, STAT_LABELS, STAT_EMOJIS, TYPE_DISPLAY_VALUES } from "../data/players.js";
+import { CORE_STATS, STAT_LABELS, STAT_EMOJIS, TYPE_DISPLAY_VALUES } from "../data/players.js?v=types-2";
 import { MAX_GUESSES } from "../game/gameState.js";
 import { inlinePlayerSearchMarkup } from "./playerSearch.js";
 

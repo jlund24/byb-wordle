@@ -1,6 +1,6 @@
 import { comparePlayer, equivalentProfiles } from "./comparisons.js";
 import { getStatRange, possibleRangesForGuesses, possibleTypesForGuesses } from "./statRanges.js";
-import { CORE_STATS } from "../data/players.js";
+import { CORE_STATS } from "../data/players.js?v=types-2";
 
 export const MAX_GUESSES = 6;
 export const GAME_STATE_VERSION = 6;

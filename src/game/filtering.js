@@ -1,4 +1,4 @@
-import { CORE_STATS } from "../data/players.js";
+import { CORE_STATS } from "../data/players.js?v=types-2";
 import { valueFallsInRange } from "./statRanges.js";
 
 /** Return players consistent with explicitly scouted ranges. */

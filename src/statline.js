@@ -1,4 +1,4 @@
-import { PLAYERS, STATLINE_STATS, STAT_EMOJIS, STAT_LABELS } from "./data/players.js";
+import { PLAYERS, STATLINE_STATS, STAT_EMOJIS, STAT_LABELS } from "./data/players.js?v=types-2";
 import { createRandomPuzzle, createStatlineDailyPuzzle, dateId, parsePuzzleDate } from "./game/puzzle.js";
 import { STATLINE_MAX_ATTEMPTS, STATLINE_STATE_VERSION, STATLINE_TIER_ORDER, STATLINE_TIER_RANGES, createStatlineState, getStatTier, submitStatlineGuess } from "./game/statlineState.js";
 import { loadProgress, saveProgress } from "./storage/storage.js";

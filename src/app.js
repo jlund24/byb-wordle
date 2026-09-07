@@ -1,4 +1,4 @@
-import { CORE_STATS, PLAYERS, STAT_LABELS } from "./data/players.js";
+import { CORE_STATS, PLAYERS, STAT_LABELS } from "./data/players.js?v=types-2";
 
 const SCOUTABLE_STATS = CORE_STATS.filter((stat) => stat !== "type");
 import { createDailyPuzzle, createRandomPuzzle, dateId, parsePuzzleDate } from "./game/puzzle.js?v=random-mode-1";
