@@ -15,6 +15,7 @@ const FIELD_MAP = {
   vision: "Eye",
   height: "Height"
 };
+const TYPE_DISPLAY_VALUES = { Backyard: "Backyard", Generic: "Generic", "Pro/Clone": "Pro/Clone" };
 
 function slugify(value) {
   return value.toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "")
@@ -31,7 +32,8 @@ function createPlayer(row) {
   const name = row["Player Name"]?.trim();
   const sourceId = row.ID;
   if (!name || sourceId === undefined || sourceId === null) throw new Error("Every included row requires Player Name and ID.");
-  const player = { id: `${slugify(name)}-${slugify(String(sourceId))}`, name };
+  const type = typeof row.Type === "string" ? row.Type.trim() : "Generic";
+  const player = { id: `${slugify(name)}-${slugify(String(sourceId))}`, name, type: TYPE_DISPLAY_VALUES[type] ?? "Generic" };
   for (const [field, sourceField] of Object.entries(FIELD_MAP)) {
     player[field] = numericValue(row[sourceField], sourceField, name);
   }
@@ -48,6 +50,7 @@ function moduleSource(players) {
     "/** @typedef {Object} Player",
     " * @property {string} id",
     " * @property {string} name",
+    " * @property {string} type",
     " * @property {number} battingPower",
     " * @property {number} battingContact",
     " * @property {number} stamina",
@@ -60,18 +63,33 @@ function moduleSource(players) {
     " */",
     "",
     "export const CORE_STATS = [",
-    "  \"battingPower\", \"battingContact\", \"stamina\", \"speed\",",
-    "  \"coordination\", \"arm\", \"throwing\", \"vision\"",
+    "  \"type\", \"battingPower\", \"battingContact\", \"stamina\", \"speed\",",
+    "  \"arm\", \"throwing\", \"vision\"",
+    "];",
+    "",
+    "export const TYPE_DISPLAY_VALUES = {",
+    "  Backyard: \"KID\", Generic: \"GNR\", \"Pro/Clone\": \"PRO\"",
+    "};",
+    "",
+    "export const STATLINE_STATS = [",
+    "  { key: \"battingPower\", label: \"Bat Power\" },",
+    "  { key: \"battingContact\", label: \"Bat Contact\" },",
+    "  { key: \"stamina\", label: \"Stamina\" },",
+    "  { key: \"speed\", label: \"Speed\" },",
+    "  { key: \"coordination\", label: \"Coordination\" },",
+    "  { key: \"arm\", label: \"Arm Strength\" },",
+    "  { key: \"throwing\", label: \"Arm Accuracy\" },",
+    "  { key: \"vision\", label: \"Eye\" }",
     "];",
     "",
     "export const STAT_LABELS = {",
-    "  battingPower: \"Power\", battingContact: \"Contact\", stamina: \"Stamina\", speed: \"Speed\",",
-    "  coordination: \"Coordination\", arm: \"Arm Strength\", throwing: \"Arm Accuracy\", vision: \"Vision\"",
+    "  type: \"Type\", battingPower: \"Power\", battingContact: \"Contact\", stamina: \"Stamina\", speed: \"Speed\",",
+    "  arm: \"Arm Strength\", throwing: \"Arm Accuracy\", vision: \"Vision\"",
     "};",
     "",
     "export const STAT_EMOJIS = {",
-    "  battingPower: \"\\u{1F4A3}\", battingContact: \"\\u{1F3AF}\", stamina: \"\\u{1F50B}\", speed: \"\\u{1F45F}\",",
-    "  coordination: \"\\u{1F9E4}\", arm: \"\\u{1F4AA}\", throwing: \"\\u{1F3F9}\", vision: \"\\u{1F440}\"",
+    "  type: \"\\u{1F3F7}\", battingPower: \"\\u{1F4A3}\", battingContact: \"\\u{1F3AF}\", stamina: \"\\u{1F50B}\", speed: \"\\u{1F45F}\",",
+    "  arm: \"\\u{1F4AA}\", throwing: \"\\u{1F3F9}\", vision: \"\\u{1F440}\"",
     "};"
   ].join("\n");
   return `${metadata}\n\n/** @type {Player[]} */\nexport const PLAYERS = ${JSON.stringify(players, null, 2)};\n`;

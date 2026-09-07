@@ -1,10 +1,10 @@
-import { CORE_STATS, STAT_LABELS, STAT_EMOJIS } from "../data/players.js";
+import { CORE_STATS, STAT_LABELS, STAT_EMOJIS, TYPE_DISPLAY_VALUES } from "../data/players.js";
 import { MAX_GUESSES } from "../game/gameState.js";
 import { inlinePlayerSearchMarkup } from "./playerSearch.js";
 
-const SYMBOLS = { higher: "⬆️", lower: "⬇️", equal: "✅" };
+const SYMBOLS = { higher: "⬆️", lower: "⬇️", equal: "✅", wrong: "❌" };
 const SHARE_HEADER = CORE_STATS.map((stat) => STAT_EMOJIS[stat]).join("");
-const SHORT_STAT_LABELS = { battingPower: "PWR", battingContact: "CON", stamina: "STA", speed: "SPD", coordination: "CRD", arm: "STR", throwing: "ACC", vision: "VIS" };
+const SHORT_STAT_LABELS = { type: "TYP", battingPower: "PWR", battingContact: "CON", stamina: "STA", speed: "SPD", arm: "STR", throwing: "ACC", vision: "VIS" };
 
 function rangeLabel(range) {
   if (!range) return "?";
@@ -17,8 +17,13 @@ function mysteryRangeMarkup(range) {
   return `<span>${range.min}</span><span class="range-separator" aria-hidden="true">-</span><span>${range.max}</span>`;
 }
 
-export function statHeaderMarkup() {
-  return `<div class="report-header">${CORE_STATS.map((stat) => `<span><span class="stat-header-emoji" aria-hidden="true">${STAT_EMOJIS[stat]}</span>${SHORT_STAT_LABELS[stat]}</span>`).join("")}</div>`;
+export function statHeaderMarkup(showEmojis = true) {
+  return `<div class="report-header">${CORE_STATS.map((stat) => `<span>${showEmojis ? `<span class="stat-header-emoji" aria-hidden="true">${STAT_EMOJIS[stat]}</span>` : ""}${SHORT_STAT_LABELS[stat]}</span>`).join("")}</div>`;
+}
+
+export function formatStatValue(stat, value) {
+  if (stat === "type") return TYPE_DISPLAY_VALUES[value] ?? value ?? "?";
+  return value ?? "?";
 }
 
 export function generateEmojiShare(guesses, scoutedStats = {}, scoutTokens = 0) {
@@ -43,17 +48,25 @@ export function generateEmojiShare(guesses, scoutedStats = {}, scoutTokens = 0) 
   return result;
 }
 
-export function guessHistoryMarkup(guesses, possibleRanges = {}, scoutedStats = {}, availablePlayers = [], scoutTokens = 0, scoutAvailable = false, gameOver = false) {
-  const reportHeader = statHeaderMarkup();
+export function guessHistoryMarkup(guesses, possibleRanges = {}, scoutedStats = {}, availablePlayers = [], scoutTokens = 0, scoutAvailable = false, gameOver = false, possibleTypes = ["Backyard", "Generic", "Pro/Clone"]) {
   const guessRows = guesses.map((guess, index) => {
     const isCorrect = Object.keys(guess.comparisons ?? {}).length === 0;
     const isIncorrect = Object.keys(guess.comparisons ?? {}).length > 0;
-    return `<article class="guess-row${isIncorrect ? " incorrect" : ""}${isCorrect ? " correct" : ""}"><h3>#${index + 1}: ${isCorrect ? "✅ " : isIncorrect ? "❌ " : ""}${guess.playerName}</h3>${reportHeader}<div class="history-stats">${CORE_STATS.map((stat) => {
+    return `<article class="guess-row${isIncorrect ? " incorrect" : ""}${isCorrect ? " correct" : ""}"><h3>#${index + 1}: ${isCorrect ? "✅ " : isIncorrect ? "❌ " : ""}${guess.playerName}</h3>${statHeaderMarkup(index === 0)}<div class="history-stats">${CORE_STATS.map((stat) => {
     const comparison = isCorrect ? "equal" : guess.comparisons?.[stat];
-    return `<div class="${comparison ? `direction-${comparison}` : ""}"><div class="stat-value-line"><strong>${guess.playerStats[stat]}</strong>${comparison ? `<small aria-label="${comparison}">${SYMBOLS[comparison]}</small>` : ""}</div></div>`;
+    const value = formatStatValue(stat, guess.playerStats[stat]);
+    const symbol = comparison ? SYMBOLS[comparison] : "";
+    return `<div class="${comparison ? `direction-${comparison}` : ""}"><div class="stat-value-line"><strong>${value}</strong>${comparison ? `<small aria-label="${comparison}">${symbol}</small>` : ""}</div></div>`;
     }).join("")}</div></article>`;
   }).join("");
-  const mysteryRow = gameOver ? "" : `<article class="mystery-row"><h3 id="mystery-guess-title">#${guesses.length + 1}: ???????</h3>${reportHeader}<div class="history-stats">${CORE_STATS.map((stat) => { const range = possibleRanges[stat] || scoutedStats[stat]; return `<div class="${range ? "revealed" : ""}" data-stat="${stat}"><strong class="range-value">${mysteryRangeMarkup(range)}</strong></div>`; }).join("")}</div><div class="inline-guess-preview" id="inline-guess-preview" hidden></div>${availablePlayers.length ? inlinePlayerSearchMarkup(availablePlayers, scoutTokens, scoutAvailable) : ""}</article>`;
+  const mysteryRow = gameOver ? "" : `<article class="mystery-row"><h3 id="mystery-guess-title">#${guesses.length + 1}: ???????</h3>${statHeaderMarkup(false)}<div class="history-stats">${CORE_STATS.map((stat) => {
+    const range = possibleRanges[stat] || scoutedStats[stat];
+    if (stat === "type") {
+      const typeValue = possibleTypes.length === 3 ? "?" : possibleTypes.map((type) => formatStatValue(stat, type)).join(" / ");
+      return `<div class="${possibleTypes.length === 1 ? "revealed" : ""}" data-stat="${stat}"><strong class="range-value">${typeValue}</strong></div>`;
+    }
+    return `<div class="${range ? "revealed" : ""}" data-stat="${stat}"><strong class="range-value">${mysteryRangeMarkup(range)}</strong></div>`;
+  }).join("")}</div><div class="inline-guess-preview" id="inline-guess-preview" hidden></div>${availablePlayers.length ? inlinePlayerSearchMarkup(availablePlayers, scoutTokens, scoutAvailable) : ""}</article>`;
   const emptyRowCount = MAX_GUESSES - guesses.length - (gameOver ? 0 : 1);
   const emptyRows = Array.from({ length: Math.max(0, emptyRowCount) }, (_, index) => {
     const number = guesses.length + (gameOver ? 1 : 2) + index;

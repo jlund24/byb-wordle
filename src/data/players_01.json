@@ -34,7 +34,8 @@
     "Gender": "Girl",
     "B-Day Month": "Jun",
     "B-Day Day": 22,
-    "Nickname": "Twinkie Toes"
+    "Nickname": "Twinkie Toes",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Kimmy Eckman (@ Eckman Acres)",
@@ -71,7 +72,8 @@
     "Gender": "Girl",
     "B-Day Month": "Jun",
     "B-Day Day": 22,
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Maria Luna",
@@ -108,7 +110,8 @@
     "Gender": "Girl",
     "B-Day Month": "Jul",
     "B-Day Day": 23,
-    "Nickname": "Pinky"
+    "Nickname": "Pinky",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Maria Luna (pink uniform)",
@@ -145,7 +148,8 @@
     "Gender": "Girl",
     "B-Day Month": "Jul",
     "B-Day Day": 23,
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Angela Delvecchio",
@@ -182,7 +186,8 @@
     "Gender": "Girl",
     "B-Day Month": "Dec",
     "B-Day Day": 20,
-    "Nickname": "Sugar Pop"
+    "Nickname": "Sugar Pop",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Angela Delvecchio (vs Tony Delvecchio)",
@@ -219,7 +224,8 @@
     "Gender": "Girl",
     "B-Day Month": "Dec",
     "B-Day Day": 20,
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Vicki Kawaguchi",
@@ -256,7 +262,8 @@
     "Gender": "Girl",
     "B-Day Month": "Nov",
     "B-Day Day": 5,
-    "Nickname": "Swan"
+    "Nickname": "Swan",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Gretchen Hasselhoff",
@@ -293,7 +300,8 @@
     "Gender": "Girl",
     "B-Day Month": "May",
     "B-Day Day": 31,
-    "Nickname": "Jabberjaw"
+    "Nickname": "Jabberjaw",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Sally Dobbs",
@@ -330,7 +338,8 @@
     "Gender": "Girl",
     "B-Day Month": "Nov",
     "B-Day Day": 11,
-    "Nickname": "The Boss"
+    "Nickname": "The Boss",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Sally Dobbs (w/ Ronny Dobbs)",
@@ -367,7 +376,8 @@
     "Gender": "Girl",
     "B-Day Month": "Nov",
     "B-Day Day": 11,
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Billy Jean Blackwood",
@@ -404,7 +414,8 @@
     "Gender": "Girl",
     "B-Day Month": "Jan",
     "B-Day Day": 26,
-    "Nickname": "Crazy Legs"
+    "Nickname": "Crazy Legs",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Billy Jean Blackwood (w/ Marky Dubois)",
@@ -441,7 +452,8 @@
     "Gender": "Girl",
     "B-Day Month": "Jan",
     "B-Day Day": 26,
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Ashley Webber",
@@ -478,7 +490,8 @@
     "Gender": "Girl",
     "B-Day Month": "Feb",
     "B-Day Day": 18,
-    "Nickname": "Little Smokey"
+    "Nickname": "Little Smokey",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Ashley Webber (w/ Sidney Webber)",
@@ -515,7 +528,8 @@
     "Gender": "Girl",
     "B-Day Month": "Feb",
     "B-Day Day": 18,
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Sidney Webber",
@@ -552,7 +566,8 @@
     "Gender": "Girl",
     "B-Day Month": "Feb",
     "B-Day Day": 18,
-    "Nickname": "Little Smokey"
+    "Nickname": "Little Smokey",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Sidney Webber (w/ Ashley Webber)",
@@ -589,7 +604,8 @@
     "Gender": "Girl",
     "B-Day Month": "Feb",
     "B-Day Day": 18,
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Kiesha Phillips",
@@ -626,7 +642,8 @@
     "Gender": "Girl",
     "B-Day Month": "Apr",
     "B-Day Day": 2,
-    "Nickname": "Flash"
+    "Nickname": "Flash",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Stephanie Morgan",
@@ -663,7 +680,8 @@
     "Gender": "Girl",
     "B-Day Month": "Aug",
     "B-Day Day": 15,
-    "Nickname": "Bubbles"
+    "Nickname": "Bubbles",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Luanne Lui",
@@ -700,7 +718,8 @@
     "Gender": "Girl",
     "B-Day Month": "Jan",
     "B-Day Day": 27,
-    "Nickname": "Lulu"
+    "Nickname": "Lulu",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Annie Frazier",
@@ -737,7 +756,8 @@
     "Gender": "Girl",
     "B-Day Month": "Sep",
     "B-Day Day": 18,
-    "Nickname": "Flipper"
+    "Nickname": "Flipper",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Jocinda Smith",
@@ -774,7 +794,8 @@
     "Gender": "Girl",
     "B-Day Month": "Sep",
     "B-Day Day": 28,
-    "Nickname": "MVP"
+    "Nickname": "MVP",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Lisa Crocket",
@@ -811,7 +832,8 @@
     "Gender": "Girl",
     "B-Day Month": "Dec",
     "B-Day Day": 4,
-    "Nickname": "Mad Dog"
+    "Nickname": "Mad Dog",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Ronny Dobbs",
@@ -848,7 +870,8 @@
     "Gender": "Boy",
     "B-Day Month": "Aug",
     "B-Day Day": 10,
-    "Nickname": "Spud"
+    "Nickname": "Spud",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Ronny Dobbs (w/ Sally Dobbs)",
@@ -885,7 +908,8 @@
     "Gender": "Boy",
     "B-Day Month": "Aug",
     "B-Day Day": 10,
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Achmed Khan",
@@ -922,7 +946,8 @@
     "Gender": "Boy",
     "B-Day Month": "Jul",
     "B-Day Day": 11,
-    "Nickname": "Axeman"
+    "Nickname": "Axeman",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Amir Khan",
@@ -959,7 +984,8 @@
     "Gender": "Boy",
     "B-Day Month": "Sep",
     "B-Day Day": 1,
-    "Nickname": "Sticks"
+    "Nickname": "Sticks",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Amir Khan (w/ Achmed Khan)",
@@ -996,7 +1022,8 @@
     "Gender": "Boy",
     "B-Day Month": "Sep",
     "B-Day Day": 1,
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Kenny Kawaguchi",
@@ -1033,7 +1060,8 @@
     "Gender": "Boy",
     "B-Day Month": "Nov",
     "B-Day Day": 20,
-    "Nickname": "K-Man"
+    "Nickname": "K-Man",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Pete Wheeler",
@@ -1070,7 +1098,8 @@
     "Gender": "Boy",
     "B-Day Month": "Oct",
     "B-Day Day": 13,
-    "Nickname": "Wheelie"
+    "Nickname": "Wheelie",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Dmitri Petrovich",
@@ -1107,7 +1136,8 @@
     "Gender": "Boy",
     "B-Day Month": "Jun",
     "B-Day Day": 9,
-    "Nickname": "Paste"
+    "Nickname": "Paste",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Ricky Johnson",
@@ -1144,7 +1174,8 @@
     "Gender": "Boy",
     "B-Day Month": "Feb",
     "B-Day Day": 14,
-    "Nickname": "Fella"
+    "Nickname": "Fella",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Marky Dubois",
@@ -1181,7 +1212,8 @@
     "Gender": "Boy",
     "B-Day Month": "Sep",
     "B-Day Day": 6,
-    "Nickname": "Cootie"
+    "Nickname": "Cootie",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Marky Dubois (vs Red/White Sox)",
@@ -1218,7 +1250,8 @@
     "Gender": "Boy",
     "B-Day Month": "Sep",
     "B-Day Day": 6,
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Marky Dubois (w/ Billy Jean Blackwood)",
@@ -1255,7 +1288,8 @@
     "Gender": "Boy",
     "B-Day Month": "Sep",
     "B-Day Day": 6,
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Marky Dubois (w/ Billy Jean & vs Sox)",
@@ -1292,7 +1326,8 @@
     "Gender": "Boy",
     "B-Day Month": "Sep",
     "B-Day Day": 6,
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Marky Dubois (on Red/White Sox)",
@@ -1329,7 +1364,8 @@
     "Gender": "Boy",
     "B-Day Month": "Sep",
     "B-Day Day": 6,
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Marky Dubois (w/ Billy Jean & on Sox)",
@@ -1366,7 +1402,8 @@
     "Gender": "Boy",
     "B-Day Month": "Sep",
     "B-Day Day": 6,
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Reese Worthington",
@@ -1403,7 +1440,8 @@
     "Gender": "Boy",
     "B-Day Month": "May",
     "B-Day Day": 25,
-    "Nickname": "Big Toe"
+    "Nickname": "Big Toe",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Pablo Sanchez",
@@ -1440,7 +1478,8 @@
     "Gender": "Boy",
     "B-Day Month": "Aug",
     "B-Day Day": 18,
-    "Nickname": "Secret Weapon"
+    "Nickname": "Secret Weapon",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Tony Delvecchio",
@@ -1477,7 +1516,8 @@
     "Gender": "Boy",
     "B-Day Month": "Jul",
     "B-Day Day": 16,
-    "Nickname": "Vec"
+    "Nickname": "Vec",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Tony Delvecchio (vs Angela Delvecchio)",
@@ -1514,7 +1554,8 @@
     "Gender": "Boy",
     "B-Day Month": "Jul",
     "B-Day Day": 16,
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Jorge Garcia",
@@ -1551,7 +1592,8 @@
     "Gender": "Boy",
     "B-Day Month": "Oct",
     "B-Day Day": 7,
-    "Nickname": "Bonkers"
+    "Nickname": "Bonkers",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Dante Robinson",
@@ -1588,7 +1630,8 @@
     "Gender": "Boy",
     "B-Day Month": "Mar",
     "B-Day Day": 3,
-    "Nickname": "Stretch"
+    "Nickname": "Stretch",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Ernie Steele",
@@ -1625,7 +1668,8 @@
     "Gender": "Boy",
     "B-Day Month": "Apr",
     "B-Day Day": 21,
-    "Nickname": "Funnybones"
+    "Nickname": "Funnybones",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Ernie Steele (@ Steele Stadium)",
@@ -1662,7 +1706,8 @@
     "Gender": "Boy",
     "B-Day Month": "Apr",
     "B-Day Day": 21,
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Mikey Thomas",
@@ -1699,7 +1744,8 @@
     "Gender": "Boy",
     "B-Day Month": "Oct",
     "B-Day Day": 19,
-    "Nickname": "Nugget"
+    "Nickname": "Nugget",
+    "Type": "Backyard"
   },
   {
     "Player Name": "Mo Vaughn",
@@ -1736,7 +1782,8 @@
     "Gender": "Boy",
     "B-Day Month": "Dec",
     "B-Day Day": 15,
-    "Nickname": "Hit Dog"
+    "Nickname": "Hit Dog",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Randy Johnson",
@@ -1773,7 +1820,8 @@
     "Gender": "Boy",
     "B-Day Month": "Sep",
     "B-Day Day": 10,
-    "Nickname": "The Big Unit"
+    "Nickname": "The Big Unit",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Chipper Jones",
@@ -1810,7 +1858,8 @@
     "Gender": "Boy",
     "B-Day Month": "Apr",
     "B-Day Day": 24,
-    "Nickname": "Chipper"
+    "Nickname": "Chipper",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Cal Ripken Jr.",
@@ -1847,7 +1896,8 @@
     "Gender": "Boy",
     "B-Day Month": "Aug",
     "B-Day Day": 24,
-    "Nickname": "Iron Man"
+    "Nickname": "Iron Man",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Nomar Garciaparra",
@@ -1884,7 +1934,8 @@
     "Gender": "Boy",
     "B-Day Month": "Jul",
     "B-Day Day": 23,
-    "Nickname": "Spiderman"
+    "Nickname": "Spiderman",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Sammy Sosa",
@@ -1921,7 +1972,8 @@
     "Gender": "Boy",
     "B-Day Month": "Nov",
     "B-Day Day": 12,
-    "Nickname": "Slammin'"
+    "Nickname": "Slammin'",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Frank Thomas",
@@ -1958,7 +2010,8 @@
     "Gender": "Boy",
     "B-Day Month": "May",
     "B-Day Day": 27,
-    "Nickname": "The Big Hurt"
+    "Nickname": "The Big Hurt",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Barry Larkin",
@@ -1995,7 +2048,8 @@
     "Gender": "Boy",
     "B-Day Month": "Apr",
     "B-Day Day": 28,
-    "Nickname": "30/30"
+    "Nickname": "30/30",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Kenny Lofton",
@@ -2032,7 +2086,8 @@
     "Gender": "Boy",
     "B-Day Month": "May",
     "B-Day Day": 31,
-    "Nickname": "Blur"
+    "Nickname": "Blur",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Larry Walker",
@@ -2069,7 +2124,8 @@
     "Gender": "Boy",
     "B-Day Month": "Dec",
     "B-Day Day": 1,
-    "Nickname": "Canadian Clubber"
+    "Nickname": "Canadian Clubber",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Juan Gonzalez",
@@ -2106,7 +2162,8 @@
     "Gender": "Boy",
     "B-Day Month": "Oct",
     "B-Day Day": 16,
-    "Nickname": "Juan Gone"
+    "Nickname": "Juan Gone",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Alex Gonzalez",
@@ -2143,7 +2200,8 @@
     "Gender": "Boy",
     "B-Day Month": "Feb",
     "B-Day Day": 15,
-    "Nickname": "Lil' Mitt"
+    "Nickname": "Lil' Mitt",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Jeff Bagwell",
@@ -2180,7 +2238,8 @@
     "Gender": "Boy",
     "B-Day Month": "May",
     "B-Day Day": 27,
-    "Nickname": "Bags"
+    "Nickname": "Bags",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Carlos Beltran",
@@ -2217,7 +2276,8 @@
     "Gender": "Boy",
     "B-Day Month": "Apr",
     "B-Day Day": 24,
-    "Nickname": "Buckles"
+    "Nickname": "Buckles",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Raul Mondesi",
@@ -2254,7 +2314,8 @@
     "Gender": "Boy",
     "B-Day Month": "Mar",
     "B-Day Day": 12,
-    "Nickname": "Tuesdesi"
+    "Nickname": "Tuesdesi",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Jeromy Burnitz",
@@ -2291,7 +2352,8 @@
     "Gender": "Boy",
     "B-Day Month": "Apr",
     "B-Day Day": 15,
-    "Nickname": "The Kid"
+    "Nickname": "The Kid",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Marty Cordova",
@@ -2328,7 +2390,8 @@
     "Gender": "Boy",
     "B-Day Month": "Jul",
     "B-Day Day": 10,
-    "Nickname": "Shade"
+    "Nickname": "Shade",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Vladimir Guerrero",
@@ -2365,7 +2428,8 @@
     "Gender": "Boy",
     "B-Day Month": "Feb",
     "B-Day Day": 9,
-    "Nickname": "Alvino"
+    "Nickname": "Alvino",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Mike Piazza",
@@ -2402,7 +2466,8 @@
     "Gender": "Boy",
     "B-Day Month": "Sep",
     "B-Day Day": 4,
-    "Nickname": "Supreme"
+    "Nickname": "Supreme",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Derek Jeter",
@@ -2439,7 +2504,8 @@
     "Gender": "Boy",
     "B-Day Month": "Jun",
     "B-Day Day": 26,
-    "Nickname": "D.J."
+    "Nickname": "D.J.",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Jason Giambi",
@@ -2476,7 +2542,8 @@
     "Gender": "Boy",
     "B-Day Month": "Jan",
     "B-Day Day": 8,
-    "Nickname": "Slugger"
+    "Nickname": "Slugger",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Curt Schilling",
@@ -2513,7 +2580,8 @@
     "Gender": "Boy",
     "B-Day Month": "Nov",
     "B-Day Day": 14,
-    "Nickname": "Heater"
+    "Nickname": "Heater",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Jason Kendall",
@@ -2550,7 +2618,8 @@
     "Gender": "Boy",
     "B-Day Month": "Jun",
     "B-Day Day": 26,
-    "Nickname": "Patch"
+    "Nickname": "Patch",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Tony Gwynn",
@@ -2587,7 +2656,8 @@
     "Gender": "Boy",
     "B-Day Month": "May",
     "B-Day Day": 9,
-    "Nickname": "Pal"
+    "Nickname": "Pal",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Barry Bonds",
@@ -2624,7 +2694,8 @@
     "Gender": "Boy",
     "B-Day Month": "Jul",
     "B-Day Day": 24,
-    "Nickname": "Big Guy"
+    "Nickname": "Big Guy",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Ken Griffey Jr.",
@@ -2661,7 +2732,8 @@
     "Gender": "Boy",
     "B-Day Month": "Nov",
     "B-Day Day": 21,
-    "Nickname": "Junior"
+    "Nickname": "Junior",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Mark McGwire",
@@ -2698,7 +2770,8 @@
     "Gender": "Boy",
     "B-Day Month": "Oct",
     "B-Day Day": 1,
-    "Nickname": "Mac"
+    "Nickname": "Mac",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Jose Canseco",
@@ -2735,7 +2808,8 @@
     "Gender": "Boy",
     "B-Day Month": "Jul",
     "B-Day Day": 2,
-    "Nickname": "No Way"
+    "Nickname": "No Way",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Ivan Rodriguez",
@@ -2772,7 +2846,8 @@
     "Gender": "Boy",
     "B-Day Month": "Nov",
     "B-Day Day": 30,
-    "Nickname": "Pudge"
+    "Nickname": "Pudge",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Shawn Green",
@@ -2809,7 +2884,8 @@
     "Gender": "Boy",
     "B-Day Month": "Nov",
     "B-Day Day": 10,
-    "Nickname": "Squeaky"
+    "Nickname": "Squeaky",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Alex Rodriguez",
@@ -2846,7 +2922,8 @@
     "Gender": "Boy",
     "B-Day Month": "Jul",
     "B-Day Day": 27,
-    "Nickname": "A-Rod"
+    "Nickname": "A-Rod",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Amy Bostwick",
@@ -2883,7 +2960,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Arlene Perez",
@@ -2920,7 +2998,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Betty Houstan",
@@ -2957,7 +3036,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Cindy Chang",
@@ -2994,7 +3074,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Clarice Reid",
@@ -3031,7 +3112,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Colleen Klinker",
@@ -3068,7 +3150,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Debby Nagasawa",
@@ -3105,7 +3188,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Diana Hayes",
@@ -3142,7 +3226,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Esther French",
@@ -3179,7 +3264,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Francis Blewer",
@@ -3216,7 +3302,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Gail Weinmann",
@@ -3253,7 +3340,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Grace Tipton",
@@ -3290,7 +3378,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Hannah Peavy",
@@ -3327,7 +3416,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Heather Quinn",
@@ -3364,7 +3454,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Holly Franklin",
@@ -3401,7 +3492,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Isabelle Marelli",
@@ -3438,7 +3530,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Jane Davis",
@@ -3475,7 +3568,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Joella Minotti",
@@ -3512,7 +3606,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Judy Abwunza",
@@ -3549,7 +3644,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Julie Dunkel",
@@ -3586,7 +3682,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Karen Donato",
@@ -3623,7 +3720,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Katie Shankar",
@@ -3660,7 +3758,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Krissy Mulligan",
@@ -3697,7 +3796,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Lara Nunez",
@@ -3734,7 +3834,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Leah Wayne",
@@ -3771,7 +3872,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Lena Ng",
@@ -3808,7 +3910,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Linda Potter",
@@ -3845,7 +3948,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Liz Kinghorn",
@@ -3882,7 +3986,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Marianna Rauf",
@@ -3919,7 +4024,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Mary Reilly",
@@ -3956,7 +4062,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Michiko Adachi",
@@ -3993,7 +4100,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Molly May",
@@ -4030,7 +4138,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Nancy Chin",
@@ -4067,7 +4176,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Olga Tollefson",
@@ -4104,7 +4214,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Olive Hussein",
@@ -4141,7 +4252,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Petra Chekov",
@@ -4178,7 +4290,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Ramona Bennett",
@@ -4215,7 +4328,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Randi Uno",
@@ -4252,7 +4366,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Serena Damonte",
@@ -4289,7 +4404,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Sheila Basanti",
@@ -4326,7 +4442,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Sonja Hagen",
@@ -4363,7 +4480,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Stacy Gordon",
@@ -4400,7 +4518,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Star Moonbeam",
@@ -4437,7 +4556,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Tanya Uchida",
@@ -4474,7 +4594,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Tiffany Bosworth",
@@ -4511,7 +4632,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Tina Herrara",
@@ -4548,7 +4670,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Vanna Steinman",
@@ -4585,7 +4708,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Veronica Lee",
@@ -4622,7 +4746,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Whitney Singh",
@@ -4659,7 +4784,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Zena Fromme",
@@ -4696,7 +4822,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Andres Ibsen",
@@ -4733,7 +4860,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Artie Pimbleton",
@@ -4770,7 +4898,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Bobby Bulgrien",
@@ -4807,7 +4936,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Bret Olson",
@@ -4844,7 +4974,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Carlos Ocampo",
@@ -4881,7 +5012,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Chad Koppel",
@@ -4918,7 +5050,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Chico Pappas",
@@ -4955,7 +5088,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Chris Milton",
@@ -4992,7 +5126,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Chucky Flinder",
@@ -5029,7 +5164,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Davy Marian",
@@ -5066,7 +5202,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Dominique Lowe",
@@ -5103,7 +5240,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Earl Abbot",
@@ -5140,7 +5278,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Eric Lebeaux",
@@ -5177,7 +5316,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Felix Grant",
@@ -5214,7 +5354,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Fernando Diaz",
@@ -5251,7 +5392,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Franky Holly",
@@ -5288,7 +5430,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Fred Benson",
@@ -5325,7 +5468,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Gary Allen",
@@ -5362,7 +5506,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "George Coleman",
@@ -5399,7 +5544,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Henri Deschenes",
@@ -5436,7 +5582,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Horace Young",
@@ -5473,7 +5620,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Ibrahim Mohamed",
@@ -5510,7 +5658,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Isaac Drummond",
@@ -5547,7 +5696,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Jack Joseph",
@@ -5584,7 +5734,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Jay Green",
@@ -5621,7 +5772,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Jim Kiley",
@@ -5658,7 +5810,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Johnny Omar",
@@ -5695,7 +5848,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Jordan Thorner",
@@ -5732,7 +5886,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Mickey O'Connor",
@@ -5769,7 +5924,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Murray Goldman",
@@ -5806,7 +5962,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Nate Kowalski",
@@ -5843,7 +6000,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Nicky Winston",
@@ -5880,7 +6038,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Omar Stephano",
@@ -5917,7 +6076,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Paco Kaufman",
@@ -5954,7 +6114,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "PJ Shareef",
@@ -5991,7 +6152,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Rafael Hendrix",
@@ -6028,7 +6190,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Ray Tran",
@@ -6065,7 +6228,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Robby Bocko",
@@ -6102,7 +6266,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Ryan VanderHoek",
@@ -6139,7 +6304,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Shane Smith",
@@ -6176,7 +6342,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Stan Olafson",
@@ -6213,7 +6380,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Stevie Lindt",
@@ -6250,7 +6418,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Stuart Sullivan",
@@ -6287,7 +6456,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Timmy Unger",
@@ -6324,7 +6494,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Todd Xavier",
@@ -6361,7 +6532,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Vic Soufle",
@@ -6398,7 +6570,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Vladimir Womak",
@@ -6435,7 +6608,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Wally Evans",
@@ -6472,7 +6646,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Wing Kwan",
@@ -6509,7 +6684,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Zenon Estrada",
@@ -6546,7 +6722,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Alexis Weis",
@@ -6583,7 +6760,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Angelique Harding",
@@ -6620,7 +6798,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Catherine Asher",
@@ -6657,7 +6836,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Clair Nelson",
@@ -6694,7 +6874,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Courtney Valentino",
@@ -6731,7 +6912,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Dana Sekula",
@@ -6768,7 +6950,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Ellen Martinez",
@@ -6805,7 +6988,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Erin Harris",
@@ -6842,7 +7026,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Esmarelda Heimann",
@@ -6879,7 +7064,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Ezra Travolta",
@@ -6916,7 +7102,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Fabienne Callahan",
@@ -6953,7 +7140,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Francesca Whitaker",
@@ -6990,7 +7178,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Gloria Keitel",
@@ -7027,7 +7216,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Heidi Thurman",
@@ -7064,7 +7254,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Joan Mae",
@@ -7101,7 +7292,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Jody Palmer",
@@ -7138,7 +7330,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Katelyn Cain",
@@ -7175,7 +7368,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Kathy Wolf",
@@ -7212,7 +7406,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Lindsy Felgate",
@@ -7249,7 +7444,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Lorelei Ikaye",
@@ -7286,7 +7482,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Mamie Skiumsby",
@@ -7323,7 +7520,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Mandy Coolidge",
@@ -7360,7 +7558,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Rosanna Phelps",
@@ -7397,7 +7596,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Ruth Proutt",
@@ -7434,7 +7634,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Samantha Winslow",
@@ -7471,7 +7672,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Tatiana Jackson",
@@ -7508,7 +7710,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Tracy Hoban",
@@ -7545,7 +7748,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Uma Morris",
@@ -7582,7 +7786,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Vanessa Goodman",
@@ -7619,7 +7824,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Victoria Shamberg",
@@ -7656,7 +7862,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Adam Van Doren",
@@ -7693,7 +7900,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Alan Hulsman",
@@ -7730,7 +7938,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Billy Mendelson",
@@ -7767,7 +7976,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Brad Bender",
@@ -7804,7 +8014,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Buddy Martin",
@@ -7841,7 +8052,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Butch Sherrod",
@@ -7878,7 +8090,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Cameron Haines",
@@ -7915,7 +8128,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Chandler Huggins",
@@ -7952,7 +8166,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Daniel Willis",
@@ -7989,7 +8204,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Derek McCattery",
@@ -8026,7 +8242,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Donald Vogel",
@@ -8063,7 +8280,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Guiseppe Pachasa",
@@ -8100,7 +8318,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Ivan King",
@@ -8137,7 +8356,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Jerry Mahoney",
@@ -8174,7 +8394,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Jose Meisenheimer",
@@ -8211,7 +8432,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Lance Lambert",
@@ -8248,7 +8470,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Marsellus Marx",
@@ -8285,7 +8508,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Matthew La Cruz",
@@ -8322,7 +8546,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Maynard McElroy",
@@ -8359,7 +8584,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Melvin Berger",
@@ -8396,7 +8622,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Parker Collum",
@@ -8433,7 +8660,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Peter Levine",
@@ -8470,7 +8698,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Quentin Driver",
@@ -8507,7 +8736,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Randolph Glueckert",
@@ -8544,7 +8774,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Samuel Middleton",
@@ -8581,7 +8812,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Scotty Roth",
@@ -8618,7 +8850,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Terry Vega",
@@ -8655,7 +8888,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Vincent Sweet",
@@ -8692,7 +8926,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Walter Hall",
@@ -8729,7 +8964,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Wayne Pitman",
@@ -8766,7 +9002,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Rachel La Buena",
@@ -8803,7 +9040,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Kendra Yarbrough",
@@ -8840,7 +9078,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Berit Greenwalt",
@@ -8877,7 +9116,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Rose Fluegel",
@@ -8914,7 +9154,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Maya Woodruff",
@@ -8951,7 +9192,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Trent Sizemore",
@@ -8988,7 +9230,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Perry Marx",
@@ -9025,7 +9268,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Dominic Hoskins",
@@ -9062,7 +9306,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Umberto Anders",
@@ -9099,7 +9344,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Thor Herring",
@@ -9136,7 +9382,8 @@
     "Gender": "Boy",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Generic"
   },
   {
     "Player Name": "Alicia Blakely",
@@ -9173,7 +9420,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Amanda Hellerman",
@@ -9210,7 +9458,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Anna Goudreau",
@@ -9247,7 +9496,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Barbara Jones",
@@ -9284,7 +9534,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Brenda Markart",
@@ -9321,7 +9572,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Cheryl Reynolds",
@@ -9358,7 +9610,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Christina Beattie",
@@ -9395,7 +9648,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Claudia Villarta",
@@ -9432,7 +9686,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Dawn Cozart",
@@ -9469,7 +9724,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Emily Lewbel",
@@ -9506,7 +9762,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Fay Dawson",
@@ -9543,7 +9800,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Gwen Sears",
@@ -9580,7 +9838,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Hillary Vargas",
@@ -9617,7 +9876,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Ingrid Dahlman",
@@ -9654,7 +9914,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Jessica Wassersas",
@@ -9691,7 +9952,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Jillian Paine",
@@ -9728,7 +9990,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Kristen Sullivan",
@@ -9765,7 +10028,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Kay O'Toole",
@@ -9802,7 +10066,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Libby Futterman",
@@ -9839,7 +10104,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Marilyn McDonnell",
@@ -9876,7 +10142,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Melissa Waters",
@@ -9913,7 +10180,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Nan Porter",
@@ -9950,7 +10218,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Pamela Kirkos",
@@ -9987,7 +10256,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Raquel Cullen",
@@ -10024,7 +10294,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Sarah Maxwell",
@@ -10061,7 +10332,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Susan Gore",
@@ -10098,7 +10370,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Sophie Meyer",
@@ -10135,7 +10408,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Tonya Lesco",
@@ -10172,7 +10446,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Wendy Parsons",
@@ -10209,7 +10484,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Yvonne Carter",
@@ -10246,7 +10522,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Zoe Mallory",
@@ -10283,7 +10560,8 @@
     "Gender": "Girl",
     "B-Day Month": "",
     "B-Day Day": "",
-    "Nickname": ""
+    "Nickname": "",
+    "Type": "Pro/Clone"
   },
   {
     "Player Name": "Mr. Clanky",
@@ -10320,6 +10598,7 @@
     "Gender": "Boy",
     "B-Day Month": "Aug",
     "B-Day Day": 2,
-    "Nickname": "Automatic"
+    "Nickname": "Automatic",
+    "Type": "Backyard"
   }
 ]

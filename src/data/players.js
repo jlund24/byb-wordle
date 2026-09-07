@@ -6,6 +6,7 @@
 /** @typedef {Object} Player
  * @property {string} id
  * @property {string} name
+ * @property {string} type
  * @property {number} battingPower
  * @property {number} battingContact
  * @property {number} stamina
@@ -18,9 +19,13 @@
  */
 
 export const CORE_STATS = [
-  "battingPower", "battingContact", "stamina", "speed",
-  "coordination", "arm", "throwing", "vision"
+  "type", "battingPower", "battingContact", "stamina", "speed",
+  "arm", "throwing", "vision"
 ];
+
+export const TYPE_DISPLAY_VALUES = {
+  Backyard: "KID", Generic: "GNR", "Pro/Clone": "PRO"
+};
 
 export const STATLINE_STATS = [
   { key: "battingPower", label: "Bat Power" },
@@ -34,13 +39,13 @@ export const STATLINE_STATS = [
 ];
 
 export const STAT_LABELS = {
-  battingPower: "Power", battingContact: "Contact", stamina: "Stamina", speed: "Speed",
+  type: "Type", battingPower: "Power", battingContact: "Contact", stamina: "Stamina", speed: "Speed",
   coordination: "Coordination", arm: "Arm Strength", throwing: "Arm Accuracy", vision: "Vision"
 };
 
 export const STAT_EMOJIS = {
-  battingPower: "\u{1F4A3}", battingContact: "\u{1F3AF}", stamina: "\u{1F50B}", speed: "\u{1F45F}",
-  coordination: "\u{1F9E4}", arm: "\u{1F4AA}", throwing: "\u{1F3F9}", vision: "\u{1F440}"
+  type: "👤", battingPower: "\u{1F4A3}", battingContact: "\u{1F3AF}", stamina: "\u{1F50B}", speed: "\u{1F45F}",
+  coordination: "🧤", arm: "\u{1F4AA}", throwing: "\u{1F3F9}", vision: "\u{1F440}"
 };
 
 /** @type {Player[]} */
@@ -48,6 +53,7 @@ export const PLAYERS = [
   {
     "id": "kimmy-eckman-1",
     "name": "Kimmy Eckman",
+    "type": "Backyard",
     "battingPower": 72,
     "battingContact": 42,
     "stamina": 31,
@@ -61,6 +67,7 @@ export const PLAYERS = [
   {
     "id": "kimmy-eckman-eckman-acres-1-1",
     "name": "Kimmy Eckman (@ Eckman Acres)",
+    "type": "Backyard",
     "battingPower": 72,
     "battingContact": 82,
     "stamina": 71,
@@ -74,6 +81,7 @@ export const PLAYERS = [
   {
     "id": "maria-luna-2",
     "name": "Maria Luna",
+    "type": "Backyard",
     "battingPower": 67,
     "battingContact": 45,
     "stamina": 24,
@@ -87,6 +95,7 @@ export const PLAYERS = [
   {
     "id": "maria-luna-pink-uniform-2-1",
     "name": "Maria Luna (pink uniform)",
+    "type": "Backyard",
     "battingPower": 87,
     "battingContact": 75,
     "stamina": 64,
@@ -100,6 +109,7 @@ export const PLAYERS = [
   {
     "id": "angela-delvecchio-3",
     "name": "Angela Delvecchio",
+    "type": "Backyard",
     "battingPower": 89,
     "battingContact": 40,
     "stamina": 83,
@@ -113,6 +123,7 @@ export const PLAYERS = [
   {
     "id": "angela-delvecchio-vs-tony-delvecchio-3-1",
     "name": "Angela Delvecchio (vs Tony Delvecchio)",
+    "type": "Backyard",
     "battingPower": 89,
     "battingContact": 80,
     "stamina": 93,
@@ -126,6 +137,7 @@ export const PLAYERS = [
   {
     "id": "vicki-kawaguchi-4",
     "name": "Vicki Kawaguchi",
+    "type": "Backyard",
     "battingPower": 25,
     "battingContact": 25,
     "stamina": 79,
@@ -139,6 +151,7 @@ export const PLAYERS = [
   {
     "id": "gretchen-hasselhoff-5",
     "name": "Gretchen Hasselhoff",
+    "type": "Backyard",
     "battingPower": 41,
     "battingContact": 22,
     "stamina": 68,
@@ -152,6 +165,7 @@ export const PLAYERS = [
   {
     "id": "sally-dobbs-6",
     "name": "Sally Dobbs",
+    "type": "Backyard",
     "battingPower": 94,
     "battingContact": 1,
     "stamina": 42,
@@ -165,6 +179,7 @@ export const PLAYERS = [
   {
     "id": "sally-dobbs-w-ronny-dobbs-6-1",
     "name": "Sally Dobbs (w/ Ronny Dobbs)",
+    "type": "Backyard",
     "battingPower": 74,
     "battingContact": 51,
     "stamina": 82,
@@ -178,6 +193,7 @@ export const PLAYERS = [
   {
     "id": "billy-jean-blackwood-7",
     "name": "Billy Jean Blackwood",
+    "type": "Backyard",
     "battingPower": 29,
     "battingContact": 95,
     "stamina": 45,
@@ -191,6 +207,7 @@ export const PLAYERS = [
   {
     "id": "billy-jean-blackwood-w-marky-dubois-7-1",
     "name": "Billy Jean Blackwood (w/ Marky Dubois)",
+    "type": "Backyard",
     "battingPower": 29,
     "battingContact": 45,
     "stamina": 25,
@@ -204,6 +221,7 @@ export const PLAYERS = [
   {
     "id": "ashley-webber-8",
     "name": "Ashley Webber",
+    "type": "Backyard",
     "battingPower": 34,
     "battingContact": 62,
     "stamina": 94,
@@ -217,6 +235,7 @@ export const PLAYERS = [
   {
     "id": "ashley-webber-w-sidney-webber-8-1",
     "name": "Ashley Webber (w/ Sidney Webber)",
+    "type": "Backyard",
     "battingPower": 64,
     "battingContact": 82,
     "stamina": 94,
@@ -230,6 +249,7 @@ export const PLAYERS = [
   {
     "id": "sidney-webber-9",
     "name": "Sidney Webber",
+    "type": "Backyard",
     "battingPower": 34,
     "battingContact": 62,
     "stamina": 94,
@@ -243,6 +263,7 @@ export const PLAYERS = [
   {
     "id": "sidney-webber-w-ashley-webber-9-1",
     "name": "Sidney Webber (w/ Ashley Webber)",
+    "type": "Backyard",
     "battingPower": 64,
     "battingContact": 82,
     "stamina": 94,
@@ -256,6 +277,7 @@ export const PLAYERS = [
   {
     "id": "kiesha-phillips-10",
     "name": "Kiesha Phillips",
+    "type": "Backyard",
     "battingPower": 87,
     "battingContact": 67,
     "stamina": 34,
@@ -269,6 +291,7 @@ export const PLAYERS = [
   {
     "id": "stephanie-morgan-11",
     "name": "Stephanie Morgan",
+    "type": "Backyard",
     "battingPower": 40,
     "battingContact": 72,
     "stamina": 32,
@@ -282,6 +305,7 @@ export const PLAYERS = [
   {
     "id": "luanne-lui-12",
     "name": "Luanne Lui",
+    "type": "Backyard",
     "battingPower": 18,
     "battingContact": 77,
     "stamina": 55,
@@ -295,6 +319,7 @@ export const PLAYERS = [
   {
     "id": "annie-frazier-13",
     "name": "Annie Frazier",
+    "type": "Backyard",
     "battingPower": 38,
     "battingContact": 96,
     "stamina": 1,
@@ -308,6 +333,7 @@ export const PLAYERS = [
   {
     "id": "jocinda-smith-14",
     "name": "Jocinda Smith",
+    "type": "Backyard",
     "battingPower": 54,
     "battingContact": 100,
     "stamina": 38,
@@ -321,6 +347,7 @@ export const PLAYERS = [
   {
     "id": "lisa-crocket-15",
     "name": "Lisa Crocket",
+    "type": "Backyard",
     "battingPower": 67,
     "battingContact": 16,
     "stamina": 78,
@@ -334,6 +361,7 @@ export const PLAYERS = [
   {
     "id": "ronny-dobbs-16",
     "name": "Ronny Dobbs",
+    "type": "Backyard",
     "battingPower": 86,
     "battingContact": 24,
     "stamina": 52,
@@ -347,6 +375,7 @@ export const PLAYERS = [
   {
     "id": "ronny-dobbs-w-sally-dobbs-16-1",
     "name": "Ronny Dobbs (w/ Sally Dobbs)",
+    "type": "Backyard",
     "battingPower": 56,
     "battingContact": 14,
     "stamina": 42,
@@ -360,6 +389,7 @@ export const PLAYERS = [
   {
     "id": "achmed-khan-17",
     "name": "Achmed Khan",
+    "type": "Backyard",
     "battingPower": 95,
     "battingContact": 84,
     "stamina": 43,
@@ -373,6 +403,7 @@ export const PLAYERS = [
   {
     "id": "amir-khan-18",
     "name": "Amir Khan",
+    "type": "Backyard",
     "battingPower": 73,
     "battingContact": 64,
     "stamina": 25,
@@ -386,6 +417,7 @@ export const PLAYERS = [
   {
     "id": "amir-khan-w-achmed-khan-18-1",
     "name": "Amir Khan (w/ Achmed Khan)",
+    "type": "Backyard",
     "battingPower": 90,
     "battingContact": 75,
     "stamina": 37,
@@ -399,6 +431,7 @@ export const PLAYERS = [
   {
     "id": "kenny-kawaguchi-19",
     "name": "Kenny Kawaguchi",
+    "type": "Backyard",
     "battingPower": 19,
     "battingContact": 49,
     "stamina": 100,
@@ -412,6 +445,7 @@ export const PLAYERS = [
   {
     "id": "pete-wheeler-20",
     "name": "Pete Wheeler",
+    "type": "Backyard",
     "battingPower": 80,
     "battingContact": 50,
     "stamina": 76,
@@ -425,6 +459,7 @@ export const PLAYERS = [
   {
     "id": "dmitri-petrovich-21",
     "name": "Dmitri Petrovich",
+    "type": "Backyard",
     "battingPower": 78,
     "battingContact": 57,
     "stamina": 12,
@@ -438,6 +473,7 @@ export const PLAYERS = [
   {
     "id": "ricky-johnson-22",
     "name": "Ricky Johnson",
+    "type": "Backyard",
     "battingPower": 25,
     "battingContact": 27,
     "stamina": 78,
@@ -451,6 +487,7 @@ export const PLAYERS = [
   {
     "id": "marky-dubois-23",
     "name": "Marky Dubois",
+    "type": "Backyard",
     "battingPower": 57,
     "battingContact": 49,
     "stamina": 92,
@@ -464,6 +501,7 @@ export const PLAYERS = [
   {
     "id": "marky-dubois-vs-red-white-sox-23-1",
     "name": "Marky Dubois (vs Red/White Sox)",
+    "type": "Backyard",
     "battingPower": 77,
     "battingContact": 69,
     "stamina": 92,
@@ -477,6 +515,7 @@ export const PLAYERS = [
   {
     "id": "marky-dubois-w-billy-jean-blackwood-23-2",
     "name": "Marky Dubois (w/ Billy Jean Blackwood)",
+    "type": "Backyard",
     "battingPower": 57,
     "battingContact": 79,
     "stamina": 92,
@@ -490,6 +529,7 @@ export const PLAYERS = [
   {
     "id": "marky-dubois-w-billy-jean-vs-sox-23-21",
     "name": "Marky Dubois (w/ Billy Jean & vs Sox)",
+    "type": "Backyard",
     "battingPower": 77,
     "battingContact": 69,
     "stamina": 92,
@@ -503,6 +543,7 @@ export const PLAYERS = [
   {
     "id": "marky-dubois-on-red-white-sox-23-3",
     "name": "Marky Dubois (on Red/White Sox)",
+    "type": "Backyard",
     "battingPower": 57,
     "battingContact": 30,
     "stamina": 50,
@@ -516,6 +557,7 @@ export const PLAYERS = [
   {
     "id": "marky-dubois-w-billy-jean-on-sox-23-31",
     "name": "Marky Dubois (w/ Billy Jean & on Sox)",
+    "type": "Backyard",
     "battingPower": 57,
     "battingContact": 30,
     "stamina": 50,
@@ -529,6 +571,7 @@ export const PLAYERS = [
   {
     "id": "reese-worthington-24",
     "name": "Reese Worthington",
+    "type": "Backyard",
     "battingPower": 46,
     "battingContact": 25,
     "stamina": 14,
@@ -542,6 +585,7 @@ export const PLAYERS = [
   {
     "id": "pablo-sanchez-25",
     "name": "Pablo Sanchez",
+    "type": "Backyard",
     "battingPower": 100,
     "battingContact": 63,
     "stamina": 54,
@@ -555,6 +599,7 @@ export const PLAYERS = [
   {
     "id": "tony-delvecchio-26",
     "name": "Tony Delvecchio",
+    "type": "Backyard",
     "battingPower": 74,
     "battingContact": 56,
     "stamina": 41,
@@ -568,6 +613,7 @@ export const PLAYERS = [
   {
     "id": "tony-delvecchio-vs-angela-delvecchio-26-1",
     "name": "Tony Delvecchio (vs Angela Delvecchio)",
+    "type": "Backyard",
     "battingPower": 84,
     "battingContact": 86,
     "stamina": 71,
@@ -581,6 +627,7 @@ export const PLAYERS = [
   {
     "id": "jorge-garcia-27",
     "name": "Jorge Garcia",
+    "type": "Backyard",
     "battingPower": 82,
     "battingContact": 58,
     "stamina": 69,
@@ -594,6 +641,7 @@ export const PLAYERS = [
   {
     "id": "dante-robinson-28",
     "name": "Dante Robinson",
+    "type": "Backyard",
     "battingPower": 50,
     "battingContact": 39,
     "stamina": 51,
@@ -607,6 +655,7 @@ export const PLAYERS = [
   {
     "id": "ernie-steele-29",
     "name": "Ernie Steele",
+    "type": "Backyard",
     "battingPower": 62,
     "battingContact": 36,
     "stamina": 85,
@@ -620,6 +669,7 @@ export const PLAYERS = [
   {
     "id": "ernie-steele-steele-stadium-29-1",
     "name": "Ernie Steele (@ Steele Stadium)",
+    "type": "Backyard",
     "battingPower": 72,
     "battingContact": 84,
     "stamina": 85,
@@ -633,6 +683,7 @@ export const PLAYERS = [
   {
     "id": "mikey-thomas-30",
     "name": "Mikey Thomas",
+    "type": "Backyard",
     "battingPower": 90,
     "battingContact": 81,
     "stamina": 24,
@@ -646,6 +697,7 @@ export const PLAYERS = [
   {
     "id": "mo-vaughn-31",
     "name": "Mo Vaughn",
+    "type": "Pro/Clone",
     "battingPower": 86,
     "battingContact": 58,
     "stamina": 100,
@@ -659,6 +711,7 @@ export const PLAYERS = [
   {
     "id": "randy-johnson-32",
     "name": "Randy Johnson",
+    "type": "Pro/Clone",
     "battingPower": 61,
     "battingContact": 26,
     "stamina": 100,
@@ -672,6 +725,7 @@ export const PLAYERS = [
   {
     "id": "chipper-jones-33",
     "name": "Chipper Jones",
+    "type": "Pro/Clone",
     "battingPower": 82,
     "battingContact": 62,
     "stamina": 10,
@@ -685,6 +739,7 @@ export const PLAYERS = [
   {
     "id": "cal-ripken-jr-34",
     "name": "Cal Ripken Jr.",
+    "type": "Pro/Clone",
     "battingPower": 74,
     "battingContact": 68,
     "stamina": 100,
@@ -698,6 +753,7 @@ export const PLAYERS = [
   {
     "id": "nomar-garciaparra-35",
     "name": "Nomar Garciaparra",
+    "type": "Pro/Clone",
     "battingPower": 81,
     "battingContact": 56,
     "stamina": 83,
@@ -711,6 +767,7 @@ export const PLAYERS = [
   {
     "id": "sammy-sosa-36",
     "name": "Sammy Sosa",
+    "type": "Pro/Clone",
     "battingPower": 100,
     "battingContact": 50,
     "stamina": 65,
@@ -724,6 +781,7 @@ export const PLAYERS = [
   {
     "id": "frank-thomas-37",
     "name": "Frank Thomas",
+    "type": "Pro/Clone",
     "battingPower": 81,
     "battingContact": 30,
     "stamina": 100,
@@ -737,6 +795,7 @@ export const PLAYERS = [
   {
     "id": "barry-larkin-38",
     "name": "Barry Larkin",
+    "type": "Pro/Clone",
     "battingPower": 76,
     "battingContact": 58,
     "stamina": 24,
@@ -750,6 +809,7 @@ export const PLAYERS = [
   {
     "id": "kenny-lofton-39",
     "name": "Kenny Lofton",
+    "type": "Pro/Clone",
     "battingPower": 76,
     "battingContact": 48,
     "stamina": 65,
@@ -763,6 +823,7 @@ export const PLAYERS = [
   {
     "id": "larry-walker-40",
     "name": "Larry Walker",
+    "type": "Pro/Clone",
     "battingPower": 85,
     "battingContact": 73,
     "stamina": 26,
@@ -776,6 +837,7 @@ export const PLAYERS = [
   {
     "id": "juan-gonzalez-41",
     "name": "Juan Gonzalez",
+    "type": "Pro/Clone",
     "battingPower": 83,
     "battingContact": 69,
     "stamina": 45,
@@ -789,6 +851,7 @@ export const PLAYERS = [
   {
     "id": "alex-gonzalez-42",
     "name": "Alex Gonzalez",
+    "type": "Pro/Clone",
     "battingPower": 69,
     "battingContact": 10,
     "stamina": 75,
@@ -802,6 +865,7 @@ export const PLAYERS = [
   {
     "id": "jeff-bagwell-43",
     "name": "Jeff Bagwell",
+    "type": "Pro/Clone",
     "battingPower": 81,
     "battingContact": 61,
     "stamina": 37,
@@ -815,6 +879,7 @@ export const PLAYERS = [
   {
     "id": "carlos-beltran-44",
     "name": "Carlos Beltran",
+    "type": "Pro/Clone",
     "battingPower": 64,
     "battingContact": 18,
     "stamina": 56,
@@ -828,6 +893,7 @@ export const PLAYERS = [
   {
     "id": "raul-mondesi-45",
     "name": "Raul Mondesi",
+    "type": "Pro/Clone",
     "battingPower": 82,
     "battingContact": 48,
     "stamina": 100,
@@ -841,6 +907,7 @@ export const PLAYERS = [
   {
     "id": "jeromy-burnitz-46",
     "name": "Jeromy Burnitz",
+    "type": "Pro/Clone",
     "battingPower": 83,
     "battingContact": 35,
     "stamina": 50,
@@ -854,6 +921,7 @@ export const PLAYERS = [
   {
     "id": "marty-cordova-47",
     "name": "Marty Cordova",
+    "type": "Pro/Clone",
     "battingPower": 69,
     "battingContact": 46,
     "stamina": 45,
@@ -867,6 +935,7 @@ export const PLAYERS = [
   {
     "id": "vladimir-guerrero-48",
     "name": "Vladimir Guerrero",
+    "type": "Pro/Clone",
     "battingPower": 82,
     "battingContact": 54,
     "stamina": 72,
@@ -880,6 +949,7 @@ export const PLAYERS = [
   {
     "id": "mike-piazza-49",
     "name": "Mike Piazza",
+    "type": "Pro/Clone",
     "battingPower": 87,
     "battingContact": 69,
     "stamina": 54,
@@ -893,6 +963,7 @@ export const PLAYERS = [
   {
     "id": "derek-jeter-50",
     "name": "Derek Jeter",
+    "type": "Pro/Clone",
     "battingPower": 79,
     "battingContact": 72,
     "stamina": 48,
@@ -906,6 +977,7 @@ export const PLAYERS = [
   {
     "id": "jason-giambi-51",
     "name": "Jason Giambi",
+    "type": "Pro/Clone",
     "battingPower": 81,
     "battingContact": 41,
     "stamina": 62,
@@ -919,6 +991,7 @@ export const PLAYERS = [
   {
     "id": "curt-schilling-52",
     "name": "Curt Schilling",
+    "type": "Pro/Clone",
     "battingPower": 15,
     "battingContact": 66,
     "stamina": 57,
@@ -932,6 +1005,7 @@ export const PLAYERS = [
   {
     "id": "jason-kendall-53",
     "name": "Jason Kendall",
+    "type": "Pro/Clone",
     "battingPower": 75,
     "battingContact": 62,
     "stamina": 50,
@@ -945,6 +1019,7 @@ export const PLAYERS = [
   {
     "id": "tony-gwynn-54",
     "name": "Tony Gwynn",
+    "type": "Pro/Clone",
     "battingPower": 65,
     "battingContact": 84,
     "stamina": 21,
@@ -958,6 +1033,7 @@ export const PLAYERS = [
   {
     "id": "barry-bonds-55",
     "name": "Barry Bonds",
+    "type": "Pro/Clone",
     "battingPower": 81,
     "battingContact": 50,
     "stamina": 76,
@@ -971,6 +1047,7 @@ export const PLAYERS = [
   {
     "id": "ken-griffey-jr-56",
     "name": "Ken Griffey Jr.",
+    "type": "Pro/Clone",
     "battingPower": 100,
     "battingContact": 37,
     "stamina": 70,
@@ -984,6 +1061,7 @@ export const PLAYERS = [
   {
     "id": "mark-mcgwire-57",
     "name": "Mark McGwire",
+    "type": "Pro/Clone",
     "battingPower": 100,
     "battingContact": 50,
     "stamina": 40,
@@ -997,6 +1075,7 @@ export const PLAYERS = [
   {
     "id": "jose-canseco-58",
     "name": "Jose Canseco",
+    "type": "Pro/Clone",
     "battingPower": 100,
     "battingContact": 19,
     "stamina": 95,
@@ -1010,6 +1089,7 @@ export const PLAYERS = [
   {
     "id": "ivan-rodriguez-59",
     "name": "Ivan Rodriguez",
+    "type": "Pro/Clone",
     "battingPower": 70,
     "battingContact": 70,
     "stamina": 18,
@@ -1023,6 +1103,7 @@ export const PLAYERS = [
   {
     "id": "shawn-green-60",
     "name": "Shawn Green",
+    "type": "Pro/Clone",
     "battingPower": 82,
     "battingContact": 45,
     "stamina": 59,
@@ -1036,6 +1117,7 @@ export const PLAYERS = [
   {
     "id": "alex-rodriguez-61",
     "name": "Alex Rodriguez",
+    "type": "Pro/Clone",
     "battingPower": 75,
     "battingContact": 60,
     "stamina": 70,
@@ -1049,6 +1131,7 @@ export const PLAYERS = [
   {
     "id": "amy-bostwick-62",
     "name": "Amy Bostwick",
+    "type": "Generic",
     "battingPower": 72,
     "battingContact": 32,
     "stamina": 31,
@@ -1062,6 +1145,7 @@ export const PLAYERS = [
   {
     "id": "arlene-perez-63",
     "name": "Arlene Perez",
+    "type": "Generic",
     "battingPower": 67,
     "battingContact": 45,
     "stamina": 24,
@@ -1075,6 +1159,7 @@ export const PLAYERS = [
   {
     "id": "betty-houstan-64",
     "name": "Betty Houstan",
+    "type": "Generic",
     "battingPower": 89,
     "battingContact": 40,
     "stamina": 83,
@@ -1088,6 +1173,7 @@ export const PLAYERS = [
   {
     "id": "cindy-chang-65",
     "name": "Cindy Chang",
+    "type": "Generic",
     "battingPower": 1,
     "battingContact": 15,
     "stamina": 79,
@@ -1101,6 +1187,7 @@ export const PLAYERS = [
   {
     "id": "clarice-reid-66",
     "name": "Clarice Reid",
+    "type": "Generic",
     "battingPower": 41,
     "battingContact": 22,
     "stamina": 68,
@@ -1114,6 +1201,7 @@ export const PLAYERS = [
   {
     "id": "colleen-klinker-67",
     "name": "Colleen Klinker",
+    "type": "Generic",
     "battingPower": 64,
     "battingContact": 1,
     "stamina": 42,
@@ -1127,6 +1215,7 @@ export const PLAYERS = [
   {
     "id": "debby-nagasawa-68",
     "name": "Debby Nagasawa",
+    "type": "Generic",
     "battingPower": 85,
     "battingContact": 95,
     "stamina": 60,
@@ -1140,6 +1229,7 @@ export const PLAYERS = [
   {
     "id": "diana-hayes-69",
     "name": "Diana Hayes",
+    "type": "Generic",
     "battingPower": 34,
     "battingContact": 62,
     "stamina": 94,
@@ -1153,6 +1243,7 @@ export const PLAYERS = [
   {
     "id": "esther-french-70",
     "name": "Esther French",
+    "type": "Generic",
     "battingPower": 34,
     "battingContact": 62,
     "stamina": 94,
@@ -1166,6 +1257,7 @@ export const PLAYERS = [
   {
     "id": "francis-blewer-71",
     "name": "Francis Blewer",
+    "type": "Generic",
     "battingPower": 87,
     "battingContact": 67,
     "stamina": 34,
@@ -1179,6 +1271,7 @@ export const PLAYERS = [
   {
     "id": "gail-weinmann-72",
     "name": "Gail Weinmann",
+    "type": "Generic",
     "battingPower": 40,
     "battingContact": 72,
     "stamina": 32,
@@ -1192,6 +1285,7 @@ export const PLAYERS = [
   {
     "id": "grace-tipton-73",
     "name": "Grace Tipton",
+    "type": "Generic",
     "battingPower": 18,
     "battingContact": 77,
     "stamina": 85,
@@ -1205,6 +1299,7 @@ export const PLAYERS = [
   {
     "id": "hannah-peavy-74",
     "name": "Hannah Peavy",
+    "type": "Generic",
     "battingPower": 38,
     "battingContact": 96,
     "stamina": 1,
@@ -1218,6 +1313,7 @@ export const PLAYERS = [
   {
     "id": "heather-quinn-75",
     "name": "Heather Quinn",
+    "type": "Generic",
     "battingPower": 54,
     "battingContact": 100,
     "stamina": 38,
@@ -1231,6 +1327,7 @@ export const PLAYERS = [
   {
     "id": "holly-franklin-76",
     "name": "Holly Franklin",
+    "type": "Generic",
     "battingPower": 67,
     "battingContact": 16,
     "stamina": 78,
@@ -1244,6 +1341,7 @@ export const PLAYERS = [
   {
     "id": "isabelle-marelli-77",
     "name": "Isabelle Marelli",
+    "type": "Generic",
     "battingPower": 86,
     "battingContact": 24,
     "stamina": 52,
@@ -1257,6 +1355,7 @@ export const PLAYERS = [
   {
     "id": "jane-davis-78",
     "name": "Jane Davis",
+    "type": "Generic",
     "battingPower": 95,
     "battingContact": 84,
     "stamina": 43,
@@ -1270,6 +1369,7 @@ export const PLAYERS = [
   {
     "id": "joella-minotti-79",
     "name": "Joella Minotti",
+    "type": "Generic",
     "battingPower": 89,
     "battingContact": 64,
     "stamina": 25,
@@ -1283,6 +1383,7 @@ export const PLAYERS = [
   {
     "id": "judy-abwunza-80",
     "name": "Judy Abwunza",
+    "type": "Generic",
     "battingPower": 19,
     "battingContact": 49,
     "stamina": 100,
@@ -1296,6 +1397,7 @@ export const PLAYERS = [
   {
     "id": "julie-dunkel-81",
     "name": "Julie Dunkel",
+    "type": "Generic",
     "battingPower": 100,
     "battingContact": 50,
     "stamina": 76,
@@ -1309,6 +1411,7 @@ export const PLAYERS = [
   {
     "id": "karen-donato-82",
     "name": "Karen Donato",
+    "type": "Generic",
     "battingPower": 78,
     "battingContact": 57,
     "stamina": 12,
@@ -1322,6 +1425,7 @@ export const PLAYERS = [
   {
     "id": "katie-shankar-83",
     "name": "Katie Shankar",
+    "type": "Generic",
     "battingPower": 25,
     "battingContact": 27,
     "stamina": 78,
@@ -1335,6 +1439,7 @@ export const PLAYERS = [
   {
     "id": "krissy-mulligan-84",
     "name": "Krissy Mulligan",
+    "type": "Generic",
     "battingPower": 57,
     "battingContact": 49,
     "stamina": 92,
@@ -1348,6 +1453,7 @@ export const PLAYERS = [
   {
     "id": "lara-nunez-85",
     "name": "Lara Nunez",
+    "type": "Generic",
     "battingPower": 46,
     "battingContact": 25,
     "stamina": 14,
@@ -1361,6 +1467,7 @@ export const PLAYERS = [
   {
     "id": "leah-wayne-86",
     "name": "Leah Wayne",
+    "type": "Generic",
     "battingPower": 100,
     "battingContact": 63,
     "stamina": 54,
@@ -1374,6 +1481,7 @@ export const PLAYERS = [
   {
     "id": "lena-ng-87",
     "name": "Lena Ng",
+    "type": "Generic",
     "battingPower": 74,
     "battingContact": 56,
     "stamina": 41,
@@ -1387,6 +1495,7 @@ export const PLAYERS = [
   {
     "id": "linda-potter-88",
     "name": "Linda Potter",
+    "type": "Generic",
     "battingPower": 31,
     "battingContact": 58,
     "stamina": 69,
@@ -1400,6 +1509,7 @@ export const PLAYERS = [
   {
     "id": "liz-kinghorn-89",
     "name": "Liz Kinghorn",
+    "type": "Generic",
     "battingPower": 50,
     "battingContact": 39,
     "stamina": 51,
@@ -1413,6 +1523,7 @@ export const PLAYERS = [
   {
     "id": "marianna-rauf-90",
     "name": "Marianna Rauf",
+    "type": "Generic",
     "battingPower": 80,
     "battingContact": 36,
     "stamina": 65,
@@ -1426,6 +1537,7 @@ export const PLAYERS = [
   {
     "id": "mary-reilly-91",
     "name": "Mary Reilly",
+    "type": "Generic",
     "battingPower": 54,
     "battingContact": 81,
     "stamina": 24,
@@ -1439,6 +1551,7 @@ export const PLAYERS = [
   {
     "id": "michiko-adachi-92",
     "name": "Michiko Adachi",
+    "type": "Generic",
     "battingPower": 60,
     "battingContact": 43,
     "stamina": 35,
@@ -1452,6 +1565,7 @@ export const PLAYERS = [
   {
     "id": "molly-may-93",
     "name": "Molly May",
+    "type": "Generic",
     "battingPower": 87,
     "battingContact": 45,
     "stamina": 56,
@@ -1465,6 +1579,7 @@ export const PLAYERS = [
   {
     "id": "nancy-chin-94",
     "name": "Nancy Chin",
+    "type": "Generic",
     "battingPower": 75,
     "battingContact": 1,
     "stamina": 84,
@@ -1478,6 +1593,7 @@ export const PLAYERS = [
   {
     "id": "olga-tollefson-95",
     "name": "Olga Tollefson",
+    "type": "Generic",
     "battingPower": 29,
     "battingContact": 76,
     "stamina": 29,
@@ -1491,6 +1607,7 @@ export const PLAYERS = [
   {
     "id": "olive-hussein-96",
     "name": "Olive Hussein",
+    "type": "Generic",
     "battingPower": 49,
     "battingContact": 63,
     "stamina": 77,
@@ -1504,6 +1621,7 @@ export const PLAYERS = [
   {
     "id": "petra-chekov-97",
     "name": "Petra Chekov",
+    "type": "Generic",
     "battingPower": 93,
     "battingContact": 56,
     "stamina": 43,
@@ -1517,6 +1635,7 @@ export const PLAYERS = [
   {
     "id": "ramona-bennett-98",
     "name": "Ramona Bennett",
+    "type": "Generic",
     "battingPower": 69,
     "battingContact": 72,
     "stamina": 89,
@@ -1530,6 +1649,7 @@ export const PLAYERS = [
   {
     "id": "randi-uno-99",
     "name": "Randi Uno",
+    "type": "Generic",
     "battingPower": 80,
     "battingContact": 29,
     "stamina": 83,
@@ -1543,6 +1663,7 @@ export const PLAYERS = [
   {
     "id": "serena-damonte-100",
     "name": "Serena Damonte",
+    "type": "Generic",
     "battingPower": 33,
     "battingContact": 55,
     "stamina": 27,
@@ -1556,6 +1677,7 @@ export const PLAYERS = [
   {
     "id": "sheila-basanti-101",
     "name": "Sheila Basanti",
+    "type": "Generic",
     "battingPower": 61,
     "battingContact": 43,
     "stamina": 49,
@@ -1569,6 +1691,7 @@ export const PLAYERS = [
   {
     "id": "sonja-hagen-102",
     "name": "Sonja Hagen",
+    "type": "Generic",
     "battingPower": 80,
     "battingContact": 56,
     "stamina": 100,
@@ -1582,6 +1705,7 @@ export const PLAYERS = [
   {
     "id": "stacy-gordon-103",
     "name": "Stacy Gordon",
+    "type": "Generic",
     "battingPower": 64,
     "battingContact": 72,
     "stamina": 78,
@@ -1595,6 +1719,7 @@ export const PLAYERS = [
   {
     "id": "star-moonbeam-104",
     "name": "Star Moonbeam",
+    "type": "Generic",
     "battingPower": 20,
     "battingContact": 39,
     "stamina": 63,
@@ -1608,6 +1733,7 @@ export const PLAYERS = [
   {
     "id": "tanya-uchida-105",
     "name": "Tanya Uchida",
+    "type": "Generic",
     "battingPower": 68,
     "battingContact": 100,
     "stamina": 49,
@@ -1621,6 +1747,7 @@ export const PLAYERS = [
   {
     "id": "tiffany-bosworth-106",
     "name": "Tiffany Bosworth",
+    "type": "Generic",
     "battingPower": 32,
     "battingContact": 74,
     "stamina": 70,
@@ -1634,6 +1761,7 @@ export const PLAYERS = [
   {
     "id": "tina-herrara-107",
     "name": "Tina Herrara",
+    "type": "Generic",
     "battingPower": 22,
     "battingContact": 43,
     "stamina": 42,
@@ -1647,6 +1775,7 @@ export const PLAYERS = [
   {
     "id": "vanna-steinman-108",
     "name": "Vanna Steinman",
+    "type": "Generic",
     "battingPower": 36,
     "battingContact": 61,
     "stamina": 12,
@@ -1660,6 +1789,7 @@ export const PLAYERS = [
   {
     "id": "veronica-lee-109",
     "name": "Veronica Lee",
+    "type": "Generic",
     "battingPower": 80,
     "battingContact": 33,
     "stamina": 36,
@@ -1673,6 +1803,7 @@ export const PLAYERS = [
   {
     "id": "whitney-singh-110",
     "name": "Whitney Singh",
+    "type": "Generic",
     "battingPower": 25,
     "battingContact": 75,
     "stamina": 25,
@@ -1686,6 +1817,7 @@ export const PLAYERS = [
   {
     "id": "zena-fromme-111",
     "name": "Zena Fromme",
+    "type": "Generic",
     "battingPower": 100,
     "battingContact": 89,
     "stamina": 70,
@@ -1699,6 +1831,7 @@ export const PLAYERS = [
   {
     "id": "andres-ibsen-112",
     "name": "Andres Ibsen",
+    "type": "Generic",
     "battingPower": 72,
     "battingContact": 32,
     "stamina": 31,
@@ -1712,6 +1845,7 @@ export const PLAYERS = [
   {
     "id": "artie-pimbleton-113",
     "name": "Artie Pimbleton",
+    "type": "Generic",
     "battingPower": 67,
     "battingContact": 45,
     "stamina": 24,
@@ -1725,6 +1859,7 @@ export const PLAYERS = [
   {
     "id": "bobby-bulgrien-114",
     "name": "Bobby Bulgrien",
+    "type": "Generic",
     "battingPower": 89,
     "battingContact": 40,
     "stamina": 83,
@@ -1738,6 +1873,7 @@ export const PLAYERS = [
   {
     "id": "bret-olson-115",
     "name": "Bret Olson",
+    "type": "Generic",
     "battingPower": 1,
     "battingContact": 15,
     "stamina": 79,
@@ -1751,6 +1887,7 @@ export const PLAYERS = [
   {
     "id": "carlos-ocampo-116",
     "name": "Carlos Ocampo",
+    "type": "Generic",
     "battingPower": 41,
     "battingContact": 22,
     "stamina": 68,
@@ -1764,6 +1901,7 @@ export const PLAYERS = [
   {
     "id": "chad-koppel-117",
     "name": "Chad Koppel",
+    "type": "Generic",
     "battingPower": 64,
     "battingContact": 1,
     "stamina": 42,
@@ -1777,6 +1915,7 @@ export const PLAYERS = [
   {
     "id": "chico-pappas-118",
     "name": "Chico Pappas",
+    "type": "Generic",
     "battingPower": 95,
     "battingContact": 95,
     "stamina": 60,
@@ -1790,6 +1929,7 @@ export const PLAYERS = [
   {
     "id": "chris-milton-119",
     "name": "Chris Milton",
+    "type": "Generic",
     "battingPower": 34,
     "battingContact": 62,
     "stamina": 94,
@@ -1803,6 +1943,7 @@ export const PLAYERS = [
   {
     "id": "chucky-flinder-120",
     "name": "Chucky Flinder",
+    "type": "Generic",
     "battingPower": 34,
     "battingContact": 62,
     "stamina": 94,
@@ -1816,6 +1957,7 @@ export const PLAYERS = [
   {
     "id": "davy-marian-121",
     "name": "Davy Marian",
+    "type": "Generic",
     "battingPower": 87,
     "battingContact": 67,
     "stamina": 34,
@@ -1829,6 +1971,7 @@ export const PLAYERS = [
   {
     "id": "dominique-lowe-122",
     "name": "Dominique Lowe",
+    "type": "Generic",
     "battingPower": 40,
     "battingContact": 72,
     "stamina": 32,
@@ -1842,6 +1985,7 @@ export const PLAYERS = [
   {
     "id": "earl-abbot-123",
     "name": "Earl Abbot",
+    "type": "Generic",
     "battingPower": 18,
     "battingContact": 77,
     "stamina": 85,
@@ -1855,6 +1999,7 @@ export const PLAYERS = [
   {
     "id": "eric-lebeaux-124",
     "name": "Eric Lebeaux",
+    "type": "Generic",
     "battingPower": 38,
     "battingContact": 96,
     "stamina": 1,
@@ -1868,6 +2013,7 @@ export const PLAYERS = [
   {
     "id": "felix-grant-125",
     "name": "Felix Grant",
+    "type": "Generic",
     "battingPower": 54,
     "battingContact": 100,
     "stamina": 38,
@@ -1881,6 +2027,7 @@ export const PLAYERS = [
   {
     "id": "fernando-diaz-126",
     "name": "Fernando Diaz",
+    "type": "Generic",
     "battingPower": 67,
     "battingContact": 16,
     "stamina": 78,
@@ -1894,6 +2041,7 @@ export const PLAYERS = [
   {
     "id": "franky-holly-127",
     "name": "Franky Holly",
+    "type": "Generic",
     "battingPower": 86,
     "battingContact": 24,
     "stamina": 52,
@@ -1907,6 +2055,7 @@ export const PLAYERS = [
   {
     "id": "fred-benson-128",
     "name": "Fred Benson",
+    "type": "Generic",
     "battingPower": 95,
     "battingContact": 84,
     "stamina": 43,
@@ -1920,6 +2069,7 @@ export const PLAYERS = [
   {
     "id": "gary-allen-129",
     "name": "Gary Allen",
+    "type": "Generic",
     "battingPower": 89,
     "battingContact": 64,
     "stamina": 25,
@@ -1933,6 +2083,7 @@ export const PLAYERS = [
   {
     "id": "george-coleman-130",
     "name": "George Coleman",
+    "type": "Generic",
     "battingPower": 19,
     "battingContact": 49,
     "stamina": 100,
@@ -1946,6 +2097,7 @@ export const PLAYERS = [
   {
     "id": "henri-deschenes-131",
     "name": "Henri Deschenes",
+    "type": "Generic",
     "battingPower": 100,
     "battingContact": 50,
     "stamina": 76,
@@ -1959,6 +2111,7 @@ export const PLAYERS = [
   {
     "id": "horace-young-132",
     "name": "Horace Young",
+    "type": "Generic",
     "battingPower": 78,
     "battingContact": 57,
     "stamina": 12,
@@ -1972,6 +2125,7 @@ export const PLAYERS = [
   {
     "id": "ibrahim-mohamed-133",
     "name": "Ibrahim Mohamed",
+    "type": "Generic",
     "battingPower": 25,
     "battingContact": 27,
     "stamina": 78,
@@ -1985,6 +2139,7 @@ export const PLAYERS = [
   {
     "id": "isaac-drummond-134",
     "name": "Isaac Drummond",
+    "type": "Generic",
     "battingPower": 57,
     "battingContact": 49,
     "stamina": 92,
@@ -1998,6 +2153,7 @@ export const PLAYERS = [
   {
     "id": "jack-joseph-135",
     "name": "Jack Joseph",
+    "type": "Generic",
     "battingPower": 46,
     "battingContact": 25,
     "stamina": 14,
@@ -2011,6 +2167,7 @@ export const PLAYERS = [
   {
     "id": "jay-green-136",
     "name": "Jay Green",
+    "type": "Generic",
     "battingPower": 100,
     "battingContact": 63,
     "stamina": 54,
@@ -2024,6 +2181,7 @@ export const PLAYERS = [
   {
     "id": "jim-kiley-137",
     "name": "Jim Kiley",
+    "type": "Generic",
     "battingPower": 74,
     "battingContact": 56,
     "stamina": 41,
@@ -2037,6 +2195,7 @@ export const PLAYERS = [
   {
     "id": "johnny-omar-138",
     "name": "Johnny Omar",
+    "type": "Generic",
     "battingPower": 31,
     "battingContact": 58,
     "stamina": 69,
@@ -2050,6 +2209,7 @@ export const PLAYERS = [
   {
     "id": "jordan-thorner-139",
     "name": "Jordan Thorner",
+    "type": "Generic",
     "battingPower": 50,
     "battingContact": 39,
     "stamina": 51,
@@ -2063,6 +2223,7 @@ export const PLAYERS = [
   {
     "id": "mickey-o-connor-140",
     "name": "Mickey O'Connor",
+    "type": "Generic",
     "battingPower": 80,
     "battingContact": 36,
     "stamina": 65,
@@ -2076,6 +2237,7 @@ export const PLAYERS = [
   {
     "id": "murray-goldman-141",
     "name": "Murray Goldman",
+    "type": "Generic",
     "battingPower": 54,
     "battingContact": 81,
     "stamina": 24,
@@ -2089,6 +2251,7 @@ export const PLAYERS = [
   {
     "id": "nate-kowalski-142",
     "name": "Nate Kowalski",
+    "type": "Generic",
     "battingPower": 60,
     "battingContact": 43,
     "stamina": 35,
@@ -2102,6 +2265,7 @@ export const PLAYERS = [
   {
     "id": "nicky-winston-143",
     "name": "Nicky Winston",
+    "type": "Generic",
     "battingPower": 87,
     "battingContact": 45,
     "stamina": 56,
@@ -2115,6 +2279,7 @@ export const PLAYERS = [
   {
     "id": "omar-stephano-144",
     "name": "Omar Stephano",
+    "type": "Generic",
     "battingPower": 75,
     "battingContact": 1,
     "stamina": 84,
@@ -2128,6 +2293,7 @@ export const PLAYERS = [
   {
     "id": "paco-kaufman-145",
     "name": "Paco Kaufman",
+    "type": "Generic",
     "battingPower": 29,
     "battingContact": 76,
     "stamina": 29,
@@ -2141,6 +2307,7 @@ export const PLAYERS = [
   {
     "id": "pj-shareef-146",
     "name": "PJ Shareef",
+    "type": "Generic",
     "battingPower": 49,
     "battingContact": 63,
     "stamina": 77,
@@ -2154,6 +2321,7 @@ export const PLAYERS = [
   {
     "id": "rafael-hendrix-147",
     "name": "Rafael Hendrix",
+    "type": "Generic",
     "battingPower": 93,
     "battingContact": 56,
     "stamina": 43,
@@ -2167,6 +2335,7 @@ export const PLAYERS = [
   {
     "id": "ray-tran-148",
     "name": "Ray Tran",
+    "type": "Generic",
     "battingPower": 69,
     "battingContact": 72,
     "stamina": 89,
@@ -2180,6 +2349,7 @@ export const PLAYERS = [
   {
     "id": "robby-bocko-149",
     "name": "Robby Bocko",
+    "type": "Generic",
     "battingPower": 80,
     "battingContact": 29,
     "stamina": 83,
@@ -2193,6 +2363,7 @@ export const PLAYERS = [
   {
     "id": "ryan-vanderhoek-150",
     "name": "Ryan VanderHoek",
+    "type": "Generic",
     "battingPower": 33,
     "battingContact": 55,
     "stamina": 27,
@@ -2206,6 +2377,7 @@ export const PLAYERS = [
   {
     "id": "shane-smith-151",
     "name": "Shane Smith",
+    "type": "Generic",
     "battingPower": 61,
     "battingContact": 43,
     "stamina": 49,
@@ -2219,6 +2391,7 @@ export const PLAYERS = [
   {
     "id": "stan-olafson-152",
     "name": "Stan Olafson",
+    "type": "Generic",
     "battingPower": 80,
     "battingContact": 56,
     "stamina": 100,
@@ -2232,6 +2405,7 @@ export const PLAYERS = [
   {
     "id": "stevie-lindt-153",
     "name": "Stevie Lindt",
+    "type": "Generic",
     "battingPower": 64,
     "battingContact": 72,
     "stamina": 78,
@@ -2245,6 +2419,7 @@ export const PLAYERS = [
   {
     "id": "stuart-sullivan-154",
     "name": "Stuart Sullivan",
+    "type": "Generic",
     "battingPower": 20,
     "battingContact": 39,
     "stamina": 63,
@@ -2258,6 +2433,7 @@ export const PLAYERS = [
   {
     "id": "timmy-unger-155",
     "name": "Timmy Unger",
+    "type": "Generic",
     "battingPower": 68,
     "battingContact": 100,
     "stamina": 49,
@@ -2271,6 +2447,7 @@ export const PLAYERS = [
   {
     "id": "todd-xavier-156",
     "name": "Todd Xavier",
+    "type": "Generic",
     "battingPower": 32,
     "battingContact": 74,
     "stamina": 70,
@@ -2284,6 +2461,7 @@ export const PLAYERS = [
   {
     "id": "vic-soufle-157",
     "name": "Vic Soufle",
+    "type": "Generic",
     "battingPower": 22,
     "battingContact": 43,
     "stamina": 42,
@@ -2297,6 +2475,7 @@ export const PLAYERS = [
   {
     "id": "vladimir-womak-158",
     "name": "Vladimir Womak",
+    "type": "Generic",
     "battingPower": 36,
     "battingContact": 61,
     "stamina": 12,
@@ -2310,6 +2489,7 @@ export const PLAYERS = [
   {
     "id": "wally-evans-159",
     "name": "Wally Evans",
+    "type": "Generic",
     "battingPower": 80,
     "battingContact": 33,
     "stamina": 36,
@@ -2323,6 +2503,7 @@ export const PLAYERS = [
   {
     "id": "wing-kwan-160",
     "name": "Wing Kwan",
+    "type": "Generic",
     "battingPower": 25,
     "battingContact": 75,
     "stamina": 25,
@@ -2336,6 +2517,7 @@ export const PLAYERS = [
   {
     "id": "zenon-estrada-161",
     "name": "Zenon Estrada",
+    "type": "Generic",
     "battingPower": 100,
     "battingContact": 89,
     "stamina": 70,
@@ -2349,6 +2531,7 @@ export const PLAYERS = [
   {
     "id": "alexis-weis-162",
     "name": "Alexis Weis",
+    "type": "Generic",
     "battingPower": 88,
     "battingContact": 40,
     "stamina": 52,
@@ -2362,6 +2545,7 @@ export const PLAYERS = [
   {
     "id": "angelique-harding-163",
     "name": "Angelique Harding",
+    "type": "Generic",
     "battingPower": 31,
     "battingContact": 50,
     "stamina": 81,
@@ -2375,6 +2559,7 @@ export const PLAYERS = [
   {
     "id": "catherine-asher-164",
     "name": "Catherine Asher",
+    "type": "Generic",
     "battingPower": 39,
     "battingContact": 69,
     "stamina": 98,
@@ -2388,6 +2573,7 @@ export const PLAYERS = [
   {
     "id": "clair-nelson-165",
     "name": "Clair Nelson",
+    "type": "Generic",
     "battingPower": 43,
     "battingContact": 22,
     "stamina": 67,
@@ -2401,6 +2587,7 @@ export const PLAYERS = [
   {
     "id": "courtney-valentino-166",
     "name": "Courtney Valentino",
+    "type": "Generic",
     "battingPower": 82,
     "battingContact": 73,
     "stamina": 29,
@@ -2414,6 +2601,7 @@ export const PLAYERS = [
   {
     "id": "dana-sekula-167",
     "name": "Dana Sekula",
+    "type": "Generic",
     "battingPower": 53,
     "battingContact": 16,
     "stamina": 71,
@@ -2427,6 +2615,7 @@ export const PLAYERS = [
   {
     "id": "ellen-martinez-168",
     "name": "Ellen Martinez",
+    "type": "Generic",
     "battingPower": 26,
     "battingContact": 88,
     "stamina": 60,
@@ -2440,6 +2629,7 @@ export const PLAYERS = [
   {
     "id": "erin-harris-169",
     "name": "Erin Harris",
+    "type": "Generic",
     "battingPower": 57,
     "battingContact": 41,
     "stamina": 49,
@@ -2453,6 +2643,7 @@ export const PLAYERS = [
   {
     "id": "esmarelda-heimann-170",
     "name": "Esmarelda Heimann",
+    "type": "Generic",
     "battingPower": 19,
     "battingContact": 10,
     "stamina": 36,
@@ -2466,6 +2657,7 @@ export const PLAYERS = [
   {
     "id": "ezra-travolta-171",
     "name": "Ezra Travolta",
+    "type": "Generic",
     "battingPower": 72,
     "battingContact": 32,
     "stamina": 91,
@@ -2479,6 +2671,7 @@ export const PLAYERS = [
   {
     "id": "fabienne-callahan-172",
     "name": "Fabienne Callahan",
+    "type": "Generic",
     "battingPower": 100,
     "battingContact": 35,
     "stamina": 76,
@@ -2492,6 +2685,7 @@ export const PLAYERS = [
   {
     "id": "francesca-whitaker-173",
     "name": "Francesca Whitaker",
+    "type": "Generic",
     "battingPower": 79,
     "battingContact": 59,
     "stamina": 66,
@@ -2505,6 +2699,7 @@ export const PLAYERS = [
   {
     "id": "gloria-keitel-174",
     "name": "Gloria Keitel",
+    "type": "Generic",
     "battingPower": 64,
     "battingContact": 24,
     "stamina": 82,
@@ -2518,6 +2713,7 @@ export const PLAYERS = [
   {
     "id": "heidi-thurman-175",
     "name": "Heidi Thurman",
+    "type": "Generic",
     "battingPower": 34,
     "battingContact": 14,
     "stamina": 24,
@@ -2531,6 +2727,7 @@ export const PLAYERS = [
   {
     "id": "joan-mae-176",
     "name": "Joan Mae",
+    "type": "Generic",
     "battingPower": 100,
     "battingContact": 62,
     "stamina": 13,
@@ -2544,6 +2741,7 @@ export const PLAYERS = [
   {
     "id": "jody-palmer-177",
     "name": "Jody Palmer",
+    "type": "Generic",
     "battingPower": 36,
     "battingContact": 26,
     "stamina": 74,
@@ -2557,6 +2755,7 @@ export const PLAYERS = [
   {
     "id": "katelyn-cain-178",
     "name": "Katelyn Cain",
+    "type": "Generic",
     "battingPower": 27,
     "battingContact": 57,
     "stamina": 75,
@@ -2570,6 +2769,7 @@ export const PLAYERS = [
   {
     "id": "kathy-wolf-179",
     "name": "Kathy Wolf",
+    "type": "Generic",
     "battingPower": 61,
     "battingContact": 19,
     "stamina": 41,
@@ -2583,6 +2783,7 @@ export const PLAYERS = [
   {
     "id": "lindsy-felgate-180",
     "name": "Lindsy Felgate",
+    "type": "Generic",
     "battingPower": 95,
     "battingContact": 72,
     "stamina": 79,
@@ -2596,6 +2797,7 @@ export const PLAYERS = [
   {
     "id": "lorelei-ikaye-181",
     "name": "Lorelei Ikaye",
+    "type": "Generic",
     "battingPower": 53,
     "battingContact": 100,
     "stamina": 9,
@@ -2609,6 +2811,7 @@ export const PLAYERS = [
   {
     "id": "mamie-skiumsby-182",
     "name": "Mamie Skiumsby",
+    "type": "Generic",
     "battingPower": 56,
     "battingContact": 79,
     "stamina": 29,
@@ -2622,6 +2825,7 @@ export const PLAYERS = [
   {
     "id": "mandy-coolidge-183",
     "name": "Mandy Coolidge",
+    "type": "Generic",
     "battingPower": 88,
     "battingContact": 64,
     "stamina": 83,
@@ -2635,6 +2839,7 @@ export const PLAYERS = [
   {
     "id": "rosanna-phelps-184",
     "name": "Rosanna Phelps",
+    "type": "Generic",
     "battingPower": 37,
     "battingContact": 34,
     "stamina": 68,
@@ -2648,6 +2853,7 @@ export const PLAYERS = [
   {
     "id": "ruth-proutt-185",
     "name": "Ruth Proutt",
+    "type": "Generic",
     "battingPower": 21,
     "battingContact": 100,
     "stamina": 50,
@@ -2661,6 +2867,7 @@ export const PLAYERS = [
   {
     "id": "samantha-winslow-186",
     "name": "Samantha Winslow",
+    "type": "Generic",
     "battingPower": 30,
     "battingContact": 80,
     "stamina": 10,
@@ -2674,6 +2881,7 @@ export const PLAYERS = [
   {
     "id": "tatiana-jackson-187",
     "name": "Tatiana Jackson",
+    "type": "Generic",
     "battingPower": 23,
     "battingContact": 90,
     "stamina": 98,
@@ -2687,6 +2895,7 @@ export const PLAYERS = [
   {
     "id": "tracy-hoban-188",
     "name": "Tracy Hoban",
+    "type": "Generic",
     "battingPower": 65,
     "battingContact": 34,
     "stamina": 92,
@@ -2700,6 +2909,7 @@ export const PLAYERS = [
   {
     "id": "uma-morris-189",
     "name": "Uma Morris",
+    "type": "Generic",
     "battingPower": 88,
     "battingContact": 10,
     "stamina": 72,
@@ -2713,6 +2923,7 @@ export const PLAYERS = [
   {
     "id": "vanessa-goodman-190",
     "name": "Vanessa Goodman",
+    "type": "Generic",
     "battingPower": 65,
     "battingContact": 28,
     "stamina": 4,
@@ -2726,6 +2937,7 @@ export const PLAYERS = [
   {
     "id": "victoria-shamberg-191",
     "name": "Victoria Shamberg",
+    "type": "Generic",
     "battingPower": 34,
     "battingContact": 23,
     "stamina": 29,
@@ -2739,6 +2951,7 @@ export const PLAYERS = [
   {
     "id": "adam-van-doren-192",
     "name": "Adam Van Doren",
+    "type": "Generic",
     "battingPower": 48,
     "battingContact": 77,
     "stamina": 38,
@@ -2752,6 +2965,7 @@ export const PLAYERS = [
   {
     "id": "alan-hulsman-193",
     "name": "Alan Hulsman",
+    "type": "Generic",
     "battingPower": 33,
     "battingContact": 80,
     "stamina": 67,
@@ -2765,6 +2979,7 @@ export const PLAYERS = [
   {
     "id": "billy-mendelson-194",
     "name": "Billy Mendelson",
+    "type": "Generic",
     "battingPower": 59,
     "battingContact": 47,
     "stamina": 15,
@@ -2778,6 +2993,7 @@ export const PLAYERS = [
   {
     "id": "brad-bender-195",
     "name": "Brad Bender",
+    "type": "Generic",
     "battingPower": 33,
     "battingContact": 35,
     "stamina": 22,
@@ -2791,6 +3007,7 @@ export const PLAYERS = [
   {
     "id": "buddy-martin-196",
     "name": "Buddy Martin",
+    "type": "Generic",
     "battingPower": 35,
     "battingContact": 26,
     "stamina": 63,
@@ -2804,6 +3021,7 @@ export const PLAYERS = [
   {
     "id": "butch-sherrod-197",
     "name": "Butch Sherrod",
+    "type": "Generic",
     "battingPower": 51,
     "battingContact": 35,
     "stamina": 87,
@@ -2817,6 +3035,7 @@ export const PLAYERS = [
   {
     "id": "cameron-haines-198",
     "name": "Cameron Haines",
+    "type": "Generic",
     "battingPower": 16,
     "battingContact": 17,
     "stamina": 27,
@@ -2830,6 +3049,7 @@ export const PLAYERS = [
   {
     "id": "chandler-huggins-199",
     "name": "Chandler Huggins",
+    "type": "Generic",
     "battingPower": 39,
     "battingContact": 58,
     "stamina": 43,
@@ -2843,6 +3063,7 @@ export const PLAYERS = [
   {
     "id": "daniel-willis-200",
     "name": "Daniel Willis",
+    "type": "Generic",
     "battingPower": 51,
     "battingContact": 53,
     "stamina": 4,
@@ -2856,6 +3077,7 @@ export const PLAYERS = [
   {
     "id": "derek-mccattery-201",
     "name": "Derek McCattery",
+    "type": "Generic",
     "battingPower": 62,
     "battingContact": 66,
     "stamina": 73,
@@ -2869,6 +3091,7 @@ export const PLAYERS = [
   {
     "id": "donald-vogel-202",
     "name": "Donald Vogel",
+    "type": "Generic",
     "battingPower": 35,
     "battingContact": 53,
     "stamina": 81,
@@ -2882,6 +3105,7 @@ export const PLAYERS = [
   {
     "id": "guiseppe-pachasa-203",
     "name": "Guiseppe Pachasa",
+    "type": "Generic",
     "battingPower": 26,
     "battingContact": 95,
     "stamina": 37,
@@ -2895,6 +3119,7 @@ export const PLAYERS = [
   {
     "id": "ivan-king-204",
     "name": "Ivan King",
+    "type": "Generic",
     "battingPower": 21,
     "battingContact": 16,
     "stamina": 3,
@@ -2908,6 +3133,7 @@ export const PLAYERS = [
   {
     "id": "jerry-mahoney-205",
     "name": "Jerry Mahoney",
+    "type": "Generic",
     "battingPower": 86,
     "battingContact": 19,
     "stamina": 30,
@@ -2921,6 +3147,7 @@ export const PLAYERS = [
   {
     "id": "jose-meisenheimer-206",
     "name": "Jose Meisenheimer",
+    "type": "Generic",
     "battingPower": 81,
     "battingContact": 43,
     "stamina": 14,
@@ -2934,6 +3161,7 @@ export const PLAYERS = [
   {
     "id": "lance-lambert-207",
     "name": "Lance Lambert",
+    "type": "Generic",
     "battingPower": 94,
     "battingContact": 61,
     "stamina": 54,
@@ -2947,6 +3175,7 @@ export const PLAYERS = [
   {
     "id": "marsellus-marx-208",
     "name": "Marsellus Marx",
+    "type": "Generic",
     "battingPower": 95,
     "battingContact": 75,
     "stamina": 14,
@@ -2960,6 +3189,7 @@ export const PLAYERS = [
   {
     "id": "matthew-la-cruz-209",
     "name": "Matthew La Cruz",
+    "type": "Generic",
     "battingPower": 53,
     "battingContact": 53,
     "stamina": 58,
@@ -2973,6 +3203,7 @@ export const PLAYERS = [
   {
     "id": "maynard-mcelroy-210",
     "name": "Maynard McElroy",
+    "type": "Generic",
     "battingPower": 51,
     "battingContact": 56,
     "stamina": 80,
@@ -2986,6 +3217,7 @@ export const PLAYERS = [
   {
     "id": "melvin-berger-211",
     "name": "Melvin Berger",
+    "type": "Generic",
     "battingPower": 50,
     "battingContact": 43,
     "stamina": 16,
@@ -2999,6 +3231,7 @@ export const PLAYERS = [
   {
     "id": "parker-collum-212",
     "name": "Parker Collum",
+    "type": "Generic",
     "battingPower": 98,
     "battingContact": 37,
     "stamina": 53,
@@ -3012,6 +3245,7 @@ export const PLAYERS = [
   {
     "id": "peter-levine-213",
     "name": "Peter Levine",
+    "type": "Generic",
     "battingPower": 65,
     "battingContact": 21,
     "stamina": 43,
@@ -3025,6 +3259,7 @@ export const PLAYERS = [
   {
     "id": "quentin-driver-214",
     "name": "Quentin Driver",
+    "type": "Generic",
     "battingPower": 25,
     "battingContact": 27,
     "stamina": 1,
@@ -3038,6 +3273,7 @@ export const PLAYERS = [
   {
     "id": "randolph-glueckert-215",
     "name": "Randolph Glueckert",
+    "type": "Generic",
     "battingPower": 75,
     "battingContact": 85,
     "stamina": 74,
@@ -3051,6 +3287,7 @@ export const PLAYERS = [
   {
     "id": "samuel-middleton-216",
     "name": "Samuel Middleton",
+    "type": "Generic",
     "battingPower": 84,
     "battingContact": 88,
     "stamina": 98,
@@ -3064,6 +3301,7 @@ export const PLAYERS = [
   {
     "id": "scotty-roth-217",
     "name": "Scotty Roth",
+    "type": "Generic",
     "battingPower": 16,
     "battingContact": 73,
     "stamina": 7,
@@ -3077,6 +3315,7 @@ export const PLAYERS = [
   {
     "id": "terry-vega-218",
     "name": "Terry Vega",
+    "type": "Generic",
     "battingPower": 88,
     "battingContact": 23,
     "stamina": 41,
@@ -3090,6 +3329,7 @@ export const PLAYERS = [
   {
     "id": "vincent-sweet-219",
     "name": "Vincent Sweet",
+    "type": "Generic",
     "battingPower": 51,
     "battingContact": 46,
     "stamina": 97,
@@ -3103,6 +3343,7 @@ export const PLAYERS = [
   {
     "id": "walter-hall-220",
     "name": "Walter Hall",
+    "type": "Generic",
     "battingPower": 50,
     "battingContact": 58,
     "stamina": 100,
@@ -3116,6 +3357,7 @@ export const PLAYERS = [
   {
     "id": "wayne-pitman-221",
     "name": "Wayne Pitman",
+    "type": "Generic",
     "battingPower": 22,
     "battingContact": 51,
     "stamina": 2,
@@ -3129,6 +3371,7 @@ export const PLAYERS = [
   {
     "id": "rachel-la-buena-222",
     "name": "Rachel La Buena",
+    "type": "Generic",
     "battingPower": 98,
     "battingContact": 37,
     "stamina": 63,
@@ -3142,6 +3385,7 @@ export const PLAYERS = [
   {
     "id": "kendra-yarbrough-223",
     "name": "Kendra Yarbrough",
+    "type": "Generic",
     "battingPower": 65,
     "battingContact": 21,
     "stamina": 87,
@@ -3155,6 +3399,7 @@ export const PLAYERS = [
   {
     "id": "berit-greenwalt-224",
     "name": "Berit Greenwalt",
+    "type": "Generic",
     "battingPower": 25,
     "battingContact": 27,
     "stamina": 27,
@@ -3168,6 +3413,7 @@ export const PLAYERS = [
   {
     "id": "rose-fluegel-225",
     "name": "Rose Fluegel",
+    "type": "Generic",
     "battingPower": 75,
     "battingContact": 85,
     "stamina": 43,
@@ -3181,6 +3427,7 @@ export const PLAYERS = [
   {
     "id": "maya-woodruff-226",
     "name": "Maya Woodruff",
+    "type": "Generic",
     "battingPower": 84,
     "battingContact": 88,
     "stamina": 4,
@@ -3194,6 +3441,7 @@ export const PLAYERS = [
   {
     "id": "trent-sizemore-227",
     "name": "Trent Sizemore",
+    "type": "Generic",
     "battingPower": 16,
     "battingContact": 73,
     "stamina": 73,
@@ -3207,6 +3455,7 @@ export const PLAYERS = [
   {
     "id": "perry-marx-228",
     "name": "Perry Marx",
+    "type": "Generic",
     "battingPower": 88,
     "battingContact": 23,
     "stamina": 81,
@@ -3220,6 +3469,7 @@ export const PLAYERS = [
   {
     "id": "dominic-hoskins-229",
     "name": "Dominic Hoskins",
+    "type": "Generic",
     "battingPower": 51,
     "battingContact": 46,
     "stamina": 37,
@@ -3233,6 +3483,7 @@ export const PLAYERS = [
   {
     "id": "umberto-anders-230",
     "name": "Umberto Anders",
+    "type": "Generic",
     "battingPower": 50,
     "battingContact": 58,
     "stamina": 3,
@@ -3246,6 +3497,7 @@ export const PLAYERS = [
   {
     "id": "thor-herring-231",
     "name": "Thor Herring",
+    "type": "Generic",
     "battingPower": 22,
     "battingContact": 51,
     "stamina": 30,
@@ -3259,6 +3511,7 @@ export const PLAYERS = [
   {
     "id": "alicia-blakely-232",
     "name": "Alicia Blakely",
+    "type": "Pro/Clone",
     "battingPower": 86,
     "battingContact": 58,
     "stamina": 100,
@@ -3272,6 +3525,7 @@ export const PLAYERS = [
   {
     "id": "amanda-hellerman-233",
     "name": "Amanda Hellerman",
+    "type": "Pro/Clone",
     "battingPower": 61,
     "battingContact": 26,
     "stamina": 100,
@@ -3285,6 +3539,7 @@ export const PLAYERS = [
   {
     "id": "anna-goudreau-234",
     "name": "Anna Goudreau",
+    "type": "Pro/Clone",
     "battingPower": 82,
     "battingContact": 62,
     "stamina": 10,
@@ -3298,6 +3553,7 @@ export const PLAYERS = [
   {
     "id": "barbara-jones-235",
     "name": "Barbara Jones",
+    "type": "Pro/Clone",
     "battingPower": 74,
     "battingContact": 68,
     "stamina": 100,
@@ -3311,6 +3567,7 @@ export const PLAYERS = [
   {
     "id": "brenda-markart-236",
     "name": "Brenda Markart",
+    "type": "Pro/Clone",
     "battingPower": 81,
     "battingContact": 56,
     "stamina": 83,
@@ -3324,6 +3581,7 @@ export const PLAYERS = [
   {
     "id": "cheryl-reynolds-237",
     "name": "Cheryl Reynolds",
+    "type": "Pro/Clone",
     "battingPower": 100,
     "battingContact": 50,
     "stamina": 65,
@@ -3337,6 +3595,7 @@ export const PLAYERS = [
   {
     "id": "christina-beattie-238",
     "name": "Christina Beattie",
+    "type": "Pro/Clone",
     "battingPower": 81,
     "battingContact": 30,
     "stamina": 100,
@@ -3350,6 +3609,7 @@ export const PLAYERS = [
   {
     "id": "claudia-villarta-239",
     "name": "Claudia Villarta",
+    "type": "Pro/Clone",
     "battingPower": 76,
     "battingContact": 58,
     "stamina": 24,
@@ -3363,6 +3623,7 @@ export const PLAYERS = [
   {
     "id": "dawn-cozart-240",
     "name": "Dawn Cozart",
+    "type": "Pro/Clone",
     "battingPower": 76,
     "battingContact": 48,
     "stamina": 65,
@@ -3376,6 +3637,7 @@ export const PLAYERS = [
   {
     "id": "emily-lewbel-241",
     "name": "Emily Lewbel",
+    "type": "Pro/Clone",
     "battingPower": 85,
     "battingContact": 73,
     "stamina": 26,
@@ -3389,6 +3651,7 @@ export const PLAYERS = [
   {
     "id": "fay-dawson-242",
     "name": "Fay Dawson",
+    "type": "Pro/Clone",
     "battingPower": 83,
     "battingContact": 69,
     "stamina": 45,
@@ -3402,6 +3665,7 @@ export const PLAYERS = [
   {
     "id": "gwen-sears-243",
     "name": "Gwen Sears",
+    "type": "Pro/Clone",
     "battingPower": 69,
     "battingContact": 10,
     "stamina": 75,
@@ -3415,6 +3679,7 @@ export const PLAYERS = [
   {
     "id": "hillary-vargas-244",
     "name": "Hillary Vargas",
+    "type": "Pro/Clone",
     "battingPower": 81,
     "battingContact": 61,
     "stamina": 37,
@@ -3428,6 +3693,7 @@ export const PLAYERS = [
   {
     "id": "ingrid-dahlman-245",
     "name": "Ingrid Dahlman",
+    "type": "Pro/Clone",
     "battingPower": 64,
     "battingContact": 18,
     "stamina": 56,
@@ -3441,6 +3707,7 @@ export const PLAYERS = [
   {
     "id": "jessica-wassersas-246",
     "name": "Jessica Wassersas",
+    "type": "Pro/Clone",
     "battingPower": 82,
     "battingContact": 48,
     "stamina": 100,
@@ -3454,6 +3721,7 @@ export const PLAYERS = [
   {
     "id": "jillian-paine-247",
     "name": "Jillian Paine",
+    "type": "Pro/Clone",
     "battingPower": 83,
     "battingContact": 35,
     "stamina": 50,
@@ -3467,6 +3735,7 @@ export const PLAYERS = [
   {
     "id": "kristen-sullivan-248",
     "name": "Kristen Sullivan",
+    "type": "Pro/Clone",
     "battingPower": 69,
     "battingContact": 46,
     "stamina": 45,
@@ -3480,6 +3749,7 @@ export const PLAYERS = [
   {
     "id": "kay-o-toole-249",
     "name": "Kay O'Toole",
+    "type": "Pro/Clone",
     "battingPower": 82,
     "battingContact": 54,
     "stamina": 72,
@@ -3493,6 +3763,7 @@ export const PLAYERS = [
   {
     "id": "libby-futterman-250",
     "name": "Libby Futterman",
+    "type": "Pro/Clone",
     "battingPower": 87,
     "battingContact": 69,
     "stamina": 54,
@@ -3506,6 +3777,7 @@ export const PLAYERS = [
   {
     "id": "marilyn-mcdonnell-251",
     "name": "Marilyn McDonnell",
+    "type": "Pro/Clone",
     "battingPower": 79,
     "battingContact": 72,
     "stamina": 48,
@@ -3519,6 +3791,7 @@ export const PLAYERS = [
   {
     "id": "melissa-waters-252",
     "name": "Melissa Waters",
+    "type": "Pro/Clone",
     "battingPower": 81,
     "battingContact": 41,
     "stamina": 62,
@@ -3532,6 +3805,7 @@ export const PLAYERS = [
   {
     "id": "nan-porter-253",
     "name": "Nan Porter",
+    "type": "Pro/Clone",
     "battingPower": 15,
     "battingContact": 66,
     "stamina": 57,
@@ -3545,6 +3819,7 @@ export const PLAYERS = [
   {
     "id": "pamela-kirkos-254",
     "name": "Pamela Kirkos",
+    "type": "Pro/Clone",
     "battingPower": 75,
     "battingContact": 62,
     "stamina": 50,
@@ -3558,6 +3833,7 @@ export const PLAYERS = [
   {
     "id": "raquel-cullen-255",
     "name": "Raquel Cullen",
+    "type": "Pro/Clone",
     "battingPower": 65,
     "battingContact": 84,
     "stamina": 21,
@@ -3571,6 +3847,7 @@ export const PLAYERS = [
   {
     "id": "sarah-maxwell-256",
     "name": "Sarah Maxwell",
+    "type": "Pro/Clone",
     "battingPower": 81,
     "battingContact": 50,
     "stamina": 76,
@@ -3584,6 +3861,7 @@ export const PLAYERS = [
   {
     "id": "susan-gore-257",
     "name": "Susan Gore",
+    "type": "Pro/Clone",
     "battingPower": 100,
     "battingContact": 37,
     "stamina": 70,
@@ -3597,6 +3875,7 @@ export const PLAYERS = [
   {
     "id": "sophie-meyer-258",
     "name": "Sophie Meyer",
+    "type": "Pro/Clone",
     "battingPower": 100,
     "battingContact": 50,
     "stamina": 40,
@@ -3610,6 +3889,7 @@ export const PLAYERS = [
   {
     "id": "tonya-lesco-259",
     "name": "Tonya Lesco",
+    "type": "Pro/Clone",
     "battingPower": 100,
     "battingContact": 19,
     "stamina": 95,
@@ -3623,6 +3903,7 @@ export const PLAYERS = [
   {
     "id": "wendy-parsons-260",
     "name": "Wendy Parsons",
+    "type": "Pro/Clone",
     "battingPower": 70,
     "battingContact": 70,
     "stamina": 18,
@@ -3636,6 +3917,7 @@ export const PLAYERS = [
   {
     "id": "yvonne-carter-261",
     "name": "Yvonne Carter",
+    "type": "Pro/Clone",
     "battingPower": 82,
     "battingContact": 45,
     "stamina": 59,
@@ -3649,6 +3931,7 @@ export const PLAYERS = [
   {
     "id": "zoe-mallory-262",
     "name": "Zoe Mallory",
+    "type": "Pro/Clone",
     "battingPower": 75,
     "battingContact": 60,
     "stamina": 70,
@@ -3662,6 +3945,7 @@ export const PLAYERS = [
   {
     "id": "mr-clanky-263",
     "name": "Mr. Clanky",
+    "type": "Backyard",
     "battingPower": 75,
     "battingContact": 75,
     "stamina": 100,

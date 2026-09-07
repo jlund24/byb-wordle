@@ -1,9 +1,13 @@
 import { CORE_STATS } from "../data/players.js";
 import { valueFallsInRange } from "./statRanges.js";
 
-/** Return players consistent with all revealed ranges and past directional evidence. */
+/** Return players consistent with explicitly scouted ranges. */
 export function filterCandidates(players, state, mystery) {
   return players.filter((player) => {
-    return CORE_STATS.every((stat) => !state.scoutedStats[stat] || valueFallsInRange(player[stat], state.scoutedStats[stat]));
+    return CORE_STATS.every((stat) => {
+      const range = state.scoutedStats[stat];
+      if (!range || typeof player[stat] !== "number") return true;
+      return valueFallsInRange(player[stat], range);
+    });
   });
 }

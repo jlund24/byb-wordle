@@ -2,7 +2,6 @@ import { PLAYERS, STATLINE_STATS, STAT_EMOJIS, STAT_LABELS } from "./data/player
 import { createRandomPuzzle, createStatlineDailyPuzzle, dateId, parsePuzzleDate } from "./game/puzzle.js";
 import { STATLINE_MAX_ATTEMPTS, STATLINE_STATE_VERSION, STATLINE_TIER_ORDER, STATLINE_TIER_RANGES, createStatlineState, getStatTier, submitStatlineGuess } from "./game/statlineState.js";
 import { loadProgress, saveProgress } from "./storage/storage.js";
-import { statHeaderMarkup } from "./ui/guessHistory.js";
 
 const app = document.querySelector("#app");
 const sheet = document.querySelector("#bottom-sheet");
@@ -106,7 +105,7 @@ async function shareResult() {
   const emojiHeader = STATLINE_STATS.map(({ key }) => STAT_EMOJIS[key]).join("");
   const emojiRows = state.history.map(({ feedback }) => STATLINE_STATS.map(({ key }) => SHARE_SYMBOLS[feedback[key]]).join("")).join("\n");
   const modeLabel = isRandomMode ? "Random" : `Daily - ${puzzleDateLabel}`;
-  const result = `Statline ${modeLabel}\nFirst guess: ${state.firstGuessScore}/8\nFinal: ${finalScore}/8 in ${state.attempt} attempts\n${emojiHeader}\n${emojiRows}\nhttps://jlund24.github.io/byb-wordle/statline.html`;
+  const result = `📊 STATLINE ${modeLabel}\nFirst guess: ${state.firstGuessScore}/8\nFinal: ${finalScore}/8 in ${state.attempt} attempts\n${emojiHeader}\n${emojiRows}\nhttps://jlund24.github.io/byb-wordle/statline.html`;
   if (await copyText(result)) {
     const status = sheet.querySelector("#share-copy-status");
     if (status) {
@@ -148,7 +147,8 @@ function emptyAttemptRows(hasActiveRow) {
 }
 
 function statlineHeaderMarkup() {
-  return statHeaderMarkup();
+  const shortLabels = { battingPower: "PWR", battingContact: "CON", stamina: "STA", speed: "SPD", coordination: "CRD", arm: "STR", throwing: "ACC", vision: "VIS" };
+  return `<div class="report-header">${STATLINE_STATS.map(({ key }) => `<span><span class="stat-header-emoji" aria-hidden="true">${STAT_EMOJIS[key]}</span>${shortLabels[key]}</span>`).join("")}</div>`;
 }
 
 function resultMarkup() {

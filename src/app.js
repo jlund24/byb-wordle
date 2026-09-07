@@ -1,4 +1,6 @@
 import { CORE_STATS, PLAYERS, STAT_LABELS } from "./data/players.js";
+
+const SCOUTABLE_STATS = CORE_STATS.filter((stat) => stat !== "type");
 import { createDailyPuzzle, createRandomPuzzle, dateId, parsePuzzleDate } from "./game/puzzle.js?v=random-mode-1";
 import { createGameState, scoutStat, submitGuess } from "./game/gameState.js?v=scout-1";
 import { equivalentPlayers } from "./game/comparisons.js";
@@ -7,7 +9,7 @@ import { loadProgress, saveProgress } from "./storage/storage.js";
 import { playerSearchMarkup, wirePlayerSearch } from "./ui/playerSearch.js?v=sticky-2";
 import { candidatesMarkup } from "./ui/candidateDrawer.js";
 import { scoutMarkup } from "./ui/statReveal.js?v=scout-copy-3";
-import { guessHistoryMarkup, generateEmojiShare, statHeaderMarkup } from "./ui/guessHistory.js";
+import { guessHistoryMarkup, generateEmojiShare, statHeaderMarkup, formatStatValue } from "./ui/guessHistory.js";
 
 const app = document.querySelector("#app");
 const sheet = document.querySelector("#bottom-sheet");
@@ -26,7 +28,7 @@ const puzzle = isRandomMode
   : createDailyPuzzle(PLAYERS, puzzleDate, parameters.get("player"));
 const mystery = PLAYERS.find((player) => player.id === puzzle.mysteryId);
 const savedState = loadProgress(puzzle.id, isRandomMode ? "random" : "daily");
-const savedStateIsCurrent = savedState?.version === 5 && savedState.startingStats?.length === 0 && savedState.mysteryId === puzzle.mysteryId && Number.isInteger(savedState.scoutTokens) && savedState.scoutedStats && savedState.possibleRanges && savedState.guesses.every((guess) => PLAYERS.some((player) => player.id === guess.playerId) && guess.comparisons && [0, 8].includes(Object.keys(guess.comparisons).length));
+const savedStateIsCurrent = savedState?.version === 6 && savedState.startingStats?.length === 0 && savedState.mysteryId === puzzle.mysteryId && Number.isInteger(savedState.scoutTokens) && savedState.scoutedStats && savedState.possibleRanges && savedState.possibleTypes && savedState.guesses.every((guess) => PLAYERS.some((player) => player.id === guess.playerId) && guess.comparisons && [0, 8].includes(Object.keys(guess.comparisons).length));
 let state = savedStateIsCurrent ? savedState : createGameState(puzzle);
 let priorFocus;
 let pendingGuessPlayerId = null;
@@ -62,6 +64,7 @@ function openSheet(content, setup, backdropClass) {
   priorFocus = document.activeElement;
   sheet.innerHTML = `<button class="close-sheet" type="button" aria-label="Close">×</button>${content}`;
   backdrop.classList.toggle("scout-backdrop", backdropClass === "scout-backdrop");
+  sheet.classList.toggle("scout-sheet", backdropClass === "scout-backdrop");
   sheet.hidden = false; backdrop.hidden = false;
   sheet.querySelector(".close-sheet").addEventListener("click", closeSheet);
   setup?.();
@@ -91,7 +94,7 @@ function selectInlineGuess(root, playerId) {
   currentRow.querySelector("#mystery-guess-title").textContent = `#${state.guesses.length + 1}: ${player.name}`;
   currentRow.querySelector("#inline-guess-preview").innerHTML = `<div class="history-stats">${CORE_STATS.map((stat) => {
     const range = state.possibleRanges[stat] || state.scoutedStats[stat];
-    return `<div><div class="stat-value-line"><strong>${player[stat]}</strong></div></div>`;
+    return `<div><div class="stat-value-line"><strong>${formatStatValue(stat, player[stat])}</strong></div></div>`;
   }).join("")}</div>`;
   currentRow.querySelector("#inline-guess-preview").hidden = false;
   window.requestAnimationFrame(focusCurrentGuess);
@@ -112,7 +115,7 @@ function openCandidates() {
 }
 
 function openScout() {
-  openSheet(scoutMarkup(CORE_STATS.filter((stat) => !state.scoutedStats[stat]), state.scoutTokens), () => sheet.querySelectorAll("[data-stat]").forEach((button) => button.addEventListener("click", () => {
+  openSheet(scoutMarkup(SCOUTABLE_STATS.filter((stat) => !state.scoutedStats[stat]), state.scoutTokens, state.possibleRanges), () => sheet.querySelectorAll("[data-stat]").forEach((button) => button.addEventListener("click", () => {
     try { state = scoutStat(state, button.dataset.stat, mystery); persistAndRender(); closeSheet(); }
     catch (error) { alert(error.message); }
   })), "scout-backdrop");
@@ -145,7 +148,7 @@ async function copyText(text) {
 
 async function shareResult() {
   const emojiShare = generateEmojiShare(state.guesses, state.scoutedStats, state.scoutTokens);
-  const header = `Backyardle ${isRandomMode ? "Random" : `Daily - ${puzzleDateLabel}`}: ${state.status === "won" ? `${state.guesses.length}/6` : "X/6"}`;
+  const header = `🔎 BACKYARDLE ${isRandomMode ? "Random" : `Daily - ${puzzleDateLabel}`}: ${state.status === "won" ? `${state.guesses.length}/6` : "X/6"}`;
   const sharedResult = `${header}\n${emojiShare}\nhttps://jlund24.github.io/byb-wordle/`;
   if (await copyText(sharedResult)) {
     const copyStatus = sheet.querySelector("#share-copy-status");
@@ -172,7 +175,7 @@ function gameOverMarkup() {
     return `<section class="result won"><h2 id="sheet-title">Correct!</h2><p>Solved in ${state.guesses.length} guess${state.guesses.length === 1 ? "" : "es"}.</p><button class="secondary-button" id="share-result" type="button">Copy spoiler-free result</button>${nextRoundButton}<p class="share-copy-status" id="share-copy-status" role="status">Result copied!</p></section>`;
   }
   
-  const trueStats = `${statHeaderMarkup()}<div class="history-stats">${CORE_STATS.map((stat) => `<div><div class="stat-value-line"><strong>${mystery[stat]}</strong></div></div>`).join("")}</div>`;
+  const trueStats = `${statHeaderMarkup()}<div class="history-stats">${CORE_STATS.map((stat) => `<div><div class="stat-value-line"><strong>${formatStatValue(stat, mystery[stat])}</strong></div></div>`).join("")}</div>`;
   return `<section class="result lost"><h2 id="sheet-title">Out of guesses</h2><p>${isRandomMode ? "This round's" : "Today's"} mystery player:</p><h3>${mystery.name}</h3><div class="loss-profile">${trueStats}</div><p>${clues}</p>${equivalents.length > 1 ? `<p>Accepted: ${equivalents.map((player) => player.name).join(", ")}</p>` : ""}<button class="secondary-button" id="share-result" type="button">Copy spoiler-free result</button>${nextRoundButton}<p class="share-copy-status" id="share-copy-status" role="status">Result copied!</p></section>`;
 }
 
@@ -195,8 +198,8 @@ function focusCurrentGuess() {
 function render() {
   const candidates = filterCandidates(PLAYERS, state, mystery);
   const availablePlayers = candidates.filter((player) => !guessedIds().includes(player.id));
-  const scoutAvailable = state.guesses.length > 0 && (state.scoutsThisGuess ?? 0) < 1 && state.scoutTokens > 0 && Object.keys(state.scoutedStats).length < CORE_STATS.length;
-  app.innerHTML = `<header><div class="header-top"><div><h1>Backyardle</h1><p class="eyebrow">Find the ⚾ '01 player in 6</p></div><div class="mode-picker"><select class="mode-select" id="mode-select" aria-label="Game mode"><option value="daily"${isRandomMode ? "" : " selected"}>Daily - ${puzzleDateLabel}</option><option value="random"${isRandomMode ? " selected" : ""}>Random</option></select>${isRandomMode ? '<button class="shuffle-button" id="shuffle-random" type="button" aria-label="Start a new random round" title="Start a new random round">&#128256;</button>' : ""}</div></div><nav class="site-nav" aria-label="Game modes"><a href="./index.html" aria-current="page">Backyardle</a><a href="./statline.html">Statline</a></nav></header>${guessHistoryMarkup(state.guesses, state.possibleRanges, state.scoutedStats, availablePlayers, state.scoutTokens, scoutAvailable, state.status !== "playing")}<div class="bottom-spacer"></div>`;
+  const scoutAvailable = state.guesses.length > 0 && (state.scoutsThisGuess ?? 0) < 1 && state.scoutTokens > 0 && Object.keys(state.scoutedStats).length < SCOUTABLE_STATS.length;
+  app.innerHTML = `<header><div class="header-top"><div><h1>Backyardle</h1><p class="eyebrow">Find the ⚾ '01 player in 6</p></div><div class="mode-picker"><select class="mode-select" id="mode-select" aria-label="Game mode"><option value="daily"${isRandomMode ? "" : " selected"}>Daily - ${puzzleDateLabel}</option><option value="random"${isRandomMode ? " selected" : ""}>Random</option></select>${isRandomMode ? '<button class="shuffle-button" id="shuffle-random" type="button" aria-label="Start a new random round" title="Start a new random round">&#128256;</button>' : ""}</div></div><nav class="site-nav" aria-label="Game modes"><a href="./index.html" aria-current="page">Backyardle</a><a href="./statline.html">Statline</a></nav></header>${guessHistoryMarkup(state.guesses, state.possibleRanges, state.scoutedStats, availablePlayers, state.scoutTokens, scoutAvailable, state.status !== "playing", state.possibleTypes)}<div class="bottom-spacer"></div>`;
   app.querySelector("#mode-select").addEventListener("change", (event) => {
     if (event.target.value === "random") startRandomRound();
     else if (isRandomMode) startDailyChallenge();
