@@ -26,6 +26,15 @@ assert(!valueFallsInRange(80, getStatRange(50)));
 
 const pablo = PLAYERS.find((player) => player.name === "Pablo Sanchez");
 const kenny = PLAYERS.find((player) => player.name === "Kenny Kawaguchi");
+const stephanie = PLAYERS.find((player) => player.sourceId === 11);
+assert.equal(stephanie.heat, 70);
+assert.equal(stephanie.corkscrew, 88);
+assert.equal(stephanie.attention, 1);
+assert.equal(stephanie.intelligence, 96);
+assert.equal(stephanie.aggression, 93);
+assert.equal(getStatTier(stephanie.speed, "speed"), "B");
+assert.equal(speedTierNumber(getStatTier(stephanie.speed, "speed")), 6);
+assert.equal(getStatTier(stephanie.heat), "A");
 assert.deepEqual(CORE_STATS.slice(0, 8), ["type", "battingPower", "battingContact", "stamina", "speed", "arm", "throwing", "vision"]);
 assert.equal(CORE_STATS.includes("coordination"), false);
 assert.equal(STAT_EMOJIS.type, "👤");

@@ -13,8 +13,37 @@ const FIELD_MAP = {
   arm: "Arm Strength",
   throwing: "Arm Accuracy",
   vision: "Eye",
+  heat: "Heat",
+  slowball: "Slowball",
+  leftHook: "Left Hook",
+  rightHook: "Right Hook",
+  corkscrew: "Corkscrew",
+  zigZag: "Zig-Zag",
+  bigFreeze: "Big Freeze",
+  fireball: "Fireball",
+  spitball: "Spitball",
+  crazyball: "Crazyball",
+  sloMo: "Slo-mo",
+  elevator: "Elevator",
+  attention: "Attention",
+  intelligence: "Intelligence",
+  aggression: "Aggression",
   height: "Height",
   appearance: "Appearance"
+};
+const IMPORTED_NUMERIC_FIELDS = {
+  overallRank: "BBOL.r",
+  offense: "Offense",
+  defense: "Defense",
+  speedTier: "Speed Tier",
+  pitching: "Pitching",
+  pitchingCal: "Pitching (Cal)"
+};
+const IMPORTED_TEXT_FIELDS = {
+  bestPosition: "Best Position",
+  description: "Description of the Player",
+  tier: "Tier",
+  tierDescription: "Short Description"
 };
 const TYPE_DISPLAY_VALUES = { Backyard: "Backyard", Generic: "Generic", "Pro/Clone": "Pro/Clone" };
 
@@ -29,14 +58,38 @@ function numericValue(value, field, name) {
   return number;
 }
 
+function importedValue(value, field, name) {
+  const number = Number(value);
+  if (Number.isFinite(number)) return number;
+  if (typeof value === "string" && value.trim()) return value.trim();
+  throw new Error(`Invalid ${field} value for ${name}: ${value}`);
+}
+
 function createPlayer(row) {
   const name = row["Player Name"]?.trim();
   const sourceId = row.ID;
   if (!name || sourceId === undefined || sourceId === null) throw new Error("Every included row requires Player Name and ID.");
   const type = typeof row.Type === "string" ? row.Type.trim() : "Generic";
-  const player = { id: `${slugify(name)}-${slugify(String(sourceId))}`, name, type: TYPE_DISPLAY_VALUES[type] ?? "Generic" };
+  const player = {
+    id: `${slugify(name)}-${slugify(String(sourceId))}`,
+    sourceId,
+    name,
+    type: TYPE_DISPLAY_VALUES[type] ?? "Generic",
+    nickname: row.Nickname?.trim() || "",
+    bats: row.Bats?.trim() || "",
+    throws: row.Throws?.trim() || "",
+    gender: row.Gender?.trim() || "",
+    birthdayMonth: row["B-Day Month"]?.trim() || "",
+    birthdayDay: row["B-Day Day"] || ""
+  };
   for (const [field, sourceField] of Object.entries(FIELD_MAP)) {
     player[field] = numericValue(row[sourceField], sourceField, name);
+  }
+  for (const [field, sourceField] of Object.entries(IMPORTED_NUMERIC_FIELDS)) {
+    player[field] = importedValue(row[sourceField], sourceField, name);
+  }
+  for (const [field, sourceField] of Object.entries(IMPORTED_TEXT_FIELDS)) {
+    player[field] = row[sourceField]?.trim() || "";
   }
   return player;
 }
@@ -60,6 +113,31 @@ function moduleSource(players) {
     " * @property {number} arm",
     " * @property {number} throwing",
     " * @property {number} vision",
+    " * @property {number} heat",
+    " * @property {number} slowball",
+    " * @property {number} leftHook",
+    " * @property {number} rightHook",
+    " * @property {number} corkscrew",
+    " * @property {number} zigZag",
+    " * @property {number} bigFreeze",
+    " * @property {number} fireball",
+    " * @property {number} spitball",
+    " * @property {number} crazyball",
+    " * @property {number} sloMo",
+    " * @property {number} elevator",
+    " * @property {number} attention",
+    " * @property {number} intelligence",
+    " * @property {number} aggression",
+    " * @property {number} overallRank",
+    " * @property {number} offense",
+    " * @property {number} defense",
+    " * @property {number} speedTier",
+    " * @property {number} pitching",
+    " * @property {number} pitchingCal",
+    " * @property {string} bestPosition",
+    " * @property {string} description",
+    " * @property {string=} tier",
+    " * @property {string=} tierDescription",
     " * @property {number=} height",
     " * @property {number=} appearance",
     " */",

@@ -35,7 +35,17 @@
     "B-Day Month": "Jun",
     "B-Day Day": 22,
     "Nickname": "Twinkie Toes",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "C",
+    "Short Description": "Can Hit Hard Sometimes and Also Throw Well",
+    "BBOL.r": 159,
+    "Offense": 35,
+    "Speed Tier": 4,
+    "Defense": 32,
+    "Pitching": 38,
+    "Pitching (Cal)": 38,
+    "Best Position": "3B",
+    "Description of the Player": "Mediocre hitter, mediocre defense, really needs Eckman Acres to thrive"
   },
   {
     "Player Name": "Kimmy Eckman (@ Eckman Acres)",
@@ -73,7 +83,17 @@
     "B-Day Month": "Jun",
     "B-Day Day": 22,
     "Nickname": "",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "C",
+    "Short Description": "Can Hit Hard Sometimes and Also Throw Well",
+    "BBOL.r": 79.1,
+    "Offense": 74,
+    "Speed Tier": 6,
+    "Defense": 68,
+    "Pitching": 38,
+    "Pitching (Cal)": 38,
+    "Best Position": "OF / SS",
+    "Description of the Player": "Pretty well-rounded hitter and defender, always worth but Kimmy herself isn't good"
   },
   {
     "Player Name": "Maria Luna",
@@ -111,7 +131,17 @@
     "B-Day Month": "Jul",
     "B-Day Day": 23,
     "Nickname": "Pinky",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "C",
+    "Short Description": "Decent in a Few Categories but not Great in Any",
+    "BBOL.r": 146.1,
+    "Offense": 55,
+    "Speed Tier": 6,
+    "Defense": 42,
+    "Pitching": 57,
+    "Pitching (Cal)": 57,
+    "Best Position": "OF",
+    "Description of the Player": "Decent on-base hitter who only really specializes in catching the ball"
   },
   {
     "Player Name": "Maria Luna (pink uniform)",
@@ -149,7 +179,17 @@
     "B-Day Month": "Jul",
     "B-Day Day": 23,
     "Nickname": "",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "S-",
+    "Short Description": "Jack of All Trades Players",
+    "BBOL.r": 27,
+    "Offense": 90,
+    "Speed Tier": 7,
+    "Defense": 79,
+    "Pitching": 78,
+    "Pitching (Cal)": 78,
+    "Best Position": "OF / P",
+    "Description of the Player": "Good hitter, great outfielder, great pitcher, useful for any pitching rotation"
   },
   {
     "Player Name": "Angela Delvecchio",
@@ -187,7 +227,17 @@
     "B-Day Month": "Dec",
     "B-Day Day": 20,
     "Nickname": "Sugar Pop",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "C",
+    "Short Description": "Big Late Round Power, Bad Defense",
+    "BBOL.r": 160,
+    "Offense": 61,
+    "Speed Tier": 4,
+    "Defense": 4,
+    "Pitching": 78,
+    "Pitching (Cal)": 78,
+    "Best Position": "P",
+    "Description of the Player": "Good hitter and great pitcher but awful defender, not fast either"
   },
   {
     "Player Name": "Angela Delvecchio (vs Tony Delvecchio)",
@@ -225,7 +275,17 @@
     "B-Day Month": "Dec",
     "B-Day Day": 20,
     "Nickname": "",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "C",
+    "Short Description": "Big Late Round Power, Bad Defense",
+    "BBOL.r": 160.1,
+    "Offense": 91,
+    "Speed Tier": 7,
+    "Defense": 74,
+    "Pitching": 73,
+    "Pitching (Cal)": 98,
+    "Best Position": "OF / P",
+    "Description of the Player": "Very good but only functional when playing vs Tony Delvecchio (rare)"
   },
   {
     "Player Name": "Vicki Kawaguchi",
@@ -263,7 +323,17 @@
     "B-Day Month": "Nov",
     "B-Day Day": 5,
     "Nickname": "Swan",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "B-",
+    "Short Description": "Speedy Players Who Can Play a Defensive Role",
+    "BBOL.r": 135,
+    "Offense": 34,
+    "Speed Tier": 7,
+    "Defense": 66,
+    "Pitching": 42,
+    "Pitching (Cal)": 42,
+    "Best Position": "OF",
+    "Description of the Player": "Top tier outfielder, not good at hitting but can still sometimes get on with speed"
   },
   {
     "Player Name": "Gretchen Hasselhoff",
@@ -301,7 +371,17 @@
     "B-Day Month": "May",
     "B-Day Day": 31,
     "Nickname": "Jabberjaw",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can Only Run Okay, Can't Throw or Hit",
+    "BBOL.r": 224,
+    "Offense": 28,
+    "Speed Tier": 6,
+    "Defense": 30,
+    "Pitching": 61,
+    "Pitching (Cal)": 61,
+    "Best Position": "P",
+    "Description of the Player": "Okay relief pitching, worst arm in the game, poor hitter"
   },
   {
     "Player Name": "Sally Dobbs",
@@ -339,7 +419,17 @@
     "B-Day Month": "Nov",
     "B-Day Day": 11,
     "Nickname": "The Boss",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "S-",
+    "Short Description": "Great Defensive Pieces, Leaning Toward Batting Skill",
+    "BBOL.r": 43,
+    "Offense": 71,
+    "Speed Tier": 6,
+    "Defense": 88,
+    "Pitching": 68,
+    "Pitching (Cal)": 68,
+    "Best Position": "3B / 1B",
+    "Description of the Player": "Great defender, good relief pitcher, top tier power but 1 contact holds her back a lot"
   },
   {
     "Player Name": "Sally Dobbs (w/ Ronny Dobbs)",
@@ -377,7 +467,17 @@
     "B-Day Month": "Nov",
     "B-Day Day": 11,
     "Nickname": "",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "S-",
+    "Short Description": "Great Defensive Pieces, Leaning Toward Batting Skill",
+    "BBOL.r": 43.1,
+    "Offense": 71,
+    "Speed Tier": 6,
+    "Defense": 96,
+    "Pitching": 77,
+    "Pitching (Cal)": 89,
+    "Best Position": "P",
+    "Description of the Player": "Not considered worthwhile since Ronny Dobbs becomes totally useless with Sally"
   },
   {
     "Player Name": "Billy Jean Blackwood",
@@ -415,7 +515,17 @@
     "B-Day Month": "Jan",
     "B-Day Day": 26,
     "Nickname": "Crazy Legs",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "B-",
+    "Short Description": "Good Contact Hitting 1B Specialists",
+    "BBOL.r": 139,
+    "Offense": 18,
+    "Speed Tier": 5,
+    "Defense": 73,
+    "Pitching": 54,
+    "Pitching (Cal)": 54,
+    "Best Position": "1B",
+    "Description of the Player": "Best 1B in the game, basically worth it for that alone, value goes up a lot with Marky"
   },
   {
     "Player Name": "Billy Jean Blackwood (w/ Marky Dubois)",
@@ -453,7 +563,17 @@
     "B-Day Month": "Jan",
     "B-Day Day": 26,
     "Nickname": "",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "B-",
+    "Short Description": "Good Contact Hitting 1B Specialists",
+    "BBOL.r": 149.1,
+    "Offense": 11,
+    "Speed Tier": 5,
+    "Defense": 73,
+    "Pitching": 54,
+    "Pitching (Cal)": 54,
+    "Best Position": "1B",
+    "Description of the Player": "Still one of the best 1Bs in the game, almost always worth it"
   },
   {
     "Player Name": "Ashley Webber",
@@ -491,7 +611,17 @@
     "B-Day Month": "Feb",
     "B-Day Day": 18,
     "Nickname": "Little Smokey",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "C",
+    "Short Description": "Okay Contact Hitting Non-Slow 1Bs",
+    "BBOL.r": 148.1,
+    "Offense": 38,
+    "Speed Tier": 6,
+    "Defense": 70,
+    "Pitching": 54,
+    "Pitching (Cal)": 60,
+    "Best Position": "1B / OF",
+    "Description of the Player": "Not really relevant since the two Webbers are always paired together"
   },
   {
     "Player Name": "Ashley Webber (w/ Sidney Webber)",
@@ -529,7 +659,17 @@
     "B-Day Month": "Feb",
     "B-Day Day": 18,
     "Nickname": "",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "A-",
+    "Short Description": "Well-Above Average Defenders Who Can Do One Other Thing Very Well",
+    "BBOL.r": 69,
+    "Offense": 66,
+    "Speed Tier": 6,
+    "Defense": 87,
+    "Pitching": 68,
+    "Pitching (Cal)": 88,
+    "Best Position": "OF / 3B",
+    "Description of the Player": "Almost top tier fielding, good relief pitching, decent offensively, can sometimes impress"
   },
   {
     "Player Name": "Sidney Webber",
@@ -567,7 +707,17 @@
     "B-Day Month": "Feb",
     "B-Day Day": 18,
     "Nickname": "Little Smokey",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "C",
+    "Short Description": "Okay Contact Hitting Non-Slow 1Bs",
+    "BBOL.r": 148.2,
+    "Offense": 38,
+    "Speed Tier": 6,
+    "Defense": 70,
+    "Pitching": 54,
+    "Pitching (Cal)": 60,
+    "Best Position": "1B / OF",
+    "Description of the Player": "Not really relevant since the two Webbers are always paired together"
   },
   {
     "Player Name": "Sidney Webber (w/ Ashley Webber)",
@@ -605,7 +755,17 @@
     "B-Day Month": "Feb",
     "B-Day Day": 18,
     "Nickname": "",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "A-",
+    "Short Description": "Well-Above Average Defenders Who Can Do One Other Thing Very Well",
+    "BBOL.r": 69,
+    "Offense": 66,
+    "Speed Tier": 6,
+    "Defense": 87,
+    "Pitching": 68,
+    "Pitching (Cal)": 88,
+    "Best Position": "OF / 3B",
+    "Description of the Player": "Almost top tier fielding, good relief pitching, decent offensively, can sometimes impress"
   },
   {
     "Player Name": "Kiesha Phillips",
@@ -643,7 +803,17 @@
     "B-Day Month": "Apr",
     "B-Day Day": 2,
     "Nickname": "Flash",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "S+",
+    "Short Description": "Elite Defensive Players While Still Being Great Offensively",
+    "BBOL.r": 16,
+    "Offense": 90,
+    "Speed Tier": 7,
+    "Defense": 96,
+    "Pitching": 36,
+    "Pitching (Cal)": 36,
+    "Best Position": "any",
+    "Description of the Player": "Top tier fielder, good batter, one of two tall fast people"
   },
   {
     "Player Name": "Stephanie Morgan",
@@ -681,7 +851,17 @@
     "B-Day Month": "Aug",
     "B-Day Day": 15,
     "Nickname": "Bubbles",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "C",
+    "Short Description": "Okay Contact Hitting Non-Slow 1Bs",
+    "BBOL.r": 148,
+    "Offense": 39,
+    "Speed Tier": 6,
+    "Defense": 61,
+    "Pitching": 59,
+    "Pitching (Cal)": 59,
+    "Best Position": "1B / OF",
+    "Description of the Player": "Decent defender, awful attention so must remain active, good relief pitcher"
   },
   {
     "Player Name": "Luanne Lui",
@@ -719,7 +899,17 @@
     "B-Day Month": "Jan",
     "B-Day Day": 27,
     "Nickname": "Lulu",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "B-",
+    "Short Description": "Speedy Players Who Can Play a Defensive Role",
+    "BBOL.r": 142,
+    "Offense": 70,
+    "Speed Tier": 8,
+    "Defense": 25,
+    "Pitching": 76,
+    "Pitching (Cal)": 76,
+    "Best Position": "P",
+    "Description of the Player": "Extremely fast, great pitcher, very poor defender due to being so short"
   },
   {
     "Player Name": "Annie Frazier",
@@ -757,7 +947,17 @@
     "B-Day Month": "Sep",
     "B-Day Day": 18,
     "Nickname": "Flipper",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "C",
+    "Short Description": "Okay Contact Hitting Non-Slow 1Bs",
+    "BBOL.r": 149,
+    "Offense": 46,
+    "Speed Tier": 6,
+    "Defense": 58,
+    "Pitching": 23,
+    "Pitching (Cal)": 23,
+    "Best Position": "1B",
+    "Description of the Player": "Okay hitter who can really only play 1B, max attention is nice but lacks aggression"
   },
   {
     "Player Name": "Jocinda Smith",
@@ -795,7 +995,17 @@
     "B-Day Month": "Sep",
     "B-Day Day": 28,
     "Nickname": "MVP",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "B-",
+    "Short Description": "Good Contact Hitting 1B Specialists",
+    "BBOL.r": 136,
+    "Offense": 40,
+    "Speed Tier": 5,
+    "Defense": 63,
+    "Pitching": 43,
+    "Pitching (Cal)": 43,
+    "Best Position": "1B",
+    "Description of the Player": "Top tier 1B, good contact hitter but lacks the speed to get on sometimes"
   },
   {
     "Player Name": "Lisa Crocket",
@@ -833,7 +1043,17 @@
     "B-Day Month": "Dec",
     "B-Day Day": 4,
     "Nickname": "Mad Dog",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "A-",
+    "Short Description": "Well-Above Average Defenders Who Can Do One Other Thing Very Well",
+    "BBOL.r": 84,
+    "Offense": 48,
+    "Speed Tier": 6,
+    "Defense": 85,
+    "Pitching": 70,
+    "Pitching (Cal)": 70,
+    "Best Position": "1B / P",
+    "Description of the Player": "Great defender and good starting pitcher, very tall so hard to hit around"
   },
   {
     "Player Name": "Ronny Dobbs",
@@ -871,7 +1091,17 @@
     "B-Day Month": "Aug",
     "B-Day Day": 10,
     "Nickname": "Spud",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "C",
+    "Short Description": "Can Hit Hard Sometimes and Also Throw Well",
+    "BBOL.r": 154,
+    "Offense": 67,
+    "Speed Tier": 5,
+    "Defense": 34,
+    "Pitching": 61,
+    "Pitching (Cal)": 61,
+    "Best Position": "C",
+    "Description of the Player": "Solid hitter, low contact is tough, good relief pitcher, poor defender due to being short"
   },
   {
     "Player Name": "Ronny Dobbs (w/ Sally Dobbs)",
@@ -909,7 +1139,17 @@
     "B-Day Month": "Aug",
     "B-Day Day": 10,
     "Nickname": "",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "IDC About Winning",
+    "Short Description": "Not Very Usable But Can Play Offense OK-ish",
+    "BBOL.r": 250.1,
+    "Offense": 19,
+    "Speed Tier": 4,
+    "Defense": 3,
+    "Pitching": 41,
+    "Pitching (Cal)": 41,
+    "Best Position": "2B / C",
+    "Description of the Player": "Not considered worthwhile since Ronny Dobbs becomes totally useless with Sally"
   },
   {
     "Player Name": "Achmed Khan",
@@ -947,7 +1187,17 @@
     "B-Day Month": "Jul",
     "B-Day Day": 11,
     "Nickname": "Axeman",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "S+",
+    "Short Description": "Less Flexible Elite Hitters",
+    "BBOL.r": 17,
+    "Offense": 92,
+    "Speed Tier": 6,
+    "Defense": 64,
+    "Pitching": 29,
+    "Pitching (Cal)": 29,
+    "Best Position": "1B",
+    "Description of the Player": "Top off. specialist, only competent at 1B, Amir Khan boost inflates his draft stock"
   },
   {
     "Player Name": "Amir Khan",
@@ -985,7 +1235,17 @@
     "B-Day Month": "Sep",
     "B-Day Day": 1,
     "Nickname": "Sticks",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "C",
+    "Short Description": "Good Hitting and Pitching",
+    "BBOL.r": 145.1,
+    "Offense": 57,
+    "Speed Tier": 5,
+    "Defense": 27,
+    "Pitching": 86,
+    "Pitching (Cal)": 86,
+    "Best Position": "P",
+    "Description of the Player": "Good line drive hitter, top tier pitcher, lacks defensively, always picked with Achmed"
   },
   {
     "Player Name": "Amir Khan (w/ Achmed Khan)",
@@ -1023,7 +1283,17 @@
     "B-Day Month": "Sep",
     "B-Day Day": 1,
     "Nickname": "",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "A+",
+    "Short Description": "Elite Offense, Lacking in Defense",
+    "BBOL.r": 62,
+    "Offense": 87,
+    "Speed Tier": 6,
+    "Defense": 45,
+    "Pitching": 57,
+    "Pitching (Cal)": 57,
+    "Best Position": "OF",
+    "Description of the Player": "Great off. specialist, held back by poor defensive stats, best saved for later rounds"
   },
   {
     "Player Name": "Kenny Kawaguchi",
@@ -1061,7 +1331,17 @@
     "B-Day Month": "Nov",
     "B-Day Day": 20,
     "Nickname": "K-Man",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "D-",
+    "Short Description": "Very Desperate Late Round Pitcher / Non-Slow Fielder Pickups",
+    "BBOL.r": 192,
+    "Offense": 25,
+    "Speed Tier": 6,
+    "Defense": 51,
+    "Pitching": 54,
+    "Pitching (Cal)": 54,
+    "Best Position": "OF / P",
+    "Description of the Player": "Competent fielder with good relief pitching, cannot fall over at all"
   },
   {
     "Player Name": "Pete Wheeler",
@@ -1099,7 +1379,17 @@
     "B-Day Month": "Oct",
     "B-Day Day": 13,
     "Nickname": "Wheelie",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "S+",
+    "Short Description": "Elite Defensive Players While Still Being Great Offensively",
+    "BBOL.r": 8,
+    "Offense": 92,
+    "Speed Tier": 9,
+    "Defense": 95,
+    "Pitching": 17,
+    "Pitching (Cal)": 17,
+    "Best Position": "OF",
+    "Description of the Player": "Max speed, top tier fielder, good hitter. Poor eye and attn can be awkward to play with"
   },
   {
     "Player Name": "Dmitri Petrovich",
@@ -1137,7 +1427,17 @@
     "B-Day Month": "Jun",
     "B-Day Day": 9,
     "Nickname": "Paste",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "B+",
+    "Short Description": "Heavily Defense Leaning But Great At It",
+    "BBOL.r": 110,
+    "Offense": 62,
+    "Speed Tier": 6,
+    "Defense": 63,
+    "Pitching": 39,
+    "Pitching (Cal)": 43,
+    "Best Position": "1B",
+    "Description of the Player": "Good line drive hitter but is basically only usable at 1B, poor stamina"
   },
   {
     "Player Name": "Ricky Johnson",
@@ -1175,7 +1475,17 @@
     "B-Day Month": "Feb",
     "B-Day Day": 14,
     "Nickname": "Fella",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "D+",
+    "Short Description": "Very Desperate 1B Pickups",
+    "BBOL.r": 183,
+    "Offense": 26,
+    "Speed Tier": 6,
+    "Defense": 58,
+    "Pitching": 42,
+    "Pitching (Cal)": 42,
+    "Best Position": "1B",
+    "Description of the Player": "Basically only good at 1B, poor hitter, unimpressive overall"
   },
   {
     "Player Name": "Marky Dubois",
@@ -1213,7 +1523,17 @@
     "B-Day Month": "Sep",
     "B-Day Day": 6,
     "Nickname": "Cootie",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "D+",
+    "Short Description": "Very Desperate 1B Pickups",
+    "BBOL.r": 184,
+    "Offense": 29,
+    "Speed Tier": 4,
+    "Defense": 33,
+    "Pitching": 61,
+    "Pitching (Cal)": 74,
+    "Best Position": "1B / P",
+    "Description of the Player": "Decent pitcher, okay 1B, bad at everything else, basically only good with Billy Jean"
   },
   {
     "Player Name": "Marky Dubois (vs Red/White Sox)",
@@ -1251,7 +1571,17 @@
     "B-Day Month": "Sep",
     "B-Day Day": 6,
     "Nickname": "",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "D+",
+    "Short Description": "Very Desperate 1B Pickups",
+    "BBOL.r": 85.5,
+    "Offense": 55,
+    "Speed Tier": 6,
+    "Defense": 76,
+    "Pitching": 77,
+    "Pitching (Cal)": 97,
+    "Best Position": "P",
+    "Description of the Player": "Great pitcher and fielder, pretty likely to get in a draft if you get Billy Jean first"
   },
   {
     "Player Name": "Marky Dubois (w/ Billy Jean Blackwood)",
@@ -1289,7 +1619,17 @@
     "B-Day Month": "Sep",
     "B-Day Day": 6,
     "Nickname": "",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "A-",
+    "Short Description": "Extremely Elite Pitchers",
+    "BBOL.r": 85.4,
+    "Offense": 77,
+    "Speed Tier": 6,
+    "Defense": 80,
+    "Pitching": 61,
+    "Pitching (Cal)": 74,
+    "Best Position": "3B / SS",
+    "Description of the Player": "Pretty unlikely to face one of the Red or White Sox"
   },
   {
     "Player Name": "Marky Dubois (w/ Billy Jean & vs Sox)",
@@ -1327,7 +1667,17 @@
     "B-Day Month": "Sep",
     "B-Day Day": 6,
     "Nickname": "",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "D+",
+    "Short Description": "Very Desperate 1B Pickups",
+    "BBOL.r": 85.3,
+    "Offense": 77,
+    "Speed Tier": 6,
+    "Defense": 80,
+    "Pitching": 77,
+    "Pitching (Cal)": 97,
+    "Best Position": "P / 3B",
+    "Description of the Player": "Great pitcher and fielder, pretty unlikely to face one of the Red or White Sox"
   },
   {
     "Player Name": "Marky Dubois (on Red/White Sox)",
@@ -1365,7 +1715,17 @@
     "B-Day Month": "Sep",
     "B-Day Day": 6,
     "Nickname": "",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "D+",
+    "Short Description": "Very Desperate 1B Pickups",
+    "BBOL.r": 238.1,
+    "Offense": 26,
+    "Speed Tier": 4,
+    "Defense": 32,
+    "Pitching": 49,
+    "Pitching (Cal)": 49,
+    "Best Position": "1B",
+    "Description of the Player": "Absolutely no reason to do this to yourself"
   },
   {
     "Player Name": "Marky Dubois (w/ Billy Jean & on Sox)",
@@ -1403,7 +1763,17 @@
     "B-Day Month": "Sep",
     "B-Day Day": 6,
     "Nickname": "",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "D+",
+    "Short Description": "Very Desperate 1B Pickups",
+    "BBOL.r": 184.1,
+    "Offense": 26,
+    "Speed Tier": 4,
+    "Defense": 32,
+    "Pitching": 68,
+    "Pitching (Cal)": 68,
+    "Best Position": "1B / P",
+    "Description of the Player": "Absolutely no reason to do this to yourself"
   },
   {
     "Player Name": "Reese Worthington",
@@ -1441,7 +1811,17 @@
     "B-Day Month": "May",
     "B-Day Day": 25,
     "Nickname": "Big Toe",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "D-",
+    "Short Description": "Last Okay Decent Speed People",
+    "BBOL.r": 211,
+    "Offense": 30,
+    "Speed Tier": 6,
+    "Defense": 33,
+    "Pitching": 50,
+    "Pitching (Cal)": 58,
+    "Best Position": "OF",
+    "Description of the Player": "Extremely budget outfielder, good eyesight is always useful"
   },
   {
     "Player Name": "Pablo Sanchez",
@@ -1479,7 +1859,17 @@
     "B-Day Month": "Aug",
     "B-Day Day": 18,
     "Nickname": "Secret Weapon",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "S-",
+    "Short Description": "Elite Offense, Meh Defense",
+    "BBOL.r": 32,
+    "Offense": 97,
+    "Speed Tier": 7,
+    "Defense": 54,
+    "Pitching": 39,
+    "Pitching (Cal)": 39,
+    "Best Position": "OF / C",
+    "Description of the Player": "Max power + fast, really hard to use defensively because he's so short"
   },
   {
     "Player Name": "Tony Delvecchio",
@@ -1517,7 +1907,17 @@
     "B-Day Month": "Jul",
     "B-Day Day": 16,
     "Nickname": "Vec",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "A-",
+    "Short Description": "Extremely Powerful Infielders with OK Batting",
+    "BBOL.r": 87,
+    "Offense": 53,
+    "Speed Tier": 5,
+    "Defense": 93,
+    "Pitching": 44,
+    "Pitching (Cal)": 44,
+    "Best Position": "3B / SS",
+    "Description of the Player": "Top tier defender, okay hitter, arm is less good than it looks because he's so tall"
   },
   {
     "Player Name": "Tony Delvecchio (vs Angela Delvecchio)",
@@ -1555,7 +1955,17 @@
     "B-Day Month": "Jul",
     "B-Day Day": 16,
     "Nickname": "",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "A-",
+    "Short Description": "Extremely Powerful Infielders with OK Batting",
+    "BBOL.r": 87.1,
+    "Offense": 89,
+    "Speed Tier": 7,
+    "Defense": 99,
+    "Pitching": 61,
+    "Pitching (Cal)": 61,
+    "Best Position": "any",
+    "Description of the Player": "Very good but only functional when playing vs Angela Delvecchio (rare)"
   },
   {
     "Player Name": "Jorge Garcia",
@@ -1593,7 +2003,17 @@
     "B-Day Month": "Oct",
     "B-Day Day": 7,
     "Nickname": "Bonkers",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "B+",
+    "Short Description": "Solid Batting Infielders",
+    "BBOL.r": 105,
+    "Offense": 54,
+    "Speed Tier": 5,
+    "Defense": 77,
+    "Pitching": 40,
+    "Pitching (Cal)": 40,
+    "Best Position": "1B / 3B",
+    "Description of the Player": "Good hitter, awful eyesight, good corner infielder, can over or under perform easily"
   },
   {
     "Player Name": "Dante Robinson",
@@ -1631,7 +2051,17 @@
     "B-Day Month": "Mar",
     "B-Day Day": 3,
     "Nickname": "Stretch",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "B-",
+    "Short Description": "Speedy Players Who Can Play a Defensive Role",
+    "BBOL.r": 129,
+    "Offense": 61,
+    "Speed Tier": 7,
+    "Defense": 72,
+    "Pitching": 58,
+    "Pitching (Cal)": 58,
+    "Best Position": "OF",
+    "Description of the Player": "Decent hitter who can keep the ball low, fast outfielder but can sort of play IF too"
   },
   {
     "Player Name": "Ernie Steele",
@@ -1669,7 +2099,17 @@
     "B-Day Month": "Apr",
     "B-Day Day": 21,
     "Nickname": "Funnybones",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "C",
+    "Short Description": "Clunky but Still Functional 1Bs",
+    "BBOL.r": 158,
+    "Offense": 39,
+    "Speed Tier": 5,
+    "Defense": 52,
+    "Pitching": 60,
+    "Pitching (Cal)": 60,
+    "Best Position": "1B",
+    "Description of the Player": "Okay hitter, good 1B, poor attention, decent relief pitcher, awful arm due to his height"
   },
   {
     "Player Name": "Ernie Steele (@ Steele Stadium)",
@@ -1707,7 +2147,17 @@
     "B-Day Month": "Apr",
     "B-Day Day": 21,
     "Nickname": "",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "C",
+    "Short Description": "Clunky but Still Functional 1Bs",
+    "BBOL.r": 68.1,
+    "Offense": 74,
+    "Speed Tier": 6,
+    "Defense": 89,
+    "Pitching": 60,
+    "Pitching (Cal)": 60,
+    "Best Position": "1B / OF",
+    "Description of the Player": "Very nice player but lacks the HR power for Steele Stadium, usually still worth it though"
   },
   {
     "Player Name": "Mikey Thomas",
@@ -1745,7 +2195,17 @@
     "B-Day Month": "Oct",
     "B-Day Day": 19,
     "Nickname": "Nugget",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "A+",
+    "Short Description": "Power Hitter Catchers",
+    "BBOL.r": 58,
+    "Offense": 74,
+    "Speed Tier": 4,
+    "Defense": 76,
+    "Pitching": 54,
+    "Pitching (Cal)": 54,
+    "Best Position": "C",
+    "Description of the Player": "Good power hitter, primarily used as a catcherr. Struggles to run the bases."
   },
   {
     "Player Name": "Mo Vaughn",
@@ -1783,7 +2243,17 @@
     "B-Day Month": "Dec",
     "B-Day Day": 15,
     "Nickname": "Hit Dog",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "A+",
+    "Short Description": "Strong Hitters With Some Pitching Skill",
+    "BBOL.r": 65,
+    "Offense": 72,
+    "Speed Tier": 5,
+    "Defense": 74,
+    "Pitching": 68,
+    "Pitching (Cal)": 68,
+    "Best Position": "1B",
+    "Description of the Player": "Good hitter, top tier 1B, 100 stamina lets him relief pitch for ages even if inaccurate"
   },
   {
     "Player Name": "Randy Johnson",
@@ -1821,7 +2291,17 @@
     "B-Day Month": "Sep",
     "B-Day Day": 10,
     "Nickname": "The Big Unit",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "A-",
+    "Short Description": "Extremely Elite Pitchers",
+    "BBOL.r": 88,
+    "Offense": 28,
+    "Speed Tier": 5,
+    "Defense": 85,
+    "Pitching": 99,
+    "Pitching (Cal)": 99,
+    "Best Position": "P",
+    "Description of the Player": "Best pitcher in the game by far, you never need a reliever, very much lacks in offense"
   },
   {
     "Player Name": "Chipper Jones",
@@ -1859,7 +2339,17 @@
     "B-Day Month": "Apr",
     "B-Day Day": 24,
     "Nickname": "Chipper",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "A+",
+    "Short Description": "Very Well-Rounded Players Who Can Play for Any Team",
+    "BBOL.r": 55,
+    "Offense": 83,
+    "Speed Tier": 6,
+    "Defense": 84,
+    "Pitching": 47,
+    "Pitching (Cal)": 53,
+    "Best Position": "3B / 1B",
+    "Description of the Player": "Good hitter, can play any position very well but poor stamina can sometimes hurt him"
   },
   {
     "Player Name": "Cal Ripken Jr.",
@@ -1897,7 +2387,17 @@
     "B-Day Month": "Aug",
     "B-Day Day": 24,
     "Nickname": "Iron Man",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "A+",
+    "Short Description": "Very Well-Rounded Players Who Can Play for Any Team",
+    "BBOL.r": 54,
+    "Offense": 73,
+    "Speed Tier": 6,
+    "Defense": 84,
+    "Pitching": 53,
+    "Pitching (Cal)": 53,
+    "Best Position": "3B / SS",
+    "Description of the Player": "Good hitter with great defensive stats, gives his whole team +10 stamina (caps at 100)"
   },
   {
     "Player Name": "Nomar Garciaparra",
@@ -1935,7 +2435,17 @@
     "B-Day Month": "Jul",
     "B-Day Day": 23,
     "Nickname": "Spiderman",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "A+",
+    "Short Description": "Very Well-Rounded Players Who Can Play for Any Team",
+    "BBOL.r": 52,
+    "Offense": 82,
+    "Speed Tier": 6,
+    "Defense": 75,
+    "Pitching": 68,
+    "Pitching (Cal)": 80,
+    "Best Position": "OF / 3B",
+    "Description of the Player": "Good line drive hitter, good defender, very good pitcher in a pinch but a poor starter"
   },
   {
     "Player Name": "Sammy Sosa",
@@ -1973,7 +2483,17 @@
     "B-Day Month": "Nov",
     "B-Day Day": 12,
     "Nickname": "Slammin'",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S+",
+    "Short Description": "Elite Hitters With Solid Fielding",
+    "BBOL.r": 6,
+    "Offense": 94,
+    "Speed Tier": 6,
+    "Defense": 92,
+    "Pitching": 50,
+    "Pitching (Cal)": 50,
+    "Best Position": "3B / SS",
+    "Description of the Player": "Max power, top tier fielding, the best offense + defense combo"
   },
   {
     "Player Name": "Frank Thomas",
@@ -2011,7 +2531,17 @@
     "B-Day Month": "May",
     "B-Day Day": 27,
     "Nickname": "The Big Hurt",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "A-",
+    "Short Description": "Extremely Elite Pitchers",
+    "BBOL.r": 90,
+    "Offense": 44,
+    "Speed Tier": 4,
+    "Defense": 51,
+    "Pitching": 89,
+    "Pitching (Cal)": 89,
+    "Best Position": "P",
+    "Description of the Player": "Top tier pitcher, unlikely you will need any relievers, decent power but still slow"
   },
   {
     "Player Name": "Barry Larkin",
@@ -2049,7 +2579,17 @@
     "B-Day Month": "Apr",
     "B-Day Day": 28,
     "Nickname": "30/30",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S-",
+    "Short Description": "Great Defensive Pieces, Leaning Toward Speed",
+    "BBOL.r": 35,
+    "Offense": 79,
+    "Speed Tier": 7,
+    "Defense": 94,
+    "Pitching": 46,
+    "Pitching (Cal)": 46,
+    "Best Position": "any",
+    "Description of the Player": "Great defender, good line drive hitter, poor stamina isn't too negative due to his arm"
   },
   {
     "Player Name": "Kenny Lofton",
@@ -2087,7 +2627,17 @@
     "B-Day Month": "May",
     "B-Day Day": 31,
     "Nickname": "Blur",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S+",
+    "Short Description": "Elite Defensive Players While Still Being Great Offensively",
+    "BBOL.r": 25,
+    "Offense": 85,
+    "Speed Tier": 8,
+    "Defense": 93,
+    "Pitching": 68,
+    "Pitching (Cal)": 68,
+    "Best Position": "OF",
+    "Description of the Player": "Extremely fast, good hitter, great fielder, decent relief pitcher"
   },
   {
     "Player Name": "Larry Walker",
@@ -2125,7 +2675,17 @@
     "B-Day Month": "Dec",
     "B-Day Day": 1,
     "Nickname": "Canadian Clubber",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S-",
+    "Short Description": "Great Defensive Pieces, Leaning Toward Batting Skill",
+    "BBOL.r": 30,
+    "Offense": 87,
+    "Speed Tier": 6,
+    "Defense": 89,
+    "Pitching": 41,
+    "Pitching (Cal)": 41,
+    "Best Position": "any",
+    "Description of the Player": "Solid hitter, great defender, good eyesight"
   },
   {
     "Player Name": "Juan Gonzalez",
@@ -2163,7 +2723,17 @@
     "B-Day Month": "Oct",
     "B-Day Day": 16,
     "Nickname": "Juan Gone",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S-",
+    "Short Description": "Great Defensive Pieces, Leaning Toward Batting Skill",
+    "BBOL.r": 38,
+    "Offense": 83,
+    "Speed Tier": 6,
+    "Defense": 89,
+    "Pitching": 44,
+    "Pitching (Cal)": 44,
+    "Best Position": "3B / SS",
+    "Description of the Player": "Good hitter, great defender, lacks consistent home run power"
   },
   {
     "Player Name": "Alex Gonzalez",
@@ -2201,7 +2771,17 @@
     "B-Day Month": "Feb",
     "B-Day Day": 15,
     "Nickname": "Lil' Mitt",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "B+",
+    "Short Description": "Heavily Defense Leaning But Great At It",
+    "BBOL.r": 94,
+    "Offense": 49,
+    "Speed Tier": 7,
+    "Defense": 82,
+    "Pitching": 24,
+    "Pitching (Cal)": 24,
+    "Best Position": "3B / OF",
+    "Description of the Player": "Below average offensively (low contact and eye) but a solid infielder this late"
   },
   {
     "Player Name": "Jeff Bagwell",
@@ -2239,7 +2819,17 @@
     "B-Day Month": "May",
     "B-Day Day": 27,
     "Nickname": "Bags",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "A-",
+    "Short Description": "Extremely Powerful Infielders with OK Batting",
+    "BBOL.r": 77,
+    "Offense": 67,
+    "Speed Tier": 5,
+    "Defense": 82,
+    "Pitching": 48,
+    "Pitching (Cal)": 48,
+    "Best Position": "C / 3B",
+    "Description of the Player": "Decent hitting with very good defense, one of the top infielders in the game"
   },
   {
     "Player Name": "Carlos Beltran",
@@ -2277,7 +2867,17 @@
     "B-Day Month": "Apr",
     "B-Day Day": 24,
     "Nickname": "Buckles",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "B+",
+    "Short Description": "Heavily Defense Leaning But Great At It",
+    "BBOL.r": 111,
+    "Offense": 42,
+    "Speed Tier": 6,
+    "Defense": 73,
+    "Pitching": 55,
+    "Pitching (Cal)": 55,
+    "Best Position": "SS / 3B",
+    "Description of the Player": "Lackluster hitter, still a very nice defender, okay relief pitcher"
   },
   {
     "Player Name": "Raul Mondesi",
@@ -2315,7 +2915,17 @@
     "B-Day Month": "Mar",
     "B-Day Day": 12,
     "Nickname": "Tuesdesi",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S+",
+    "Short Description": "Elite Defensive Players While Still Being Great Offensively",
+    "BBOL.r": 21,
+    "Offense": 85,
+    "Speed Tier": 7,
+    "Defense": 98,
+    "Pitching": 55,
+    "Pitching (Cal)": 55,
+    "Best Position": "any",
+    "Description of the Player": "Top tier fielder but low attention, 100 stamina lets him pitch for a while"
   },
   {
     "Player Name": "Jeromy Burnitz",
@@ -2353,7 +2963,17 @@
     "B-Day Month": "Apr",
     "B-Day Day": 15,
     "Nickname": "The Kid",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "B+",
+    "Short Description": "Solid Batting Infielders",
+    "BBOL.r": 106,
+    "Offense": 60,
+    "Speed Tier": 5,
+    "Defense": 69,
+    "Pitching": 49,
+    "Pitching (Cal)": 49,
+    "Best Position": "1B / 3B",
+    "Description of the Player": "Decent hitter, low contact is a little awkward, a good corner infielder"
   },
   {
     "Player Name": "Marty Cordova",
@@ -2391,7 +3011,17 @@
     "B-Day Month": "Jul",
     "B-Day Day": 10,
     "Nickname": "Shade",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "A-",
+    "Short Description": "Well-Above Average Defenders Who Can Do One Other Thing Very Well",
+    "BBOL.r": 71,
+    "Offense": 51,
+    "Speed Tier": 6,
+    "Defense": 93,
+    "Pitching": 75,
+    "Pitching (Cal)": 75,
+    "Best Position": "3B / SS",
+    "Description of the Player": "Top tier fielding and great pitching, so-so hitting, great for those wanting budget defense"
   },
   {
     "Player Name": "Vladimir Guerrero",
@@ -2429,7 +3059,17 @@
     "B-Day Month": "Feb",
     "B-Day Day": 9,
     "Nickname": "Alvino",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S-",
+    "Short Description": "Great Defensive Pieces, Leaning Toward Batting Skill",
+    "BBOL.r": 41,
+    "Offense": 82,
+    "Speed Tier": 6,
+    "Defense": 86,
+    "Pitching": 42,
+    "Pitching (Cal)": 42,
+    "Best Position": "OF / 3B",
+    "Description of the Player": "Good hitter, great defender but poor attention, lacks consistent home run power"
   },
   {
     "Player Name": "Mike Piazza",
@@ -2467,7 +3107,17 @@
     "B-Day Month": "Sep",
     "B-Day Day": 4,
     "Nickname": "Supreme",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "B-",
+    "Short Description": "Decent Hitters with Meh Defense",
+    "BBOL.r": 118,
+    "Offense": 56,
+    "Speed Tier": 4,
+    "Defense": 43,
+    "Pitching": 36,
+    "Pitching (Cal)": 36,
+    "Best Position": "1B",
+    "Description of the Player": "Good power but lacks speed, not really good anywhere other than 1B"
   },
   {
     "Player Name": "Derek Jeter",
@@ -2505,7 +3155,17 @@
     "B-Day Month": "Jun",
     "B-Day Day": 26,
     "Nickname": "D.J.",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S+",
+    "Short Description": "Elite Defensive Players While Still Being Great Offensively",
+    "BBOL.r": 14,
+    "Offense": 88,
+    "Speed Tier": 7,
+    "Defense": 99,
+    "Pitching": 36,
+    "Pitching (Cal)": 36,
+    "Best Position": "any",
+    "Description of the Player": "Best fielder in the game (not immune to errors), great line drive hitter with some speed"
   },
   {
     "Player Name": "Jason Giambi",
@@ -2543,7 +3203,17 @@
     "B-Day Month": "Jan",
     "B-Day Day": 8,
     "Nickname": "Slugger",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "C",
+    "Short Description": "Clunky but Still Functional 1Bs",
+    "BBOL.r": 161,
+    "Offense": 44,
+    "Speed Tier": 4,
+    "Defense": 29,
+    "Pitching": 61,
+    "Pitching (Cal)": 61,
+    "Best Position": "1B",
+    "Description of the Player": "Okay power but poor speed, only good at 1B, good relief pitcher"
   },
   {
     "Player Name": "Curt Schilling",
@@ -2581,7 +3251,17 @@
     "B-Day Month": "Nov",
     "B-Day Day": 14,
     "Nickname": "Heater",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "D+",
+    "Short Description": "Solid Defense Only Pitchers",
+    "BBOL.r": 166,
+    "Offense": 15,
+    "Speed Tier": 5,
+    "Defense": 80,
+    "Pitching": 76,
+    "Pitching (Cal)": 76,
+    "Best Position": "P / C",
+    "Description of the Player": "Top tier pitcher, great defender, horrible hitter"
   },
   {
     "Player Name": "Jason Kendall",
@@ -2619,7 +3299,17 @@
     "B-Day Month": "Jun",
     "B-Day Day": 26,
     "Nickname": "Patch",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "A-",
+    "Short Description": "Well-Above Average Defenders Who Can Do One Other Thing Very Well",
+    "BBOL.r": 73,
+    "Offense": 73,
+    "Speed Tier": 6,
+    "Defense": 80,
+    "Pitching": 49,
+    "Pitching (Cal)": 49,
+    "Best Position": "OF / 3B",
+    "Description of the Player": "Good offense and good defense, can pitch in a pinch, pretty \"average\" good player"
   },
   {
     "Player Name": "Tony Gwynn",
@@ -2657,7 +3347,17 @@
     "B-Day Month": "May",
     "B-Day Day": 9,
     "Nickname": "Pal",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "B-",
+    "Short Description": "Good Contact Hitting 1B Specialists",
+    "BBOL.r": 137,
+    "Offense": 49,
+    "Speed Tier": 5,
+    "Defense": 54,
+    "Pitching": 57,
+    "Pitching (Cal)": 57,
+    "Best Position": "1B",
+    "Description of the Player": "Good 1B who can sort of play other positions, good hitter but not very fast"
   },
   {
     "Player Name": "Barry Bonds",
@@ -2695,7 +3395,17 @@
     "B-Day Month": "Jul",
     "B-Day Day": 24,
     "Nickname": "Big Guy",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S+",
+    "Short Description": "Elite Defensive Players While Still Being Great Offensively",
+    "BBOL.r": 23,
+    "Offense": 85,
+    "Speed Tier": 7,
+    "Defense": 98,
+    "Pitching": 54,
+    "Pitching (Cal)": 54,
+    "Best Position": "any",
+    "Description of the Player": "Top tier fielder, great line drive hitter, NOT irl Barry Bonds"
   },
   {
     "Player Name": "Ken Griffey Jr.",
@@ -2733,7 +3443,17 @@
     "B-Day Month": "Nov",
     "B-Day Day": 21,
     "Nickname": "Junior",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S+",
+    "Short Description": "Elite Hitters With Solid Fielding",
+    "BBOL.r": 12,
+    "Offense": 93,
+    "Speed Tier": 6,
+    "Defense": 76,
+    "Pitching": 52,
+    "Pitching (Cal)": 52,
+    "Best Position": "3B / SS",
+    "Description of the Player": "Max power, good fielder, recovers from errors pretty quickly"
   },
   {
     "Player Name": "Mark McGwire",
@@ -2771,7 +3491,17 @@
     "B-Day Month": "Oct",
     "B-Day Day": 1,
     "Nickname": "Mac",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S-",
+    "Short Description": "ELITE Power, Low Speed",
+    "BBOL.r": 46,
+    "Offense": 87,
+    "Speed Tier": 4,
+    "Defense": 69,
+    "Pitching": 62,
+    "Pitching (Cal)": 62,
+    "Best Position": "1B",
+    "Description of the Player": "Max power, good 1B and good relief pitcher, will get walked a lot without backup"
   },
   {
     "Player Name": "Jose Canseco",
@@ -2809,7 +3539,17 @@
     "B-Day Month": "Jul",
     "B-Day Day": 2,
     "Nickname": "No Way",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S+",
+    "Short Description": "Elite Hitters With Solid Fielding",
+    "BBOL.r": 10,
+    "Offense": 93,
+    "Speed Tier": 6,
+    "Defense": 88,
+    "Pitching": 49,
+    "Pitching (Cal)": 64,
+    "Best Position": "1B / OF",
+    "Description of the Player": "Max power, great eyesight, good fielder, best non-specialized 1B in the game"
   },
   {
     "Player Name": "Ivan Rodriguez",
@@ -2847,7 +3587,17 @@
     "B-Day Month": "Nov",
     "B-Day Day": 30,
     "Nickname": "Pudge",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "B+",
+    "Short Description": "Solid Line Drive Hitting Catchers",
+    "BBOL.r": 96,
+    "Offense": 58,
+    "Speed Tier": 5,
+    "Defense": 83,
+    "Pitching": 74,
+    "Pitching (Cal)": 74,
+    "Best Position": "C / SS",
+    "Description of the Player": "Great catcher who can also pitch very well, solid line drive hitter"
   },
   {
     "Player Name": "Shawn Green",
@@ -2885,7 +3635,17 @@
     "B-Day Month": "Nov",
     "B-Day Day": 10,
     "Nickname": "Squeaky",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "A-",
+    "Short Description": "Solid Hitters with Skills in Other Things but Not Really Elite",
+    "BBOL.r": 79,
+    "Offense": 74,
+    "Speed Tier": 6,
+    "Defense": 69,
+    "Pitching": 69,
+    "Pitching (Cal)": 69,
+    "Best Position": "1B",
+    "Description of the Player": "Good hitter, mid tier defense but is a good relief pitcher, not bad at 1B"
   },
   {
     "Player Name": "Alex Rodriguez",
@@ -2923,7 +3683,17 @@
     "B-Day Month": "Jul",
     "B-Day Day": 27,
     "Nickname": "A-Rod",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S-",
+    "Short Description": "Great Defensive Pieces, Leaning Toward Speed",
+    "BBOL.r": 44,
+    "Offense": 79,
+    "Speed Tier": 7,
+    "Defense": 84,
+    "Pitching": 24,
+    "Pitching (Cal)": 24,
+    "Best Position": "OF",
+    "Description of the Player": "Good line drive hitter, last great fielder who is fast but poor attention"
   },
   {
     "Player Name": "Amy Bostwick",
@@ -2961,7 +3731,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "BBOL.r": 239,
+    "Offense": 23,
+    "Speed Tier": 3,
+    "Defense": 16,
+    "Pitching": 38,
+    "Pitching (Cal)": 38,
+    "Best Position": "2B / 3B",
+    "Description of the Player": "Has some power and a decent arm, min speed",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can't do Anything Well, but Still Has At Least One Quality"
   },
   {
     "Player Name": "Arlene Perez",
@@ -2999,7 +3779,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "C",
+    "Short Description": "Decent in a Few Categories but not Great in Any",
+    "BBOL.r": 146,
+    "Offense": 55,
+    "Speed Tier": 6,
+    "Defense": 42,
+    "Pitching": 57,
+    "Pitching (Cal)": 57,
+    "Best Position": "OF",
+    "Description of the Player": "Decent on-base hitter who only really specializes in catching the ball"
   },
   {
     "Player Name": "Betty Houstan",
@@ -3037,7 +3827,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D+",
+    "Short Description": "Very Desperate Power Hitter Pickups",
+    "BBOL.r": 171,
+    "Offense": 61,
+    "Speed Tier": 4,
+    "Defense": 4,
+    "Pitching": 70,
+    "Pitching (Cal)": 70,
+    "Best Position": "P",
+    "Description of the Player": "Good hitter and good pitcher but awful defender, not fast either"
   },
   {
     "Player Name": "Cindy Chang",
@@ -3075,7 +3875,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D+",
+    "Short Description": "Very Desperate Not Slow Fielder Pickups",
+    "BBOL.r": 179,
+    "Offense": 25,
+    "Speed Tier": 7,
+    "Defense": 64,
+    "Pitching": 42,
+    "Pitching (Cal)": 42,
+    "Best Position": "OF",
+    "Description of the Player": "Solid outfielder, worst bat in the game, even with speed it's hard to get on base"
   },
   {
     "Player Name": "Clarice Reid",
@@ -3113,7 +3923,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can Only Run Okay, Can't Throw or Hit",
+    "BBOL.r": 222,
+    "Offense": 28,
+    "Speed Tier": 6,
+    "Defense": 30,
+    "Pitching": 62,
+    "Pitching (Cal)": 62,
+    "Best Position": "P",
+    "Description of the Player": "Okay relief pitching, worst arm in the game, poor hitter"
   },
   {
     "Player Name": "Colleen Klinker",
@@ -3151,7 +3971,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D+",
+    "Short Description": "Solid Defense Only Pitchers",
+    "BBOL.r": 168,
+    "Offense": 21,
+    "Speed Tier": 5,
+    "Defense": 70,
+    "Pitching": 68,
+    "Pitching (Cal)": 68,
+    "Best Position": "SS / 3B",
+    "Description of the Player": "Solid defensive specialist, terrible at making contact, good relief pitcher"
   },
   {
     "Player Name": "Debby Nagasawa",
@@ -3189,7 +4019,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "A+",
+    "Short Description": "Elite Offense, Lacking in Defense",
+    "BBOL.r": 59,
+    "Offense": 88,
+    "Speed Tier": 6,
+    "Defense": 63,
+    "Pitching": 54,
+    "Pitching (Cal)": 54,
+    "Best Position": "OF",
+    "Description of the Player": "Great hitter for average but lacks top tier slugging, so-so fielder at every position"
   },
   {
     "Player Name": "Diana Hayes",
@@ -3227,7 +4067,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Very Desperate Late Round Pitcher / Non-Slow Fielder Pickups",
+    "BBOL.r": 201,
+    "Offense": 23,
+    "Speed Tier": 5,
+    "Defense": 43,
+    "Pitching": 70,
+    "Pitching (Cal)": 80,
+    "Best Position": "P / 2B",
+    "Description of the Player": "Good pitching, okay fielding, not bad for a pitching rotation"
   },
   {
     "Player Name": "Esther French",
@@ -3265,7 +4115,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Very Desperate Late Round Pitcher / Non-Slow Fielder Pickups",
+    "BBOL.r": 201,
+    "Offense": 23,
+    "Speed Tier": 5,
+    "Defense": 43,
+    "Pitching": 70,
+    "Pitching (Cal)": 80,
+    "Best Position": "P / 2B",
+    "Description of the Player": "Good pitching, okay fielding, not bad for a pitching rotation"
   },
   {
     "Player Name": "Francis Blewer",
@@ -3303,7 +4163,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "S-",
+    "Short Description": "Jack of All Trades Players",
+    "BBOL.r": 28,
+    "Offense": 90,
+    "Speed Tier": 7,
+    "Defense": 87,
+    "Pitching": 67,
+    "Pitching (Cal)": 67,
+    "Best Position": "SS / 3B",
+    "Description of the Player": "Good hitter, great defender, decent relief pitchers"
   },
   {
     "Player Name": "Gail Weinmann",
@@ -3341,7 +4211,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D+",
+    "Short Description": "Very Desperate Not Slow Fielder Pickups",
+    "BBOL.r": 175,
+    "Offense": 38,
+    "Speed Tier": 6,
+    "Defense": 50,
+    "Pitching": 59,
+    "Pitching (Cal)": 59,
+    "Best Position": "OF",
+    "Description of the Player": "Competent fielder, good relief pitcher, can occasionally get a good hit"
   },
   {
     "Player Name": "Grace Tipton",
@@ -3379,7 +4259,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "A-",
+    "Short Description": "Extremely Elite Pitchers",
+    "BBOL.r": 85,
+    "Offense": 70,
+    "Speed Tier": 8,
+    "Defense": 46,
+    "Pitching": 86,
+    "Pitching (Cal)": 86,
+    "Best Position": "P",
+    "Description of the Player": "Extremely fast, top tier pitcher, these both conflict but can still get on with grounders"
   },
   {
     "Player Name": "Hannah Peavy",
@@ -3417,7 +4307,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Can Sort of Field But Still Are Bad",
+    "BBOL.r": 244,
+    "Offense": 19,
+    "Speed Tier": 5,
+    "Defense": 34,
+    "Pitching": 21,
+    "Pitching (Cal)": 21,
+    "Best Position": "2B",
+    "Description of the Player": "Poor defender, okay contact hitter but lacks any speed or power"
   },
   {
     "Player Name": "Heather Quinn",
@@ -3455,7 +4355,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Mediocre at Everything but not Trash?",
+    "BBOL.r": 212,
+    "Offense": 38,
+    "Speed Tier": 4,
+    "Defense": 25,
+    "Pitching": 43,
+    "Pitching (Cal)": 43,
+    "Best Position": "2B / 3B",
+    "Description of the Player": "Decent line drive hitter, slow, not really good anywhere defensively"
   },
   {
     "Player Name": "Holly Franklin",
@@ -3493,7 +4403,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B+",
+    "Short Description": "Heavily Defense Leaning But Great At It",
+    "BBOL.r": 113,
+    "Offense": 45,
+    "Speed Tier": 6,
+    "Defense": 65,
+    "Pitching": 70,
+    "Pitching (Cal)": 70,
+    "Best Position": "P / SS",
+    "Description of the Player": "Good starting pitcher with solid defensive stats, lacking in offense but still has pop"
   },
   {
     "Player Name": "Isabelle Marelli",
@@ -3531,7 +4451,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B+",
+    "Short Description": "Solid Batting Infielders",
+    "BBOL.r": 103,
+    "Offense": 67,
+    "Speed Tier": 5,
+    "Defense": 62,
+    "Pitching": 61,
+    "Pitching (Cal)": 61,
+    "Best Position": "C",
+    "Description of the Player": "Solid hitter, low contact is tough, can play most IF positions, good relief pitchers"
   },
   {
     "Player Name": "Jane Davis",
@@ -3569,7 +4499,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "S-",
+    "Short Description": "Elite Offense, Meh Defense",
+    "BBOL.r": 33,
+    "Offense": 96,
+    "Speed Tier": 7,
+    "Defense": 44,
+    "Pitching": 29,
+    "Pitching (Cal)": 29,
+    "Best Position": "OF / 2B",
+    "Description of the Player": "Top tier offensive stats, notably below average fielder, poor eyesight"
   },
   {
     "Player Name": "Joella Minotti",
@@ -3607,7 +4547,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "C",
+    "Short Description": "Big Late Round Power, Bad Defense",
+    "BBOL.r": 155,
+    "Offense": 77,
+    "Speed Tier": 5,
+    "Defense": 21,
+    "Pitching": 37,
+    "Pitching (Cal)": 37,
+    "Best Position": "2B",
+    "Description of the Player": "Good but not top tier power, poor defender, only good if you REALLY need power"
   },
   {
     "Player Name": "Judy Abwunza",
@@ -3645,7 +4595,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Very Desperate Late Round Pitcher / Non-Slow Fielder Pickups",
+    "BBOL.r": 193,
+    "Offense": 25,
+    "Speed Tier": 6,
+    "Defense": 51,
+    "Pitching": 54,
+    "Pitching (Cal)": 54,
+    "Best Position": "OF / P",
+    "Description of the Player": "Competent fielder with good relief pitching"
   },
   {
     "Player Name": "Julie Dunkel",
@@ -3683,7 +4643,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "S+",
+    "Short Description": "The Masters of Almost Everything",
+    "BBOL.r": 1,
+    "Offense": 98,
+    "Speed Tier": 9,
+    "Defense": 85,
+    "Pitching": 74,
+    "Pitching (Cal)": 83,
+    "Best Position": "OF / P",
+    "Description of the Player": "Max power + max speed, great pitcher, great fielder. Low eye and attn is a bit weird"
   },
   {
     "Player Name": "Karen Donato",
@@ -3721,7 +4691,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "C",
+    "Short Description": "Decent in a Few Categories but not Great in Any",
+    "BBOL.r": 143,
+    "Offense": 62,
+    "Speed Tier": 6,
+    "Defense": 47,
+    "Pitching": 46,
+    "Pitching (Cal)": 51,
+    "Best Position": "OF",
+    "Description of the Player": "Good line drive hitter, doesn't excel anywhere defensively, awful stamina"
   },
   {
     "Player Name": "Katie Shankar",
@@ -3759,7 +4739,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Basically Unusable Joke Characters",
+    "BBOL.r": 258,
+    "Offense": 4,
+    "Speed Tier": 4,
+    "Defense": 7,
+    "Pitching": 42,
+    "Pitching (Cal)": 42,
+    "Best Position": "P",
+    "Description of the Player": "Has one good pitch, bad at everything else"
   },
   {
     "Player Name": "Krissy Mulligan",
@@ -3797,7 +4787,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "BBOL.r": 235,
+    "Offense": 29,
+    "Speed Tier": 4,
+    "Defense": 18,
+    "Pitching": 61,
+    "Pitching (Cal)": 74,
+    "Best Position": "P",
+    "Description of the Player": "Decent pitcher, bad at everything else",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can't do Anything Well, but Still Has At Least One Quality"
   },
   {
     "Player Name": "Lara Nunez",
@@ -3835,7 +4835,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Last Okay Decent Speed People",
+    "BBOL.r": 209,
+    "Offense": 30,
+    "Speed Tier": 6,
+    "Defense": 32,
+    "Pitching": 55,
+    "Pitching (Cal)": 61,
+    "Best Position": "OF",
+    "Description of the Player": "Extremely budget outfielder, decent eyesight, okay relief pitching"
   },
   {
     "Player Name": "Leah Wayne",
@@ -3873,7 +4883,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "S+",
+    "Short Description": "The Masters of Almost Everything",
+    "BBOL.r": 3,
+    "Offense": 97,
+    "Speed Tier": 7,
+    "Defense": 76,
+    "Pitching": 81,
+    "Pitching (Cal)": 81,
+    "Best Position": "P",
+    "Description of the Player": "Max power + fast, top tier pitcher, good fielder. Hard to go wrong"
   },
   {
     "Player Name": "Lena Ng",
@@ -3911,7 +4931,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B+",
+    "Short Description": "Solid Line Drive Hitting Catchers",
+    "BBOL.r": 98,
+    "Offense": 53,
+    "Speed Tier": 5,
+    "Defense": 87,
+    "Pitching": 44,
+    "Pitching (Cal)": 44,
+    "Best Position": "C",
+    "Description of the Player": "Top tier catcher, okay hitter, runs away from the ball sometimes at corner IF"
   },
   {
     "Player Name": "Linda Potter",
@@ -3949,7 +4979,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Very Desperate Late Round Pitcher / Non-Slow Fielder Pickups",
+    "BBOL.r": 199,
+    "Offense": 22,
+    "Speed Tier": 5,
+    "Defense": 64,
+    "Pitching": 62,
+    "Pitching (Cal)": 62,
+    "Best Position": "P / 3B",
+    "Description of the Player": "Good late round fielder, good relief pitcher, awful eyesight"
   },
   {
     "Player Name": "Liz Kinghorn",
@@ -3987,7 +5027,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B-",
+    "Short Description": "Speedy Players Who Can Play a Defensive Role",
+    "BBOL.r": 127,
+    "Offense": 63,
+    "Speed Tier": 7,
+    "Defense": 72,
+    "Pitching": 58,
+    "Pitching (Cal)": 58,
+    "Best Position": "OF",
+    "Description of the Player": "Decent hitter who can keep the ball low, fast outfielder but can sort of play IF too"
   },
   {
     "Player Name": "Marianna Rauf",
@@ -4025,7 +5075,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can Hit Okay, Can't Field",
+    "BBOL.r": 215,
+    "Offense": 44,
+    "Speed Tier": 4,
+    "Defense": 9,
+    "Pitching": 60,
+    "Pitching (Cal)": 60,
+    "Best Position": "2B",
+    "Description of the Player": "Good late round power, atrocious fielding, decent relief pitcher, poor attention"
   },
   {
     "Player Name": "Mary Reilly",
@@ -4063,7 +5123,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D+",
+    "Short Description": "Strong Defenders With Some Decent Pop",
+    "BBOL.r": 163,
+    "Offense": 36,
+    "Speed Tier": 4,
+    "Defense": 76,
+    "Pitching": 54,
+    "Pitching (Cal)": 54,
+    "Best Position": "C",
+    "Description of the Player": "Good fielder, slow, can sometimes overperform due to good contact hitting"
   },
   {
     "Player Name": "Michiko Adachi",
@@ -4101,7 +5171,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Very Desperate Infielder Arm Pickups",
+    "BBOL.r": 196,
+    "Offense": 31,
+    "Speed Tier": 4,
+    "Defense": 57,
+    "Pitching": 34,
+    "Pitching (Cal)": 34,
+    "Best Position": "3B / SS",
+    "Description of the Player": "Poor hitter with some pop, decent fielder, can play corner infield well"
   },
   {
     "Player Name": "Molly May",
@@ -4139,7 +5219,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B+",
+    "Short Description": "Decent Power Hitter Catchers",
+    "BBOL.r": 101,
+    "Offense": 68,
+    "Speed Tier": 4,
+    "Defense": 66,
+    "Pitching": 29,
+    "Pitching (Cal)": 29,
+    "Best Position": "C",
+    "Description of the Player": "Strong hitter with awful eyesight, decent defender, primarily corner IF or catcher"
   },
   {
     "Player Name": "Nancy Chin",
@@ -4177,7 +5267,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B-",
+    "Short Description": "Great Pitchers with Low Defensive Skill",
+    "BBOL.r": 125,
+    "Offense": 29,
+    "Speed Tier": 6,
+    "Defense": 45,
+    "Pitching": 78,
+    "Pitching (Cal)": 78,
+    "Best Position": "P",
+    "Description of the Player": "Top tier pitcher who can defend at their position, totally lacks in offensive skills"
   },
   {
     "Player Name": "Olga Tollefson",
@@ -4215,7 +5315,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Very Desperate Speedy Offensive Pickups",
+    "BBOL.r": 186,
+    "Offense": 46,
+    "Speed Tier": 7,
+    "Defense": 44,
+    "Pitching": 64,
+    "Pitching (Cal)": 64,
+    "Best Position": "2B / OF",
+    "Description of the Player": "Decent offensive specialist, extremely difficult to use fielders"
   },
   {
     "Player Name": "Olive Hussein",
@@ -4253,7 +5363,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Very Desperate Speedy Offensive Pickups",
+    "BBOL.r": 188,
+    "Offense": 51,
+    "Speed Tier": 6,
+    "Defense": 40,
+    "Pitching": 19,
+    "Pitching (Cal)": 22,
+    "Best Position": "2B / OF",
+    "Description of the Player": "Decent late round line drive hitter, bad defensively but not atrocious"
   },
   {
     "Player Name": "Petra Chekov",
@@ -4291,7 +5411,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B-",
+    "Short Description": "Elite Hitters, No Defensive Use",
+    "BBOL.r": 115,
+    "Offense": 81,
+    "Speed Tier": 4,
+    "Defense": 7,
+    "Pitching": 53,
+    "Pitching (Cal)": 53,
+    "Best Position": "2B",
+    "Description of the Player": "Top tier power but awful at every defensive position, good if lacking in power"
   },
   {
     "Player Name": "Ramona Bennett",
@@ -4329,7 +5459,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B-",
+    "Short Description": "Great Pitchers with Low Defensive Skill",
+    "BBOL.r": 123,
+    "Offense": 56,
+    "Speed Tier": 6,
+    "Defense": 34,
+    "Pitching": 75,
+    "Pitching (Cal)": 75,
+    "Best Position": "P",
+    "Description of the Player": "Good line drive hitter with good pitching, lacks in defensive qualities"
   },
   {
     "Player Name": "Randi Uno",
@@ -4367,7 +5507,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "C",
+    "Short Description": "Can Hit Hard Sometimes and Also Throw Well",
+    "BBOL.r": 152,
+    "Offense": 46,
+    "Speed Tier": 5,
+    "Defense": 57,
+    "Pitching": 35,
+    "Pitching (Cal)": 35,
+    "Best Position": "3B / SS",
+    "Description of the Player": "Good power but poor contact, decent infielders, not good for homers"
   },
   {
     "Player Name": "Serena Damonte",
@@ -4405,7 +5555,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Very Desperate Infielder Arm Pickups",
+    "BBOL.r": 191,
+    "Offense": 8,
+    "Speed Tier": 4,
+    "Defense": 65,
+    "Pitching": 69,
+    "Pitching (Cal)": 69,
+    "Best Position": "C",
+    "Description of the Player": "Good fielder with a cannon arm, can relief pitch, awful hitter"
   },
   {
     "Player Name": "Sheila Basanti",
@@ -4443,7 +5603,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B-",
+    "Short Description": "Speedy Players Who Can Play a Defensive Role",
+    "BBOL.r": 133,
+    "Offense": 55,
+    "Speed Tier": 7,
+    "Defense": 55,
+    "Pitching": 37,
+    "Pitching (Cal)": 37,
+    "Best Position": "OF",
+    "Description of the Player": "Decent offense, basically only good at playing the outfield"
   },
   {
     "Player Name": "Sonja Hagen",
@@ -4481,7 +5651,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "A-",
+    "Short Description": "Well-Above Average Defenders Who Can Do One Other Thing Very Well",
+    "BBOL.r": 75,
+    "Offense": 78,
+    "Speed Tier": 6,
+    "Defense": 72,
+    "Pitching": 65,
+    "Pitching (Cal)": 65,
+    "Best Position": "OF / SS",
+    "Description of the Player": "Great in all roles but lacks the height to keep up with the pros with similar stats"
   },
   {
     "Player Name": "Stacy Gordon",
@@ -4519,7 +5699,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "BBOL.r": 237,
+    "Offense": 23,
+    "Speed Tier": 4,
+    "Defense": 17,
+    "Pitching": 54,
+    "Pitching (Cal)": 63,
+    "Best Position": "2B / P",
+    "Description of the Player": "Okay relief pitcher, okay hitter, not good enough in any category",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can't do Anything Well, but Still Has At Least One Quality"
   },
   {
     "Player Name": "Star Moonbeam",
@@ -4557,7 +5747,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "A+",
+    "Short Description": "As Valuable as a Run",
+    "BBOL.r": 50,
+    "Offense": 80,
+    "Speed Tier": 9,
+    "Defense": 52,
+    "Pitching": 49,
+    "Pitching (Cal)": 49,
+    "Best Position": "OF",
+    "Description of the Player": "Max speed, their entire gameplan is built around them being absurdly fast"
   },
   {
     "Player Name": "Tanya Uchida",
@@ -4595,7 +5795,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B-",
+    "Short Description": "Decent Hitters with Meh Defense",
+    "BBOL.r": 121,
+    "Offense": 78,
+    "Speed Tier": 6,
+    "Defense": 51,
+    "Pitching": 45,
+    "Pitching (Cal)": 45,
+    "Best Position": "OF",
+    "Description of the Player": "VERY good contact hitter, so-so in defense but great if you can afford them"
   },
   {
     "Player Name": "Tiffany Bosworth",
@@ -4633,7 +5843,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can Only Pitch, Can't Hit or Field",
+    "BBOL.r": 227,
+    "Offense": 10,
+    "Speed Tier": 4,
+    "Defense": 22,
+    "Pitching": 74,
+    "Pitching (Cal)": 74,
+    "Best Position": "P / 2B",
+    "Description of the Player": "Good pitcher, not really good for any other role"
   },
   {
     "Player Name": "Tina Herrara",
@@ -4671,7 +5891,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "C",
+    "Short Description": "Nice Def. Specialists",
+    "BBOL.r": 150,
+    "Offense": 26,
+    "Speed Tier": 6,
+    "Defense": 81,
+    "Pitching": 57,
+    "Pitching (Cal)": 57,
+    "Best Position": "SS / C",
+    "Description of the Player": "Very good fielder, decent relief pitcher, not a good hitter but has okay speed"
   },
   {
     "Player Name": "Vanna Steinman",
@@ -4709,7 +5939,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Not Very Usable But Has A Pitch",
+    "BBOL.r": 254,
+    "Offense": 11,
+    "Speed Tier": 4,
+    "Defense": 11,
+    "Pitching": 59,
+    "Pitching (Cal)": 59,
+    "Best Position": "P",
+    "Description of the Player": "Okay relief pitcher, bad at everything else"
   },
   {
     "Player Name": "Veronica Lee",
@@ -4747,7 +5987,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "A-",
+    "Short Description": "Solid Hitters with Skills in Other Things but Not Really Elite",
+    "BBOL.r": 92,
+    "Offense": 71,
+    "Speed Tier": 7,
+    "Defense": 64,
+    "Pitching": 52,
+    "Pitching (Cal)": 52,
+    "Best Position": "OF",
+    "Description of the Player": "Fast while still having some power, not particularly consistent but can still make plays"
   },
   {
     "Player Name": "Whitney Singh",
@@ -4785,7 +6035,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B+",
+    "Short Description": "Heavily Defense Leaning But Great At It",
+    "BBOL.r": 108,
+    "Offense": 38,
+    "Speed Tier": 7,
+    "Defense": 79,
+    "Pitching": 75,
+    "Pitching (Cal)": 75,
+    "Best Position": "OF / P",
+    "Description of the Player": "Great outfielder, very nice pitching rotation player, lacks power to get on base"
   },
   {
     "Player Name": "Zena Fromme",
@@ -4823,7 +6083,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "S+",
+    "Short Description": "Less Flexible Elite Hitters",
+    "BBOL.r": 18,
+    "Offense": 99,
+    "Speed Tier": 5,
+    "Defense": 51,
+    "Pitching": 50,
+    "Pitching (Cal)": 50,
+    "Best Position": "2B / 3B",
+    "Description of the Player": "Max power, Best batter in the game, probably will get walked a lot"
   },
   {
     "Player Name": "Andres Ibsen",
@@ -4861,7 +6131,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Decent Hitting Slow People",
+    "BBOL.r": 208,
+    "Offense": 32,
+    "Speed Tier": 4,
+    "Defense": 32,
+    "Pitching": 38,
+    "Pitching (Cal)": 38,
+    "Best Position": "3B / 2B",
+    "Description of the Player": "Lackluster hitter, lackluster defender, has some pop and a good arm"
   },
   {
     "Player Name": "Artie Pimbleton",
@@ -4899,7 +6179,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "C",
+    "Short Description": "Decent in a Few Categories but not Great in Any",
+    "BBOL.r": 146,
+    "Offense": 55,
+    "Speed Tier": 6,
+    "Defense": 42,
+    "Pitching": 57,
+    "Pitching (Cal)": 57,
+    "Best Position": "OF",
+    "Description of the Player": "Decent on-base hitter who only really specializes in catching the ball"
   },
   {
     "Player Name": "Bobby Bulgrien",
@@ -4937,7 +6227,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D+",
+    "Short Description": "Very Desperate Power Hitter Pickups",
+    "BBOL.r": 171,
+    "Offense": 61,
+    "Speed Tier": 4,
+    "Defense": 4,
+    "Pitching": 70,
+    "Pitching (Cal)": 70,
+    "Best Position": "P",
+    "Description of the Player": "Good hitter and good pitcher but awful defender, not fast either"
   },
   {
     "Player Name": "Bret Olson",
@@ -4975,7 +6275,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D+",
+    "Short Description": "Very Desperate Not Slow Fielder Pickups",
+    "BBOL.r": 179,
+    "Offense": 25,
+    "Speed Tier": 7,
+    "Defense": 64,
+    "Pitching": 42,
+    "Pitching (Cal)": 42,
+    "Best Position": "OF",
+    "Description of the Player": "Solid outfielder, worst bat in the game, even with speed it's hard to get on base"
   },
   {
     "Player Name": "Carlos Ocampo",
@@ -5013,7 +6323,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can Only Run Okay, Can't Throw or Hit",
+    "BBOL.r": 222,
+    "Offense": 28,
+    "Speed Tier": 6,
+    "Defense": 30,
+    "Pitching": 62,
+    "Pitching (Cal)": 62,
+    "Best Position": "P",
+    "Description of the Player": "Okay relief pitching, worst arm in the game, poor hitter"
   },
   {
     "Player Name": "Chad Koppel",
@@ -5051,7 +6371,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D+",
+    "Short Description": "Solid Defense Only Pitchers",
+    "BBOL.r": 168,
+    "Offense": 21,
+    "Speed Tier": 5,
+    "Defense": 70,
+    "Pitching": 68,
+    "Pitching (Cal)": 68,
+    "Best Position": "SS / 3B",
+    "Description of the Player": "Solid defensive specialist, terrible at making contact, good relief pitcher"
   },
   {
     "Player Name": "Chico Pappas",
@@ -5089,7 +6419,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "S+",
+    "Short Description": "Elite Offense & Can Play OF",
+    "BBOL.r": 9,
+    "Offense": 99,
+    "Speed Tier": 7,
+    "Defense": 62,
+    "Pitching": 54,
+    "Pitching (Cal)": 54,
+    "Best Position": "OF",
+    "Description of the Player": "Top tier offensive player, still okay as an outfielder even if not great"
   },
   {
     "Player Name": "Chris Milton",
@@ -5127,7 +6467,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Very Desperate Late Round Pitcher / Non-Slow Fielder Pickups",
+    "BBOL.r": 201,
+    "Offense": 23,
+    "Speed Tier": 5,
+    "Defense": 43,
+    "Pitching": 70,
+    "Pitching (Cal)": 80,
+    "Best Position": "P / 2B",
+    "Description of the Player": "Good pitching, okay fielding, not bad for a pitching rotation"
   },
   {
     "Player Name": "Chucky Flinder",
@@ -5165,7 +6515,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Very Desperate Late Round Pitcher / Non-Slow Fielder Pickups",
+    "BBOL.r": 201,
+    "Offense": 23,
+    "Speed Tier": 5,
+    "Defense": 43,
+    "Pitching": 70,
+    "Pitching (Cal)": 80,
+    "Best Position": "P / 2B",
+    "Description of the Player": "Good pitching, okay fielding, not bad for a pitching rotation"
   },
   {
     "Player Name": "Davy Marian",
@@ -5203,7 +6563,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "S-",
+    "Short Description": "Jack of All Trades Players",
+    "BBOL.r": 28,
+    "Offense": 90,
+    "Speed Tier": 7,
+    "Defense": 87,
+    "Pitching": 67,
+    "Pitching (Cal)": 67,
+    "Best Position": "SS / 3B",
+    "Description of the Player": "Good hitter, great defender, decent relief pitchers"
   },
   {
     "Player Name": "Dominique Lowe",
@@ -5241,7 +6611,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D+",
+    "Short Description": "Very Desperate Not Slow Fielder Pickups",
+    "BBOL.r": 174,
+    "Offense": 38,
+    "Speed Tier": 6,
+    "Defense": 50,
+    "Pitching": 59,
+    "Pitching (Cal)": 59,
+    "Best Position": "OF",
+    "Description of the Player": "Competent fielder, good relief pitcher, can occasionally get a good hit"
   },
   {
     "Player Name": "Earl Abbot",
@@ -5279,7 +6659,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "A-",
+    "Short Description": "Extremely Elite Pitchers",
+    "BBOL.r": 85,
+    "Offense": 70,
+    "Speed Tier": 8,
+    "Defense": 46,
+    "Pitching": 86,
+    "Pitching (Cal)": 86,
+    "Best Position": "P",
+    "Description of the Player": "Extremely fast, top tier pitcher, these both conflict but can still get on with grounders"
   },
   {
     "Player Name": "Eric Lebeaux",
@@ -5317,7 +6707,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Can Sort of Field But Still Are Bad",
+    "BBOL.r": 244,
+    "Offense": 19,
+    "Speed Tier": 5,
+    "Defense": 34,
+    "Pitching": 21,
+    "Pitching (Cal)": 21,
+    "Best Position": "2B",
+    "Description of the Player": "Poor defender, okay contact hitter but lacks any speed or power"
   },
   {
     "Player Name": "Felix Grant",
@@ -5355,7 +6755,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Mediocre at Everything but not Trash?",
+    "BBOL.r": 212,
+    "Offense": 38,
+    "Speed Tier": 4,
+    "Defense": 25,
+    "Pitching": 43,
+    "Pitching (Cal)": 43,
+    "Best Position": "2B / 3B",
+    "Description of the Player": "Decent line drive hitter, slow, not really good anywhere defensively"
   },
   {
     "Player Name": "Fernando Diaz",
@@ -5393,7 +6803,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B+",
+    "Short Description": "Heavily Defense Leaning But Great At It",
+    "BBOL.r": 113,
+    "Offense": 45,
+    "Speed Tier": 6,
+    "Defense": 65,
+    "Pitching": 70,
+    "Pitching (Cal)": 70,
+    "Best Position": "P / SS",
+    "Description of the Player": "Good starting pitcher with solid defensive stats, lacking in offense but still has pop"
   },
   {
     "Player Name": "Franky Holly",
@@ -5431,7 +6851,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B+",
+    "Short Description": "Solid Batting Infielders",
+    "BBOL.r": 104,
+    "Offense": 67,
+    "Speed Tier": 5,
+    "Defense": 62,
+    "Pitching": 61,
+    "Pitching (Cal)": 61,
+    "Best Position": "C",
+    "Description of the Player": "Solid hitter, low contact is tough, can play most IF positions, good relief pitchers"
   },
   {
     "Player Name": "Fred Benson",
@@ -5469,7 +6899,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "S-",
+    "Short Description": "Elite Offense, Meh Defense",
+    "BBOL.r": 33,
+    "Offense": 96,
+    "Speed Tier": 7,
+    "Defense": 44,
+    "Pitching": 29,
+    "Pitching (Cal)": 29,
+    "Best Position": "OF / 2B",
+    "Description of the Player": "Top tier offensive stats, notably below average fielder, poor eyesight"
   },
   {
     "Player Name": "Gary Allen",
@@ -5507,7 +6947,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "C",
+    "Short Description": "Big Late Round Power, Bad Defense",
+    "BBOL.r": 155,
+    "Offense": 77,
+    "Speed Tier": 5,
+    "Defense": 21,
+    "Pitching": 37,
+    "Pitching (Cal)": 37,
+    "Best Position": "2B",
+    "Description of the Player": "Good but not top tier power, poor defender, only good if you REALLY need power"
   },
   {
     "Player Name": "George Coleman",
@@ -5545,7 +6995,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Very Desperate Late Round Pitcher / Non-Slow Fielder Pickups",
+    "BBOL.r": 193,
+    "Offense": 25,
+    "Speed Tier": 6,
+    "Defense": 51,
+    "Pitching": 54,
+    "Pitching (Cal)": 54,
+    "Best Position": "OF / P",
+    "Description of the Player": "Competent fielder with good relief pitching"
   },
   {
     "Player Name": "Henri Deschenes",
@@ -5583,7 +7043,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "S+",
+    "Short Description": "The Masters of Almost Everything",
+    "BBOL.r": 1,
+    "Offense": 98,
+    "Speed Tier": 9,
+    "Defense": 85,
+    "Pitching": 74,
+    "Pitching (Cal)": 83,
+    "Best Position": "OF / P",
+    "Description of the Player": "Max power + max speed, great pitcher, great fielder. Low eye and attn is a bit weird"
   },
   {
     "Player Name": "Horace Young",
@@ -5621,7 +7091,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "C",
+    "Short Description": "Decent in a Few Categories but not Great in Any",
+    "BBOL.r": 143,
+    "Offense": 62,
+    "Speed Tier": 6,
+    "Defense": 47,
+    "Pitching": 46,
+    "Pitching (Cal)": 51,
+    "Best Position": "OF",
+    "Description of the Player": "Good line drive hitter, doesn't excel anywhere defensively, awful stamina"
   },
   {
     "Player Name": "Ibrahim Mohamed",
@@ -5659,7 +7139,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Basically Unusable Joke Characters",
+    "BBOL.r": 258,
+    "Offense": 4,
+    "Speed Tier": 4,
+    "Defense": 7,
+    "Pitching": 42,
+    "Pitching (Cal)": 42,
+    "Best Position": "P",
+    "Description of the Player": "Has one good pitch, bad at everything else"
   },
   {
     "Player Name": "Isaac Drummond",
@@ -5697,7 +7187,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can't do Anything Well, but Still Has At Least One Quality",
+    "BBOL.r": 234,
+    "Offense": 29,
+    "Speed Tier": 4,
+    "Defense": 18,
+    "Pitching": 61,
+    "Pitching (Cal)": 74,
+    "Best Position": "P",
+    "Description of the Player": "Decent pitcher, bad at everything else"
   },
   {
     "Player Name": "Jack Joseph",
@@ -5735,7 +7235,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Last Okay Decent Speed People",
+    "BBOL.r": 209,
+    "Offense": 30,
+    "Speed Tier": 6,
+    "Defense": 32,
+    "Pitching": 55,
+    "Pitching (Cal)": 61,
+    "Best Position": "OF",
+    "Description of the Player": "Extremely budget outfielder, decent eyesight, okay relief pitching"
   },
   {
     "Player Name": "Jay Green",
@@ -5773,7 +7283,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "S+",
+    "Short Description": "The Masters of Almost Everything",
+    "BBOL.r": 3,
+    "Offense": 97,
+    "Speed Tier": 7,
+    "Defense": 76,
+    "Pitching": 81,
+    "Pitching (Cal)": 81,
+    "Best Position": "P",
+    "Description of the Player": "Max power + fast, top tier pitcher, good fielder. Hard to go wrong"
   },
   {
     "Player Name": "Jim Kiley",
@@ -5811,7 +7331,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B+",
+    "Short Description": "Decent Power Hitter Catchers",
+    "BBOL.r": 98,
+    "Offense": 53,
+    "Speed Tier": 5,
+    "Defense": 87,
+    "Pitching": 44,
+    "Pitching (Cal)": 44,
+    "Best Position": "C",
+    "Description of the Player": "Top tier catcher, okay hitter, runs away from the ball sometimes at corner IF"
   },
   {
     "Player Name": "Johnny Omar",
@@ -5849,7 +7379,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Very Desperate Late Round Pitcher / Non-Slow Fielder Pickups",
+    "BBOL.r": 199,
+    "Offense": 22,
+    "Speed Tier": 5,
+    "Defense": 64,
+    "Pitching": 62,
+    "Pitching (Cal)": 62,
+    "Best Position": "P / 3B",
+    "Description of the Player": "Good late round fielder, good relief pitcher, awful eyesight"
   },
   {
     "Player Name": "Jordan Thorner",
@@ -5887,7 +7427,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B-",
+    "Short Description": "Speedy Players Who Can Play a Defensive Role",
+    "BBOL.r": 127,
+    "Offense": 63,
+    "Speed Tier": 7,
+    "Defense": 72,
+    "Pitching": 58,
+    "Pitching (Cal)": 58,
+    "Best Position": "OF",
+    "Description of the Player": "Decent hitter who can keep the ball low, fast outfielder but can sort of play IF too"
   },
   {
     "Player Name": "Mickey O'Connor",
@@ -5925,7 +7475,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can Hit Okay, Can't Field",
+    "BBOL.r": 216,
+    "Offense": 44,
+    "Speed Tier": 4,
+    "Defense": 9,
+    "Pitching": 60,
+    "Pitching (Cal)": 60,
+    "Best Position": "2B",
+    "Description of the Player": "Good late round power, atrocious fielding, decent relief pitcher, poor attention"
   },
   {
     "Player Name": "Murray Goldman",
@@ -5963,7 +7523,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D+",
+    "Short Description": "Strong Defenders With Some Decent Pop",
+    "BBOL.r": 164,
+    "Offense": 36,
+    "Speed Tier": 4,
+    "Defense": 76,
+    "Pitching": 54,
+    "Pitching (Cal)": 54,
+    "Best Position": "C",
+    "Description of the Player": "Good fielder, slow, can sometimes overperform due to good contact hitting"
   },
   {
     "Player Name": "Nate Kowalski",
@@ -6001,7 +7571,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Very Desperate Infielder Arm Pickups",
+    "BBOL.r": 196,
+    "Offense": 31,
+    "Speed Tier": 4,
+    "Defense": 57,
+    "Pitching": 34,
+    "Pitching (Cal)": 34,
+    "Best Position": "3B / SS",
+    "Description of the Player": "Poor hitter with some pop, decent fielder, can play corner infield well"
   },
   {
     "Player Name": "Nicky Winston",
@@ -6039,7 +7619,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B+",
+    "Short Description": "Decent Power Hitter Catchers",
+    "BBOL.r": 101,
+    "Offense": 68,
+    "Speed Tier": 4,
+    "Defense": 66,
+    "Pitching": 29,
+    "Pitching (Cal)": 29,
+    "Best Position": "C",
+    "Description of the Player": "Strong hitter with awful eyesight, decent defender, primarily corner IF or catcher"
   },
   {
     "Player Name": "Omar Stephano",
@@ -6077,7 +7667,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B-",
+    "Short Description": "Great Pitchers with Low Defensive Skill",
+    "BBOL.r": 125,
+    "Offense": 29,
+    "Speed Tier": 6,
+    "Defense": 45,
+    "Pitching": 78,
+    "Pitching (Cal)": 78,
+    "Best Position": "P",
+    "Description of the Player": "Top tier pitcher who can defend at their position, totally lacks in offensive skills"
   },
   {
     "Player Name": "Paco Kaufman",
@@ -6115,7 +7715,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Very Desperate Speedy Offensive Pickups",
+    "BBOL.r": 186,
+    "Offense": 46,
+    "Speed Tier": 7,
+    "Defense": 44,
+    "Pitching": 64,
+    "Pitching (Cal)": 64,
+    "Best Position": "2B / OF",
+    "Description of the Player": "Decent offensive specialist, extremely difficult to use fielders"
   },
   {
     "Player Name": "PJ Shareef",
@@ -6153,7 +7763,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Very Desperate Speedy Offensive Pickups",
+    "BBOL.r": 188,
+    "Offense": 51,
+    "Speed Tier": 6,
+    "Defense": 40,
+    "Pitching": 19,
+    "Pitching (Cal)": 22,
+    "Best Position": "2B / OF",
+    "Description of the Player": "Decent late round line drive hitter, bad defensively but not atrocious"
   },
   {
     "Player Name": "Rafael Hendrix",
@@ -6191,7 +7811,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B-",
+    "Short Description": "Elite Hitters, No Defensive Use",
+    "BBOL.r": 115,
+    "Offense": 81,
+    "Speed Tier": 4,
+    "Defense": 7,
+    "Pitching": 53,
+    "Pitching (Cal)": 53,
+    "Best Position": "2B",
+    "Description of the Player": "Top tier power but awful at every defensive position, good if lacking in power"
   },
   {
     "Player Name": "Ray Tran",
@@ -6229,7 +7859,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B-",
+    "Short Description": "Great Pitchers with Low Defensive Skill",
+    "BBOL.r": 123,
+    "Offense": 56,
+    "Speed Tier": 6,
+    "Defense": 34,
+    "Pitching": 75,
+    "Pitching (Cal)": 75,
+    "Best Position": "P",
+    "Description of the Player": "Good line drive hitter with good pitching, lacks in defensive qualities"
   },
   {
     "Player Name": "Robby Bocko",
@@ -6267,7 +7907,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "C",
+    "Short Description": "Can Hit Hard Sometimes and Also Throw Well",
+    "BBOL.r": 152,
+    "Offense": 46,
+    "Speed Tier": 5,
+    "Defense": 57,
+    "Pitching": 35,
+    "Pitching (Cal)": 35,
+    "Best Position": "3B / SS",
+    "Description of the Player": "Good power but poor contact, decent infielders, not good for homers"
   },
   {
     "Player Name": "Ryan VanderHoek",
@@ -6305,7 +7955,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Very Desperate Infielder Arm Pickups",
+    "BBOL.r": 190,
+    "Offense": 8,
+    "Speed Tier": 4,
+    "Defense": 65,
+    "Pitching": 69,
+    "Pitching (Cal)": 69,
+    "Best Position": "C",
+    "Description of the Player": "Good fielder with a cannon arm, can relief pitch, awful hitter"
   },
   {
     "Player Name": "Shane Smith",
@@ -6343,7 +8003,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B-",
+    "Short Description": "Speedy Players Who Can Play a Defensive Role",
+    "BBOL.r": 133,
+    "Offense": 55,
+    "Speed Tier": 7,
+    "Defense": 55,
+    "Pitching": 37,
+    "Pitching (Cal)": 37,
+    "Best Position": "OF",
+    "Description of the Player": "Decent offense, basically only good at playing the outfield"
   },
   {
     "Player Name": "Stan Olafson",
@@ -6381,7 +8051,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "A-",
+    "Short Description": "Well-Above Average Defenders Who Can Do One Other Thing Very Well",
+    "BBOL.r": 75,
+    "Offense": 78,
+    "Speed Tier": 6,
+    "Defense": 72,
+    "Pitching": 65,
+    "Pitching (Cal)": 65,
+    "Best Position": "OF / SS",
+    "Description of the Player": "Great in all roles but lacks the height to keep up with the pros with similar stats"
   },
   {
     "Player Name": "Stevie Lindt",
@@ -6419,7 +8099,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "BBOL.r": 238,
+    "Offense": 23,
+    "Speed Tier": 4,
+    "Defense": 17,
+    "Pitching": 54,
+    "Pitching (Cal)": 63,
+    "Best Position": "2B / P",
+    "Description of the Player": "Okay relief pitcher, okay hitter, not good enough in any category",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can't do Anything Well, but Still Has At Least One Quality"
   },
   {
     "Player Name": "Stuart Sullivan",
@@ -6457,7 +8147,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "A+",
+    "Short Description": "As Valuable as a Run",
+    "BBOL.r": 50,
+    "Offense": 80,
+    "Speed Tier": 9,
+    "Defense": 52,
+    "Pitching": 49,
+    "Pitching (Cal)": 49,
+    "Best Position": "OF",
+    "Description of the Player": "Max speed, their entire gameplan is built around them being absurdly fast"
   },
   {
     "Player Name": "Timmy Unger",
@@ -6495,7 +8195,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B-",
+    "Short Description": "Decent Hitters with Meh Defense",
+    "BBOL.r": 121,
+    "Offense": 78,
+    "Speed Tier": 6,
+    "Defense": 51,
+    "Pitching": 45,
+    "Pitching (Cal)": 45,
+    "Best Position": "OF",
+    "Description of the Player": "VERY good contact hitter, so-so in defense but great if you can afford them"
   },
   {
     "Player Name": "Todd Xavier",
@@ -6533,7 +8243,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can Only Pitch, Can't Hit or Field",
+    "BBOL.r": 227,
+    "Offense": 10,
+    "Speed Tier": 4,
+    "Defense": 22,
+    "Pitching": 74,
+    "Pitching (Cal)": 74,
+    "Best Position": "P / 2B",
+    "Description of the Player": "Good pitcher, not really good for any other role"
   },
   {
     "Player Name": "Vic Soufle",
@@ -6571,7 +8291,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "C",
+    "Short Description": "Nice Def. Specialists",
+    "BBOL.r": 150,
+    "Offense": 26,
+    "Speed Tier": 6,
+    "Defense": 81,
+    "Pitching": 57,
+    "Pitching (Cal)": 57,
+    "Best Position": "SS / C",
+    "Description of the Player": "Very good fielder, decent relief pitcher, not a good hitter but has okay speed"
   },
   {
     "Player Name": "Vladimir Womak",
@@ -6609,7 +8339,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Not Very Usable But Has A Pitch",
+    "BBOL.r": 254,
+    "Offense": 11,
+    "Speed Tier": 4,
+    "Defense": 11,
+    "Pitching": 59,
+    "Pitching (Cal)": 59,
+    "Best Position": "P",
+    "Description of the Player": "Okay relief pitcher, bad at everything else"
   },
   {
     "Player Name": "Wally Evans",
@@ -6647,7 +8387,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "A-",
+    "Short Description": "Solid Hitters with Skills in Other Things but Not Really Elite",
+    "BBOL.r": 92,
+    "Offense": 71,
+    "Speed Tier": 7,
+    "Defense": 64,
+    "Pitching": 52,
+    "Pitching (Cal)": 52,
+    "Best Position": "OF",
+    "Description of the Player": "Fast while still having some power, not particularly consistent but can still make plays"
   },
   {
     "Player Name": "Wing Kwan",
@@ -6685,7 +8435,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B+",
+    "Short Description": "Heavily Defense Leaning But Great At It",
+    "BBOL.r": 108,
+    "Offense": 38,
+    "Speed Tier": 7,
+    "Defense": 79,
+    "Pitching": 75,
+    "Pitching (Cal)": 75,
+    "Best Position": "OF / P",
+    "Description of the Player": "Great outfielder, very nice pitching rotation player, lacks power to get on base"
   },
   {
     "Player Name": "Zenon Estrada",
@@ -6723,7 +8483,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "S+",
+    "Short Description": "Less Flexible Elite Hitters",
+    "BBOL.r": 18,
+    "Offense": 99,
+    "Speed Tier": 5,
+    "Defense": 51,
+    "Pitching": 50,
+    "Pitching (Cal)": 50,
+    "Best Position": "2B / 3B",
+    "Description of the Player": "Max power, Best batter in the game, probably will get walked a lot"
   },
   {
     "Player Name": "Alexis Weis",
@@ -6761,7 +8531,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "A-",
+    "Short Description": "Solid Hitters with Skills in Other Things but Not Really Elite",
+    "BBOL.r": 81,
+    "Offense": 76,
+    "Speed Tier": 6,
+    "Defense": 43,
+    "Pitching": 60,
+    "Pitching (Cal)": 60,
+    "Best Position": "P / OF",
+    "Description of the Player": "Good power hitter without lacking speed, not likely to carry a team offensively"
   },
   {
     "Player Name": "Angelique Harding",
@@ -6799,7 +8579,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can Only Pitch, Can't Hit or Field",
+    "BBOL.r": 229,
+    "Offense": 8,
+    "Speed Tier": 4,
+    "Defense": 27,
+    "Pitching": 71,
+    "Pitching (Cal)": 79,
+    "Best Position": "P / 3B",
+    "Description of the Player": "Good pitcher, has a decent arm, awful hitter"
   },
   {
     "Player Name": "Catherine Asher",
@@ -6837,7 +8627,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can Only Pitch, Can't Hit or Field",
+    "BBOL.r": 230,
+    "Offense": 16,
+    "Speed Tier": 4,
+    "Defense": 11,
+    "Pitching": 75,
+    "Pitching (Cal)": 89,
+    "Best Position": "P",
+    "Description of the Player": "Good pitcher, high stamina, bad at everything else"
   },
   {
     "Player Name": "Clair Nelson",
@@ -6875,7 +8675,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Not Very Usable But Has A Pitch",
+    "BBOL.r": 256,
+    "Offense": 12,
+    "Speed Tier": 4,
+    "Defense": 7,
+    "Pitching": 57,
+    "Pitching (Cal)": 57,
+    "Best Position": "P",
+    "Description of the Player": "Okay relief pitcher, bad at everything else"
   },
   {
     "Player Name": "Courtney Valentino",
@@ -6913,7 +8723,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "S-",
+    "Short Description": "Great Defensive Pieces, Leaning Toward Speed",
+    "BBOL.r": 49,
+    "Offense": 80,
+    "Speed Tier": 7,
+    "Defense": 77,
+    "Pitching": 65,
+    "Pitching (Cal)": 65,
+    "Best Position": "3B / SS",
+    "Description of the Player": "Good hitter, good defender and relief pitcher, awful eyesight is tough to use"
   },
   {
     "Player Name": "Dana Sekula",
@@ -6951,7 +8771,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Not Very Usable But Can Play Offense OK-ish",
+    "BBOL.r": 250,
+    "Offense": 19,
+    "Speed Tier": 4,
+    "Defense": 12,
+    "Pitching": 29,
+    "Pitching (Cal)": 29,
+    "Best Position": "2B",
+    "Description of the Player": "Can hit to the outfield, awful fielder"
   },
   {
     "Player Name": "Ellen Martinez",
@@ -6989,7 +8819,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can Only Throw, Can't Hit",
+    "BBOL.r": 221,
+    "Offense": 12,
+    "Speed Tier": 4,
+    "Defense": 53,
+    "Pitching": 38,
+    "Pitching (Cal)": 38,
+    "Best Position": "C",
+    "Description of the Player": "Decent fielder, awful hitter, basically only good at catcher"
   },
   {
     "Player Name": "Erin Harris",
@@ -7027,7 +8867,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D+",
+    "Short Description": "Strong Defenders With Some Decent Pop",
+    "BBOL.r": 173,
+    "Offense": 51,
+    "Speed Tier": 5,
+    "Defense": 47,
+    "Pitching": 74,
+    "Pitching (Cal)": 74,
+    "Best Position": "P",
+    "Description of the Player": "Competent hitter with okay fielding and good pitching, poor attention"
   },
   {
     "Player Name": "Esmarelda Heimann",
@@ -7065,7 +8915,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can Only Throw & Pitch",
+    "BBOL.r": 220,
+    "Offense": 3,
+    "Speed Tier": 4,
+    "Defense": 59,
+    "Pitching": 69,
+    "Pitching (Cal)": 69,
+    "Best Position": "C",
+    "Description of the Player": "Good pitcher with a strong arm, unusable offensively"
   },
   {
     "Player Name": "Ezra Travolta",
@@ -7103,7 +8963,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B+",
+    "Short Description": "Decent Power Hitter Catchers",
+    "BBOL.r": 100,
+    "Offense": 50,
+    "Speed Tier": 5,
+    "Defense": 83,
+    "Pitching": 42,
+    "Pitching (Cal)": 50,
+    "Best Position": "C",
+    "Description of the Player": "Top tier catcher, okay hitter, lacks in attention which can ruin plays at home"
   },
   {
     "Player Name": "Fabienne Callahan",
@@ -7141,7 +9011,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B-",
+    "Short Description": "Elite Hitters, No Defensive Use",
+    "BBOL.r": 117,
+    "Offense": 80,
+    "Speed Tier": 3,
+    "Defense": 9,
+    "Pitching": 35,
+    "Pitching (Cal)": 42,
+    "Best Position": "2B",
+    "Description of the Player": "Max power, min speed, basically a free walk, only good if desperate for power"
   },
   {
     "Player Name": "Francesca Whitaker",
@@ -7179,7 +9059,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "A-",
+    "Short Description": "Solid Hitters with Skills in Other Things but Not Really Elite",
+    "BBOL.r": 82,
+    "Offense": 78,
+    "Speed Tier": 6,
+    "Defense": 59,
+    "Pitching": 39,
+    "Pitching (Cal)": 39,
+    "Best Position": "OF",
+    "Description of the Player": "Typically overperforms offensively, okay but not great at every defensive position"
   },
   {
     "Player Name": "Gloria Keitel",
@@ -7217,7 +9107,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Not Very Usable But Can Play Offense OK-ish",
+    "BBOL.r": 249,
+    "Offense": 17,
+    "Speed Tier": 3,
+    "Defense": 12,
+    "Pitching": 42,
+    "Pitching (Cal)": 53,
+    "Best Position": "2B",
+    "Description of the Player": "Has some kind of pop, awful at everything else, min speed"
   },
   {
     "Player Name": "Heidi Thurman",
@@ -7255,7 +9155,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can Only Throw, Can't Hit",
+    "BBOL.r": 232,
+    "Offense": 3,
+    "Speed Tier": 3,
+    "Defense": 46,
+    "Pitching": 38,
+    "Pitching (Cal)": 38,
+    "Best Position": "C",
+    "Description of the Player": "Good catcher, terrible hitter, min speed, awful attention"
   },
   {
     "Player Name": "Joan Mae",
@@ -7293,7 +9203,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "S-",
+    "Short Description": "ELITE Power, Low Speed",
+    "BBOL.r": 48,
+    "Offense": 91,
+    "Speed Tier": 4,
+    "Defense": 25,
+    "Pitching": 36,
+    "Pitching (Cal)": 38,
+    "Best Position": "2B",
+    "Description of the Player": "Max power, poor defense but has an okay arm, will get walked a lot without backup"
   },
   {
     "Player Name": "Jody Palmer",
@@ -7331,7 +9251,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D+",
+    "Short Description": "Very Desperate Not Slow Fielder Pickups",
+    "BBOL.r": 181,
+    "Offense": 26,
+    "Speed Tier": 6,
+    "Defense": 61,
+    "Pitching": 65,
+    "Pitching (Cal)": 65,
+    "Best Position": "P / OF",
+    "Description of the Player": "Competent fielder with good pitching, very poor hitter"
   },
   {
     "Player Name": "Katelyn Cain",
@@ -7369,7 +9299,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Basically Unusable Joke Characters",
+    "BBOL.r": 261,
+    "Offense": 2,
+    "Speed Tier": 3,
+    "Defense": 1,
+    "Pitching": 49,
+    "Pitching (Cal)": 49,
+    "Best Position": "P",
+    "Description of the Player": "Okay relief pitcher, tied worst fielder in the game, min speed"
   },
   {
     "Player Name": "Kathy Wolf",
@@ -7407,7 +9347,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "S-",
+    "Short Description": "Great Defensive Pieces, Leaning Toward Speed",
+    "BBOL.r": 37,
+    "Offense": 79,
+    "Speed Tier": 8,
+    "Defense": 93,
+    "Pitching": 52,
+    "Pitching (Cal)": 52,
+    "Best Position": "C",
+    "Description of the Player": "Extremely fast, best speed + arm combo, top 5 catcher, tough to master but rewarding"
   },
   {
     "Player Name": "Lindsy Felgate",
@@ -7445,7 +9395,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "S+",
+    "Short Description": "Elite Offense & Can Play OF",
+    "BBOL.r": 5,
+    "Offense": 99,
+    "Speed Tier": 8,
+    "Defense": 68,
+    "Pitching": 60,
+    "Pitching (Cal)": 73,
+    "Best Position": "OF",
+    "Description of the Player": "Elite power + speed, good outfielder, decent pitcher. Tends to trip on the basepath a lot"
   },
   {
     "Player Name": "Lorelei Ikaye",
@@ -7483,7 +9443,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "C",
+    "Short Description": "Good Hitting and Pitching",
+    "BBOL.r": 157,
+    "Offense": 55,
+    "Speed Tier": 6,
+    "Defense": 37,
+    "Pitching": 56,
+    "Pitching (Cal)": 66,
+    "Best Position": "OF",
+    "Description of the Player": "Solid line drive hitter, poor defender, decent relief pitcher"
   },
   {
     "Player Name": "Mamie Skiumsby",
@@ -7521,7 +9491,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can Only Hit and Pitch",
+    "BBOL.r": 219,
+    "Offense": 35,
+    "Speed Tier": 4,
+    "Defense": 12,
+    "Pitching": 77,
+    "Pitching (Cal)": 77,
+    "Best Position": "P",
+    "Description of the Player": "Very good pitcher, sort of okay hitter, atrocious fielder"
   },
   {
     "Player Name": "Mandy Coolidge",
@@ -7559,7 +9539,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "A+",
+    "Short Description": "Strong Hitters With Some Pitching Skill",
+    "BBOL.r": 64,
+    "Offense": 81,
+    "Speed Tier": 5,
+    "Defense": 34,
+    "Pitching": 73,
+    "Pitching (Cal)": 81,
+    "Best Position": "P",
+    "Description of the Player": "Great pitcher with good batting, poor eye and attn., Heat is a strenuous best pitch"
   },
   {
     "Player Name": "Rosanna Phelps",
@@ -7597,7 +9587,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D+",
+    "Short Description": "Very Desperate Not Slow Fielder Pickups",
+    "BBOL.r": 182,
+    "Offense": 26,
+    "Speed Tier": 6,
+    "Defense": 58,
+    "Pitching": 59,
+    "Pitching (Cal)": 59,
+    "Best Position": "3B / 2B",
+    "Description of the Player": "Decent budget fielder with decent pitching, lacks offensive stats"
   },
   {
     "Player Name": "Ruth Proutt",
@@ -7635,7 +9635,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B-",
+    "Short Description": "Speedy Players Who Can Play a Defensive Role",
+    "BBOL.r": 132,
+    "Offense": 51,
+    "Speed Tier": 7,
+    "Defense": 66,
+    "Pitching": 48,
+    "Pitching (Cal)": 48,
+    "Best Position": "OF",
+    "Description of the Player": "Great outfielder who is reliable at finding a good soft hit to get on base with"
   },
   {
     "Player Name": "Samantha Winslow",
@@ -7673,7 +9683,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Not Very Usable But Has A Pitch",
+    "BBOL.r": 252,
+    "Offense": 12,
+    "Speed Tier": 4,
+    "Defense": 17,
+    "Pitching": 52,
+    "Pitching (Cal)": 53,
+    "Best Position": "2B",
+    "Description of the Player": "Decent relief pitcher"
   },
   {
     "Player Name": "Tatiana Jackson",
@@ -7711,7 +9731,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can Only Run Okay, Can't Throw or Hit",
+    "BBOL.r": 225,
+    "Offense": 25,
+    "Speed Tier": 6,
+    "Defense": 30,
+    "Pitching": 47,
+    "Pitching (Cal)": 57,
+    "Best Position": "OF",
+    "Description of the Player": "Terrible hitter, mediocre relief pitcher, has very high stamina"
   },
   {
     "Player Name": "Tracy Hoban",
@@ -7749,7 +9779,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D+",
+    "Short Description": "Strong Defenders With Some Decent Pop",
+    "BBOL.r": 165,
+    "Offense": 27,
+    "Speed Tier": 4,
+    "Defense": 75,
+    "Pitching": 38,
+    "Pitching (Cal)": 58,
+    "Best Position": "C",
+    "Description of the Player": "Good fielder, slow, not a good hitter, low attention makes her a tougher catcher choice"
   },
   {
     "Player Name": "Uma Morris",
@@ -7787,7 +9827,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B-",
+    "Short Description": "Decent Hitters with Meh Defense",
+    "BBOL.r": 120,
+    "Offense": 54,
+    "Speed Tier": 5,
+    "Defense": 47,
+    "Pitching": 58,
+    "Pitching (Cal)": 58,
+    "Best Position": "3B / P",
+    "Description of the Player": "Strong hitter on paper but has a hard time performing, decent fielder, good relief pitcher"
   },
   {
     "Player Name": "Vanessa Goodman",
@@ -7825,7 +9875,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Last Okay Decent Speed People",
+    "BBOL.r": 214,
+    "Offense": 37,
+    "Speed Tier": 6,
+    "Defense": 26,
+    "Pitching": 57,
+    "Pitching (Cal)": 57,
+    "Best Position": "OF",
+    "Description of the Player": "Okay hitter, poor fielder, okay relief pitcher, poor stamina and ey emakes her hard to use"
   },
   {
     "Player Name": "Victoria Shamberg",
@@ -7863,7 +9923,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Not Very Usable But Can Play Offense OK-ish",
+    "BBOL.r": 251,
+    "Offense": 16,
+    "Speed Tier": 5,
+    "Defense": 16,
+    "Pitching": 43,
+    "Pitching (Cal)": 43,
+    "Best Position": "2B",
+    "Description of the Player": "Isn't one of the slowest players in the game, mediocre relief pitcher"
   },
   {
     "Player Name": "Adam Van Doren",
@@ -7901,7 +9971,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B-",
+    "Short Description": "Speedy Players Who Can Play a Defensive Role",
+    "BBOL.r": 130,
+    "Offense": 70,
+    "Speed Tier": 7,
+    "Defense": 61,
+    "Pitching": 38,
+    "Pitching (Cal)": 38,
+    "Best Position": "OF / 2B",
+    "Description of the Player": "Surprisingly competent hitter and so-so defender, poor eye makes him hard to master"
   },
   {
     "Player Name": "Alan Hulsman",
@@ -7939,7 +10019,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can Only Pitch, Can't Hit or Field",
+    "BBOL.r": 240,
+    "Offense": 10,
+    "Speed Tier": 4,
+    "Defense": 15,
+    "Pitching": 78,
+    "Pitching (Cal)": 78,
+    "Best Position": "P",
+    "Description of the Player": "Very good pitcher, awful at everything else"
   },
   {
     "Player Name": "Billy Mendelson",
@@ -7977,7 +10067,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can Only Hit and Pitch",
+    "BBOL.r": 217,
+    "Offense": 50,
+    "Speed Tier": 5,
+    "Defense": 14,
+    "Pitching": 77,
+    "Pitching (Cal)": 77,
+    "Best Position": "P",
+    "Description of the Player": "Competent hitter, good pitcher, terrible fielder"
   },
   {
     "Player Name": "Brad Bender",
@@ -8015,7 +10115,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can Only Throw, Can't Hit",
+    "BBOL.r": 231,
+    "Offense": 6,
+    "Speed Tier": 4,
+    "Defense": 49,
+    "Pitching": 38,
+    "Pitching (Cal)": 38,
+    "Best Position": "3B / C",
+    "Description of the Player": "Okay fielder with a good arm, horrendous batter"
   },
   {
     "Player Name": "Buddy Martin",
@@ -8053,7 +10163,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Can Sort of Field But Still Are Bad",
+    "BBOL.r": 246,
+    "Offense": 5,
+    "Speed Tier": 4,
+    "Defense": 32,
+    "Pitching": 53,
+    "Pitching (Cal)": 53,
+    "Best Position": "3B / SS",
+    "Description of the Player": "Decent arm but still lackluster fielder, okay relief pitcher, atrocious hitter"
   },
   {
     "Player Name": "Butch Sherrod",
@@ -8091,7 +10211,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Very Desperate Infielder Arm Pickups",
+    "BBOL.r": 195,
+    "Offense": 31,
+    "Speed Tier": 4,
+    "Defense": 61,
+    "Pitching": 49,
+    "Pitching (Cal)": 49,
+    "Best Position": "C / 3B",
+    "Description of the Player": "Poor hitter, decent fielder, awful attention makes him a risk at catcher"
   },
   {
     "Player Name": "Cameron Haines",
@@ -8129,7 +10259,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Can Sort of Field But Still Are Bad",
+    "BBOL.r": 242,
+    "Offense": 5,
+    "Speed Tier": 5,
+    "Defense": 42,
+    "Pitching": 61,
+    "Pitching (Cal)": 61,
+    "Best Position": "2B / 3B",
+    "Description of the Player": "Lackluster fielder, atrocious hitter, decent relief pitcher"
   },
   {
     "Player Name": "Chandler Huggins",
@@ -8167,7 +10307,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Basically Unusable Joke Characters",
+    "BBOL.r": 257,
+    "Offense": 11,
+    "Speed Tier": 4,
+    "Defense": 11,
+    "Pitching": 35,
+    "Pitching (Cal)": 35,
+    "Best Position": "2B / P",
+    "Description of the Player": "Isn't min speed, bad at almost everything else"
   },
   {
     "Player Name": "Daniel Willis",
@@ -8205,7 +10355,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Mediocre at Everything but not Trash?",
+    "BBOL.r": 206,
+    "Offense": 45,
+    "Speed Tier": 5,
+    "Defense": 43,
+    "Pitching": 45,
+    "Pitching (Cal)": 45,
+    "Best Position": "2B / 3B",
+    "Description of the Player": "Decent hitter, okay infielder"
   },
   {
     "Player Name": "Derek McCattery",
@@ -8243,7 +10403,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "C",
+    "Short Description": "Good Hitting and Pitching",
+    "BBOL.r": 145,
+    "Offense": 55,
+    "Speed Tier": 6,
+    "Defense": 40,
+    "Pitching": 64,
+    "Pitching (Cal)": 64,
+    "Best Position": "P / OF",
+    "Description of the Player": "Decent hitter, solid relief pitcher, poor eyesight"
   },
   {
     "Player Name": "Donald Vogel",
@@ -8281,7 +10451,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B-",
+    "Short Description": "Strong Defensive Specialists",
+    "BBOL.r": 131,
+    "Offense": 38,
+    "Speed Tier": 6,
+    "Defense": 83,
+    "Pitching": 46,
+    "Pitching (Cal)": 58,
+    "Best Position": "SS / C",
+    "Description of the Player": "Very good fielder at every position, lackluster hitter but can surprise sometimes"
   },
   {
     "Player Name": "Guiseppe Pachasa",
@@ -8319,7 +10499,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Not Very Usable But Can Play Offense OK-ish",
+    "BBOL.r": 248,
+    "Offense": 10,
+    "Speed Tier": 5,
+    "Defense": 21,
+    "Pitching": 54,
+    "Pitching (Cal)": 54,
+    "Best Position": "P",
+    "Description of the Player": "Can sort of relief pitch, not good at anything else"
   },
   {
     "Player Name": "Ivan King",
@@ -8357,7 +10547,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Basically Unusable Joke Characters",
+    "BBOL.r": 262,
+    "Offense": 1,
+    "Speed Tier": 3,
+    "Defense": 2,
+    "Pitching": 38,
+    "Pitching (Cal)": 38,
+    "Best Position": "P",
+    "Description of the Player": "Has one good pitch, bottom tier fielder, min speed"
   },
   {
     "Player Name": "Jerry Mahoney",
@@ -8395,7 +10595,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D+",
+    "Short Description": "Very Desperate Power Hitter Pickups",
+    "BBOL.r": 178,
+    "Offense": 45,
+    "Speed Tier": 4,
+    "Defense": 14,
+    "Pitching": 71,
+    "Pitching (Cal)": 71,
+    "Best Position": "P",
+    "Description of the Player": "Super unreliable power hitter, good pitcher, very poor fielder"
   },
   {
     "Player Name": "Jose Meisenheimer",
@@ -8433,7 +10643,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Decent Hitting Slow People",
+    "BBOL.r": 205,
+    "Offense": 42,
+    "Speed Tier": 3,
+    "Defense": 15,
+    "Pitching": 83,
+    "Pitching (Cal)": 83,
+    "Best Position": "P / 2B",
+    "Description of the Player": "Good hitter but will never score, top tier pitcher, min speed"
   },
   {
     "Player Name": "Lance Lambert",
@@ -8471,7 +10691,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "A+",
+    "Short Description": "Strong Hitters With Some Pitching Skill",
+    "BBOL.r": 67,
+    "Offense": 84,
+    "Speed Tier": 5,
+    "Defense": 13,
+    "Pitching": 70,
+    "Pitching (Cal)": 70,
+    "Best Position": "P",
+    "Description of the Player": "Top tier power, awful fielder at every position, a decent pitcher"
   },
   {
     "Player Name": "Marsellus Marx",
@@ -8509,7 +10739,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "S+",
+    "Short Description": "Elite Offense & Can Play OF",
+    "BBOL.r": 20,
+    "Offense": 95,
+    "Speed Tier": 7,
+    "Defense": 60,
+    "Pitching": 53,
+    "Pitching (Cal)": 64,
+    "Best Position": "OF",
+    "Description of the Player": "Top tier offensive stats, gets tired pretty quickly playing any position"
   },
   {
     "Player Name": "Matthew La Cruz",
@@ -8547,7 +10787,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Mediocre at Everything but not Trash?",
+    "BBOL.r": 207,
+    "Offense": 46,
+    "Speed Tier": 5,
+    "Defense": 34,
+    "Pitching": 19,
+    "Pitching (Cal)": 19,
+    "Best Position": "2B / 3B",
+    "Description of the Player": "Decent hitter, doesn't really excel at any position defensively"
   },
   {
     "Player Name": "Maynard McElroy",
@@ -8585,7 +10835,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "S-",
+    "Short Description": "Great Defensive Pieces, Leaning Toward Speed",
+    "BBOL.r": 40,
+    "Offense": 80,
+    "Speed Tier": 8,
+    "Defense": 90,
+    "Pitching": 53,
+    "Pitching (Cal)": 53,
+    "Best Position": "OF",
+    "Description of the Player": "Extremely fast, easy to use at nearly every defensive position, decent hitter"
   },
   {
     "Player Name": "Melvin Berger",
@@ -8623,7 +10883,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "BBOL.r": 236,
+    "Offense": 27,
+    "Speed Tier": 5,
+    "Defense": 13,
+    "Pitching": 57,
+    "Pitching (Cal)": 64,
+    "Best Position": "P",
+    "Description of the Player": "Meh hitter, decent relief pitcher, terrible fielder",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can't do Anything Well, but Still Has At Least One Quality"
   },
   {
     "Player Name": "Parker Collum",
@@ -8661,7 +10931,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "A+",
+    "Short Description": "Elite Offense, Lacking in Defense",
+    "BBOL.r": 61,
+    "Offense": 91,
+    "Speed Tier": 5,
+    "Defense": 18,
+    "Pitching": 35,
+    "Pitching (Cal)": 35,
+    "Best Position": "OF",
+    "Description of the Player": "Top tier power without crippling speed, poor defense"
   },
   {
     "Player Name": "Peter Levine",
@@ -8699,7 +10979,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Super Slow Pitchers",
+    "BBOL.r": 243,
+    "Offense": 17,
+    "Speed Tier": 3,
+    "Defense": 14,
+    "Pitching": 69,
+    "Pitching (Cal)": 69,
+    "Best Position": "P",
+    "Description of the Player": "Good pitcher, okay power but still poor offensively, awful fielder, min speed"
   },
   {
     "Player Name": "Quentin Driver",
@@ -8737,7 +11027,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Basically Unusable Joke Characters",
+    "BBOL.r": 263,
+    "Offense": 1,
+    "Speed Tier": 3,
+    "Defense": 2,
+    "Pitching": 28,
+    "Pitching (Cal)": 28,
+    "Best Position": "2B",
+    "Description of the Player": "Not the worst at any individual thing but is the worst overall player, min speed"
   },
   {
     "Player Name": "Randolph Glueckert",
@@ -8775,7 +11075,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can Hit Okay, Can't Field",
+    "BBOL.r": 218,
+    "Offense": 39,
+    "Speed Tier": 3,
+    "Defense": 4,
+    "Pitching": 48,
+    "Pitching (Cal)": 49,
+    "Best Position": "2B",
+    "Description of the Player": "Good hitter but will never score, mediocre relief pitcher, min speed, awful attention"
   },
   {
     "Player Name": "Samuel Middleton",
@@ -8813,7 +11123,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "A+",
+    "Short Description": "Strong Hitters With Some Pitching Skill",
+    "BBOL.r": 63,
+    "Offense": 82,
+    "Speed Tier": 5,
+    "Defense": 49,
+    "Pitching": 63,
+    "Pitching (Cal)": 74,
+    "Best Position": "2B / 3B",
+    "Description of the Player": "Extremely good hitter for average and power, so-so defender but can relief pitch"
   },
   {
     "Player Name": "Scotty Roth",
@@ -8851,7 +11171,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B-",
+    "Short Description": "Strong Defensive Specialists",
+    "BBOL.r": 141,
+    "Offense": 25,
+    "Speed Tier": 6,
+    "Defense": 90,
+    "Pitching": 42,
+    "Pitching (Cal)": 50,
+    "Best Position": "any",
+    "Description of the Player": "Top tier defender but very much lacks offensive stats, can play anywhere, poor stamina"
   },
   {
     "Player Name": "Terry Vega",
@@ -8889,7 +11219,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D+",
+    "Short Description": "Very Desperate Power Hitter Pickups",
+    "BBOL.r": 177,
+    "Offense": 49,
+    "Speed Tier": 4,
+    "Defense": 4,
+    "Pitching": 45,
+    "Pitching (Cal)": 45,
+    "Best Position": "2B",
+    "Description of the Player": "Very budget power hitter, horrible fielder, mediocre relief pitcher"
   },
   {
     "Player Name": "Vincent Sweet",
@@ -8927,7 +11267,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D+",
+    "Short Description": "Strong Defenders With Some Decent Pop",
+    "BBOL.r": 170,
+    "Offense": 34,
+    "Speed Tier": 5,
+    "Defense": 70,
+    "Pitching": 45,
+    "Pitching (Cal)": 56,
+    "Best Position": "SS / 3B",
+    "Description of the Player": "Good fielder, very mediocre hitter, lacks eyesight"
   },
   {
     "Player Name": "Walter Hall",
@@ -8965,7 +11315,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Not Very Usable But Can Play Offense OK-ish",
+    "BBOL.r": 247,
+    "Offense": 20,
+    "Speed Tier": 3,
+    "Defense": 2,
+    "Pitching": 51,
+    "Pitching (Cal)": 51,
+    "Best Position": "P",
+    "Description of the Player": "Has one extremely good pitch (left hook), bottom tier fielder, mediore hitter, min speed"
   },
   {
     "Player Name": "Wayne Pitman",
@@ -9003,7 +11363,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Basically Unusable Joke Characters",
+    "BBOL.r": 260,
+    "Offense": 3,
+    "Speed Tier": 3,
+    "Defense": 1,
+    "Pitching": 48,
+    "Pitching (Cal)": 48,
+    "Best Position": "P",
+    "Description of the Player": "Okay relief pitcher, tied worst fielder in the game, min speed"
   },
   {
     "Player Name": "Rachel La Buena",
@@ -9041,7 +11411,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "A+",
+    "Short Description": "Elite Offense, Lacking in Defense",
+    "BBOL.r": 60,
+    "Offense": 92,
+    "Speed Tier": 5,
+    "Defense": 20,
+    "Pitching": 38,
+    "Pitching (Cal)": 38,
+    "Best Position": "OF",
+    "Description of the Player": "Top tier power without crippling speed, good eyesight, poor defense"
   },
   {
     "Player Name": "Kendra Yarbrough",
@@ -9079,7 +11459,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Not Very Usable But Has A Pitch",
+    "BBOL.r": 253,
+    "Offense": 17,
+    "Speed Tier": 3,
+    "Defense": 3,
+    "Pitching": 64,
+    "Pitching (Cal)": 64,
+    "Best Position": "P",
+    "Description of the Player": "Has some kind of pop, bottom tier fielder, good relief pitcher, min speed"
   },
   {
     "Player Name": "Berit Greenwalt",
@@ -9117,7 +11507,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can Only Throw, Can't Hit",
+    "BBOL.r": 233,
+    "Offense": 1,
+    "Speed Tier": 3,
+    "Defense": 42,
+    "Pitching": 49,
+    "Pitching (Cal)": 49,
+    "Best Position": "C",
+    "Description of the Player": "Good but not excellent catcher, unusable offensively, min speed, awful attention"
   },
   {
     "Player Name": "Rose Fluegel",
@@ -9155,7 +11555,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D-",
+    "Short Description": "Decent Hitting Slow People",
+    "BBOL.r": 198,
+    "Offense": 38,
+    "Speed Tier": 3,
+    "Defense": 42,
+    "Pitching": 61,
+    "Pitching (Cal)": 61,
+    "Best Position": "2B / C",
+    "Description of the Player": "Good hitter but will never score, good relief pitcher, min speed, awful attention"
   },
   {
     "Player Name": "Maya Woodruff",
@@ -9193,7 +11603,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "A+",
+    "Short Description": "Power Hitter Catchers",
+    "BBOL.r": 57,
+    "Offense": 81,
+    "Speed Tier": 5,
+    "Defense": 80,
+    "Pitching": 37,
+    "Pitching (Cal)": 37,
+    "Best Position": "C",
+    "Description of the Player": "Extremely good hitter for average and power, great catcher and IF but lacks in stamina"
   },
   {
     "Player Name": "Trent Sizemore",
@@ -9231,7 +11651,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "B-",
+    "Short Description": "Strong Defensive Specialists",
+    "BBOL.r": 140,
+    "Offense": 25,
+    "Speed Tier": 6,
+    "Defense": 91,
+    "Pitching": 54,
+    "Pitching (Cal)": 54,
+    "Best Position": "any",
+    "Description of the Player": "Top tier defender but very much lacks offensive stats, can play anywhere"
   },
   {
     "Player Name": "Perry Marx",
@@ -9269,7 +11699,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D+",
+    "Short Description": "Very Desperate Power Hitter Pickups",
+    "BBOL.r": 176,
+    "Offense": 49,
+    "Speed Tier": 4,
+    "Defense": 13,
+    "Pitching": 43,
+    "Pitching (Cal)": 50,
+    "Best Position": "P / 2B",
+    "Description of the Player": "Very budget power hitter, mostly salvaged by a decent arm, mediocre relief pitcher"
   },
   {
     "Player Name": "Dominic Hoskins",
@@ -9307,7 +11747,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "D+",
+    "Short Description": "Solid Defense Only Pitchers",
+    "BBOL.r": 185,
+    "Offense": 35,
+    "Speed Tier": 5,
+    "Defense": 32,
+    "Pitching": 71,
+    "Pitching (Cal)": 71,
+    "Best Position": "P / 2B",
+    "Description of the Player": "Good pitcher, lacks in offense and fielding"
   },
   {
     "Player Name": "Umberto Anders",
@@ -9345,7 +11795,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "IDC About Winning",
+    "Short Description": "Super Slow Pitchers",
+    "BBOL.r": 241,
+    "Offense": 20,
+    "Speed Tier": 3,
+    "Defense": 4,
+    "Pitching": 83,
+    "Pitching (Cal)": 83,
+    "Best Position": "P",
+    "Description of the Player": "Extremely good pitcher, mediocre hitter, bottom tier fielder, awful stamina, min speed"
   },
   {
     "Player Name": "Thor Herring",
@@ -9383,7 +11843,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Generic"
+    "Type": "Generic",
+    "Tier": "F(ringe Case)",
+    "Short Description": "Can Only Throw & Pitch",
+    "BBOL.r": 226,
+    "Offense": 3,
+    "Speed Tier": 3,
+    "Defense": 48,
+    "Pitching": 70,
+    "Pitching (Cal)": 70,
+    "Best Position": "C / P",
+    "Description of the Player": "Good pitcher with a strong arm, unusable offensively, min speed"
   },
   {
     "Player Name": "Alicia Blakely",
@@ -9421,7 +11891,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "A+",
+    "Short Description": "Strong Hitters With Some Pitching Skill",
+    "BBOL.r": 65,
+    "Offense": 72,
+    "Speed Tier": 5,
+    "Defense": 74,
+    "Pitching": 68,
+    "Pitching (Cal)": 68,
+    "Best Position": "1B",
+    "Description of the Player": "Good hitter, top tier 1B, 100 stamina lets him relief pitch for ages even if inaccurate"
   },
   {
     "Player Name": "Amanda Hellerman",
@@ -9459,7 +11939,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "A-",
+    "Short Description": "Extremely Elite Pitchers",
+    "BBOL.r": 88,
+    "Offense": 28,
+    "Speed Tier": 5,
+    "Defense": 85,
+    "Pitching": 99,
+    "Pitching (Cal)": 99,
+    "Best Position": "P",
+    "Description of the Player": "Best pitcher in the game by far, you never need a reliever, very much lacks in offense"
   },
   {
     "Player Name": "Anna Goudreau",
@@ -9497,7 +11987,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "A+",
+    "Short Description": "Very Well-Rounded Players Who Can Play for Any Team",
+    "BBOL.r": 55,
+    "Offense": 83,
+    "Speed Tier": 6,
+    "Defense": 84,
+    "Pitching": 47,
+    "Pitching (Cal)": 53,
+    "Best Position": "3B / 1B",
+    "Description of the Player": "Good hitter, can play any position very well but poor stamina can sometimes hurt him"
   },
   {
     "Player Name": "Barbara Jones",
@@ -9535,7 +12035,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "A+",
+    "Short Description": "Very Well-Rounded Players Who Can Play for Any Team",
+    "BBOL.r": 68,
+    "Offense": 73,
+    "Speed Tier": 6,
+    "Defense": 84,
+    "Pitching": 53,
+    "Pitching (Cal)": 53,
+    "Best Position": "3B / SS",
+    "Description of the Player": "Good hitter with great defensive stats, pretty decent relief pitcher"
   },
   {
     "Player Name": "Brenda Markart",
@@ -9573,7 +12083,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "A+",
+    "Short Description": "Very Well-Rounded Players Who Can Play for Any Team",
+    "BBOL.r": 52,
+    "Offense": 82,
+    "Speed Tier": 6,
+    "Defense": 75,
+    "Pitching": 68,
+    "Pitching (Cal)": 80,
+    "Best Position": "OF / 3B",
+    "Description of the Player": "Good line drive hitter, good defender, very good pitcher in a pinch but a poor starter"
   },
   {
     "Player Name": "Cheryl Reynolds",
@@ -9611,7 +12131,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S+",
+    "Short Description": "Elite Hitters With Solid Fielding",
+    "BBOL.r": 6,
+    "Offense": 94,
+    "Speed Tier": 6,
+    "Defense": 92,
+    "Pitching": 50,
+    "Pitching (Cal)": 50,
+    "Best Position": "3B / SS",
+    "Description of the Player": "Max power, top tier fielding, the best offense + defense combo"
   },
   {
     "Player Name": "Christina Beattie",
@@ -9649,7 +12179,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "A-",
+    "Short Description": "Extremely Elite Pitchers",
+    "BBOL.r": 90,
+    "Offense": 44,
+    "Speed Tier": 4,
+    "Defense": 51,
+    "Pitching": 89,
+    "Pitching (Cal)": 89,
+    "Best Position": "P",
+    "Description of the Player": "Top tier pitcher, unlikely you will need any relievers, decent power but still slow"
   },
   {
     "Player Name": "Claudia Villarta",
@@ -9687,7 +12227,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S-",
+    "Short Description": "Great Defensive Pieces, Leaning Toward Speed",
+    "BBOL.r": 35,
+    "Offense": 79,
+    "Speed Tier": 7,
+    "Defense": 94,
+    "Pitching": 46,
+    "Pitching (Cal)": 46,
+    "Best Position": "any",
+    "Description of the Player": "Great defender, good line drive hitter, poor stamina isn't too negative due to his arm"
   },
   {
     "Player Name": "Dawn Cozart",
@@ -9725,7 +12275,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S+",
+    "Short Description": "Elite Defensive Players While Still Being Great Offensively",
+    "BBOL.r": 25,
+    "Offense": 85,
+    "Speed Tier": 8,
+    "Defense": 93,
+    "Pitching": 68,
+    "Pitching (Cal)": 68,
+    "Best Position": "OF",
+    "Description of the Player": "Extremely fast, good hitter, great fielder, decent relief pitcher"
   },
   {
     "Player Name": "Emily Lewbel",
@@ -9763,7 +12323,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S-",
+    "Short Description": "Great Defensive Pieces, Leaning Toward Batting Skill",
+    "BBOL.r": 30,
+    "Offense": 87,
+    "Speed Tier": 6,
+    "Defense": 89,
+    "Pitching": 41,
+    "Pitching (Cal)": 41,
+    "Best Position": "any",
+    "Description of the Player": "Solid hitter, great defender, good eyesight"
   },
   {
     "Player Name": "Fay Dawson",
@@ -9801,7 +12371,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S-",
+    "Short Description": "Great Defensive Pieces, Leaning Toward Batting Skill",
+    "BBOL.r": 38,
+    "Offense": 83,
+    "Speed Tier": 6,
+    "Defense": 89,
+    "Pitching": 44,
+    "Pitching (Cal)": 44,
+    "Best Position": "3B / SS",
+    "Description of the Player": "Good hitter, great defender, lacks consistent home run power"
   },
   {
     "Player Name": "Gwen Sears",
@@ -9839,7 +12419,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "B+",
+    "Short Description": "Heavily Defense Leaning But Great At It",
+    "BBOL.r": 94,
+    "Offense": 49,
+    "Speed Tier": 7,
+    "Defense": 82,
+    "Pitching": 24,
+    "Pitching (Cal)": 24,
+    "Best Position": "3B / OF",
+    "Description of the Player": "Below average offensively (low contact and eye) but a solid infielder this late"
   },
   {
     "Player Name": "Hillary Vargas",
@@ -9877,7 +12467,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "A-",
+    "Short Description": "Extremely Powerful Infielders with OK Batting",
+    "BBOL.r": 77,
+    "Offense": 67,
+    "Speed Tier": 5,
+    "Defense": 82,
+    "Pitching": 48,
+    "Pitching (Cal)": 48,
+    "Best Position": "C / 3B",
+    "Description of the Player": "Decent hitting with very good defense, one of the top infielders in the game"
   },
   {
     "Player Name": "Ingrid Dahlman",
@@ -9915,7 +12515,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "B+",
+    "Short Description": "Heavily Defense Leaning But Great At It",
+    "BBOL.r": 111,
+    "Offense": 42,
+    "Speed Tier": 6,
+    "Defense": 73,
+    "Pitching": 55,
+    "Pitching (Cal)": 55,
+    "Best Position": "SS / 3B",
+    "Description of the Player": "Lackluster hitter, still a very nice defender, okay relief pitcher"
   },
   {
     "Player Name": "Jessica Wassersas",
@@ -9953,7 +12563,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S+",
+    "Short Description": "Elite Defensive Players While Still Being Great Offensively",
+    "BBOL.r": 21,
+    "Offense": 85,
+    "Speed Tier": 7,
+    "Defense": 98,
+    "Pitching": 55,
+    "Pitching (Cal)": 55,
+    "Best Position": "any",
+    "Description of the Player": "Top tier fielder but low attention, 100 stamina lets her pitch for a while"
   },
   {
     "Player Name": "Jillian Paine",
@@ -9991,7 +12611,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "B+",
+    "Short Description": "Heavily Defense Leaning But Great At It",
+    "BBOL.r": 106,
+    "Offense": 60,
+    "Speed Tier": 5,
+    "Defense": 69,
+    "Pitching": 49,
+    "Pitching (Cal)": 49,
+    "Best Position": "1B / 3B",
+    "Description of the Player": "Decent hitter, low contact is a little awkward, a good corner infielder"
   },
   {
     "Player Name": "Kristen Sullivan",
@@ -10029,7 +12659,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "A-",
+    "Short Description": "Well-Above Average Defenders Who Can Do One Other Thing Very Well",
+    "BBOL.r": 71,
+    "Offense": 51,
+    "Speed Tier": 6,
+    "Defense": 93,
+    "Pitching": 75,
+    "Pitching (Cal)": 75,
+    "Best Position": "3B / SS",
+    "Description of the Player": "Top tier fielding and great pitching, so-so hitting, great for those wanting budget defense"
   },
   {
     "Player Name": "Kay O'Toole",
@@ -10067,7 +12707,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S-",
+    "Short Description": "Great Defensive Pieces, Leaning Toward Batting Skill",
+    "BBOL.r": 41,
+    "Offense": 82,
+    "Speed Tier": 6,
+    "Defense": 86,
+    "Pitching": 42,
+    "Pitching (Cal)": 42,
+    "Best Position": "OF / 3B",
+    "Description of the Player": "Good hitter, great defender but poor attention, lacks consistent home run power"
   },
   {
     "Player Name": "Libby Futterman",
@@ -10105,7 +12755,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "B-",
+    "Short Description": "Decent Hitters with Meh Defense",
+    "BBOL.r": 118,
+    "Offense": 56,
+    "Speed Tier": 4,
+    "Defense": 43,
+    "Pitching": 36,
+    "Pitching (Cal)": 36,
+    "Best Position": "1B",
+    "Description of the Player": "Good power but lacks speed, not really good anywhere other than 1B"
   },
   {
     "Player Name": "Marilyn McDonnell",
@@ -10143,7 +12803,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S+",
+    "Short Description": "Elite Defensive Players While Still Being Great Offensively",
+    "BBOL.r": 14,
+    "Offense": 88,
+    "Speed Tier": 7,
+    "Defense": 99,
+    "Pitching": 36,
+    "Pitching (Cal)": 36,
+    "Best Position": "any",
+    "Description of the Player": "Best fielder in the game (not immune to errors), great line drive hitter with some speed"
   },
   {
     "Player Name": "Melissa Waters",
@@ -10181,7 +12851,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "C",
+    "Short Description": "Clunky but Still Functional 1Bs",
+    "BBOL.r": 161,
+    "Offense": 44,
+    "Speed Tier": 4,
+    "Defense": 29,
+    "Pitching": 61,
+    "Pitching (Cal)": 61,
+    "Best Position": "1B",
+    "Description of the Player": "Okay power but poor speed, only good at 1B, good relief pitcher"
   },
   {
     "Player Name": "Nan Porter",
@@ -10219,7 +12899,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "D+",
+    "Short Description": "Solid Defense Only Pitchers",
+    "BBOL.r": 166,
+    "Offense": 15,
+    "Speed Tier": 5,
+    "Defense": 80,
+    "Pitching": 76,
+    "Pitching (Cal)": 76,
+    "Best Position": "P / C",
+    "Description of the Player": "Top tier pitcher, great defender, horrible hitter"
   },
   {
     "Player Name": "Pamela Kirkos",
@@ -10257,7 +12947,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "A-",
+    "Short Description": "Well-Above Average Defenders Who Can Do One Other Thing Very Well",
+    "BBOL.r": 73,
+    "Offense": 73,
+    "Speed Tier": 6,
+    "Defense": 80,
+    "Pitching": 49,
+    "Pitching (Cal)": 49,
+    "Best Position": "OF / 3B",
+    "Description of the Player": "Good offense and good defense, can pitch in a pinch, pretty \"average\" good player"
   },
   {
     "Player Name": "Raquel Cullen",
@@ -10295,7 +12995,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "B-",
+    "Short Description": "Good Contact Hitting 1B Specialists",
+    "BBOL.r": 137,
+    "Offense": 49,
+    "Speed Tier": 5,
+    "Defense": 54,
+    "Pitching": 57,
+    "Pitching (Cal)": 57,
+    "Best Position": "1B",
+    "Description of the Player": "Good 1B who can sort of play other positions, good hitter but not very fast"
   },
   {
     "Player Name": "Sarah Maxwell",
@@ -10333,7 +13043,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S+",
+    "Short Description": "Elite Defensive Players While Still Being Great Offensively",
+    "BBOL.r": 23,
+    "Offense": 85,
+    "Speed Tier": 7,
+    "Defense": 98,
+    "Pitching": 54,
+    "Pitching (Cal)": 54,
+    "Best Position": "any",
+    "Description of the Player": "Top tier fielder, great line drive hitter, NOT irl Barry Bonds"
   },
   {
     "Player Name": "Susan Gore",
@@ -10371,7 +13091,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S+",
+    "Short Description": "Elite Hitters With Solid Fielding",
+    "BBOL.r": 12,
+    "Offense": 93,
+    "Speed Tier": 6,
+    "Defense": 76,
+    "Pitching": 52,
+    "Pitching (Cal)": 52,
+    "Best Position": "3B / SS",
+    "Description of the Player": "Max power, good fielder, recovers from errors pretty quickly"
   },
   {
     "Player Name": "Sophie Meyer",
@@ -10409,7 +13139,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S-",
+    "Short Description": "ELITE Power, Low Speed",
+    "BBOL.r": 46,
+    "Offense": 87,
+    "Speed Tier": 4,
+    "Defense": 69,
+    "Pitching": 62,
+    "Pitching (Cal)": 62,
+    "Best Position": "1B",
+    "Description of the Player": "Max power, good 1B and good relief pitcher, will get walked a lot without backup"
   },
   {
     "Player Name": "Tonya Lesco",
@@ -10447,7 +13187,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S+",
+    "Short Description": "Elite Hitters With Solid Fielding",
+    "BBOL.r": 10,
+    "Offense": 93,
+    "Speed Tier": 6,
+    "Defense": 88,
+    "Pitching": 49,
+    "Pitching (Cal)": 64,
+    "Best Position": "1B / OF",
+    "Description of the Player": "Max power, great eyesight, good fielder, best non-specialized 1B in the game"
   },
   {
     "Player Name": "Wendy Parsons",
@@ -10485,7 +13235,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "B+",
+    "Short Description": "Solid Line Drive Hitting Catchers",
+    "BBOL.r": 96,
+    "Offense": 58,
+    "Speed Tier": 5,
+    "Defense": 83,
+    "Pitching": 74,
+    "Pitching (Cal)": 74,
+    "Best Position": "C / SS",
+    "Description of the Player": "Great catcher who can also pitch very well, solid line drive hitter"
   },
   {
     "Player Name": "Yvonne Carter",
@@ -10523,7 +13283,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "A-",
+    "Short Description": "Solid Hitters with Skills in Other Things but Not Really Elite",
+    "BBOL.r": 79,
+    "Offense": 74,
+    "Speed Tier": 6,
+    "Defense": 69,
+    "Pitching": 69,
+    "Pitching (Cal)": 69,
+    "Best Position": "1B",
+    "Description of the Player": "Good hitter, mid tier defense but is a good relief pitcher, not bad at 1B"
   },
   {
     "Player Name": "Zoe Mallory",
@@ -10561,7 +13331,17 @@
     "B-Day Month": "",
     "B-Day Day": "",
     "Nickname": "",
-    "Type": "Pro/Clone"
+    "Type": "Pro/Clone",
+    "Tier": "S-",
+    "Short Description": "Great Defensive Pieces, Leaning Toward Speed",
+    "BBOL.r": 44,
+    "Offense": 79,
+    "Speed Tier": 7,
+    "Defense": 84,
+    "Pitching": 24,
+    "Pitching (Cal)": 24,
+    "Best Position": "OF",
+    "Description of the Player": "Good line drive hitter, last great fielder who is fast but poor attention"
   },
   {
     "Player Name": "Mr. Clanky",
@@ -10599,6 +13379,16 @@
     "B-Day Month": "Aug",
     "B-Day Day": 2,
     "Nickname": "Automatic",
-    "Type": "Backyard"
+    "Type": "Backyard",
+    "Tier": "A-",
+    "Short Description": "Extremely Powerful Infielders with OK Batting",
+    "BBOL.r": 83,
+    "Offense": 65,
+    "Speed Tier": 5,
+    "Defense": 91,
+    "Pitching": "BAN",
+    "Pitching (Cal)": "STILL BAN",
+    "Best Position": "C / SS",
+    "Description of the Player": "Very reliable catcher, decent line drive hitter, literally cannot get fatigued at all"
   }
 ]
