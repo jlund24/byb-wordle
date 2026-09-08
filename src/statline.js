@@ -101,8 +101,17 @@ async function copyText(text) {
   textArea.value = text;
   textArea.setAttribute("readonly", "");
   textArea.style.position = "fixed";
-  textArea.style.opacity = "0";
+  textArea.style.top = "0";
+  textArea.style.left = "0";
+  textArea.style.width = "2em";
+  textArea.style.height = "2em";
+  textArea.style.padding = "0";
+  textArea.style.border = "0";
+  textArea.style.outline = "0";
+  textArea.style.boxShadow = "none";
+  textArea.style.background = "transparent";
   document.body.append(textArea);
+  textArea.focus();
   textArea.select();
   let copied = false;
   try { copied = document.execCommand("copy"); } catch { copied = false; }
