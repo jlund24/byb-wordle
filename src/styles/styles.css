@@ -84,3 +84,4 @@ header { position:sticky; z-index:4; top:0; width:100dvw; margin:0 0 6px calc(50
 .image-choice:hover:not(:disabled),.image-choice.selected { border-color:var(--green); background:#edf5e8; }
 .image-choice:disabled { opacity:.35; }
 .image-choice .player-avatar { width:34px; height:34px; flex-basis:34px; }
+.history-stats > div,.statline-active-cell { border-radius:3px; }
