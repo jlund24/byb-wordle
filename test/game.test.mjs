@@ -8,6 +8,8 @@ import { getStatRange, possibleTypesForGuesses, valueFallsInRange } from "../src
 import { SPEED_TIER_RANGES, STATLINE_MAX_ATTEMPTS, compareTiers, createStatlineState, getStatTier, playerTiers, scoreFirstGuess, speedTierNumber, speedTierRange, submitStatlineGuess } from "../src/game/statlineState.js";
 import { formatStatValue, guessHistoryMarkup } from "../src/ui/guessHistory.js";
 import { scoutMarkup } from "../src/ui/statReveal.js";
+import { IMAGE_MANIFEST } from "../src/data/images.js";
+import { playerImageKey } from "../src/ui/playerImage.js";
 
 assert.deepEqual(getStatRange(0), { min: 0, max: 25, label: "0-25" });
 assert.equal(dateId(new Date(2026, 8, 5, 12, 0)), "2026-09-05");
@@ -44,6 +46,12 @@ assert.equal(PLAYERS.find((player) => player.name === "Kimmy Eckman")?.type, "Ba
 assert.equal(PLAYERS.find((player) => player.id === "mo-vaughn-31")?.type, "Pro/Clone");
 assert.equal(PLAYERS.find((player) => player.id === "amy-bostwick-62")?.type, "Generic");
 assert.equal(PLAYERS.find((player) => player.id === "mr-clanky-263")?.type, "Backyard");
+const ivanKing = PLAYERS.find((player) => player.name === "Ivan King");
+const ivanRodriguez = PLAYERS.find((player) => player.name === "Ivan Rodriguez");
+assert.equal(IMAGE_MANIFEST.names["ivan-king"], undefined);
+assert.equal(playerImageKey(ivanKing), "generic-1.png");
+assert.equal(playerImageKey(ivanRodriguez), "Ivan.png");
+assert.equal(PLAYERS.filter((player) => player.type === "Generic").some((player) => IMAGE_MANIFEST.names[player.name.toLowerCase().replace(/[^a-z0-9]+/g, "-")]), false);
 assert.deepEqual(STATLINE_STATS.map(({ label }) => label), ["Headshot", "Bat Power", "Bat Contact", "Stamina", "Speed", "Arm Strength", "Arm Accuracy", "Eye"]);
 assert.equal(getStatTier(100), "S+");
 assert.equal(getStatTier(85), "S");

@@ -56,10 +56,12 @@ const urls = unique(rawUrls);
 const players = records.map((record) => ({
   id: `${normalize(record["Player Name"])}-${normalize(String(record.ID))}`,
   name: record["Player Name"].trim(),
+  type: typeof record.Type === "string" ? record.Type.trim() : "Generic",
   appearance: Number(record.Appearance)
 }));
 const manifest = { version: 1, appearances: {}, names: {}, playerOverrides: {}, composites: {} };
 const errors = [];
+const warnings = [];
 
 for (const url of urls) {
   const filename = imageName(url);
@@ -79,14 +81,19 @@ for (const url of urls) {
   const key = normalize(filename);
   const exactMatches = players.filter((player) => normalize(player.name) === key);
   const prefixMatches = players.filter((player) => normalize(player.name).startsWith(`${key}-`));
-  const matches = exactMatches.length ? exactMatches : prefixMatches;
+  const genericPrefixMatches = prefixMatches.filter((player) => player.type === "Generic");
+  const namedMatches = (exactMatches.length ? exactMatches : prefixMatches).filter((player) => player.type !== "Generic");
 
-  if (!matches.length) {
+  if (genericPrefixMatches.length && prefixMatches.some((player) => player.type !== "Generic")) {
+    warnings.push(`${filename}.png also matches generic player(s): ${genericPrefixMatches.map((player) => player.name).join(", ")}; generic players will use Appearance instead.`);
+  }
+
+  if (!namedMatches.length) {
     errors.push(`No player match for ${filename}.png`);
     continue;
   }
 
-  for (const player of matches) {
+  for (const player of namedMatches) {
     manifest.names[normalize(player.name)] = imageEntry(url, filename);
   }
 }
@@ -120,6 +127,7 @@ const output = `${JSON.stringify(manifest, null, 2)}\n`;
 await writeFile(destinationUrl, output);
 await writeFile(moduleDestinationUrl, `/** Generated from images.txt by scripts/generate-images.mjs. */\nexport const IMAGE_MANIFEST = ${output};`);
 console.log(`Generated ${Object.keys(manifest.names).length} named mappings, ${Object.keys(manifest.appearances).length} appearance mappings, and ${Object.keys(manifest.composites).length} composite mappings.`);
+if (warnings.length) console.warn(warnings.map((warning) => `Warning: ${warning}`).join("\n"));
 if (errors.length) {
   console.error(errors.map((error) => `- ${error}`).join("\n"));
   process.exitCode = 1;

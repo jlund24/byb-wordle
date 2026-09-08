@@ -339,11 +339,6 @@ export const IMAGE_MANIFEST = {
       "filename": "Carlos.png",
       "localPath": "./src/assets/player-images/carlos.png"
     },
-    "carlos-ocampo": {
-      "url": "https://i.ibb.co/C8JD0gB/Carlos.png",
-      "filename": "Carlos.png",
-      "localPath": "./src/assets/player-images/carlos.png"
-    },
     "chipper-jones": {
       "url": "https://i.ibb.co/MnP6Bjm/Chipper.png",
       "filename": "Chipper.png",
@@ -359,22 +354,12 @@ export const IMAGE_MANIFEST = {
       "filename": "Derek.png",
       "localPath": "./src/assets/player-images/derek.png"
     },
-    "derek-mccattery": {
-      "url": "https://i.ibb.co/JKwzF64/Derek.png",
-      "filename": "Derek.png",
-      "localPath": "./src/assets/player-images/derek.png"
-    },
     "frank-thomas": {
       "url": "https://i.ibb.co/JqVZ07S/Frank.png",
       "filename": "Frank.png",
       "localPath": "./src/assets/player-images/frank.png"
     },
     "ivan-rodriguez": {
-      "url": "https://i.ibb.co/YPNjdSX/Ivan.png",
-      "filename": "Ivan.png",
-      "localPath": "./src/assets/player-images/ivan.png"
-    },
-    "ivan-king": {
       "url": "https://i.ibb.co/YPNjdSX/Ivan.png",
       "filename": "Ivan.png",
       "localPath": "./src/assets/player-images/ivan.png"
@@ -400,11 +385,6 @@ export const IMAGE_MANIFEST = {
       "localPath": "./src/assets/player-images/jeromy.png"
     },
     "jose-canseco": {
-      "url": "https://i.ibb.co/gTV86LN/Jose.png",
-      "filename": "Jose.png",
-      "localPath": "./src/assets/player-images/jose.png"
-    },
-    "jose-meisenheimer": {
       "url": "https://i.ibb.co/gTV86LN/Jose.png",
       "filename": "Jose.png",
       "localPath": "./src/assets/player-images/jose.png"
@@ -470,11 +450,6 @@ export const IMAGE_MANIFEST = {
       "localPath": "./src/assets/player-images/shawn.png"
     },
     "vladimir-guerrero": {
-      "url": "https://i.ibb.co/P14dLHk/Vladimir.png",
-      "filename": "Vladimir.png",
-      "localPath": "./src/assets/player-images/vladimir.png"
-    },
-    "vladimir-womak": {
       "url": "https://i.ibb.co/P14dLHk/Vladimir.png",
       "filename": "Vladimir.png",
       "localPath": "./src/assets/player-images/vladimir.png"
