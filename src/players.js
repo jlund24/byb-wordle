@@ -44,12 +44,12 @@ function metadata(player) {
 }
 
 function tierBadgeMarkup(player) {
-  return player.tier ? ` <span class="tier-badge">${escapeHtml(player.tier)}</span>` : "";
+  return player.tier ? ` <span class="tier-divider" aria-hidden="true">·</span> <span class="tier-badge">${escapeHtml(player.tier)}</span>` : "";
 }
 
 function playerCard(player) {
   const overallStats = [["offense", "OFF"], ["defense", "DEF"], ["speedTier", "SPD"], ["pitching", "PIT"]];
-  return `<a class="player-card" href="./players.html?id=${encodeURIComponent(player.sourceId)}"><div class="player-card-heading">${playerImageMarkup(player)}<div><h3>${escapeHtml(player.name)}</h3><p>${escapeHtml(player.type)} · Rank ${escapeHtml(player.overallRank)}${tierBadgeMarkup(player)}</p></div><span class="player-card-arrow" aria-hidden="true">→</span></div><div class="player-card-meta player-card-overalls">${overallStats.map(([key, label]) => `<span><strong>${label}</strong> ${player[key]}</span>`).join("")}</div><p class="player-card-description">${escapeHtml(player.tierDescription || player.description)}</p></a>`;
+  return `<a class="player-card" href="./players.html?id=${encodeURIComponent(player.sourceId)}"><div class="player-card-heading">${playerImageMarkup(player)}<div><h3>${escapeHtml(player.name)}</h3><p><span class="player-card-rank">${escapeHtml(player.type)} · Rank ${escapeHtml(player.overallRank)}</span>${tierBadgeMarkup(player)}</p></div><span class="player-card-arrow" aria-hidden="true">→</span></div><div class="player-card-meta player-card-overalls">${overallStats.map(([key, label]) => `<span><strong>${label}</strong> ${player[key]}</span>`).join("")}</div><p class="player-card-description">${escapeHtml(player.tierDescription || player.description)}</p></a>`;
 }
 
 function statBar(player, key) {
@@ -62,7 +62,7 @@ function statBar(player, key) {
 
 function detailMarkup(player) {
   const tierDescriptionMarkup = player.tierDescription ? `<p class="player-tier-description">${escapeHtml(player.tierDescription)}</p>` : "";
-  return `${navMarkup()}<a class="explorer-back" href="./players.html">← All players</a><section class="player-detail"><div class="player-detail-header">${playerImageMarkup(player, { loading: "eager", decorative: false })}<div><p class="eyebrow">${escapeHtml(player.type)}</p><h2>${escapeHtml(player.name)}</h2><p class="player-ranking">Overall rank ${escapeHtml(player.overallRank)}${tierBadgeMarkup(player)}</p></div></div>${tierDescriptionMarkup}<p class="player-detail-description">${escapeHtml(player.description)}</p><dl class="player-detail-meta">${metadata(player)}</dl><div class="explorer-stat-groups">${STAT_GROUPS.map(({ label, overall, stats }) => `<section class="explorer-stat-group"><h3>${label}<strong>${escapeHtml(player[overall])}</strong></h3>${label === "Pitching" ? `${stats.slice(0, 4).map((key) => statBar(player, key)).join("")}<div class="pitch-divider">Special pitches</div><div class="pitch-special-grid">${stats.slice(4).map((key) => statBar(player, key)).join("")}</div>` : stats.map((key) => statBar(player, key)).join("")}</section>`).join("")}</div></section>`;
+  return `${navMarkup()}<a class="explorer-back" href="./players.html">← All players</a><section class="player-detail"><div class="player-detail-header">${playerImageMarkup(player, { loading: "eager", decorative: false })}<div><p class="eyebrow">${escapeHtml(player.type)}</p><h2>${escapeHtml(player.name)}</h2><p class="player-ranking"><span>Overall rank ${escapeHtml(player.overallRank)}</span>${tierBadgeMarkup(player)}</p></div></div>${tierDescriptionMarkup}<p class="player-detail-description">${escapeHtml(player.description)}</p><dl class="player-detail-meta">${metadata(player)}</dl><div class="explorer-stat-groups">${STAT_GROUPS.map(({ label, overall, stats }) => `<section class="explorer-stat-group"><h3>${label}<strong>${escapeHtml(player[overall])}</strong></h3>${label === "Pitching" ? `${stats.slice(0, 4).map((key) => statBar(player, key)).join("")}<div class="pitch-divider">Special pitches</div><div class="pitch-special-grid">${stats.slice(4).map((key) => statBar(player, key)).join("")}</div>` : stats.map((key) => statBar(player, key)).join("")}</section>`).join("")}</div></section>`;
 }
 
 function listMarkup() {
