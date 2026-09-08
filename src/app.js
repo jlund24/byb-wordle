@@ -1,7 +1,7 @@
 import { CORE_STATS, PLAYERS, STAT_LABELS } from "./data/players.js?v=types-2";
 
 const SCOUTABLE_STATS = CORE_STATS.filter((stat) => stat !== "type");
-import { createDailyPuzzle, createRandomPuzzle, dateId, parsePuzzleDate } from "./game/puzzle.js?v=random-mode-1";
+import { createDailyPuzzle, createRandomPuzzle, createStatlineDailyPuzzle, dateId, parsePuzzleDate } from "./game/puzzle.js?v=random-mode-1";
 import { createGameState, scoutStat, submitGuess } from "./game/gameState.js?v=scout-1";
 import { equivalentPlayers } from "./game/comparisons.js";
 import { filterCandidates } from "./game/filtering.js";
@@ -51,6 +51,19 @@ function startDailyChallenge() {
   location.href = location.pathname;
 }
 
+function companionDailyIsComplete() {
+  const statlinePuzzle = createStatlineDailyPuzzle(PLAYERS, puzzleDate);
+  const companionStatus = loadProgress(statlinePuzzle.id, "statline")?.status;
+  return companionStatus === "won" || companionStatus === "lost";
+}
+
+function dailyCompletionIndicator(puzzle, mode) {
+  const status = loadProgress(puzzle.id, mode)?.status;
+  return status === "won" || status === "lost"
+    ? '<span class="daily-complete-indicator" aria-label="Daily complete" title="Daily complete">✓</span>'
+    : '<span class="daily-pending-indicator" aria-label="Daily not complete" title="Daily not complete"></span>';
+}
+
 function persistAndRender() { saveProgress(state, isRandomMode ? "random" : "daily"); render(); }
 function openGameOverSheet() {
   openSheet(gameOverMarkup(), () => {
@@ -69,7 +82,7 @@ function openSheet(content, setup, backdropClass) {
   sheet.hidden = false; backdrop.hidden = false;
   sheet.querySelector(".close-sheet").addEventListener("click", closeSheet);
   setup?.();
-  sheet.querySelector("input, button:not(.close-sheet)")?.focus();
+  if (!sheet.querySelector("#sheet-title")) sheet.querySelector("input, button:not(.close-sheet)")?.focus();
 }
 
 function openGuess(playerId) {
@@ -178,15 +191,17 @@ function gameOverMarkup() {
   const clues = `Scouted: ${state.chosenClues.length ? state.chosenClues.map((stat) => STAT_LABELS[stat]).join(", ") : "none"}`;
   
   const nextRoundButton = isRandomMode
-    ? '<button class="secondary-button" id="next-random" type="button">Next random player</button>'
-    : '<button class="secondary-button" id="try-random" type="button">Try random mode</button>';
+    ? '<button class="secondary-button" id="next-random" type="button">Play one more</button>'
+    : companionDailyIsComplete()
+      ? '<button class="secondary-button" id="try-random" type="button">Play one more</button>'
+      : '<a class="secondary-button" href="./statline.html">Play Daily Statline</a>';
 
   if (state.status === "won") {
-    return `<section class="result won"><h2 id="sheet-title">Correct!</h2><p>Solved in ${state.guesses.length} guess${state.guesses.length === 1 ? "" : "es"}.</p><h3 class="result-player-heading">${playerImageMarkup(mystery, { loading: "eager", decorative: false })}<a class="player-name-link" href="./players.html?id=${encodeURIComponent(mystery.sourceId)}">${mystery.name} <span aria-hidden="true">↗</span></a></h3><button class="secondary-button" id="share-result" type="button">Copy spoiler-free result</button>${nextRoundButton}<p class="share-copy-status" id="share-copy-status" role="status">Result copied!</p></section>`;
+    return `<section class="result won"><h2 id="sheet-title">Correct!</h2><p>Solved in ${state.guesses.length} guess${state.guesses.length === 1 ? "" : "es"}.</p><h3 class="result-player-heading">${playerImageMarkup(mystery, { loading: "eager", decorative: false })}<a class="player-name-link" href="./players.html?id=${encodeURIComponent(mystery.sourceId)}"><span class="player-name-link-text">${mystery.name}</span> <span class="player-name-link-arrow" aria-hidden="true">↗</span></a></h3><button class="secondary-button" id="share-result" type="button">Copy result</button>${nextRoundButton}<p class="share-copy-status" id="share-copy-status" role="status">Result copied!</p></section>`;
   }
   
   const trueStats = `${statHeaderMarkup()}<div class="history-stats">${CORE_STATS.map((stat) => `<div><div class="stat-value-line"><strong>${formatStatValue(stat, mystery[stat])}</strong></div></div>`).join("")}</div>`;
-  return `<section class="result lost"><h2 id="sheet-title">Out of guesses</h2><p>${isRandomMode ? "This round's" : "Today's"} mystery player:</p><h3 class="result-player-heading">${playerImageMarkup(mystery, { loading: "eager", decorative: false })}<a class="player-name-link" href="./players.html?id=${encodeURIComponent(mystery.sourceId)}">${mystery.name} <span aria-hidden="true">↗</span></a></h3><div class="loss-profile">${trueStats}</div><p>${clues}</p>${equivalents.length > 1 ? `<p>Accepted: ${equivalents.map((player) => player.name).join(", ")}</p>` : ""}<button class="secondary-button" id="share-result" type="button">Copy spoiler-free result</button>${nextRoundButton}<p class="share-copy-status" id="share-copy-status" role="status">Result copied!</p></section>`;
+  return `<section class="result lost"><h2 id="sheet-title">Out of guesses</h2><p>${isRandomMode ? "This round's" : "Today's"} mystery player:</p><h3 class="result-player-heading">${playerImageMarkup(mystery, { loading: "eager", decorative: false })}<a class="player-name-link" href="./players.html?id=${encodeURIComponent(mystery.sourceId)}"><span class="player-name-link-text">${mystery.name}</span> <span class="player-name-link-arrow" aria-hidden="true">↗</span></a></h3><div class="loss-profile">${trueStats}</div><p>${clues}</p>${equivalents.length > 1 ? `<p>Accepted: ${equivalents.map((player) => player.name).join(", ")}</p>` : ""}<button class="secondary-button" id="share-result" type="button">Copy result</button>${nextRoundButton}<p class="share-copy-status" id="share-copy-status" role="status">Result copied!</p></section>`;
 }
 
 function focusCurrentGuess() {
@@ -209,8 +224,9 @@ function render() {
   const candidates = filterCandidates(PLAYERS, state, mystery);
   const availablePlayers = candidates.filter((player) => !guessedIds().includes(player.id));
   const scoutAvailable = state.guesses.length > 0 && (state.scoutsThisGuess ?? 0) < 1 && state.scoutTokens > 0 && Object.keys(state.scoutedStats).length < SCOUTABLE_STATS.length;
-  app.innerHTML = `<header><div class="header-top"><div><h1>Backyardle</h1><p class="eyebrow">Find the ⚾ '01 player in 6</p></div><div class="mode-picker"><select class="mode-select" id="mode-select" aria-label="Game mode"><option value="daily"${isRandomMode ? "" : " selected"}>Daily - ${puzzleDateLabel}</option><option value="random"${isRandomMode ? " selected" : ""}>Random</option></select>${isRandomMode ? '<button class="shuffle-button" id="shuffle-random" type="button" aria-label="Start a new random round" title="Start a new random round">&#128256;</button>' : ""}</div></div><nav class="site-nav" aria-label="Site navigation"><a href="./index.html" aria-current="page">Backyardle</a><a href="./statline.html">Statline</a><a href="./players.html">Players</a></nav></header>${guessHistoryMarkup(state.guesses, state.possibleRanges, state.scoutedStats, availablePlayers, state.scoutTokens, scoutAvailable, state.status !== "playing", state.possibleTypes)}<div class="bottom-spacer"></div>`;
-  app.querySelector(".site-nav")?.insertAdjacentHTML("beforeend", '<a class="feedback-link" href="https://forms.gle/gLtTRZACfh8tKT6p6" target="_blank" rel="noopener noreferrer">Feedback <span aria-hidden="true">↗</span></a>');
+  const backyardleCompletion = dailyCompletionIndicator(createDailyPuzzle(PLAYERS, puzzleDate));
+  const statlineCompletion = dailyCompletionIndicator(createStatlineDailyPuzzle(PLAYERS, puzzleDate), "statline");
+  app.innerHTML = `<header><div class="header-top"><div><h1>Backyardle</h1><p class="eyebrow">Find the ⚾ '01 player in 6</p></div><div class="mode-picker"><select class="mode-select" id="mode-select" aria-label="Game mode"><option value="daily"${isRandomMode ? "" : " selected"}>Daily - ${puzzleDateLabel}</option><option value="random"${isRandomMode ? " selected" : ""}>Random</option></select></div></div><nav class="site-nav" aria-label="Site navigation"><a href="./index.html" aria-current="page">Backyardle${backyardleCompletion}</a><a href="./statline.html">Statline${statlineCompletion}</a><a href="./players.html">Players</a>${isRandomMode ? '<button class="shuffle-button" id="shuffle-random" type="button" aria-label="Start a new random round" title="Start a new random round">&#128256;</button>' : ""}</nav></header>${guessHistoryMarkup(state.guesses, state.possibleRanges, state.scoutedStats, availablePlayers, state.scoutTokens, scoutAvailable, state.status !== "playing", state.possibleTypes)}<div class="bottom-spacer"></div>`;
   app.querySelector("#mode-select").addEventListener("change", (event) => {
     if (event.target.value === "random") startRandomRound();
     else if (isRandomMode) startDailyChallenge();

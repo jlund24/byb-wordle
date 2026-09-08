@@ -1,5 +1,5 @@
 import { PLAYERS, STATLINE_STATS, STAT_EMOJIS, STAT_LABELS } from "./data/players.js?v=types-2";
-import { createRandomPuzzle, createStatlineDailyPuzzle, dateId, parsePuzzleDate } from "./game/puzzle.js";
+import { createDailyPuzzle, createRandomPuzzle, createStatlineDailyPuzzle, dateId, parsePuzzleDate } from "./game/puzzle.js";
 import { SPEED_TIER_RANGES, STATLINE_MAX_ATTEMPTS, STATLINE_STATE_VERSION, STATLINE_TIER_ORDER, STATLINE_TIER_RANGES, createStatlineState, getStatTier, submitStatlineGuess } from "./game/statlineState.js";
 import { loadProgress, saveProgress } from "./storage/storage.js";
 import { playerImageKey, playerImageMarkup } from "./ui/playerImage.js";
@@ -50,6 +50,19 @@ function startRandomRound() {
 
 function startDailyChallenge() {
   location.href = location.pathname;
+}
+
+function companionDailyIsComplete() {
+  const backyardlePuzzle = createDailyPuzzle(PLAYERS, puzzleDate);
+  const companionStatus = loadProgress(backyardlePuzzle.id)?.status;
+  return companionStatus === "won" || companionStatus === "lost";
+}
+
+function dailyCompletionIndicator(puzzle, mode) {
+  const status = loadProgress(puzzle.id, mode)?.status;
+  return status === "won" || status === "lost"
+    ? '<span class="daily-complete-indicator" aria-label="Daily complete" title="Daily complete">✓</span>'
+    : '<span class="daily-pending-indicator" aria-label="Daily not complete" title="Daily not complete"></span>';
 }
 
 function persistAndRender() {
@@ -191,8 +204,12 @@ function resultMarkup() {
   const profile = STATLINE_STATS.map(({ key }) => key === "headshot"
     ? `<div class="statline-reveal-cell">${playerImageMarkup(mystery, { loading: "eager", decorative: false })}</div>`
     : `<div class="statline-reveal-cell"><div class="stat-value-line"><strong>${tierDisplay(key, getStatTier(mystery[key], key))}</strong><small>${mystery[key]}</small></div></div>`).join("");
-  const nextRoundButton = isRandomMode ? '<button class="secondary-button" id="next-random" type="button">Next random player</button>' : '<button class="secondary-button" id="try-random" type="button">Try random mode</button>';
-  return `<section class="statline-result ${state.status}"><h2 id="sheet-title">${resultTitle}</h2><p class="result-player"><span>${playerImageMarkup(mystery, { loading: "eager", decorative: false })}</span><a class="player-name-link" href="./players.html?id=${encodeURIComponent(mystery.sourceId)}">${mystery.name} <span aria-hidden="true">↗</span></a></p><p><strong>First guess: ${state.firstGuessScore}/${STATLINE_STATS.length}</strong></p><p>Final: ${finalScore}/${STATLINE_STATS.length} in ${state.attempt} attempts</p><div class="statline-reveal report-scroll" aria-label="Correct player ratings"><div class="report-grid">${statlineHeaderMarkup()}<div class="history-stats">${profile}</div></div></div><div class="statline-result-actions"><button class="secondary-button" id="share-result" type="button">Copy spoiler-free result</button>${nextRoundButton}</div><p class="share-copy-status" id="share-copy-status" role="status">Result copied!</p></section>`;
+  const nextRoundButton = isRandomMode
+    ? '<button class="secondary-button" id="next-random" type="button">Play one more</button>'
+    : companionDailyIsComplete()
+      ? '<button class="secondary-button" id="try-random" type="button">Play one more</button>'
+      : '<a class="secondary-button" href="./index.html">Play Daily Backyardle</a>';
+  return `<section class="statline-result ${state.status}"><h2 id="sheet-title">${resultTitle}</h2><p class="result-player"><span>${playerImageMarkup(mystery, { loading: "eager", decorative: false })}</span><a class="player-name-link" href="./players.html?id=${encodeURIComponent(mystery.sourceId)}"><span class="player-name-link-text">${mystery.name}</span> <span class="player-name-link-arrow" aria-hidden="true">↗</span></a></p><p><strong>First guess: ${state.firstGuessScore}/${STATLINE_STATS.length}</strong></p><p>Final: ${finalScore}/${STATLINE_STATS.length} in ${state.attempt} attempts</p><div class="statline-reveal report-scroll" aria-label="Correct player ratings"><div class="report-grid">${statlineHeaderMarkup()}<div class="history-stats">${profile}</div></div></div><div class="statline-result-actions"><button class="secondary-button" id="share-result" type="button">Copy result</button>${nextRoundButton}</div><p class="share-copy-status" id="share-copy-status" role="status">Result copied!</p></section>`;
 }
 
 function closeSheet() {
@@ -210,7 +227,6 @@ function openGameOverSheet() {
   sheet.querySelector("#share-result").addEventListener("click", shareResult);
   sheet.querySelector("#next-random")?.addEventListener("click", startRandomRound);
   sheet.querySelector("#try-random")?.addEventListener("click", startRandomRound);
-  sheet.querySelector("button:not(.close-sheet)")?.focus();
 }
 
 function render() {
@@ -224,8 +240,9 @@ function render() {
     ? `<div class="image-picker" role="listbox" aria-label="Choose a headshot">${IMAGE_CHOICES.map((player) => { const imageKey = playerImageKey(player); const used = state.history.some((entry) => entry.guesses.headshot === imageKey); const selected = state.guesses.headshot === imageKey; return `<button type="button" class="image-choice${selected ? " selected" : ""}" data-image-choice="${imageKey}" ${used ? "disabled" : ""} aria-label="${player.name}${used ? ", already guessed" : ""}">${playerImageMarkup(player)}</button>`; }).join("")}</div>`
     : `<div class="tier-picker shared-tier-picker" role="group" aria-label="Choose a tier for ${activeLabel}">${STATLINE_TIER_ORDER.map((tier) => { const range = tierRangesForStat(activeStat).find((item) => item.tier === tier).range; const display = tierDisplay(activeStat, tier); const used = activeStat && state.history.some((entry) => entry.guesses[activeStat] === tier); return `<button type="button" class="tier-button" data-tier="${tier}" ${activeStat && !used ? "" : "disabled"} aria-label="${display}: ${range}${used ? ", already guessed" : ""}"><strong>${display}</strong><small>${range}</small></button>`; }).join("")}</div>`;
   const action = isPlaying ? `<div class="statline-action"><p class="active-stat-label">${activeTitle}</p>${picker}<button class="primary-action" id="submit-ratings" type="button" ${allChosen ? "" : "disabled"}>Submit ratings</button></div>` : "";
-  app.innerHTML = `<header><div class="header-top"><div><h1>Statline</h1><p class="eyebrow">Guess ⚾ '01 ratings in 3</p></div><div class="mode-picker"><select class="mode-select" id="mode-select" aria-label="Game mode"><option value="daily"${isRandomMode ? "" : " selected"}>Daily - ${puzzleDateLabel}</option><option value="random"${isRandomMode ? " selected" : ""}>Random</option></select>${isRandomMode ? '<button class="shuffle-button" id="shuffle-random" type="button" aria-label="Start a new random round" title="Start a new random round">&#128256;</button>' : ""}</div></div><nav class="site-nav" aria-label="Site navigation"><a href="./index.html">Backyardle</a><a href="./statline.html" aria-current="page">Statline</a><a href="./players.html">Players</a></nav></header><section class="statline-intro"><h2>${mystery.name}</h2></section><section class="statline-board" aria-label="Statline attempts"><div class="statline-progress"><span>${isPlaying ? `Attempt ${state.attempt + 1} of ${STATLINE_MAX_ATTEMPTS}` : state.status === "won" ? "Solved" : "Out of attempts"}</span>${state.firstGuessScore !== null ? `<strong>First guess: ${state.firstGuessScore}/${STATLINE_STATS.length}</strong>` : ""}</div><div class="report-scroll statline-report-scroll"><div class="report-grid statline-report">${statlineHeaderMarkup()}${state.history.map(historyRow).join("")}${activeRow}${emptyAttemptRows(isPlaying)}</div></div></section>${action}`;
-  app.querySelector(".site-nav")?.insertAdjacentHTML("beforeend", '<a class="feedback-link" href="https://forms.gle/gLtTRZACfh8tKT6p6" target="_blank" rel="noopener noreferrer">Feedback <span aria-hidden="true">↗</span></a>');
+  const backyardleCompletion = dailyCompletionIndicator(createDailyPuzzle(PLAYERS, puzzleDate));
+  const statlineCompletion = dailyCompletionIndicator(createStatlineDailyPuzzle(PLAYERS, puzzleDate), "statline");
+  app.innerHTML = `<header><div class="header-top"><div><h1>Statline</h1><p class="eyebrow">Guess ⚾ '01 ratings in 3</p></div><div class="mode-picker"><select class="mode-select" id="mode-select" aria-label="Game mode"><option value="daily"${isRandomMode ? "" : " selected"}>Daily - ${puzzleDateLabel}</option><option value="random"${isRandomMode ? " selected" : ""}>Random</option></select></div></div><nav class="site-nav" aria-label="Site navigation"><a href="./index.html">Backyardle${backyardleCompletion}</a><a href="./statline.html" aria-current="page">Statline${statlineCompletion}</a><a href="./players.html">Players</a>${isRandomMode ? '<button class="shuffle-button" id="shuffle-random" type="button" aria-label="Start a new random round" title="Start a new random round">&#128256;</button>' : ""}</nav></header><section class="statline-intro"><h2>${mystery.name}</h2></section><section class="statline-board" aria-label="Statline attempts"><div class="statline-progress"><span>${isPlaying ? `Attempt ${state.attempt + 1} of ${STATLINE_MAX_ATTEMPTS}` : state.status === "won" ? "Solved" : "Out of attempts"}</span>${state.firstGuessScore !== null ? `<strong>First guess: ${state.firstGuessScore}/${STATLINE_STATS.length}</strong>` : ""}</div><div class="report-scroll statline-report-scroll"><div class="report-grid statline-report">${statlineHeaderMarkup()}${state.history.map(historyRow).join("")}${activeRow}${emptyAttemptRows(isPlaying)}</div></div></section>${action}`;
   app.querySelector("#mode-select").addEventListener("change", (event) => {
     if (event.target.value === "random") startRandomRound();
     else if (isRandomMode) startDailyChallenge();

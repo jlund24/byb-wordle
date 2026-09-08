@@ -1,5 +1,7 @@
 import { PLAYERS, STAT_LABELS } from "./data/players.js?v=player-explorer-1";
+import { createDailyPuzzle, createStatlineDailyPuzzle, dateId } from "./game/puzzle.js";
 import { getStatTier, speedTierNumber } from "./game/statlineState.js";
+import { loadProgress } from "./storage/storage.js";
 import { playerImageMarkup } from "./ui/playerImage.js";
 
 const app = document.querySelector("#app");
@@ -31,8 +33,18 @@ function playerFromUrl() {
   return PLAYERS.find((player) => player.id === id || String(player.sourceId) === id) ?? false;
 }
 
+function dailyCompletionIndicator(puzzle, mode) {
+  const status = loadProgress(puzzle.id, mode)?.status;
+  return status === "won" || status === "lost"
+    ? '<span class="daily-complete-indicator" aria-label="Daily complete" title="Daily complete">✓</span>'
+    : '<span class="daily-pending-indicator" aria-label="Daily not complete" title="Daily not complete"></span>';
+}
+
 function navMarkup() {
-  return `<header><div class="header-top"><div><h1>Player Explorer</h1><p class="eyebrow">Browse ⚾ '01 players</p></div></div><nav class="site-nav" aria-label="Site navigation"><a href="./index.html">Backyardle</a><a href="./statline.html">Statline</a><a href="./players.html" aria-current="page">Players</a><a class="feedback-link" href="https://forms.gle/gLtTRZACfh8tKT6p6" target="_blank" rel="noopener noreferrer">Feedback <span aria-hidden="true">↗</span></a></nav></header>`;
+  const puzzleDate = dateId();
+  const backyardleCompletion = dailyCompletionIndicator(createDailyPuzzle(PLAYERS, puzzleDate));
+  const statlineCompletion = dailyCompletionIndicator(createStatlineDailyPuzzle(PLAYERS, puzzleDate), "statline");
+  return `<header><div class="header-top"><div><h1>Player Explorer</h1><p class="eyebrow">Browse ⚾ '01 players</p></div></div><nav class="site-nav" aria-label="Site navigation"><a href="./index.html">Backyardle${backyardleCompletion}</a><a href="./statline.html">Statline${statlineCompletion}</a><a href="./players.html" aria-current="page">Players</a></nav></header>`;
 }
 
 function metadata(player) {
